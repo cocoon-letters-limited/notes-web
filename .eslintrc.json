@@ -32,5 +32,13 @@
         "react/jsx-uses-react": ["off"],
         "react/jsx-props-no-spreading": ["warn"],
         "react/no-unescaped-entities": ["off"]
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx", ".d.ts"]
+          },
+          "typescript": {}
+        }
     }
 }
