@@ -37,7 +37,12 @@
         ],
         "unnamedComponents": ["function-expression", "arrow-function"]
       }
-    ]
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "peerDependencies": true }
+    ],
+    "no-param-reassign": ["error", { "props": false }]
   },
   "settings": {
     "import/resolver": {
