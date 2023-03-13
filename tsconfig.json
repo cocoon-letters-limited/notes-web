@@ -18,5 +18,5 @@
     "jsx": "react-jsx"
   },
   "include": ["src", "src/**/*.ts"],
-  "exclude": ["tailwind.config.js"],
+  "exclude": ["tailwind.config.js"]
 }
