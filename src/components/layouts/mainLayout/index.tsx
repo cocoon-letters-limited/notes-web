@@ -1,11 +1,18 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
+import Header from "./header";
+import Footer from "./footer";
 
 function MainLayout() {
   return (
-    <div>
-      <Outlet />
-    </div>
+    <>
+      <Header />
+
+      <main className="relative">
+        <Outlet />
+      </main>
+
+      <Footer />
+    </>
   );
 }
 
