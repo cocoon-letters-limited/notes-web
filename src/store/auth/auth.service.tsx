@@ -1,5 +1,5 @@
 /* eslint-disable class-methods-use-this */
-import axios from "../../axios";
+import axios from "../../axiosClient";
 
 /**
  * Auth Service

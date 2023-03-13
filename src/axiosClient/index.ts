@@ -1,9 +1,4 @@
-import axios, {
-  AxiosRequestConfig,
-  AxiosInstance,
-  AxiosResponse,
-  AxiosError,
-} from "axios";
+import axios, { AxiosInstance, AxiosResponse, AxiosError } from "axios";
 import store from "store";
 import { actions, store as reduxStore } from "../store";
 
@@ -14,7 +9,7 @@ const instance: AxiosInstance = axios.create({
 });
 
 instance.interceptors.request.use(
-  async (config: AxiosRequestConfig) => {
+  async (config) => {
     const token = await store.get("accessToken");
 
     if (typeof token !== "undefined") {
