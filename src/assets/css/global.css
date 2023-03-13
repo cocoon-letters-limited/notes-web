@@ -1,11 +1,12 @@
-:root {}
+:root {
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    /* @font-face {
+  /* @font-face {
       font-family: Matter;
       src: url("../fonts/matter/Matter-Light.ttf");
       font-weight: 300;
