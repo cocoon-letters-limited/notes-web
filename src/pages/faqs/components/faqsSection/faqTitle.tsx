@@ -4,8 +4,8 @@ type FaqTitleProps = {
 
 const FaqTitle = ({ title }: FaqTitleProps) => {
   return (
-    <div className="flex items-center space-x-6">
-      <div className="bg-[#EEF4FF] rounded-full p-4">
+    <div className="flex items-center space-x-4 md:space-x-6">
+      <div className="bg-[#EEF4FF] rounded-full p-3 md:p-4">
         <svg
           width="28"
           height="28"
@@ -19,7 +19,9 @@ const FaqTitle = ({ title }: FaqTitleProps) => {
           />
         </svg>
       </div>
-      <h2 className="text-default font-bold text-2xl lg:text-3xl">{title}</h2>
+      <h2 className="text-default font-bold text-xl md:text-2xl lg:text-3xl">
+        {title}
+      </h2>
     </div>
   );
 };

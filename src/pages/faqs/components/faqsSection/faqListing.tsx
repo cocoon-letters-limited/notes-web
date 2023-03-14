@@ -29,7 +29,7 @@ const FaqsListing = ({ faqs }: FaqsListingProps) => {
           className="block w-full text-left focus:outline-none ring-0 focus:ring-0 pt-4 pb-4 lg:pt-6 lg:pb-6"
         >
           <div className="flex flex-row justify-between items-center">
-            <p className="w-11/12 text-textColor font-semibold text-base lg:text-lg">
+            <p className="w-11/12 text-textColor font-medium md:font-semibold text-sm-15 md:text-base lg:text-lg">
               {data.question}
             </p>
 
