@@ -1,3 +1,4 @@
 .bg {
-    background: linear-gradient(180deg, #054CD6 0%, #5577EE 100%), var(--color-primary);
+  background: linear-gradient(180deg, #054cd6 0%, #5577ee 100%),
+    var(--color-primary);
 }
