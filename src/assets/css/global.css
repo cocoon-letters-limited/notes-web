@@ -1,7 +1,7 @@
 :root {
-    --color-default: #1A191E;
-    --color-primary: #054CD6;
-    --color-textColor: #696969;
+  --color-default: #1a191e;
+  --color-primary: #054cd6;
+  --color-textColor: #696969;
 }
 
 @tailwind base;

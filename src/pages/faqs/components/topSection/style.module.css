@@ -1,0 +1,3 @@
+.bg {
+    background: linear-gradient(180deg, #054CD6 0%, #5577EE 100%), var(--color-primary);
+}
