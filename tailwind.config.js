@@ -8,7 +8,21 @@ module.exports = {
     "./public/index.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        serif: [...defaultTheme.fontFamily.serif],
+        mono: [...defaultTheme.fontFamily.mono],
+      },
+      fontSize: {
+        "sm-15": "0.9375rem", //15px
+      },
+      colors: {
+        default: "var(--color-default)",
+        primary: "var(--color-primary)",
+        textColor: "var(--color-textColor)",
+      },
+    },
   },
   plugins: [],
 };
