@@ -1,7 +1,8 @@
 import React from "react";
+import TopSection from "./components/topSection";
 
 const Faqs = () => {
-  return <div>Faqs</div>;
+  return <TopSection />;
 };
 
 export default Faqs;
