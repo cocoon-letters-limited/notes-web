@@ -17,17 +17,17 @@ const SocialLink = ({ icon, url }: SocialLinkType) => {
 const TopSection = () => {
   return (
     <section className="relative">
-      <div className="container px-4 lg:px-8 xl:px-4 mx-auto pt-24 md:pt-28 lg:pt-32 pb-12 lg:pb-16 relative">
-        <div className="flex flex-row flex-wrap items-center w-full">
-          <div className="w-full lg:w-5/12">
+      <div className="container px-4 md:px-8 xl:px-4 mx-auto pt-24 md:pt-28 lg:pt-32 pb-2 md:pb-6 lg:pb-8 xl:pb-16 relative">
+        <div className="flex flex-col-reverse md:flex-row flex-wrap lg:items-center w-full">
+          <div className="mt-16 md:mt-0 w-full md:w-4/12 lg:w-5/12">
             <img src={AboutImage} alt="About Top" />
           </div>
-          <div className="w-full lg:w-1/12" />
-          <div className="w-full lg:w-5/12">
+          <div className="w-full md:w-1/12" />
+          <div className="w-full md:w-6/12 lg:w-5/12">
             <h1 className="text-primary text-4xl lg:text-5xl xl:text-6xl font-bold">
               We’re a Saas company
             </h1>
-            <p className="mt-12 lg:mt-16 text-base leading-7 lg:text-xl lg:leading-8 text-textColor">
+            <p className="mt-8 lg:mt-12 xl:mt-16 text-base leading-7 lg:text-lg lg:leading-8 xl:text-xl xl:leading-8 text-textColor">
               There are many variations of passages of Lorem Ipsum available,
               but majority have su alteration in some form, by injected humour,
               randomized works for which don't look even slightly believable. If
@@ -35,7 +35,7 @@ const TopSection = () => {
               there isn't anything.
             </p>
 
-            <div className="mt-12 lg:mt-16 flex flex-row flex-wrap space-x-6">
+            <div className="mt-8 md:mt-12 lg:mt-16 flex flex-row flex-wrap space-x-6">
               <SocialLink
                 url="https://instagram.com"
                 icon={
