@@ -1,7 +1,7 @@
 :root {
-    --color-default: #1a191e;
-    --color-primary: #054cd6;
-    --color-textColor: #696969;
+  --color-default: #1a191e;
+  --color-primary: #054cd6;
+  --color-textColor: #696969;
 }
 
 @tailwind base;
@@ -9,77 +9,77 @@
 @tailwind utilities;
 
 @layer base {
-    @font-face {
-        font-family: Inter;
-        src: url("../fonts/inter/Inter-Light.ttf");
-        font-weight: 300;
-    }
+  @font-face {
+    font-family: Inter;
+    src: url("../fonts/inter/Inter-Light.ttf");
+    font-weight: 300;
+  }
 
-    @font-face {
-        font-family: Inter;
-        src: url("../fonts/inter/Inter-Regular.ttf");
-        font-weight: 400;
-    }
+  @font-face {
+    font-family: Inter;
+    src: url("../fonts/inter/Inter-Regular.ttf");
+    font-weight: 400;
+  }
 
-    @font-face {
-        font-family: Inter;
-        src: url("../fonts/inter/Inter-Medium.ttf");
-        font-weight: 500;
-    }
+  @font-face {
+    font-family: Inter;
+    src: url("../fonts/inter/Inter-Medium.ttf");
+    font-weight: 500;
+  }
 
-    @font-face {
-        font-family: Inter;
-        src: url("../fonts/inter/Inter-SemiBold.ttf");
-        font-weight: 600;
-    }
+  @font-face {
+    font-family: Inter;
+    src: url("../fonts/inter/Inter-SemiBold.ttf");
+    font-weight: 600;
+  }
 
-    @font-face {
-        font-family: Inter;
-        src: url("../fonts/inter/Inter-Bold.ttf");
-        font-weight: 700;
-    }
+  @font-face {
+    font-family: Inter;
+    src: url("../fonts/inter/Inter-Bold.ttf");
+    font-weight: 700;
+  }
 
-    @font-face {
-        font-family: Inter;
-        src: url("../fonts/inter/Inter-ExtraBold.ttf");
-        font-weight: 800;
-    }
+  @font-face {
+    font-family: Inter;
+    src: url("../fonts/inter/Inter-ExtraBold.ttf");
+    font-weight: 800;
+  }
 
-    @font-face {
-        font-family: Mulish;
-        src: url("../fonts/mulish/Mulish-Light.ttf");
-        font-weight: 300;
-    }
+  @font-face {
+    font-family: Mulish;
+    src: url("../fonts/mulish/Mulish-Light.ttf");
+    font-weight: 300;
+  }
 
-    @font-face {
-        font-family: Mulish;
-        src: url("../fonts/mulish/Mulish-Regular.ttf");
-        font-weight: 400;
-    }
+  @font-face {
+    font-family: Mulish;
+    src: url("../fonts/mulish/Mulish-Regular.ttf");
+    font-weight: 400;
+  }
 
-    @font-face {
-        font-family: Mulish;
-        src: url("../fonts/mulish/Mulish-Medium.ttf");
-        font-weight: 500;
-    }
+  @font-face {
+    font-family: Mulish;
+    src: url("../fonts/mulish/Mulish-Medium.ttf");
+    font-weight: 500;
+  }
 
-    @font-face {
-        font-family: Mulish;
-        src: url("../fonts/mulish/Mulish-SemiBold.ttf");
-        font-weight: 600;
-    }
+  @font-face {
+    font-family: Mulish;
+    src: url("../fonts/mulish/Mulish-SemiBold.ttf");
+    font-weight: 600;
+  }
 
-    @font-face {
-        font-family: Mulish;
-        src: url("../fonts/mulish/Mulish-Bold.ttf");
-        font-weight: 700;
-    }
+  @font-face {
+    font-family: Mulish;
+    src: url("../fonts/mulish/Mulish-Bold.ttf");
+    font-weight: 700;
+  }
 
-    @font-face {
-        font-family: Mulish;
-        src: url("../fonts/mulish/Mulish-ExtraBold.ttf");
-        font-weight: 800;
-    }
+  @font-face {
+    font-family: Mulish;
+    src: url("../fonts/mulish/Mulish-ExtraBold.ttf");
+    font-weight: 800;
+  }
 }
 
 @import "./main.css";
