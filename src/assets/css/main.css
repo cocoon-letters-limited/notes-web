@@ -32,10 +32,11 @@
 }
 
 #sidebar a svg {
-    filter: none;
-    transition: filter ease-in-out 200ms;
+  filter: none;
+  transition: filter ease-in-out 200ms;
 }
 
 #sidebar a:hover svg {
-    filter: invert(17%) sepia(94%) saturate(5223%) hue-rotate(219deg) brightness(90%) contrast(96%);
+  filter: invert(17%) sepia(94%) saturate(5223%) hue-rotate(219deg)
+    brightness(90%) contrast(96%);
 }
