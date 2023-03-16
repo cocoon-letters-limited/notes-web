@@ -9,10 +9,10 @@ const DashboardLayout = () => {
       <div className="flex flex-row">
         <DashboardSidebar />
 
-        <div className="flex-1 md:pl-7">
+        <div className="flex-1 pl-4 md:pl-7 pr-4 md:pr-6">
           <DashboardHeader />
 
-          <div className="relative">
+          <div className="relative pt-4">
             <Outlet />
           </div>
         </div>
