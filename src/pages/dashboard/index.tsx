@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import TabSection from "./components/tabSection";
 import SummarySection from "./components/summarySection";
 import WorkSection from "./components/workSection";
+import CriticalSummarySection from "./components/criticalSummarySection";
 
 const Dashboard = () => {
   const location = useLocation();
@@ -23,6 +24,7 @@ const Dashboard = () => {
       <TabSection currentTab={currentTab} tabList={tabList} />
       <SummarySection />
       <WorkSection />
+      <CriticalSummarySection />
     </section>
   );
 };
