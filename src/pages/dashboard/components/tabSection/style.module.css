@@ -1,0 +1,26 @@
+.tab {
+    color: var(--color-primary);
+    transition: all ease-in-out 200ms;
+}
+
+.tab:hover, .tab.active { 
+    color: white;
+    background: var(--color-primary);
+}
+
+
+
+.tab:first-child {
+    border-radius: 10px 0px 0px 10px;
+    border: 2px solid #054CD6;
+}
+
+.tab:nth-child(2){
+    border-top: 2px solid #054CD6;
+    border-bottom: 2px solid #054CD6;
+}
+
+.tab:last-child {
+    border-radius: 0px 10px 10px 0px;
+    border: 2px solid #054CD6;
+}
