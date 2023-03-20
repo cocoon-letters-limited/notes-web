@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import TabSection from "./components/tabSection";
 import SummarySection from "./components/summarySection";
+import WorkSection from "./components/workSection";
 
 const Dashboard = () => {
   const location = useLocation();
@@ -21,6 +22,7 @@ const Dashboard = () => {
     <section className="relative h-full">
       <TabSection currentTab={currentTab} tabList={tabList} />
       <SummarySection />
+      <WorkSection />
     </section>
   );
 };
