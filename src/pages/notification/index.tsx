@@ -7,7 +7,7 @@ function Notification() {
   return (
     <div className='p-5'>
         <h1 className='font-semibold text-4xl'>Notifications</h1>
-        <div className='rounded shadow p-4 my-4'>
+        <div className='rounded shadow p-4 my-4 bg-white'>
            <div className='flex justify-between '>
             <p className='text-2xl'>(Notifications type)</p>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">

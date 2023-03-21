@@ -8,11 +8,11 @@ function Pricing() {
         <div>
             <div className='text-center p-20 '>
                 <p className="text-4xl font-bold text-blue-700">Our pricing</p>
-                <label className="relative inline-flex items-center mb-4 cursor-pointer">
+                <label className="relative inline-flex items-center m-4 cursor-pointer">
                  
                     <input type="checkbox" value="" className="sr-only peer" />
                     <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600" />
-                    <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Yes/No</span>
+                    <span className="ml-3 text-sm font-medium ">Yes/No</span>
                 </label>
             </div>
 
@@ -31,7 +31,9 @@ function Pricing() {
 
                         <div className='flex mt-5'>
                             <button className=" rounded-full h-8 w-8 bg-blue-700 text-white flex items-center justify-center">
-                                <svg className="fill-current w-3 h-3  " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                      </svg>
                             </button>
                             <p className='m-1 ml-5'>Secure and encrypted integration</p>
                         </div>
@@ -52,7 +54,10 @@ function Pricing() {
 
                         <div className='flex mt-5'>
                             <button className=" rounded-full h-8 w-8 text-blue-700 bg-white flex items-center justify-center">
-                                <svg className="fill-current w-3 h-3  " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
+                                {/* <svg className="fill-current w-3 h-3  " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg> */}
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                      </svg>
                             </button>
                             <p className='m-1 ml-5'>Secure and encrypted integration</p>
                         </div>
@@ -75,7 +80,9 @@ function Pricing() {
 
                         <div className='flex mt-5'>
                             <button className=" rounded-full h-8 w-8 bg-blue-700 text-white flex items-center justify-center">
-                                <svg className="fill-current w-3 h-3  " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                      </svg>
                             </button>
                             <p className='m-1 ml-5'>Secure and encrypted integration</p>
                         </div>
