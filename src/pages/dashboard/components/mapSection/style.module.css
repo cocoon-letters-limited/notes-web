@@ -7,19 +7,19 @@
 }
 
 .tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 81%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: white transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 81%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
 }
 
 @keyframes animate {
   from {
-    opacity: .5;
+    opacity: 0.5;
     transform: translateY(-5px);
   }
 

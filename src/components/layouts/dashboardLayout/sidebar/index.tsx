@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "assets/images/svg/logo/eam_logo.svg";
+import { useLocation } from "react-router-dom";
 import SidebarMenuItem from "./sidebarMenuItem";
 import menuData from "./menuData";
 import MenuToggler from "./menuToggler";
@@ -14,6 +15,8 @@ const LogoSection = () => {
 };
 
 const DashboardSidebar = () => {
+  const location = useLocation();
+
   const [isOpen, setIsOpen] = useState(true);
 
   const handleToggleMenu = () => {
@@ -46,6 +49,9 @@ const DashboardSidebar = () => {
                   url={item.url}
                   icon={item.icon}
                   isMenuOpen={isOpen}
+                  active={location?.pathname?.includes(
+                    item?.title?.toLowerCase(),
+                  )}
                 />
               ))}
             </div>
