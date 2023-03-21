@@ -1,0 +1,14 @@
+.showList {
+  animation: animateIn ease-in-out 200ms both;
+}
+
+@keyframes animateIn {
+  from {
+    opacity: 0.3;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
