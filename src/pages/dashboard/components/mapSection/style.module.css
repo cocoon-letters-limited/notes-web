@@ -1,0 +1,30 @@
+.pin {
+  background: linear-gradient(180deg, #054cd6 0%, #99a9c8 52.6%, #0b3c9c 100%);
+}
+
+.tooltip {
+  animation: animate ease-in-out 200ms both;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 81%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+@keyframes animate {
+  from {
+    opacity: .5;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

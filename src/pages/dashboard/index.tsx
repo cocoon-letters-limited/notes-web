@@ -4,6 +4,21 @@ import TabSection from "./components/tabSection";
 import SummarySection from "./components/summarySection";
 import WorkSection from "./components/workSection";
 import CriticalSummarySection from "./components/criticalSummarySection";
+import MapSection from "./components/mapSection";
+
+const OverviewScreen = () => {
+  return (
+    <>
+      <SummarySection />
+      <WorkSection />
+      <CriticalSummarySection />
+    </>
+  );
+};
+
+const MapScreen = () => {
+  return <MapSection />;
+};
 
 const Dashboard = () => {
   const location = useLocation();
@@ -19,12 +34,21 @@ const Dashboard = () => {
     }
   }, [location]);
 
+  const renderBasedOnSelectedTab = () => {
+    switch (currentTab) {
+      case "overview":
+        return <OverviewScreen />;
+      case "map":
+        return <MapScreen />;
+      default:
+        return <OverviewScreen />;
+    }
+  };
+
   return (
     <section className="relative h-full">
       <TabSection currentTab={currentTab} tabList={tabList} />
-      <SummarySection />
-      <WorkSection />
-      <CriticalSummarySection />
+      {renderBasedOnSelectedTab()}
     </section>
   );
 };
