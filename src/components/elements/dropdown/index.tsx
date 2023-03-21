@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 type Props = {
   selected: string;
+  selectedWidth?: string;
   iconSize?: "sm" | "md" | "lg" | undefined;
   iconColor?: "primary" | undefined;
   options: string[];
@@ -14,6 +15,7 @@ const DropDown = ({
   iconColor,
   options,
   onClick,
+  selectedWidth,
 }: Props) => {
   const preferredIconSize = (size?: string) => {
     switch (size) {
@@ -50,7 +52,7 @@ const DropDown = ({
         className="flex flex-row items-center focus:outline-none"
         onClick={() => setShowDropdown(!showDropdown)}
       >
-        <span>{selected}</span>
+        <span className={`${selectedWidth}`}>{selected}</span>
         <span className="pl-2">
           <svg
             className={preferredIconSize(iconSize)}

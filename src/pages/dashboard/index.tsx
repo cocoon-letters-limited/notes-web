@@ -5,6 +5,7 @@ import SummarySection from "./components/summarySection";
 import WorkSection from "./components/workSection";
 import CriticalSummarySection from "./components/criticalSummarySection";
 import MapSection from "./components/mapSection";
+import NoteSection from "./components/noteSection";
 
 const OverviewScreen = () => {
   return (
@@ -18,6 +19,10 @@ const OverviewScreen = () => {
 
 const MapScreen = () => {
   return <MapSection />;
+};
+
+const NoteScreen = () => {
+  return <NoteSection />;
 };
 
 const Dashboard = () => {
@@ -40,6 +45,8 @@ const Dashboard = () => {
         return <OverviewScreen />;
       case "map":
         return <MapScreen />;
+      case "notes":
+        return <NoteScreen />;
       default:
         return <OverviewScreen />;
     }
