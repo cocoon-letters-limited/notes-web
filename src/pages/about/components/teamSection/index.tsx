@@ -5,7 +5,7 @@ import TeamCard from "./teamCard";
 const TeamSection = () => {
   return (
     <section className="relative bg-[#F1F5FF]">
-      <div className="container px-4 lg:px-8 xl:px-4 mx-auto pt-20 md:pt-24 lg:pt-28 pb-20 lg:pb-24 relative">
+      <div className="container px-4 md:px-8 xl:px-4 mx-auto pt-20 md:pt-24 lg:pt-28 pb-20 lg:pb-24 relative">
         <div className="w-full md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto text-center">
           <h2 className="text-primary font-bold text-3xl lg:text-4xl">
             Meet the Team
