@@ -1,10 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const GoBackButton = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <button
+        onClick={() => navigate(-1)}
         type="button"
         className="border-2 border-primary px-2 py-2 rounded-lg focus:outline-none ring-0"
       >
