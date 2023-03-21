@@ -33,7 +33,7 @@ const DashboardSidebar = () => {
   return (
     <div
       id="sidebar"
-      className="w-56 flex flex-col justify-start items-stretch min-h-screen"
+      className="hidden w-56 lg:flex flex-col justify-start items-stretch min-h-screen"
     >
       <LogoSection />
 
