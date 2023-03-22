@@ -58,6 +58,7 @@ export const data = {
         },
     ],
 };
+
 function Bio() {
     
     return (
@@ -101,7 +102,7 @@ function Bio() {
                         <div className='border-l-8 border-fuchsia-600 pl-3'>
                             <div className='flex'>
                                 <p className='font-medium text-1xl mr-5'>Use of Metal plates</p>
-                                <span className="bg-fuchsia-600  text-white  text-xs font-medium  px-2.5 py-1 rounded-full dark:bg-blue-900 dark:text-white">Lesson note</span>
+                                <span className="bg-fuchsia-600  text-white  text-xs font-medium  px-2.5 py-1 rounded-full  dark:text-white">Lesson note</span>
                             </div>
                             <small className='text-gray-400'>27th of August, 2021</small>
                             <p className='font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus euismod </p>
@@ -111,7 +112,7 @@ function Bio() {
                         <div className='border-l-8 border-fuchsia-600 pl-3'>
                             <div className='flex'>
                                 <p className='font-medium text-1xl mr-5'>Use of Metal plates</p>
-                                <span className="bg-fuchsia-600  text-white  text-xs font-medium  px-2.5 py-1 rounded-full dark:bg-blue-900 dark:text-white">Lesson note</span>
+                                <span className="bg-fuchsia-600  text-white  text-xs font-medium  px-2.5 py-1 rounded-full  dark:text-white">Lesson note</span>
                             </div>
                             <small className='text-gray-400'>27th of August, 2021</small>
                             <p className='font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus euismod </p>
