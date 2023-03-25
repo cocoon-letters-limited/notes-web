@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const TopSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative bg-[#3B69E6]">
       <div className="container px-4 md:px-8 xl:px-4 mx-auto pt-14 md:pt-16 lg:pt-20 pb-20 lg:pb-24 relative">
@@ -8,6 +11,7 @@ const TopSection = () => {
           <div className="">
             <button
               type="button"
+              onClick={() => navigate(-1)}
               className="flex items-center text-sm-15 lg:text-base text-white"
             >
               <span>
