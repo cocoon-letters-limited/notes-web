@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
+import { Toaster } from "react-hot-toast";
 import { store } from "./store";
 import router from "./routes";
 import "./assets/css/global.css";
@@ -15,6 +16,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <Provider store={store}>
     <React.StrictMode>
+      <Toaster position="top-center" reverseOrder={false} gutter={8} />
       <RouterProvider router={router} />
     </React.StrictMode>
   </Provider>,
