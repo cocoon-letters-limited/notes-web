@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import ThumbUpIcon from "components/svg/thumbUpIcon";
 import ThumbDownIcon from "components/svg/thumbDownIcon";
 import DropDown from "components/elements/dropdown";
@@ -22,7 +23,10 @@ const ListItem = ({ title }: ListItemProps) => {
 
 const Card = () => {
   return (
-    <div className="bg-white px-4 pt-6 pb-8 rounded-lg overflow-hidden">
+    <Link
+      to="/notes/123"
+      className="bg-white px-4 pt-6 pb-8 rounded-lg overflow-hidden"
+    >
       <div className="mb-2">
         <p className="text-sm-15 lg:text-base font-bold">
           Service of machine - issued
@@ -61,7 +65,7 @@ const Card = () => {
           </p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -116,8 +120,8 @@ const NoteSection = () => {
 
   return (
     <>
-      <div className="relative lg:-mt-12">
-        <div className="flex justify-end">
+      <div className="relative mt-8 lg:-mt-12">
+        <div className="flex lg:justify-end">
           <div className="px-4 py-3 border border-[#B1BFD9] rounded-lg text-base lg:text-lg text-[#051738]">
             <DropDown
               selected={selectedOption}

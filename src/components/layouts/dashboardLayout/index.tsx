@@ -5,7 +5,7 @@ import DashboardSidebar from "./sidebar";
 
 const DashboardLayout = () => {
   return (
-    <main className="h-full w-full relative bg-[#F6F7FB] px-4 pt-6 pb-12 font-serif">
+    <main className="h-full w-full relative bg-[#F6F7FB] lg:px-4 pt-6 pb-12 font-serif">
       <div className="flex flex-row">
         <DashboardSidebar />
 

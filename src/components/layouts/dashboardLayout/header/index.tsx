@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 import AvatarImage from "assets/images/webp/avatar.png";
 import LogoutIcon from "components/svg/logoutIcon";
 import SearchIcon from "components/svg/searchIcon";
+import Logo from "assets/images/svg/logo/eam_logo.svg";
 
 const DashboardHeader = () => {
   return (
     <div className="bg-white rounded-lg pl-4 pr-8 py-3 flex justify-between items-center">
-      <div className="w-5/12">
+      <div className="hidden lg:block w-6/12 xl:w-5/12">
         <form>
           <div className="relative w-10/12">
             <div className="absolute inset-y-0 left-0 flex items-center pl-4 pr-4 pointer-events-none">
@@ -24,21 +25,30 @@ const DashboardHeader = () => {
           </div>
         </form>
       </div>
-      <div className="w-3/12">
-        <div className="flex flex-row items-center justify-between">
-          <Link to="/notifications">
+      {/* mobile view */}
+      <div className="block lg:hidden w-5/12">
+        <div className="">
+          <img src={Logo} className="w-14" alt="Logo" />
+          <span className="sr-only">iNote</span>
+        </div>
+      </div>
+
+      <div className="w-8/12 lg:w-4/12 xl:w-3/12">
+        <div className="flex flex-row items-center justify-end lg:justify-between">
+          <Link to="/notifications" className="hidden lg:block">
             <Notification2Icon />
           </Link>
 
-          <div className="flex-1 pl-12 flex flex-row items-center">
-            <div className="w-10 h-10">
+          <div className="lg:flex-1 pl-12 flex flex-row items-center">
+            <div className="w-8 h-8 lg:w-10 lg:h-10">
               <img
                 src={AvatarImage}
                 alt="Avatar"
-                className="w-10 h-10 rounded-full object-cover"
+                className="w-8 h-8 lg:w-10 lg:h-10 rounded-full object-cover"
               />
             </div>
-            <div className="pl-3 text-sm lg:text-base text-default flex items-center">
+
+            <div className="hidden lg:flex pl-3 text-sm lg:text-base text-default items-center">
               <span>David</span>
               <span className="pl-1">
                 <svg
@@ -58,7 +68,7 @@ const DashboardHeader = () => {
             </div>
           </div>
 
-          <button type="button">
+          <button type="button" className="pl-4 lg:pl-0">
             <LogoutIcon />
           </button>
         </div>
