@@ -1,6 +1,6 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import alertReducer from "../alert/alert.reducer";
-// import authReducer from "store/alert/auth.reducer";
+import alertReducer from "../alert/alert.slice";
+// import authReducer from "../auth/auth.reducer";
 
 const rootReducer = combineReducers({
   alert: alertReducer,
