@@ -12,11 +12,12 @@ const OurStorySection = () => {
             Our Story
           </h2>
           <p className="mx-auto text-center mt-6 lg:mt-10 text-base leading-7 lg:text-xl lg:leading-8 text-textColor">
-            There are many variations of passages of Lorem Ipsum available, but
-            majority have su alteration in some form, by injected humour,
-            randomised workds for which don't look even slightly believable. If
-            you are going to use a passage of Lorem Ipsum, you need to be sure
-            there isn't anything.
+            At Note Operational Excellence Limited, we understand that your
+            facility is only as strong as the integrity of its key assets:
+            manpower, machines, and materials. That's why we've developed an
+            Enterprise Asset Management (EAM) software solution that is designed
+            to streamline your operations and ensure the continuous integrity of
+            your facility.
           </p>
         </div>
         <div className="mt-16 lg:mt-20 xl:mt-24 w-full md:w-11/12 lg:w-10/12 xl:w-9/12 mx-auto">

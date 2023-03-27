@@ -25,14 +25,16 @@ const TopSection = () => {
           <div className="w-full md:w-1/12" />
           <div className="w-full md:w-6/12 lg:w-5/12">
             <h1 className="text-primary text-4xl lg:text-5xl xl:text-6xl font-bold">
-              We’re a Saas company
+              We’re Built For Your Integrity
             </h1>
             <p className="mt-8 lg:mt-12 xl:mt-16 text-base leading-7 lg:text-lg lg:leading-8 xl:text-xl xl:leading-8 text-textColor">
-              There are many variations of passages of Lorem Ipsum available,
-              but majority have su alteration in some form, by injected humour,
-              randomized works for which don't look even slightly believable. If
-              you are going to use a passage of Lorem Ipsum, you need to be sure
-              there isn't anything.
+              We know that the integrity of manpower is based on competence,
+              machine on reliability, and material on availability. Our software
+              streamlines the root of achieving these deliverables, providing a
+              comprehensive solution that helps you manage your assets more
+              efficiently and effectively than ever before.
+              <br /> <br />
+              With our software, you can:
             </p>
 
             <div className="mt-8 md:mt-12 lg:mt-16 flex flex-row flex-wrap space-x-6">
