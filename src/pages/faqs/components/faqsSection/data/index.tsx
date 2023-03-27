@@ -1,6 +1,8 @@
 import accountFaqsData from "./accountFaqsData";
-import personalFaqsData from "./personalFaqsData";
-import verificationFaqsData from "./verificationFaqsData";
+import healthFaqsData from "./healthFaqsData";
+import learningChainFaqsData from "./learningFaqsData";
+import maintenanceFaqsData from "./maintenanceFaqsData";
+import supplyChainFaqsData from "./supplyChainFaqsData";
 
 const faqsData = [
   {
@@ -10,13 +12,23 @@ const faqsData = [
   },
   {
     id: 2,
-    title: "Verification",
-    faqs: verificationFaqsData,
+    title: "Maintenance",
+    faqs: maintenanceFaqsData,
   },
   {
     id: 3,
-    title: "Personal Details",
-    faqs: personalFaqsData,
+    title: "Health & Safety",
+    faqs: healthFaqsData,
+  },
+  {
+    id: 4,
+    title: "Supply-Chain",
+    faqs: supplyChainFaqsData,
+  },
+  {
+    id: 5,
+    title: "Learning & Development",
+    faqs: learningChainFaqsData,
   },
 ];
 

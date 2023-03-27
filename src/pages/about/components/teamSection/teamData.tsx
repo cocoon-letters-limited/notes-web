@@ -1,41 +1,41 @@
-import AvatarImage from "assets/images/webp/team/teamAvatar.webp";
+import AvatarImage from "assets/images/svg/avatar.svg";
 
 const teamData = [
   {
     id: 1,
     profilePicture: AvatarImage,
     name: "Mr Victor Adeniji",
-    role: "Founder, Managing Director",
+    role: "Founder, CEO",
   },
   {
     id: 2,
     profilePicture: AvatarImage,
-    name: "Mr Victor Adeniji",
-    role: "Founder, Managing Director",
+    name: "Dr. Adam Zubair",
+    role: "Chief Technology Officer",
   },
   {
     id: 3,
     profilePicture: AvatarImage,
-    name: "Mr Victor Adeniji",
-    role: "Founder, Managing Director",
+    name: "Denis Murphy",
+    role: "Chief Asset Manager",
   },
   {
     id: 4,
     profilePicture: AvatarImage,
-    name: "Mr Victor Adeniji",
-    role: "Founder, Managing Director",
+    name: "Dr. Chido Mgbemena",
+    role: "Chief Data Analyst",
   },
   {
     id: 5,
     profilePicture: AvatarImage,
-    name: "Mr Victor Adeniji",
-    role: "Founder, Managing Director",
+    name: "Emeka Nwabudike",
+    role: "Chief Marketing Officer",
   },
   {
     id: 6,
     profilePicture: AvatarImage,
-    name: "Mr Victor Adeniji",
-    role: "Founder, Managing Director",
+    name: "Abimbola Ojenike",
+    role: "Head of Legal Services",
   },
 ];
 

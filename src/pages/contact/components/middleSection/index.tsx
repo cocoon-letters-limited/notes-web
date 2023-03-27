@@ -15,11 +15,15 @@ const MiddleSection = () => {
           </div>
           <div className="pt-6 flex-1 md:pl-4 lg:pl-8 xl:pl-12">
             <p className="text-base leading-7 lg:text-lg lg:leading-8 xl:text-xl xl:leading-9 text-textColor">
-              There are many variations of passages of Lorem Ipsum available,
-              but majority have su alteration in some form, by injected humour,
-              randomised workds for which don't look even slightly believable.
-              If you are going to use a passage of Lorem Ipsum, you need to be
-              sure there isn't anything.
+              Our overarching goal is to become the go-to solution for any
+              facility looking to streamline their operations and ensure the
+              continuous integrity of their assets. We believe that our software
+              has the potential to revolutionize the way facilities manage their
+              assets and resources, and we are committed to continuously
+              improving our product to meet the evolving needs of our clients.
+              We are excited about the future and look forward to empowering
+              facilities to achieve their goals with our innovative EAM software
+              solution.
             </p>
           </div>
         </div>
