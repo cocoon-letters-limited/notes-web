@@ -1,5 +1,4 @@
 import AuthLayout from "components/layouts/authLayout";
-import React from "react";
 import LoginImage from "assets/images/webp/login.webp";
 import InputGroup from "components/elements/input";
 import ButtonGroup from "components/elements/button";

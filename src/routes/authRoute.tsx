@@ -2,6 +2,7 @@ import ForgotPassword from "pages/auth/forgotPassword";
 import Login from "pages/auth/login";
 import ResetPassword from "pages/auth/resetPassword";
 import Signup from "pages/auth/signup";
+import SignupSuccessful from "pages/auth/signup-successful";
 import Error404 from "pages/error404";
 
 export const loginRoute = {
@@ -13,6 +14,12 @@ export const loginRoute = {
 export const signupRoute = {
   path: "login",
   element: <Login />,
+  errorElement: <Error404 />,
+};
+
+export const signupSuccessfulRoute = {
+  path: "signup-successful",
+  element: <SignupSuccessful />,
   errorElement: <Error404 />,
 };
 
@@ -31,6 +38,7 @@ export const resetPasswordRoute = {
 export default {
   loginRoute,
   signupRoute,
+  signupSuccessfulRoute,
   forgotPasswordRoute,
   resetPasswordRoute,
 };

@@ -23,18 +23,16 @@ export const loginAction =
         navigate("/dashboard");
       }
     } catch (err: any) {
-      console.log(err);
-      toast.error(
-        err?.response?.data?.message || "Something is wrong! Try again later!",
-      );
-      dispatch(error(err?.response?.data?.message));
+      const errorMessage = err?.response?.data?.message;
+      toast.error(errorMessage || "Something is wrong! Try again later!");
+      dispatch(error(errorMessage));
     }
 
     return payload;
   };
 
-export const registerAction =
-  (payload: any): AppThunk =>
+export const signupAction =
+  (payload: any, navigate: NavigateFunction): AppThunk =>
   async (dispatch) => {
     dispatch(clear());
 
@@ -46,10 +44,54 @@ export const registerAction =
         store.set("noTE_accessToken", data?.token);
         store.set("noTE_user", data);
         dispatch(success(response?.data?.message));
+
+        navigate("/signup-successful");
       }
-    } catch (err) {
-      console.log(err);
-      dispatch(error("Failed"));
+    } catch (err: any) {
+      const errorMessage = err?.response?.data?.message;
+      toast.error(errorMessage || "Something is wrong! Try again later!");
+      dispatch(error(errorMessage));
+    }
+
+    return payload;
+  };
+
+export const forgotPasswordAction =
+  (payload: any): AppThunk =>
+  async (dispatch) => {
+    dispatch(clear());
+
+    try {
+      const response = await AuthApi.forgotPassword(payload);
+
+      if (response?.data?.success) {
+        dispatch(success(response?.data?.message));
+      }
+    } catch (err: any) {
+      const errorMessage = err?.response?.data?.message;
+      toast.error(errorMessage || "Something is wrong! Try again later!");
+      dispatch(error(errorMessage));
+    }
+
+    return payload;
+  };
+
+export const resetPasswordAction =
+  (payload: any, navigate: NavigateFunction): AppThunk =>
+  async (dispatch) => {
+    dispatch(clear());
+
+    try {
+      const response = await AuthApi.resetPassword(payload);
+
+      if (response?.data?.success) {
+        dispatch(success(response?.data?.message));
+        navigate("/login");
+      }
+    } catch (err: any) {
+      const errorMessage = err?.response?.data?.message;
+      toast.error(errorMessage || "Something is wrong! Try again later!");
+      dispatch(error(errorMessage));
     }
 
     return payload;

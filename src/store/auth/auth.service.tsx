@@ -12,6 +12,14 @@ class AuthService {
   register = async (payload: any) => {
     return axios.post("/auth/signup", payload);
   };
+
+  forgotPassword = async (payload: any) => {
+    return axios.post("/auth/forgot-password", payload);
+  };
+
+  resetPassword = async (payload: any) => {
+    return axios.post("/auth/reset-password", payload);
+  };
 }
 
 const AuthApi = new AuthService();

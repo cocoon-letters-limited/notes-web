@@ -6,12 +6,14 @@ import {
   signupRoute,
   forgotPasswordRoute,
   resetPasswordRoute,
+  signupSuccessfulRoute,
 } from "./authRoute";
 
 const router = createBrowserRouter([
   publicRoute,
   loginRoute,
   signupRoute,
+  signupSuccessfulRoute,
   forgotPasswordRoute,
   resetPasswordRoute,
   privateRoute,
