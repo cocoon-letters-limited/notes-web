@@ -101,7 +101,6 @@ const WorkScheduleCard = () => {
   const handleToggleTab = (value: string) => {
     setSelectedTab(value);
   };
-  console.log(selectedTab);
 
   return (
     <div className="relative bg-transparent rounded-xl h-[27rem] px-6 pt-6 pb-6 border-2 border-dashed">

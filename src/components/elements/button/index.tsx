@@ -2,12 +2,20 @@
 import React from "react";
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  title: string;
+  title: string | any;
   type?: "submit" | "reset" | "button" | undefined;
   buttonStyleType?: "primary" | "outline" | undefined;
+  disabled?: boolean;
+  onClick?: () => void;
 }
 
-const ButtonGroup = ({ title, type, buttonStyleType, ...props }: Props) => {
+const ButtonGroup = ({
+  title,
+  type,
+  buttonStyleType,
+  disabled,
+  onClick,
+}: Props) => {
   const buttonTypeClassName = () => {
     switch (buttonStyleType) {
       case "primary":
@@ -24,7 +32,8 @@ const ButtonGroup = ({ title, type, buttonStyleType, ...props }: Props) => {
     <button
       type={type || "button"}
       className={`mt-3 block px-5 h-14 lg:h-16 font-semibold text-sm md:text-sm-15 lg:text-base w-full rounded-md border-[2px] focus:outline-none transition-all ease-in-out duration-200 ${buttonTypeClassName()}`}
-      {...props}
+      disabled={disabled || false}
+      onClick={onClick}
     >
       {title}
     </button>

@@ -10,7 +10,7 @@ const instance: AxiosInstance = axios.create({
 
 instance.interceptors.request.use(
   async (config) => {
-    const token = await store.get("accessToken");
+    const token = await store.get("noTE_accessToken");
 
     if (typeof token !== "undefined") {
       config.headers.Authorization = `Bearer ${token}`;
