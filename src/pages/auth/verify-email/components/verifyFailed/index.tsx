@@ -1,7 +1,11 @@
 import FailedImage from "assets/images/webp/cancel.png";
 import ButtonGroup from "components/elements/button";
 
-const VerifyFailed = () => {
+type Props = {
+  handleToggleShowForm?: () => void;
+};
+
+const VerifyFailed = ({ handleToggleShowForm }: Props) => {
   return (
     <div className="pt-8 lg:pt-12 flex flex-col items-center mx-auto text-center">
       <div className="w-3/12 mx-auto">
@@ -16,7 +20,11 @@ const VerifyFailed = () => {
         </p>
 
         <div className="mt-6 space-y-6 lg:space-y-8">
-          <ButtonGroup type="submit" title="Resend Verification Email" />
+          <ButtonGroup
+            type="button"
+            title="Resend Verification Email"
+            onClick={handleToggleShowForm}
+          />
         </div>
       </div>
     </div>

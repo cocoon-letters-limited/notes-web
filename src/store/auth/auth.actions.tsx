@@ -1,8 +1,9 @@
-import { success, error, clear } from "store/alert/alert.actions";
+import { success, clear } from "store/alert/alert.actions";
 import type { AppThunk } from "store/store";
 import store from "store";
 import { NavigateFunction } from "react-router-dom";
 import { toast } from "react-hot-toast";
+import errorHandler from "utils/errorHandler";
 import AuthApi from "./auth.service";
 
 export const loginAction =
@@ -23,9 +24,7 @@ export const loginAction =
         navigate("/dashboard");
       }
     } catch (err: any) {
-      const errorMessage = err?.response?.data?.message;
-      toast.error(errorMessage || "Something is wrong! Try again later!");
-      dispatch(error(errorMessage));
+      errorHandler(err, dispatch);
     }
 
     return payload;
@@ -48,9 +47,7 @@ export const signupAction =
         navigate("/signup-successful");
       }
     } catch (err: any) {
-      const errorMessage = err?.response?.data?.message;
-      toast.error(errorMessage || "Something is wrong! Try again later!");
-      dispatch(error(errorMessage));
+      errorHandler(err, dispatch);
     }
 
     return payload;
@@ -74,9 +71,7 @@ export const verifyEmailAction =
         };
       }
     } catch (err: any) {
-      const errorMessage = err?.response?.data?.message;
-      toast.error(errorMessage || "Something is wrong! Try again later!");
-      dispatch(error(errorMessage));
+      errorHandler(err, dispatch);
     }
 
     return payload;
@@ -95,9 +90,7 @@ export const resendVerificationEmailAction =
         dispatch(success(response?.data?.message));
       }
     } catch (err: any) {
-      const errorMessage = err?.response?.data?.message;
-      toast.error(errorMessage || "Something is wrong! Try again later!");
-      dispatch(error(errorMessage));
+      errorHandler(err, dispatch);
     }
 
     return payload;
@@ -116,9 +109,7 @@ export const forgotPasswordAction =
         dispatch(success(response?.data?.message));
       }
     } catch (err: any) {
-      const errorMessage = err?.response?.data?.message;
-      toast.error(errorMessage || "Something is wrong! Try again later!");
-      dispatch(error(errorMessage));
+      errorHandler(err, dispatch);
     }
 
     return payload;
@@ -138,9 +129,7 @@ export const resetPasswordAction =
         navigate("/login");
       }
     } catch (err: any) {
-      const errorMessage = err?.response?.data?.message;
-      toast.error(errorMessage || "Something is wrong! Try again later!");
-      dispatch(error(errorMessage));
+      errorHandler(err, dispatch);
     }
 
     return payload;

@@ -6,6 +6,7 @@ import AuthLayout from "components/layouts/authLayout";
 import { verifyEmailAction } from "store/auth/auth.actions";
 import VerifyLoading from "./components/verifyLoading";
 import VerifyFailed from "./components/verifyFailed";
+import ResendVerificationForm from "./components/resendVerificationForm";
 
 const VerifyEmail = () => {
   const location = useLocation();
@@ -14,6 +15,7 @@ const VerifyEmail = () => {
 
   const [loading, setLoading] = useState(true);
   const [status, setStatus] = useState("");
+  const [showForm, setShowForm] = useState<boolean>(false);
 
   const verifyEmail = async (value: string) => {
     setLoading(true);
@@ -45,12 +47,22 @@ const VerifyEmail = () => {
     }
   }, [location]);
 
+  const handleToggleShowForm = () => {
+    setShowForm(!showForm);
+  };
+
   return (
     <AuthLayout image={LoginImage} linkTitle="Login" linkUrl="/login">
       <div className="mt-16 lg:mt-20">
         {loading && <VerifyLoading />}
 
-        {status === "failed" ? <VerifyFailed /> : ""}
+        {status === "failed" && !showForm && (
+          <VerifyFailed handleToggleShowForm={handleToggleShowForm} />
+        )}
+
+        {status === "failed" && showForm && (
+          <ResendVerificationForm handleToggleShowForm={handleToggleShowForm} />
+        )}
       </div>
     </AuthLayout>
   );
