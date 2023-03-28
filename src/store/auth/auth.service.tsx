@@ -13,6 +13,14 @@ class AuthService {
     return axios.post("/auth/signup", payload);
   };
 
+  verifyEmail = async (payload: any) => {
+    return axios.post("/auth/verify-email", payload);
+  };
+
+  resendVerificationEmail = async (payload: any) => {
+    return axios.post("/auth/resend-verification-mail", payload);
+  };
+
   forgotPassword = async (payload: any) => {
     return axios.post("/auth/forgot-password", payload);
   };

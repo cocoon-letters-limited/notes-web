@@ -7,6 +7,7 @@ import {
   forgotPasswordRoute,
   resetPasswordRoute,
   signupSuccessfulRoute,
+  verifyEmailRoute,
 } from "./authRoute";
 
 const router = createBrowserRouter([
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
   loginRoute,
   signupRoute,
   signupSuccessfulRoute,
+  verifyEmailRoute,
   forgotPasswordRoute,
   resetPasswordRoute,
   privateRoute,

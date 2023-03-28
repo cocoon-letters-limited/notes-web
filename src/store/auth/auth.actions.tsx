@@ -56,6 +56,53 @@ export const signupAction =
     return payload;
   };
 
+export const verifyEmailAction =
+  (payload: any, navigate: NavigateFunction): AppThunk =>
+  async (dispatch) => {
+    dispatch(clear());
+
+    try {
+      const response = await AuthApi.verifyEmail(payload);
+
+      if (response?.data?.success) {
+        toast.success(response?.data?.message);
+        dispatch(success(response?.data?.message));
+        navigate("/login");
+      } else {
+        return {
+          success: false,
+        };
+      }
+    } catch (err: any) {
+      const errorMessage = err?.response?.data?.message;
+      toast.error(errorMessage || "Something is wrong! Try again later!");
+      dispatch(error(errorMessage));
+    }
+
+    return payload;
+  };
+
+export const resendVerificationEmailAction =
+  (payload: any): AppThunk =>
+  async (dispatch) => {
+    dispatch(clear());
+
+    try {
+      const response = await AuthApi.resendVerificationEmail(payload);
+
+      if (response?.data?.success) {
+        toast.success(response?.data?.message);
+        dispatch(success(response?.data?.message));
+      }
+    } catch (err: any) {
+      const errorMessage = err?.response?.data?.message;
+      toast.error(errorMessage || "Something is wrong! Try again later!");
+      dispatch(error(errorMessage));
+    }
+
+    return payload;
+  };
+
 export const forgotPasswordAction =
   (payload: any): AppThunk =>
   async (dispatch) => {
@@ -65,6 +112,7 @@ export const forgotPasswordAction =
       const response = await AuthApi.forgotPassword(payload);
 
       if (response?.data?.success) {
+        toast.success(response?.data?.message);
         dispatch(success(response?.data?.message));
       }
     } catch (err: any) {
@@ -86,6 +134,7 @@ export const resetPasswordAction =
 
       if (response?.data?.success) {
         dispatch(success(response?.data?.message));
+        toast.success(response?.data?.message);
         navigate("/login");
       }
     } catch (err: any) {
