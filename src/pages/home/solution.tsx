@@ -120,7 +120,7 @@ const Solution = () => {
           <div className="md:grid md:grid-cols-4 md:gap-6 p-10 md:p-0">
             <div className=" text-center rounded mb-10 overflow-hidden p-7  shadow-lg bg-orange-50">
               <div className="px-6 py-6">
-                <p className=" text-3xl mb-2 text-green-800"> Asset</p>
+                <p className=" text-3xl mb-2 text-orange-800"> Asset</p>
                 <AccordionCustom
                   title="People"
                   discription=" Boost productivity by optimizing workforce, task and performance management"
@@ -139,7 +139,7 @@ const Solution = () => {
             </div>
             <div className="mb-10 text-center rounded overflow-hidden p-7 shadow-lg bg-orange-50">
               <div className="px-6 py-6">
-                <p className=" text-3xl mb-2 text-green-800"> Maintenance</p>
+                <p className=" text-3xl mb-2 text-orange-800"> Maintenance</p>
                 <AccordionCustom
                   title="Preventive"
                   discription=" Minimize equipment failure and unplanned disruptions with 
@@ -158,7 +158,7 @@ const Solution = () => {
             </div>
             <div className=" mb-10 text-center rounded overflow-hidden p-7 shadow-lg  bg-orange-50">
               <div className="px-6 py-6">
-                <p className=" text-3xl mb-2 text-green-800"> Work </p>
+                <p className=" text-3xl mb-2 text-orange-800"> Work </p>
                 {work.map((data) => (
                   <AccordionCustom
                     title={data.title}
@@ -169,7 +169,7 @@ const Solution = () => {
             </div>
             <div className=" mb-10 text-center rounded overflow-hidden p-7 shadow-lg bg-orange-50">
               <div className="px-6 py-6">
-                <p className=" text-3xl mb-2 text-green-800"> Report</p>
+                <p className=" text-3xl mb-2 text-orange-800"> Report</p>
                 {Report.map((data) => (
                   <AccordionCustom
                     title={data.title}
@@ -230,7 +230,7 @@ const Solution = () => {
                 style={{ background: "#F1F5FF" }}
               >
                 <div className="px-6 py-6">
-                  <p className=" text-3xl mb-2 text-green-800">
+                  <p className=" text-3xl mb-2 text-blue-800">
                     {cards.cardTitle}
                   </p>
                   {cards.itemList.map((data: any) => (
