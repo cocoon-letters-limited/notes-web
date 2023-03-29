@@ -4,6 +4,7 @@ import Notification from "pages/notification";
 import Error404 from "pages/error404";
 import Notes from "pages/notes";
 import Equipment from "pages/equipment/index";
+import EquipmentProfileLaypout from "pages/equipment/equipmentProfile";
 import ViewNoteDetails from "pages/notes/viewNoteDetails";
 
 const privateRoute = {
@@ -30,6 +31,12 @@ const privateRoute = {
     {
       path: "material",
       element: <Equipment />,
+      children: [
+        {
+          path: "equipment-profile",
+          element: <EquipmentProfileLaypout />,
+        },
+      ],
     },
   ],
 };

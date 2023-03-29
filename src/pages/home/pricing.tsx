@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable react/button-has-type */
-/* eslint-disable prettier/prettier */
+
 import React from "react";
 
 function Pricing() {
@@ -29,13 +28,19 @@ function Pricing() {
                 $5 <span className="text-slate-400 text-xs">/month</span>
               </p>
 
-              <button className="bg-blue-700  text-white w-64 py-3 pr-8 pl-8 px-4 rounded">
+              <button
+                type="button"
+                className="bg-blue-700  text-white w-64 py-3 pr-8 pl-8 px-4 rounded"
+              >
                 Select Plan
               </button>
             </div>
 
             <div className="flex mt-5">
-              <button className=" rounded-full h-8 w-8 bg-blue-700 text-white flex items-center justify-center">
+              <button
+                type="button"
+                className=" rounded-full h-8 w-8 bg-blue-700 text-white flex items-center justify-center"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -69,13 +74,19 @@ function Pricing() {
                 $5 <span className="text-slate-400 text-xs">/month</span>
               </p>
 
-              <button className="bg-white  text-blue-700 w-64 py-3 pr-8 pl-8 px-4 rounded">
+              <button
+                type="button"
+                className="bg-white  text-blue-700 w-64 py-3 pr-8 pl-8 px-4 rounded"
+              >
                 Select Plan
               </button>
             </div>
 
             <div className="flex mt-5">
-              <button className=" rounded-full h-8 w-8 text-blue-700 bg-white flex items-center justify-center">
+              <button
+                type="button"
+                className=" rounded-full h-8 w-8 text-blue-700 bg-white flex items-center justify-center"
+              >
                 {/* <svg className="fill-current w-3 h-3  " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg> */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -110,13 +121,19 @@ function Pricing() {
                 $5 <span className="text-slate-400 text-xs">/month</span>
               </p>
 
-              <button className="bg-blue-700  text-white w-64 py-3 pr-8 pl-8 px-4 rounded">
+              <button
+                type="button"
+                className="bg-blue-700  text-white w-64 py-3 pr-8 pl-8 px-4 rounded"
+              >
                 Select Plan
               </button>
             </div>
 
             <div className="flex mt-5">
-              <button className=" rounded-full h-8 w-8 bg-blue-700 text-white flex items-center justify-center">
+              <button
+                type="button"
+                className=" rounded-full h-8 w-8 bg-blue-700 text-white flex items-center justify-center"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

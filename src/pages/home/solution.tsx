@@ -1,19 +1,55 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable prettier/prettier */
-
+import {
+  Accordion,
+  AccordionSummary,
+  Typography,
+  AccordionDetails,
+} from "@mui/material";
 import rectangle1059 from "assets/Rectangle1059.png";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import React, { useState } from "react";
+import {
+  CompetenceDevelopmentCentreData,
+  ReportData,
+  SupplyChainNetworkData,
+  WorkData,
+  ePTWData,
+} from "./solutionData";
+
+function AccordionCustom({
+  title,
+  discription,
+}: {
+  title: string;
+  discription: string;
+}) {
+  return (
+    <Accordion style={{ background: "none", boxShadow: "none" }}>
+      <AccordionSummary
+        expandIcon={<ExpandMoreIcon />}
+        aria-controls="panel1a-content"
+        id="panel1a-header"
+      >
+        <Typography> {title}</Typography>
+      </AccordionSummary>
+      <AccordionDetails>
+        <Typography className="text-left text-gray-500">
+          {discription}
+        </Typography>
+      </AccordionDetails>
+    </Accordion>
+  );
+}
 
 const Solution = () => {
-  // eslint-disable-next-line react/self-closing-comp
+  const [Report] = useState(ReportData);
+  const [work] = useState(WorkData);
+  // const [ePTW] = useState(ePTWData);
   return (
     <div>
       <div className="text-center p-10">
-        <p className="text-4xl font-bold text-blue-600">
-          Our Solution for your business
-        </p>
+        <p className="text-4xl font-bold text-blue-600">Take total control</p>
         <p className="text-gray-400 m-5">
-          We make it easy for users to use our platform, that's why we provide
-          this benefit.
+          Optimize Asset Management with Enhanced Visibility and Control.
         </p>
       </div>
 
@@ -22,119 +58,190 @@ const Solution = () => {
           <div className="md:grid md:grid-cols-3  ">
             <div>
               <img
-                className="bg-yellow-50 w-50  rounded"
+                className="bg-yellow-50 md:w-50 ml-10 mb-10 rounded"
                 src={rectangle1059}
                 alt="product"
                 sizes=""
               />
             </div>
 
-            <div className="md:grid  ">
-              <div className=" md:border-r-2  mb-5">
-                <h5 className="text-6xl font-extrabold text-gray-200 ">01</h5>
+            <div className="md:grid ml-10 ">
+              <div className=" md:border-r-2   mb-5">
+                <h5 className="text-6xl font-extrabold text-yellow-600 ">01</h5>
                 <p className="text-2xl pt-5 pb-5">
-                  CMMS - Computerized Maintenance Management System{" "}
+                  Maintenance Management System
                 </p>
                 <p className="text-gray-700">
-                  Our Savings account is design to provides principal security
-                  and a modest interest...
+                  Streamline maintenance processes and extend the productive
+                  lifespan of your assets.
                 </p>
               </div>
               <div className=" border-r-2 mt-10 mb-5">
-                <h5 className="text-6xl font-extrabold text-gray-200 ">01</h5>
-                <p className="text-2xl pt-5 pb-5">
-                  ISSOW- Integrated Safe System of Work
-                </p>
+                <h5 className="text-6xl font-extrabold text-purple-700 ">02</h5>
+                <p className="text-2xl pt-5 pb-5">Safety Management System</p>
                 <p className="text-gray-700">
-                  Our Savings account is design to provides principal security
-                  and a modest interest...
+                  Manage permits and enhance safety processes across your entire
+                  organization.
                 </p>
               </div>
             </div>
 
             <div className="md:grid  ">
               <div className="ml-10 mb-5">
-                <h5 className="text-6xl font-extrabold text-gray-200 ">01</h5>
+                <h5 className="text-6xl font-extrabold text-green-700 ">03</h5>
                 <p className="text-2xl pt-5 pb-5">
-                  CMMS - Computerized Maintenance Management System{" "}
+                  Competence Development Centre{" "}
                 </p>
                 <p className="text-gray-700">
-                  Our Savings account is design to provides principal security
-                  and a modest interest...
+                  {" "}
+                  Accelerate growth with personalized learning and skills
+                  development programs.
                 </p>
               </div>
+
               <div className="m-10 mb-5">
-                <h5 className="text-6xl font-extrabold text-gray-200 ">01</h5>
+                <h5 className="text-6xl font-extrabold text-gray-200 ">04</h5>
                 <p className="text-2xl pt-5 pb-5">
-                  CMMS - Computerized Maintenance Management System{" "}
+                  {" "}
+                  B-2-B Supply Chain Network
                 </p>
                 <p className="text-gray-700">
-                  Our Savings account is design to provides principal security
-                  and a modest interest...
+                  Optimize procurement and fulfilment with efficient vendor,
+                  OEM, and service provider connections.
                 </p>
               </div>
             </div>
           </div>
 
           <div className="text-center p-20 ">
-            <p className="text-4xl font-bold ">
-              CMMS - ComputerizedMaintenance <br /> Management System{" "}
-            </p>
+            <p className="text-4xl font-bold ">Maintenance Management System</p>
           </div>
 
-          <div className="md:grid grid-cols-4 gap-6">
-            <div className="max-w-sm text-center rounded overflow-hidden p-7 shadow-lg bg-orange-50">
+          <div className="md:grid md:grid-cols-4 md:gap-6 p-10 md:p-0">
+            <div className=" text-center rounded mb-10 overflow-hidden p-7  shadow-lg bg-orange-50">
               <div className="px-6 py-6">
-                <div className=" text-3xl mb-2 text-orange-300">
-                  The Coldest Sunset
-                </div>
-                <p className="text-gray-700 text-base">
-                  Dashboard Process Map Plant Hierachy
-                </p>
+                <p className=" text-3xl mb-2 text-orange-800"> Asset</p>
+                <AccordionCustom
+                  title="People"
+                  discription=" Boost productivity by optimizing workforce, task and performance management"
+                />
+                <AccordionCustom
+                  title="Machines"
+                  discription="  Efficiently manage equipment lifecycle and maintenance to maximize 
+                  uptime and ROI."
+                />
+                <AccordionCustom
+                  title="Materials"
+                  discription="Reduce inventory costs and improve efficiency with optimized 
+                  material handling processes."
+                />
+              </div>
+            </div>
+            <div className="mb-10 text-center rounded overflow-hidden p-7 shadow-lg bg-orange-50">
+              <div className="px-6 py-6">
+                <p className=" text-3xl mb-2 text-orange-800"> Maintenance</p>
+                <AccordionCustom
+                  title="Preventive"
+                  discription=" Minimize equipment failure and unplanned disruptions with 
+                  proactive maintenance strategies."
+                />
+                <AccordionCustom
+                  title="Predictive:"
+                  discription=" Ensure equipment reliability with state-of-the-art sensors and AIpowered data analysis."
+                />
+                <AccordionCustom
+                  title="Prescriptive"
+                  discription="Optimize maintenance procedures with historic data and machine 
+                  learning models."
+                />
+              </div>
+            </div>
+            <div className=" mb-10 text-center rounded overflow-hidden p-7 shadow-lg  bg-orange-50">
+              <div className="px-6 py-6">
+                <p className=" text-3xl mb-2 text-orange-800"> Work </p>
+                {work.map((data) => (
+                  <AccordionCustom
+                    title={data.title}
+                    discription={data.description}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className=" mb-10 text-center rounded overflow-hidden p-7 shadow-lg bg-orange-50">
+              <div className="px-6 py-6">
+                <p className=" text-3xl mb-2 text-orange-800"> Report</p>
+                {Report.map((data) => (
+                  <AccordionCustom
+                    title={data.title}
+                    discription={data.description}
+                  />
+                ))}
               </div>
             </div>
           </div>
 
           <div className="text-center p-20 ">
-            <p className="text-4xl font-bold ">
-              ISSOW- Integrated Safe System of Work
-            </p>
+            <p className="text-4xl font-bold ">Safety Management System</p>
           </div>
 
-          <div className="md:grid grid-cols-4 gap-6">
-            <div className="max-w-sm text-center rounded overflow-hidden p-7 shadow-lg bg-green-50">
+          <div className="md:grid md:grid-cols-4 md:gap-6 p-10 md:p-0">
+            <div className=" text-center mb:10 w-100 rounded overflow-hidden p-7 shadow-lg ">
               <div className="px-6 py-6">
-                <div className=" text-3xl mb-2 text-green-800">
-                  The Coldest Sunset
-                </div>
-                <p className="text-gray-700 text-base">
-                  Dashboard Process Map Plant Hierachy
-                </p>
+                <p className=" text-3xl mb-2 text-green-800">ePTW</p>
+                {ePTWData.map((data) => (
+                  <AccordionCustom
+                    title={data.title}
+                    discription={data.description}
+                  />
+                ))}
               </div>
             </div>
           </div>
 
           <div className="text-center p-20 ">
-            <p className="text-4xl font-bold ">Development Center</p>
+            <p className="text-4xl font-bold ">Competence Development Centre</p>
           </div>
 
-          <div className="md:grid md:grid-cols-4 md:gap-6">
-            <div
-              className="max-w-sm text-center rounded overflow-hidden p-7 shadow-lg"
-              style={{ background: "#FDF4FA" }}
-            >
-              <div className="px-6 py-6">
-                <div
-                  className=" text-3xl mb-2 text-green-200"
-                  style={{ color: "#C773AF" }}
-                >
-                  The Coldest Sunset
+          <div className="md:grid md:grid-cols-4 md:gap-6 p-10 md:p-0">
+            {CompetenceDevelopmentCentreData.map((cards) => (
+              <div className=" text-center mb:10 w-100 mb-10 rounded overflow-hidden p-7 shadow-lg bg-red-50">
+                <div className="px-6 py-6">
+                  <p className=" text-3xl mb-2 text-red-800">
+                    {cards.cardTitle}
+                  </p>
+                  {cards.itemList.map((data: any) => (
+                    <AccordionCustom
+                      title={data.title}
+                      discription={data.description}
+                    />
+                  ))}
                 </div>
-                <p className="text-gray-700 text-base">
-                  Dashboard Process Map Plant Hierachy
-                </p>
               </div>
-            </div>
+            ))}
+          </div>
+          <div className="text-center p-20 ">
+            <p className="text-4xl font-bold ">Supply Chain Network</p>
+          </div>
+
+          <div className="md:grid md:grid-cols-4 md:gap-6 p-10 md:p-0">
+            {SupplyChainNetworkData.map((cards) => (
+              <div
+                className=" text-center mb:10 w-100 rounded overflow-hidden p-7 mb-10 shadow-lg "
+                style={{ background: "#F1F5FF" }}
+              >
+                <div className="px-6 py-6">
+                  <p className=" text-3xl mb-2 text-blue-800">
+                    {cards.cardTitle}
+                  </p>
+                  {cards.itemList.map((data: any) => (
+                    <AccordionCustom
+                      title={data.title}
+                      discription={data.description}
+                    />
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
