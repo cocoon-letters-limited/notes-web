@@ -1,10 +1,12 @@
 import React from "react";
-import EquipmentRegister from "./equipmentRegister";
+// import EquipmentRegister from "./equipmentRegister";
+import EquipmentProfileLaypout from "./equipmentProfile";
 
 function Equipment() {
   return (
     <div>
-      <EquipmentRegister />
+      <EquipmentProfileLaypout />
+      {/* <EquipmentRegister /> */}
     </div>
   );
 }

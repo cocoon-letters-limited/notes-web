@@ -1,6 +1,7 @@
 /* eslint-disable react/button-has-type */
 import { Pagination, Rating } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ViewEquipment() {
   return (
@@ -81,7 +82,11 @@ function ViewEquipment() {
                 </button>
               </td>
               <td className="px-6 py-4">EBMM</td>
-              <td className="px-6 py-4">Electric Block Moulding Machine</td>
+              <td className="px-6 py-4">
+                <Link to="equipment-profile">
+                  Electric Block Moulding Machine
+                </Link>
+              </td>
               <td className="px-6 py-4 text-right">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

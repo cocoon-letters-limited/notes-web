@@ -13,7 +13,16 @@ function EquipmentRegister() {
   return (
     <div>
       <div className="flex justify-between">
-        <p className="text-2xl">Equipment</p>
+        {!showEquipment ? (
+          <p className="text-2xl">Equipment</p>
+        ) : (
+          <button
+            className="bg-blue-200 border border-2 border-blue-700 w-fit px-5"
+            onClick={() => setShowEquipment(false)}
+          >
+            x
+          </button>
+        )}
         <div className="text-blue-700">
           <span>Upload csv</span>
           <IconButton

@@ -1,10 +1,10 @@
-/* eslint-disable react/button-has-type */
 import { Box, Tabs, Tab, Typography } from "@mui/material";
 import React from "react";
 import production1 from "assets/images/webp/login.webp";
 import Integrity from "./Integrity";
 import Bio from "./bio";
 import Relationships from "./relationships";
+import Hierarchy from "./hierarchy";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -58,7 +58,10 @@ function EquipmentProfileLaypout() {
           </div>
           <div className="text-center">
             <p className="font-semibold text-1xl ">Electrict block moulding</p>
-            <button className="circle w-auto px-4 mb-4 mt-1 text-white rounded-full p-1 text-sm bg-blue-700">
+            <button
+              type="button"
+              className="circle w-auto px-4 mb-4 mt-1 text-white rounded-full p-1 text-sm bg-blue-700"
+            >
               EBM2392
             </button>
           </div>
@@ -110,7 +113,7 @@ function EquipmentProfileLaypout() {
               <Integrity />
             </TabPanel>
             <TabPanel value={value} index={2}>
-              Item Three
+              <Hierarchy />
             </TabPanel>
             <TabPanel value={value} index={3}>
               <Relationships />
