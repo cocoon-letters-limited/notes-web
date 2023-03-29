@@ -77,7 +77,7 @@ const Solution = () => {
                 </p>
               </div>
               <div className=" border-r-2 mt-10 mb-5">
-                <h5 className="text-6xl font-extrabold text-purple-700 ">01</h5>
+                <h5 className="text-6xl font-extrabold text-purple-700 ">02</h5>
                 <p className="text-2xl pt-5 pb-5">Safety Management System</p>
                 <p className="text-gray-700">
                   Manage permits and enhance safety processes across your entire
@@ -88,7 +88,7 @@ const Solution = () => {
 
             <div className="md:grid  ">
               <div className="ml-10 mb-5">
-                <h5 className="text-6xl font-extrabold text-green-700 ">01</h5>
+                <h5 className="text-6xl font-extrabold text-green-700 ">03</h5>
                 <p className="text-2xl pt-5 pb-5">
                   Competence Development Centre{" "}
                 </p>
@@ -100,7 +100,7 @@ const Solution = () => {
               </div>
 
               <div className="m-10 mb-5">
-                <h5 className="text-6xl font-extrabold text-gray-200 ">01</h5>
+                <h5 className="text-6xl font-extrabold text-gray-200 ">04</h5>
                 <p className="text-2xl pt-5 pb-5">
                   {" "}
                   B-2-B Supply Chain Network
@@ -117,8 +117,8 @@ const Solution = () => {
             <p className="text-4xl font-bold ">Maintenance Management System</p>
           </div>
 
-          <div className="md:grid grid-cols-4 gap-6">
-            <div className="max-w-sm text-center rounded overflow-hidden p-7  shadow-lg bg-orange-50">
+          <div className="md:grid md:grid-cols-4 md:gap-6 p-10 md:p-0">
+            <div className=" text-center rounded mb-10 overflow-hidden p-7  shadow-lg bg-orange-50">
               <div className="px-6 py-6">
                 <p className=" text-3xl mb-2 text-green-800"> Asset</p>
                 <AccordionCustom
@@ -137,7 +137,7 @@ const Solution = () => {
                 />
               </div>
             </div>
-            <div className="max-w-sm text-center rounded overflow-hidden p-7 shadow-lg bg-orange-50">
+            <div className="mb-10 text-center rounded overflow-hidden p-7 shadow-lg bg-orange-50">
               <div className="px-6 py-6">
                 <p className=" text-3xl mb-2 text-green-800"> Maintenance</p>
                 <AccordionCustom
@@ -156,7 +156,7 @@ const Solution = () => {
                 />
               </div>
             </div>
-            <div className="max-w-sm text-center rounded overflow-hidden p-7 shadow-lg bg-orange-50">
+            <div className=" mb-10 text-center rounded overflow-hidden p-7 shadow-lg  bg-orange-50">
               <div className="px-6 py-6">
                 <p className=" text-3xl mb-2 text-green-800"> Work </p>
                 {work.map((data) => (
@@ -167,7 +167,7 @@ const Solution = () => {
                 ))}
               </div>
             </div>
-            <div className="max-w-sm text-center rounded overflow-hidden p-7 shadow-lg bg-orange-50">
+            <div className=" mb-10 text-center rounded overflow-hidden p-7 shadow-lg bg-orange-50">
               <div className="px-6 py-6">
                 <p className=" text-3xl mb-2 text-green-800"> Report</p>
                 {Report.map((data) => (
@@ -184,19 +184,8 @@ const Solution = () => {
             <p className="text-4xl font-bold ">Safety Management System</p>
           </div>
 
-          <div className="md:grid grid-cols-4 gap-6">
-            <div className="max-w-sm text-center rounded overflow-hidden p-7 shadow-lg bg-green-50">
-              <div className="px-6 py-6">
-                <p className=" text-3xl mb-2 text-green-800">ePTW</p>
-                {ePTWData.map((data) => (
-                  <AccordionCustom
-                    title={data.title}
-                    discription={data.description}
-                  />
-                ))}
-              </div>
-            </div>
-            <div className="max-w-sm text-center rounded overflow-hidden p-7 shadow-lg bg-green-50">
+          <div className="md:grid md:grid-cols-4 md:gap-6 p-10 md:p-0">
+            <div className=" text-center mb:10 w-100 rounded overflow-hidden p-7 shadow-lg ">
               <div className="px-6 py-6">
                 <p className=" text-3xl mb-2 text-green-800">ePTW</p>
                 {ePTWData.map((data) => (
@@ -213,11 +202,11 @@ const Solution = () => {
             <p className="text-4xl font-bold ">Competence Development Centre</p>
           </div>
 
-          <div className="md:grid grid-cols-4 gap-6">
+          <div className="md:grid md:grid-cols-4 md:gap-6 p-10 md:p-0">
             {CompetenceDevelopmentCentreData.map((cards) => (
-              <div className="max-w-sm text-center rounded overflow-hidden p-7 shadow-lg bg-green-50">
+              <div className=" text-center mb:10 w-100 mb-10 rounded overflow-hidden p-7 shadow-lg bg-red-50">
                 <div className="px-6 py-6">
-                  <p className=" text-3xl mb-2 text-green-800">
+                  <p className=" text-3xl mb-2 text-red-800">
                     {cards.cardTitle}
                   </p>
                   {cards.itemList.map((data: any) => (
@@ -234,10 +223,10 @@ const Solution = () => {
             <p className="text-4xl font-bold ">Supply Chain Network</p>
           </div>
 
-          <div className="md:grid grid-cols-4 gap-6">
+          <div className="md:grid md:grid-cols-4 md:gap-6 p-10 md:p-0">
             {SupplyChainNetworkData.map((cards) => (
               <div
-                className="max-w-sm text-center rounded overflow-hidden p-7 shadow-lg "
+                className=" text-center mb:10 w-100 rounded overflow-hidden p-7 mb-10 shadow-lg "
                 style={{ background: "#F1F5FF" }}
               >
                 <div className="px-6 py-6">

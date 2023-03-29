@@ -8,21 +8,27 @@ function NotesSection() {
   return (
     // eslint-disable-next-line react/self-closing-comp
     <div>
-      <div className='pt-20 mt-20 pb-20' style={{ background: ' #F1F5FF' }}>
+      <div className='md:pt-20 md:mt-20 md:pb-20 h-fix pb-10' style={{ background: ' #F1F5FF' }}>
 
         <div className=" mb:p-0 md:container md:mx-auto" >
           <div className='flex justify-between'>
-            <p className='text-5xl font-bold text-blue-600'>
+            <p className='md:text-5xl font-bold text-blue-600 md:p-0 p-10  text-2xl'>
               NOTE is loved by users
             </p>
-            <div className='flex'>
-              <button className=" rounded-full md:p-5 border-2 border-gray-400   flex text-gray-400 mr-5 items-center justify-center" style={{ background: ' #EAEFF8' }}>
+            <div className='flex md:mt-0 mt-10 mr-5 md:mr-0'>
+              <button className=" 
+               rounded-full md:p-5 w-fit h-fit border-2 border-gray-400  
+               flex text-gray-400 mr-5 
+               items-center justify-center" style={{ background: ' #EAEFF8' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="fill-current w-8 h-8  ">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
                 </svg>
 
               </button>
-              <button className=" rounded-full p-5 border-2 border-blue-700  flex text-blue-700 items-center justify-center" style={{ background: ' #EAEFF8' }}>
+              <button className=" 
+               rounded-full w-fit h-fit md:p-5 border-2
+               border-blue-700  flex text-blue-700 
+               items-center justify-center" style={{ background: ' #EAEFF8' }}>
 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="fill-current w-8 h-8  " >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -32,7 +38,7 @@ function NotesSection() {
 
           </div>
           <div className='md:grid grid-cols-3 gap-10 mt-10 '>
-            <div className="rounded-lg py-2 px-4 shadow-lg bg-white" >
+            <div className="rounded-lg py-2 px-4 md:m-0 m-10 shadow-lg bg-white" >
               <div className="px-6 py-6">
                 <div className="flex ">
                   <img className="rounded-full h-20 w-20" src={production2} alt="product" sizes="" />
@@ -49,7 +55,7 @@ function NotesSection() {
 
               </div>
             </div>
-            <div className="rounded-lg py-2 px-4 shadow-lg bg-white" >
+            <div className="rounded-lg py-2 px-4  md:m-0 m-10  shadow-lg bg-white" >
               <div className="px-6 py-6">
                 <div className="flex ">
                   <img className="rounded-full h-20 w-20" src={production2} alt="product" sizes="" />
@@ -66,7 +72,7 @@ function NotesSection() {
                 </p>
               </div>
             </div>
-            <div className="rounded-lg py-2 px-4 shadow-lg bg-white" >
+            <div className="rounded-lg py-2  px-4  md:m-0 m-10  shadow-lg bg-white" >
               <div className="px-6 py-6">
                 <div className="flex ">
                   <img className="rounded-full h-20 w-20" src={production2} alt="product" sizes="" />
