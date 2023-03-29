@@ -4,7 +4,7 @@ import {
   ALERT_INFO,
   ALERT_SUCCESS,
   ALERT_WARNING,
-} from "./alert.reducer";
+} from "./alert.slice";
 
 const success = (message: string) => (dispatch: any) => {
   dispatch(ALERT_SUCCESS(message));

@@ -6,11 +6,17 @@ type Props = {
   title: string;
   url: string;
   icon: ReactElement;
+  active: boolean;
 };
 
-const SidebarMenuItem = ({ isMenuOpen, title, url, icon }: Props) => {
+const SidebarMenuItem = ({ isMenuOpen, title, url, icon, active }: Props) => {
   return (
-    <Link to={url || "/"} className="flex items-center py-3 text-[#B1BFD9]">
+    <Link
+      to={url || "/"}
+      className={`flex items-center py-3  ${
+        active ? "text-primary sidebar-active" : "text-[#B1BFD9]"
+      }`}
+    >
       <span>{icon}</span>
       {isMenuOpen && <span className="pl-4 menu-title">{title}</span>}
     </Link>

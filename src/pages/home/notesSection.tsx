@@ -1,7 +1,7 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable prettier/prettier */
-import React from 'react'
-import production2 from 'assets/Production2.png'
+import React from "react";
+import production2 from "assets/Production2.png";
 
 function NotesSection() {
 
@@ -96,4 +96,4 @@ function NotesSection() {
 
 // Notes.propTypes = {}
 
-export default NotesSection
+export default NotesSection;

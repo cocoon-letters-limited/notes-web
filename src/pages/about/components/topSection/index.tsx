@@ -1,98 +1,40 @@
-import React, { ReactElement } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import AboutImage from "assets/images/webp/about-top.webp";
-
-type SocialLinkType = {
-  icon: ReactElement;
-  url: string;
-};
-
-const SocialLink = ({ icon, url }: SocialLinkType) => {
-  return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
-      {icon}
-    </a>
-  );
-};
 
 const TopSection = () => {
   return (
     <section className="relative">
       <div className="container px-4 md:px-8 xl:px-4 mx-auto pt-24 md:pt-28 lg:pt-32 pb-2 md:pb-6 lg:pb-8 xl:pb-16 relative">
-        <div className="flex flex-col-reverse md:flex-row flex-wrap lg:items-center w-full">
+        <div className="flex flex-col-reverse md:flex-row flex-wrap w-full">
           <div className="mt-16 md:mt-0 w-full md:w-4/12 lg:w-5/12">
             <img src={AboutImage} alt="About Top" />
           </div>
           <div className="w-full md:w-1/12" />
           <div className="w-full md:w-6/12 lg:w-5/12">
             <h1 className="text-primary text-4xl lg:text-5xl xl:text-6xl font-bold">
-              We’re a Saas company
+              We’re Built For Your Integrity
             </h1>
-            <p className="mt-8 lg:mt-12 xl:mt-16 text-base leading-7 lg:text-lg lg:leading-8 xl:text-xl xl:leading-8 text-textColor">
-              There are many variations of passages of Lorem Ipsum available,
-              but majority have su alteration in some form, by injected humour,
-              randomized works for which don't look even slightly believable. If
-              you are going to use a passage of Lorem Ipsum, you need to be sure
-              there isn't anything.
+            <p className="mt-8 lg:mt-10 xl:mt-12 text-sm-15 leading-7 lg:text-base lg:leading-7 xl:text-lg xl:leading-7 text-textColor">
+              At Note Operational Excellence Limited, we understand that your
+              facility is only as strong as the integrity of its key assets:
+              manpower, machines, and materials. That's why we've developed an
+              Enterprise Asset Management (EAM) software solution that is
+              designed to streamline your operations and ensure the continuous
+              integrity of your facility.
+              <br /> <br />
+              Our software is equipped with best-in-class features that have
+              been specifically developed to help facilities with high-valued
+              assets of a complicated makeup of human, equipment, and consumable
+              resources. Whether you're in the manufacturing, energy,
+              transportation, or any other industry, we have the expertise and
+              tools to help you optimize your asset management strategy.
             </p>
 
-            <div className="mt-8 md:mt-12 lg:mt-16 flex flex-row flex-wrap space-x-6">
-              <SocialLink
-                url="https://instagram.com"
-                icon={
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13.8655 2.08855C14.9461 2.09165 15.9816 2.50643 16.7458 3.24228C17.5099 3.97813 17.9407 4.97526 17.9439 6.01591V13.8698C17.9407 14.9104 17.5099 15.9076 16.7458 16.6434C15.9816 17.3793 14.9461 17.7941 13.8655 17.7972H5.70952C4.62885 17.7941 3.59336 17.3793 2.82921 16.6434C2.06506 15.9076 1.63433 14.9104 1.6311 13.8698V6.01591C1.63433 4.97526 2.06506 3.97813 2.82921 3.24228C3.59336 2.50643 4.62885 2.09165 5.70952 2.08855H13.8655ZM13.8655 0.517853H5.70952C2.56922 0.517853 0 2.99192 0 6.01591V13.8698C0 16.8938 2.56922 19.3679 5.70952 19.3679H13.8655C17.0058 19.3679 19.575 16.8938 19.575 13.8698V6.01591C19.575 2.99192 17.0058 0.517853 13.8655 0.517853Z"
-                      fill="#054CD6"
-                    />
-                    <path
-                      d="M15.089 6.01604C14.847 6.01604 14.6105 5.94694 14.4093 5.81749C14.2081 5.68804 14.0513 5.50404 13.9587 5.28876C13.8661 5.07349 13.8418 4.83661 13.889 4.60807C13.9362 4.37954 14.0528 4.16962 14.2239 4.00486C14.395 3.84009 14.613 3.72789 14.8503 3.68243C15.0876 3.63697 15.3336 3.6603 15.5572 3.74947C15.7807 3.83864 15.9718 3.98964 16.1062 4.18338C16.2406 4.37713 16.3124 4.6049 16.3124 4.83792C16.3127 4.99272 16.2813 5.14607 16.22 5.28916C16.1586 5.43224 16.0685 5.56225 15.9548 5.67172C15.8412 5.78118 15.7062 5.86795 15.5576 5.92704C15.409 5.98613 15.2497 6.01637 15.089 6.01604ZM9.78755 6.80118C10.4328 6.80118 11.0636 6.98544 11.6002 7.33067C12.1367 7.67589 12.5549 8.16658 12.8018 8.74067C13.0488 9.31476 13.1134 9.94647 12.9875 10.5559C12.8616 11.1654 12.5509 11.7252 12.0946 12.1646C11.6383 12.604 11.057 12.9032 10.4241 13.0244C9.79117 13.1456 9.13516 13.0834 8.53899 12.8456C7.94282 12.6078 7.43326 12.2051 7.07476 11.6885C6.71626 11.1718 6.5249 10.5644 6.5249 9.94298C6.52583 9.11 6.86987 8.31138 7.48153 7.72237C8.0932 7.13336 8.92253 6.80207 9.78755 6.80118ZM9.78755 5.23048C8.81966 5.23048 7.8735 5.50687 7.06873 6.02468C6.26396 6.5425 5.63671 7.27849 5.26632 8.13959C4.89592 9.00068 4.79901 9.94821 4.98783 10.8623C5.17666 11.7765 5.64274 12.6162 6.32715 13.2752C7.01155 13.9343 7.88353 14.3831 8.83283 14.5649C9.78212 14.7468 10.7661 14.6534 11.6603 14.2968C12.5545 13.9401 13.3188 13.3361 13.8566 12.5611C14.3943 11.7861 14.6813 10.875 14.6813 9.94298C14.6813 8.69315 14.1657 7.49451 13.248 6.61074C12.3302 5.72698 11.0855 5.23048 9.78755 5.23048Z"
-                      fill="#054CD6"
-                    />
-                  </svg>
-                }
-              />
-              <SocialLink
-                url="https://facebook.com"
-                icon={
-                  <svg
-                    width="21"
-                    height="20"
-                    viewBox="0 0 21 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M20.15 9.99946C20.15 4.79467 15.7674 0.574463 10.3625 0.574463C4.95748 0.574463 0.574951 4.79467 0.574951 9.99946C0.574951 14.7035 4.15351 18.6027 8.83315 19.3104V12.7247H6.34739V9.99946H8.83315V7.92302C8.83315 5.5613 10.2947 4.25568 12.5301 4.25568C13.6011 4.25568 14.7214 4.43998 14.7214 4.43998V6.75962H13.4866C12.2715 6.75962 11.8913 7.48585 11.8913 8.23228V9.99946H14.6056L14.1721 12.7247H11.8917V19.3113C16.5714 18.604 20.15 14.7048 20.15 9.99946Z"
-                      fill="#054CD6"
-                    />
-                  </svg>
-                }
-              />
-              <SocialLink
-                url="https://twitter.com"
-                icon={
-                  <svg
-                    width="22"
-                    height="18"
-                    viewBox="0 0 22 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M21.1231 2.54165C20.3364 2.88349 19.504 3.10871 18.6522 3.21017C19.5474 2.68601 20.2205 1.85328 20.5455 0.868164C19.6992 1.36304 18.7748 1.71027 17.812 1.89498C17.4065 1.47006 16.9189 1.13203 16.3788 0.901435C15.8386 0.670835 15.2572 0.55248 14.6699 0.553566C12.2921 0.553566 10.3678 2.44989 10.3678 4.78753C10.3661 5.11269 10.4034 5.43688 10.4788 5.75317C8.77369 5.67324 7.10406 5.23827 5.57671 4.4761C4.04936 3.71393 2.69792 2.64134 1.60885 1.32695C1.22678 1.97106 1.02472 2.70596 1.02379 3.45486C1.02379 4.92298 1.78975 6.2207 2.94633 6.98098C2.26109 6.96472 1.58988 6.78335 0.989705 6.45228V6.50471C0.989705 8.55834 2.47531 10.2668 4.44155 10.6557C4.0718 10.7542 3.69078 10.8042 3.30812 10.8042C3.03659 10.8047 2.76569 10.7784 2.49934 10.7256C3.04595 12.4078 4.63686 13.6312 6.52139 13.6662C4.99007 14.8463 3.11002 15.4842 1.17672 15.4795C0.83355 15.479 0.490702 15.4586 0.149902 15.4183C2.11666 16.6742 4.40285 17.3385 6.73637 17.3321C14.6607 17.3321 18.99 10.8785 18.99 5.28128C18.99 5.09776 18.9852 4.91425 18.9764 4.7351C19.8167 4.13739 20.5436 3.39461 21.1231 2.54165Z"
-                      fill="#054CD6"
-                    />
-                  </svg>
-                }
-              />
+            <div className="mt-6 md:mt-6 lg:mt-8 flex flex-row flex-wrap space-x-6">
+              <Link to="/" className="text-primary text-sm-15 lg:text-base">
+                Read more...
+              </Link>
             </div>
           </div>
         </div>

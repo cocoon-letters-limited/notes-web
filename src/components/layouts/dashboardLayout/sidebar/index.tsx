@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "assets/images/svg/logo/eam_logo.svg";
+import { useLocation } from "react-router-dom";
 import SidebarMenuItem from "./sidebarMenuItem";
 import menuData from "./menuData";
 import MenuToggler from "./menuToggler";
@@ -14,6 +15,8 @@ const LogoSection = () => {
 };
 
 const DashboardSidebar = () => {
+  const location = useLocation();
+
   const [isOpen, setIsOpen] = useState(true);
 
   const handleToggleMenu = () => {
@@ -30,7 +33,7 @@ const DashboardSidebar = () => {
   return (
     <div
       id="sidebar"
-      className="w-56 flex flex-col justify-start items-stretch min-h-screen"
+      className="hidden w-56 lg:flex flex-col justify-start items-stretch min-h-screen"
     >
       <LogoSection />
 
@@ -46,6 +49,9 @@ const DashboardSidebar = () => {
                   url={item.url}
                   icon={item.icon}
                   isMenuOpen={isOpen}
+                  active={location?.pathname?.includes(
+                    item?.title?.toLowerCase(),
+                  )}
                 />
               ))}
             </div>

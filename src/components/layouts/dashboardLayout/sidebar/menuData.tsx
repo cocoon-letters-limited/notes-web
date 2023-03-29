@@ -96,7 +96,7 @@ const menuData = [
   },
 
   {
-    section: "work",
+    section: "finance",
     menu: [
       {
         id: 1,

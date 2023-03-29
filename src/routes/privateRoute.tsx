@@ -5,6 +5,7 @@ import Error404 from "pages/error404";
 import Notes from "pages/notes";
 import Equipment from "pages/equipment/index";
 import EquipmentProfileLaypout from "pages/equipment/equipmentProfile";
+import ViewNoteDetails from "pages/notes/viewNoteDetails";
 
 const privateRoute = {
   path: "/",
@@ -22,6 +23,10 @@ const privateRoute = {
     {
       path: "notes",
       element: <Notes />,
+    },
+    {
+      path: "notes/:slug",
+      element: <ViewNoteDetails />,
     },
     {
       path: "material",

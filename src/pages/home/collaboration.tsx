@@ -1,12 +1,12 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable prettier/prettier */
-import React from 'react'
-import production2 from 'assets/Production2.png'
+import React from "react";
+import production2 from "assets/Production2.png";
 
 function Collaboration() {
   return (
     <div>
-      <div className='mt-48'>
+     <div className='mt-48'>
         <div className='md:flex '>
           <div className="md:w-1/1 md:pl-32 m-10 mb:p-0 md:container md:mx-auto" >
             <p className='text-6xl text-blue-700  font-bold'>Save more, Make more, Be more </p>
@@ -72,15 +72,18 @@ function Collaboration() {
                 {/* <p className='text-2xl text-gray-400'>Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.</p> */}
               </div>
             </div>
-
           </div>
 
-          <img className=" md:w-1/3    rounded" src={production2} alt="product" sizes="" />
-
+          <img
+            className=" md:w-1/3    rounded"
+            src={production2}
+            alt="product"
+            sizes=""
+          />
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Collaboration
+export default Collaboration;

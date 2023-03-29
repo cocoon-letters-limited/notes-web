@@ -1,5 +1,8 @@
 import MainLayout from "components/layouts/mainLayout";
 import About from "pages/about";
+import Blog from "pages/blog";
+import BlogDetails from "pages/blogDetails";
+import Checkout from "pages/checkout";
 import Contact from "pages/contact";
 import Error404 from "pages/error404";
 import Faqs from "pages/faqs";
@@ -25,6 +28,18 @@ const publicRoute = {
     {
       path: "contact-us",
       element: <Contact />,
+    },
+    {
+      path: "blog",
+      element: <Blog />,
+    },
+    {
+      path: "blog/:slug",
+      element: <BlogDetails />,
+    },
+    {
+      path: "checkout",
+      element: <Checkout />,
     },
   ],
 };
