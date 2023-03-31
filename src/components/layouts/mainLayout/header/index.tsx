@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Logo from "assets/images/svg/logo/eam_logo.svg";
+import Logo from "assets/NOTEOPX.png";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -55,8 +55,9 @@ const Header = () => {
               <li>
                 <NavLink
                   to=""
-                  className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-blue-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-blue-700 md:dark:hover:bg-transparent dark:border-gray-700"
                   aria-current="page"
+                  aria-activedescendant="text-red-700"
                 >
                   Home
                 </NavLink>
