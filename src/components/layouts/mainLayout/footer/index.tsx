@@ -1,12 +1,7 @@
-/* eslint-disable prettier/prettier */
-import React from "react";
-
 import Logo from "assets/NOTEOPX.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  // eslint-disable-next-line react/self-closing-comp
-  // eslint-disable-next-line react/jsx-no-useless-fragment
   return (
     <div className=" ">
       <footer className="bg-gray-100 dark:bg-gray-100">
@@ -20,54 +15,68 @@ const Footer = () => {
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-                   Home
+                  Company
                 </h2>
                 <ul className="text-gray-600 dark:text-gray-400">
                   <li className="mb-4">
-                    <Link to='/about-us' className="hover:underline">
+                    <Link to="/about-us" className="hover:underline">
                       About us
                     </Link>
                   </li>
                   <li className="mb-4">
-                    <Link to="/contact-us" className="hover:underline">Contact us</Link>
+                    <Link to="/blog" className="hover:underline">
+                      Blog
+                    </Link>
                   </li>
                   <li className="mb-4">
-                    <Link to="/faqs"
-                      className="hover:underline "
-                    >
-                      Faqs
+                    <Link to="/contact-us" className="hover:underline">
+                      Contact us
                     </Link>
                   </li>
                 </ul>
               </div>
-              {/* <div>
+              <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-                  FAQ's
+                  Our Works
                 </h2>
                 <ul className="text-gray-600 dark:text-gray-400">
                   <li className="mb-4">
-                    <Link to="/faqs"
-                      className="hover:underline "
-                    >
-                      Faqs
+                    <Link to="/pricing" className="hover:underline">
+                      Pricing
+                    </Link>
+                  </li>
+                  <li className="mb-4">
+                    <Link to="/customer" className="hover:underline">
+                      Customer
+                    </Link>
+                  </li>
+                  <li className="mb-4">
+                    <Link to="/product" className="hover:underline">
+                      Product
                     </Link>
                   </li>
                 </ul>
-              </div> */}
+              </div>
 
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-                  Quick Links
+                  Support
                 </h2>
                 <ul className="text-gray-600 dark:text-gray-400">
                   <li className="mb-4">
-                    <Link to="/pricing" className="hover:underline"> Pricing </Link>
+                    <Link to="/faqs" className="hover:underline ">
+                      Faqs
+                    </Link>
                   </li>
                   <li className="mb-4">
-                    <Link to="/contact-us" className="hover:underline"> Try Now</Link>
+                    <Link to="/contact-us" className="hover:underline">
+                      Try Now
+                    </Link>
                   </li>
                   <li className="mb-4">
-                    <Link to="/signup" className="hover:underline">  Sign In</Link>
+                    <Link to="/signup" className="hover:underline">
+                      Sign In
+                    </Link>
                   </li>
                 </ul>
               </div>

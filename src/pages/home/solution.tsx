@@ -25,7 +25,14 @@ function AccordionCustom({
   discription: string;
 }) {
   return (
-    <Accordion style={{ background: "none", boxShadow: "none" }}>
+    <Accordion
+      square
+      style={{
+        background: "none",
+        boxShadow: "none",
+        border: "none",
+      }}
+    >
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1a-content"
