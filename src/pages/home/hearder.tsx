@@ -1,5 +1,5 @@
 import production1 from "assets/Production1.png";
-import bitcoinLogo from "assets/logoImages/bitcoin.png";
+import Logolist from "./logolist";
 
 function Hearder() {
   return (
@@ -60,15 +60,9 @@ function Hearder() {
               sizes=""
             />
           </div>
-
           <div className="md:container md:mx-auto ">
             <div className="my-10 py-20">
-              <button
-                type="button"
-                className=" font-bold rounded-lg w-fit h-fit"
-              >
-                <img src={bitcoinLogo} alt="" className="h-20" />
-              </button>
+              <Logolist />
 
               <div className="md:grid md:grid-cols-2 ml-5 md:gap-10 mt-10">
                 <div>

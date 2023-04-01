@@ -1,157 +1,174 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-
-import React from "react";
+import { BusinessData, EnterpriseData, facilityData } from "./priceData";
 
 function Pricing() {
   return (
     <div>
       <div className="text-center p-20 ">
         <p className="text-4xl font-bold text-blue-700">Our pricing</p>
-        <label className="relative inline-flex items-center m-4 cursor-pointer">
-          <input type="checkbox" value="" className="sr-only peer" />
-          <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600" />
-          <span className="ml-3 text-sm font-medium ">Yes/No</span>
-        </label>
       </div>
 
-      <div className="md:grid grid-cols-3 container mx-auto gap-10 mb-20">
-        <div className="rounded-lg py-2 px-4 shadow-lg bg-white">
-          <div className="px-6 py-6">
-            <div className="ml-5 mt-3 text-center">
-              <p className="text-2xl font-semibold text-blue-700">Standart</p>
-
-              <p className="text-slate-400 m-5">
-                The national average cost of buying coin easy.
-              </p>
-
-              <p className="text-5xl font-semibold text-blue-700 m-5">
-                $5 <span className="text-slate-400 text-xs">/month</span>
-              </p>
-
-              <button
-                type="button"
-                className="bg-blue-700  text-white w-64 py-3 pr-8 pl-8 px-4 rounded"
-              >
-                Select Plan
-              </button>
-            </div>
-
-            <div className="flex mt-5">
-              <button
-                type="button"
-                className=" rounded-full h-8 w-8 bg-blue-700 text-white flex items-center justify-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4.5 12.75l6 6 9-13.5"
-                  />
-                </svg>
-              </button>
-              <p className="m-1 ml-5">Secure and encrypted integration</p>
-            </div>
+      <div className="md:grid md:grid-cols-3  container mx-auto gap-10 mb-20">
+        <div className="w-full  p-4 bg-white shadow-lg rounded-lg  sm:p-8 dark:white dark:border-gray-700">
+          <h5 className="mb-4 text-xl text-center  font-medium text-gray-500 dark:text-gray-400">
+            Facility
+          </h5>
+          <div className="flex justify-center items-baseline text-blue-700 ">
+            <span className="text-3xl font-extrabold tracking-blue-700">
+              $5,000 Upfront + $40/Users
+            </span>
+            <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
+              /month
+            </span>
           </div>
+          <button
+            type="button"
+            className="text-white bg-blue-600 hover:bg-blue-700  mt-10 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+          >
+            Choose plan
+          </button>
+          <ul className="space-y-5 my-7">
+            {facilityData.map((data) => (
+              <li key={data.id}>
+                <strong className="text-xl">{data.title}</strong>
+                <ul>
+                  {data.list.map((listItem) => (
+                    <li
+                      key={listItem.id}
+                      className="flex justify-between  mt-3 "
+                    >
+                      <p>{listItem.itemTitle}</p>
+                      <p>{listItem.itemValue}</p>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+          <ul className="space-y-5 my-7">
+            {/* <li className="flex space-x-3">
+              <svg
+                aria-hidden="true"
+                className="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Check icon</title>
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
+                20GB Cloud storage
+              </span>
+            </li>
+            <li className="flex space-x-3 line-through decoration-gray-500">
+              <svg
+                aria-hidden="true"
+                className="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Check icon</title>
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              <span className="text-base font-normal leading-tight text-gray-500">
+                Sketch Files
+              </span>
+            </li> */}
+          </ul>
         </div>
-
-        <div className="rounded-lg py-2 px-4 shadow-lg bg-blue-700 text-white">
-          <div className="px-6 py-6">
-            <div className="ml-5 mt-3 text-center">
-              <p className="text-2xl font-semibold text-white-700">Standart</p>
-
-              <p className="text-slate-400 m-5">
-                The national average cost of buying coin easy.
-              </p>
-
-              <p className="text-5xl font-semibold text-white m-5">
-                $5 <span className="text-slate-400 text-xs">/month</span>
-              </p>
-
-              <button
-                type="button"
-                className="bg-white  text-blue-700 w-64 py-3 pr-8 pl-8 px-4 rounded"
-              >
-                Select Plan
-              </button>
-            </div>
-
-            <div className="flex mt-5">
-              <button
-                type="button"
-                className=" rounded-full h-8 w-8 text-blue-700 bg-white flex items-center justify-center"
-              >
-                {/* <svg className="fill-current w-3 h-3  " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg> */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4.5 12.75l6 6 9-13.5"
-                  />
-                </svg>
-              </button>
-              <p className="m-1 ml-5">Secure and encrypted integration</p>
-            </div>
+        <div className="w-full  p-4 bg-blue-700 shadow-lg rounded-lg  sm:p-8 dark:white dark:border-gray-700">
+          <h5 className="mb-4 text-xl text-center  font-medium text-white dark:text-gray-400">
+            Business
+          </h5>
+          <div className="flex justify-center items-baseline text-white ">
+            {/* <span className="text-2xl font-semibold">$</span>  */}
+            <span className="text-3xl font-extrabold tracking-blue-700">
+              $10,000 Upfront + $100/User/Month
+              {/* <span className="text-2xl font-semibold">$</span> */}
+            </span>
+            <span className="ml-1 text-xl font-normal text-white dark:text-gray-400">
+              /month
+            </span>
           </div>
+          <button
+            type="button"
+            className="text-blue-700 bg-white hover:bg-blue-700 focus:ring-4 mt-10 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+          >
+            Choose plan
+          </button>
+          <ul className="space-y-5 my-7">
+            {BusinessData.map(
+              (dataFac: { id: number; title: string; list: Array<any> }) => (
+                <li key={dataFac.id}>
+                  <strong className="text-xl text-white">
+                    {dataFac.title}
+                  </strong>
+                  {dataFac.list.map(
+                    (listItem: {
+                      id: number;
+                      itemTitle: string;
+                      itemValue: string;
+                    }) => (
+                      <ul
+                        key={listItem.id}
+                        className="flex justify-between text-white mt-3 text-white"
+                      >
+                        <p>{listItem.itemTitle}</p>
+                        <p>{listItem.itemValue}</p>
+                      </ul>
+                    ),
+                  )}
+                </li>
+              ),
+            )}
+          </ul>
         </div>
-
-        <div className="rounded-lg py-2 px-4 shadow-lg bg-white">
-          <div className="px-6 py-6">
-            <div className="ml-5 mt-3 text-center">
-              <p className="text-2xl font-semibold text-blue-700">Standart</p>
-
-              <p className="text-slate-400 m-5">
-                The national average cost of buying coin easy.
-              </p>
-
-              <p className="text-5xl font-semibold text-blue-700 m-5">
-                $5 <span className="text-slate-400 text-xs">/month</span>
-              </p>
-
-              <button
-                type="button"
-                className="bg-blue-700  text-white w-64 py-3 pr-8 pl-8 px-4 rounded"
-              >
-                Select Plan
-              </button>
-            </div>
-
-            <div className="flex mt-5">
-              <button
-                type="button"
-                className=" rounded-full h-8 w-8 bg-blue-700 text-white flex items-center justify-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4.5 12.75l6 6 9-13.5"
-                  />
-                </svg>
-              </button>
-              <p className="m-1 ml-5">Secure and encrypted integration</p>
-            </div>
+        <div className="w-full  p-4 bg-white shadow-lg rounded-lg  sm:p-8 dark:white dark:border-gray-700">
+          <h5 className="mb-4 text-xl text-center  font-medium text-gray-500 dark:text-gray-400">
+            Enterprise
+          </h5>
+          <div className="flex justify-center items-baseline text-blue-700 ">
+            <span className="text-3xl font-extrabold tracking-blue-700">
+              {/* $5,000 Upfront + $40/Users */}
+              Contact Sales
+            </span>
+            {/* <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
+              /month
+            </span> */}
           </div>
+          <button
+            type="button"
+            className="text-white bg-blue-600 hover:bg-blue-700  mt-10 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+          >
+            Choose plan
+          </button>
+          <ul className="space-y-5 my-7">
+            {EnterpriseData.map((data) => (
+              <li key={data.id}>
+                <strong className="text-xl mt-10 ">{data.title}</strong>
+                <ul className="mt-5">
+                  {data.list.map((listItem) => (
+                    <li
+                      key={listItem.id}
+                      className="flex justify-between  mb-2 "
+                    >
+                      <p>{listItem.itemTitle}</p>
+                      <p>{listItem.itemValue}</p>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
