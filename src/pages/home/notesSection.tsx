@@ -1,11 +1,8 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable prettier/prettier */
 import React from "react";
 import production2 from "assets/Production2.png";
 
 function NotesSection() {
   return (
-    // eslint-disable-next-line react/self-closing-comp
     <div>
       <div
         className="md:pt-20 md:mt-20 md:pb-20 h-fix pb-10"
@@ -18,8 +15,9 @@ function NotesSection() {
             </p>
             <div className="flex md:mt-0 mt-10 mr-5 md:mr-0">
               <button
+                type="button"
                 className=" 
-               rounded-full md:p-5 w-fit h-fit border-2 border-gray-400  
+               rounded-full md:p-5 w-fit p-2 h-fit border-2 border-gray-400  
                flex text-gray-400 mr-5 
                items-center justify-center"
                 style={{ background: " #EAEFF8" }}
@@ -40,7 +38,8 @@ function NotesSection() {
                 </svg>
               </button>
               <button
-                className=" 
+                type="button"
+                className="  p-2
                rounded-full w-fit h-fit md:p-5 border-2
                border-blue-700  flex text-blue-700 
                items-center justify-center"

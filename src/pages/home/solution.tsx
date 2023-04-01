@@ -6,10 +6,12 @@ import {
 } from "@mui/material";
 import rectangle1059 from "assets/Rectangle1059.png";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import React, { useState } from "react";
 import {
   CompetenceDevelopmentCentreData,
+  Isolation,
   ReportData,
+  RiskAssessment,
+  SafetyMap,
   SupplyChainNetworkData,
   WorkData,
   ePTWData,
@@ -41,8 +43,6 @@ function AccordionCustom({
 }
 
 const Solution = () => {
-  const [Report] = useState(ReportData);
-  const [work] = useState(WorkData);
   // const [ePTW] = useState(ePTWData);
   return (
     <div>
@@ -159,8 +159,9 @@ const Solution = () => {
             <div className=" mb-10 text-center rounded overflow-hidden p-7 shadow-lg  bg-orange-50">
               <div className="px-6 py-6">
                 <p className=" text-3xl mb-2 text-orange-800"> Work </p>
-                {work.map((data) => (
+                {WorkData.map((data) => (
                   <AccordionCustom
+                    key={data.id}
                     title={data.title}
                     discription={data.description}
                   />
@@ -170,8 +171,9 @@ const Solution = () => {
             <div className=" mb-10 text-center rounded overflow-hidden p-7 shadow-lg bg-orange-50">
               <div className="px-6 py-6">
                 <p className=" text-3xl mb-2 text-orange-800"> Report</p>
-                {Report.map((data) => (
+                {ReportData.map((data) => (
                   <AccordionCustom
+                    key={data.id}
                     title={data.title}
                     discription={data.description}
                   />
@@ -190,6 +192,43 @@ const Solution = () => {
                 <p className=" text-3xl mb-2 text-green-800">ePTW</p>
                 {ePTWData.map((data) => (
                   <AccordionCustom
+                    key={data.id}
+                    title={data.title}
+                    discription={data.description}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className=" text-center mb:10 w-100 rounded overflow-hidden p-7 shadow-lg ">
+              <div className="px-6 py-6">
+                <p className=" text-3xl mb-2 text-green-800">Risk Assessment</p>
+                {RiskAssessment.map((data) => (
+                  <AccordionCustom
+                    key={data.id}
+                    title={data.title}
+                    discription={data.description}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className=" text-center mb:10 w-100 rounded overflow-hidden p-7 shadow-lg ">
+              <div className="px-6 py-6">
+                <p className=" text-3xl mb-2 text-green-800">Isolation</p>
+                {Isolation.map((data) => (
+                  <AccordionCustom
+                    key={data.id}
+                    title={data.title}
+                    discription={data.description}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className=" text-center mb:10 w-100 rounded overflow-hidden p-7 shadow-lg ">
+              <div className="px-6 py-6">
+                <p className=" text-3xl mb-2 text-green-800">Safety Map</p>
+                {SafetyMap.map((data) => (
+                  <AccordionCustom
+                    key={data.id}
                     title={data.title}
                     discription={data.description}
                   />
@@ -204,13 +243,17 @@ const Solution = () => {
 
           <div className="md:grid md:grid-cols-4 md:gap-6 p-10 md:p-0">
             {CompetenceDevelopmentCentreData.map((cards) => (
-              <div className=" text-center mb:10 w-100 mb-10 rounded overflow-hidden p-7 shadow-lg bg-red-50">
+              <div
+                key={cards.id}
+                className=" text-center mb:10 w-100 mb-10 rounded overflow-hidden p-7 shadow-lg bg-red-50"
+              >
                 <div className="px-6 py-6">
                   <p className=" text-3xl mb-2 text-red-800">
                     {cards.cardTitle}
                   </p>
                   {cards.itemList.map((data: any) => (
                     <AccordionCustom
+                      key={data.id}
                       title={data.title}
                       discription={data.description}
                     />
@@ -226,6 +269,7 @@ const Solution = () => {
           <div className="md:grid md:grid-cols-4 md:gap-6 p-10 md:p-0">
             {SupplyChainNetworkData.map((cards) => (
               <div
+                key={cards.id}
                 className=" text-center mb:10 w-100 rounded overflow-hidden p-7 mb-10 shadow-lg "
                 style={{ background: "#F1F5FF" }}
               >
@@ -235,6 +279,7 @@ const Solution = () => {
                   </p>
                   {cards.itemList.map((data: any) => (
                     <AccordionCustom
+                      key={data.id}
                       title={data.title}
                       discription={data.description}
                     />
