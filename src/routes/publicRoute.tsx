@@ -8,6 +8,7 @@ import Error404 from "pages/error404";
 import Faqs from "pages/faqs";
 import Home from "pages/home";
 import Pricing from "pages/home/pricing";
+import Trynow from "pages/tryNow";
 
 const publicRoute = {
   path: "/",
@@ -17,6 +18,10 @@ const publicRoute = {
     {
       index: true,
       element: <Home />,
+    },
+    {
+      path: "trynow",
+      element: <Trynow />,
     },
     {
       path: "about-us",
