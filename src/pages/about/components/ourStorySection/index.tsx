@@ -6,12 +6,12 @@ import StoryImage3 from "assets/images/webp/story3.webp";
 const OurStorySection = () => {
   return (
     <section className="relative">
-      <div className="container px-4 md:px-8 xl:px-4 mx-auto pt-24 md:pt-28 lg:pt-32 pb-40 lg:pb-52 relative">
+      <div className="container px-4 md:px-8 xl:px-4 mx-auto pt-20 md:pt-24 xl:pt-32 pb-40 lg:pb-52 relative">
         <div className="w-full md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto text-center">
           <h2 className="text-primary font-bold text-3xl lg:text-4xl">
             Our Story
           </h2>
-          <p className="mx-auto text-center mt-6 lg:mt-10 text-base leading-7 lg:text-xl lg:leading-8 text-textColor">
+          <p className="mx-auto text-center mt-6 lg:mt-10 leading-7 text-sm-15 lg:text-base lg:leading-7 xl:text-lg xl:leading-7 text-textColor">
             Our journey began with a passion for helping facilities with
             high-valued assets simplify their operations and ensure the
             continuous integrity of their facilities. We recognized the need for
@@ -34,7 +34,7 @@ const OurStorySection = () => {
           </div>
         </div>
         <div className="mt-12 lg:mt-14 xl:mt-20 w-full md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto text-center">
-          <p className="mx-auto text-center mt-6 lg:mt-10 text-base leading-7 lg:text-xl lg:leading-8 text-textColor">
+          <p className="mx-auto text-center mt-6 lg:mt-10 text-sm-15 leading-7 lg:text-base lg:leading-7 xl:text-lg xl:leading-7 text-textColor">
             At our core, we value integrity, efficiency, and excellence. We
             believe that every facility should have access to the best-in-class
             tools and technologies to optimize their operations and achieve
