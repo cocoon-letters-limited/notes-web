@@ -106,7 +106,7 @@ function Collaboration() {
                       />
                     </svg>
                   </button>
-                  <p className="md:text-2xl md:mt-5 md:mb-5 md:w-80 ">
+                  <p className="md:text-1xl md:mt-5 md:mb-5 md:w-80 ">
                     {list.title}
                   </p>
                   <p className=" text-gray-400 md:w-80">

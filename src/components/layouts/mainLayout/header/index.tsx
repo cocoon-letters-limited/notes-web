@@ -4,7 +4,7 @@ import Logo from "assets/NOTEOPX.png";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(true);
 
   return (
     <div>

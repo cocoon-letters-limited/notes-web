@@ -25,14 +25,14 @@ function Hearder() {
               <div className="mt-10">
                 <button
                   type="button"
-                  className="bg-white mr-3 text-blue-700  font-bold py-3 pr-8 pl-8 px-4 rounded"
+                  className="bg-white mr-3 text-blue-700 pl-2 pr-2 py-2 font-bold md:py-3 md:pr-8 md:pl-8 md:px-4 rounded"
                 >
                   {" "}
                   Explore Features
                 </button>
                 <button
                   type="button"
-                  className="  font-bold py-2 px-4 rounded inline-flex items-center text-white"
+                  className="  font-bold md:py-2 md:px-4 rounded inline-flex items-center text-white"
                 >
                   <span>View Solutions</span>
                   <svg
