@@ -1,9 +1,16 @@
+// import { facilityData } from "pages/home/priceData";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Trynow() {
+  const navigate = useNavigate();
   return (
     <div className="container mx-auto ">
-      <div className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">
+      <button
+        onClick={() => navigate("/")}
+        type="button"
+        className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -19,7 +26,7 @@ function Trynow() {
           />
         </svg>
         <p>back</p>
-      </div>
+      </button>
       <p className="mt-10 text-3xl  mb-10">Try for free</p>
       <div className="c">
         <div className="grid md:grid-cols-2 md:gap-6 ">
@@ -37,7 +44,7 @@ function Trynow() {
           </div>
           <div className="">
             <p className="block mb-2 text-sm font-medium text-gray-900 ">
-              Full Name
+              Company Name
             </p>
             <input
               type="email"
@@ -49,7 +56,7 @@ function Trynow() {
           </div>
           <div className="">
             <p className="block mb-2 text-sm font-medium text-gray-900 ">
-              Full Name
+              Company size
             </p>
             <input
               type="email"
@@ -61,7 +68,7 @@ function Trynow() {
           </div>
           <div className="">
             <p className="block mb-2 text-sm font-medium text-gray-900 ">
-              Full Name
+              Industry
             </p>
             <input
               type="email"
@@ -73,7 +80,7 @@ function Trynow() {
           </div>
           <div className="">
             <p className="block mb-2 text-sm font-medium text-gray-900 ">
-              Full Name
+              Billing Address
             </p>
             <input
               type="email"
@@ -85,7 +92,7 @@ function Trynow() {
           </div>
           <div className="">
             <p className="block mb-2 text-sm font-medium text-gray-900 ">
-              Full Name
+              Company Email address
             </p>
             <input
               type="email"
@@ -109,7 +116,7 @@ function Trynow() {
             className="text-white w-fit bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg
              text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
-            Cancel
+            Request access
           </button>
         </div>
       </div>

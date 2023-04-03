@@ -206,7 +206,7 @@ const Solution = () => {
                 ))}
               </div>
             </div>
-            <div className=" text-center mb:10 w-100 rounded overflow-hidden p-7 bg-green-50  shadow-lg ">
+            <div className=" text-center mb:10 w-100 rounded overflow-hidden p-7 md:mt-0 mt-10 mb-10 md:mb-0 bg-green-50  shadow-lg ">
               <div className="px-6 py-6">
                 <p className=" text-3xl mb-2 text-green-800">Risk Assessment</p>
                 {RiskAssessment.map((data) => (
@@ -218,7 +218,7 @@ const Solution = () => {
                 ))}
               </div>
             </div>
-            <div className=" text-center mb:10 w-100 rounded overflow-hidden bg-green-50  p-7 shadow-lg ">
+            <div className=" text-center mb:10 w-100 rounded overflow-hidden bg-green-50 mb-10 md:mb-0 p-7 shadow-lg ">
               <div className="px-6 py-6">
                 <p className=" text-3xl mb-2 text-green-800">Isolation</p>
                 {Isolation.map((data) => (

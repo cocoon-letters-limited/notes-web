@@ -3,7 +3,7 @@ import { BusinessData, EnterpriseData, facilityData } from "./priceData";
 function Pricing() {
   return (
     <div>
-      <div className="text-center p-20 ">
+      <div className="text-center md:p-20 ">
         <p className="text-4xl font-bold text-blue-700">Our pricing</p>
       </div>
 

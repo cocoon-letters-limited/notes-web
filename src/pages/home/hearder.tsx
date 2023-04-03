@@ -8,20 +8,21 @@ function Hearder() {
         <div className="">
           <div className="bg-blue-700 pb-48 pt-20 h-auto w-full  text-center flex justify-center ">
             <div className="">
-              <p className="font-bold text-6xl text-white mt-10">
-                Say Hello to Operational <br />{" "}
+              <p className="font-bold text-6xl  mt-10 p-1  text-white ">
+                Say Hello to Operational <br />
                 <span className="text-yellow-400">Excellence</span>
               </p>
-              <p className="text-gray-300 mt-10 mb-10 ">
-                Ensure asset reliability and operational excellence with our
-                cutting-edge predictive maintenance and
-                <br />
-                data-driven analytic models for the increased operational
-                efficiency and optimized performance of
-                <br />
-                your high-value physical assets and business workflows.
-              </p>
-              <div className="">
+              <div className="flex justify-center m-2">
+                <p className="text-gray-300 md:w-2/6 ">
+                  Ensure asset reliability and operational excellence with our
+                  cutting-edge predictive maintenance and data-driven analytic
+                  models for the increased operational efficiency and optimized
+                  performance of your high-value physical assets and business
+                  workflows.
+                </p>
+              </div>
+
+              <div className="mt-10">
                 <button
                   type="button"
                   className="bg-white mr-3 text-blue-700  font-bold py-3 pr-8 pl-8 px-4 rounded"
@@ -54,7 +55,7 @@ function Hearder() {
           </div>
           <div className="md:flex md:justify-center ">
             <img
-              className="bg-yellow-50 md:w-50 -mt-20  rounded-lg"
+              className="bg-yellow-50 md:w-50 -mt-20 object-fit rounded-lg"
               src={production1}
               alt="product"
               sizes=""
