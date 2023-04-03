@@ -4,7 +4,7 @@ import ThumbDownIcon from "components/svg/thumbDownIcon";
 
 const Avatar = () => {
   return (
-    <div className="w-3/12 flex items-center">
+    <div className="w-full md:w-3/12 flex items-center">
       <div className="w-10 h-10 rounded-full bg-black" />
       <div className="flex-1 pl-3">
         <p className="text-primary font-bold text-sm lg:text-sm-15">
@@ -18,7 +18,7 @@ const Avatar = () => {
 
 const Tags = () => {
   return (
-    <div className="flex-1 flex items-center space-x-3">
+    <div className="mt-4 md:mt-0 flex-1 flex items-center space-x-3">
       <p className="text-xs lg:text-sm font-bold text-[#051738] bg-[#C9EBFF] rounded-full px-4 py-2">
         Wisdom Odogwu
       </p>
@@ -50,7 +50,7 @@ const DetailsSection = () => {
       </div>
 
       <div className="mt-6">
-        <p className="text-[#3F3F3F] text-sm-15 lg:text-base lg:leading-7">
+        <p className="text-[#3F3F3F] text-sm-15 xl:text-base lg:leading-7">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est
           sapien mi, sed risus amet malesuada semper purus. Non adipiscing
           fermentum praesent elementum diam ultrices tempor. Congue cursus et
