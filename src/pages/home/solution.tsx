@@ -25,7 +25,14 @@ function AccordionCustom({
   discription: string;
 }) {
   return (
-    <Accordion style={{ background: "none", boxShadow: "none" }}>
+    <Accordion
+      square
+      style={{
+        background: "none",
+        boxShadow: "none",
+        border: "none",
+      }}
+    >
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1a-content"
@@ -187,7 +194,7 @@ const Solution = () => {
           </div>
 
           <div className="md:grid md:grid-cols-4 md:gap-6 p-10 md:p-0">
-            <div className=" text-center mb:10 w-100 rounded overflow-hidden p-7 shadow-lg ">
+            <div className=" text-center mb:10 w-100 rounded overflow-hidden bg-green-50 p-7 shadow-lg ">
               <div className="px-6 py-6">
                 <p className=" text-3xl mb-2 text-green-800">ePTW</p>
                 {ePTWData.map((data) => (
@@ -199,7 +206,7 @@ const Solution = () => {
                 ))}
               </div>
             </div>
-            <div className=" text-center mb:10 w-100 rounded overflow-hidden p-7 shadow-lg ">
+            <div className=" text-center mb:10 w-100 rounded overflow-hidden p-7 bg-green-50  shadow-lg ">
               <div className="px-6 py-6">
                 <p className=" text-3xl mb-2 text-green-800">Risk Assessment</p>
                 {RiskAssessment.map((data) => (
@@ -211,7 +218,7 @@ const Solution = () => {
                 ))}
               </div>
             </div>
-            <div className=" text-center mb:10 w-100 rounded overflow-hidden p-7 shadow-lg ">
+            <div className=" text-center mb:10 w-100 rounded overflow-hidden bg-green-50  p-7 shadow-lg ">
               <div className="px-6 py-6">
                 <p className=" text-3xl mb-2 text-green-800">Isolation</p>
                 {Isolation.map((data) => (
@@ -223,7 +230,7 @@ const Solution = () => {
                 ))}
               </div>
             </div>
-            <div className=" text-center mb:10 w-100 rounded overflow-hidden p-7 shadow-lg ">
+            <div className=" text-center mb:10 w-100 rounded overflow-hidden bg-green-50  p-7 shadow-lg ">
               <div className="px-6 py-6">
                 <p className=" text-3xl mb-2 text-green-800">Safety Map</p>
                 {SafetyMap.map((data) => (

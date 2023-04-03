@@ -67,17 +67,17 @@ function NotesSection() {
               <div className="px-6 py-6">
                 <div className="flex ">
                   <img
-                    className="rounded-full h-20 w-20"
+                    className="rounded-full h-16 object-none w-16"
                     src={production2}
                     alt="product"
                     sizes=""
                   />
                   <div className="ml-5 mt-3">
-                    <p className="text-2xl font-semibold">Tokunbo Odebunmi</p>
+                    <p className="text-1xl font-semibold">Tokunbo Odebunmi</p>
                     <p className="text-slate-400">(Health & Safety Manager)</p>
                   </div>
                 </div>
-                <p className="text-gray-400 mt-5 mb-5 text-xl">
+                <p className="text-gray-400 mt-5 mb-5 ">
                   Since implementing the NoteOpX Safety Management System, our
                   organization has seen a drastic reduction in accidents and
                   incidents. The user-friendly interface and customizable
@@ -90,18 +90,18 @@ function NotesSection() {
               <div className="px-6 py-6">
                 <div className="flex ">
                   <img
-                    className="rounded-full h-20 w-20"
+                    className="rounded-full object-none h-16 w-16"
                     src={production2}
                     alt="product"
                     sizes=""
                   />
                   <div className="ml-5 mt-3">
-                    <p className="text-2xl font-semibold">Alex Zoric</p>
+                    <p className="text-1xl font-semibold">Alex Zoric</p>
                     <p className="text-slate-400">(Offshore Asset Manager)</p>
                   </div>
                 </div>
-                <p className="text-gray-400 mt-5 mb-5 text-xl">
-                  "Thanks to this software, we now have full control over our
+                <p className="text-gray-400 mt-5 mb-5 ">
+                  Thanks to this software, we now have full control over our
                   maintenance processes. Approvals that used to take days now
                   take minutes with its streamlined digital authorization tool.
                   NoteOpX has reduced our downtime and saved us costs, making it
@@ -113,13 +113,13 @@ function NotesSection() {
               <div className="px-6 py-6">
                 <div className="flex ">
                   <img
-                    className="rounded-full h-20 w-20"
+                    className="rounded-full h-16 object-none w-12"
                     src={production2}
                     alt="product"
                     sizes=""
                   />
                   <div className="ml-5 mt-3">
-                    <p className="text-2xl font-semibold">
+                    <p className="text-1xl font-semibold">
                       Sheik Sameer Mohammed
                     </p>
                     <p className="text-slate-400">
@@ -127,7 +127,7 @@ function NotesSection() {
                     </p>
                   </div>
                 </div>
-                <p className="text-gray-400 mt-5 mb-5 text-xl">
+                <p className="text-gray-400 mt-5 mb-5 ">
                   Ever since we implemented NoteOpX, we've seen a significant
                   reduction in unexpected equipment downtime. The ability to
                   identify and address potential failures before they occur has
