@@ -28,7 +28,7 @@ const DashboardHeader = () => {
       {/* mobile view */}
       <div className="block lg:hidden w-5/12">
         <div className="">
-          <img src={Logo} className="w-20 md:w-14" alt="Logo" />
+          <img src={Logo} className="w-20 md:w-24 lg:w-14" alt="Logo" />
           <span className="sr-only">iNote</span>
         </div>
       </div>
