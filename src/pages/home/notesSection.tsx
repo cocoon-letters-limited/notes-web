@@ -85,7 +85,7 @@ function NotesSection() {
       >
         <div className=" mb:p-0 md:container md:mx-auto">
           <div className="flex justify-between">
-            <p className="md:text-5xl font-bold text-blue-600 md:p-0 p-10  text-2xl">
+            <p className="md:text-5xl  font-bold text-blue-600 md:p-0 p-10  text-sm ">
               NOTE is loved by users
             </p>
             <div className="flex md:mt-0 mt-10 mr-5 md:mr-0">
@@ -109,7 +109,7 @@ function NotesSection() {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="fill-current w-8 h-8  "
+                  className="fill-current md:w-8 md:h-8 w-4 h-4 "
                 >
                   <path
                     strokeLinecap="round"
@@ -137,7 +137,7 @@ function NotesSection() {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="fill-current w-8 h-8  "
+                  className="fill-current  md:w-8 md:h-8 w-4 h-4 "
                 >
                   <path
                     strokeLinecap="round"
@@ -149,28 +149,30 @@ function NotesSection() {
             </div>
           </div>
           {noteChange ? (
-            <div className="md:grid grid-cols-3 gap-10 mt-10 ">
+            <div className="md:grid grid-cols-3 gap-10 md:mt-10 ">
               {noteList.map((note) => (
                 <div
                   key={note.id}
                   className="rounded-lg py-2 px-4 md:m-0 m-10 shadow-lg bg-white"
                 >
-                  <div className="px-6 py-6">
+                  <div className="md:px-6 md:py-6 py-3">
                     <div className="flex ">
                       <img
-                        className="rounded-full h-16 object-none w-16"
+                        className="rounded-full md:h-16 h-8 md:mt-0 mt-2 md:mr-0 mr-3 w-8 object-none md:w-16"
                         src={production2}
                         alt="product"
                         sizes=""
                       />
-                      <div className="ml-5 mt-3">
-                        <p className="text-1xl font-semibold">
+                      <div className="md:ml-5 md:mt-3 mt-2">
+                        <p className="md:text-1xl font-semibold text-sm">
                           {note.username}
                         </p>
-                        <p className="text-slate-400">{note.subtitle}</p>
+                        <p className="text-slate-400 md:text-base text-xs">
+                          {note.subtitle}
+                        </p>
                       </div>
                     </div>
-                    <p className="text-gray-400 mt-5 mb-5 ">
+                    <p className="text-gray-400 mt-5 mb-5 md:text-base text-xs">
                       {note.description}
                     </p>
                     <Rating
@@ -189,22 +191,24 @@ function NotesSection() {
                   key={note.id}
                   className="rounded-lg py-2 px-4 md:m-0 m-10 shadow-lg bg-white"
                 >
-                  <div className="px-6 py-6">
+                  <div className="md:px-6 md:py-6 py-3">
                     <div className="flex ">
                       <img
-                        className="rounded-full h-16 object-none w-16"
+                        className="rounded-full md:h-16 h-8 md:mt-0 mt-2 md:mr-0 mr-3 w-8 object-none md:w-16"
                         src={production2}
                         alt="product"
                         sizes=""
                       />
-                      <div className="ml-5 mt-3">
-                        <p className="text-1xl font-semibold">
+                      <div className="md:ml-5 md:mt-3 mt-2">
+                        <p className="md:text-1xl font-semibold text-sm">
                           {note.username}
                         </p>
-                        <p className="text-slate-400">{note.subtitle}</p>
+                        <p className="text-slate-400 md:text-base text-xs">
+                          {note.subtitle}
+                        </p>
                       </div>
                     </div>
-                    <p className="text-gray-400 mt-5 mb-5 ">
+                    <p className="text-gray-400 mt-5 mb-5 md:text-base text-xs">
                       {note.description}
                     </p>
                     <Rating

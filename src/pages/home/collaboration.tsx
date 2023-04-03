@@ -40,7 +40,7 @@ function Collaboration() {
         <div className="md:flex ">
           <div className="md:w-1/1 md:pl-32 md:mr-32 p-10 mb:p-0 md:container md:mx-auto ">
             <p className="md:text-4xl text-blue-700 md:mt-48  font-bold">
-              Save more, Make more, <br /> Be more{" "}
+              Save more, Make more, Be more
             </p>
             <div className="flex mt-5 mb-5">
               <div className="flex">
@@ -69,7 +69,7 @@ function Collaboration() {
                   sizes=""
                 />
               </div>
-              <small className="md:ml-5 text-sm-12 ml-2">
+              <small className="md:ml-5 text-xs ml-5">
                 NoteOpX has helped more than 1,000 businesses eliminate waste
                 from their operational processes.
               </small>
@@ -77,7 +77,7 @@ function Collaboration() {
             <Link to="/trynow">
               <button
                 type="button"
-                className="bg-blue-700 hover:bg-blue-200 mr-3 text-white  font-bold md:py-3 md:pr-8 md:pl-8 md;px-4 p-2 rounded"
+                className="bg-blue-700 hover:bg-blue-200 mr-3 text-white text-sm md:text-base font-bold md:py-3 md:pr-8 md:pl-8 md;px-4 p-2 rounded"
               >
                 Try for free
               </button>
@@ -88,7 +88,7 @@ function Collaboration() {
                 <div className="md:mt-5 mt-5 mb-5 md:m-5 " key={list.id}>
                   <button
                     type="button"
-                    className=" rounded-full p-5  flex text-blue-700 items-center justify-center"
+                    className=" rounded-full md:p-5 p-2 flex text-blue-700 items-center justify-center"
                     style={{ background: " #EAEFF8" }}
                   >
                     <svg
@@ -97,7 +97,7 @@ function Collaboration() {
                       viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      className="md:w-6 md:h-6 w-3 h-3"
                     >
                       <path
                         strokeLinecap="round"
@@ -106,10 +106,10 @@ function Collaboration() {
                       />
                     </svg>
                   </button>
-                  <p className="md:text-1xl md:mt-5 md:mb-5 md:w-80 ">
+                  <p className="md:text-1xl text-sm md:mt-5 mt-2 md:mb-3 md:w-80 ">
                     {list.title}
                   </p>
-                  <p className=" text-gray-400 md:w-80">
+                  <p className=" text-gray-400 md:w-80 md:text-base text-xs">
                     Odio euismod lacinia at quis. Amet purus gravida quis
                     blandit turpis.
                   </p>

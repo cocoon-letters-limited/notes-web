@@ -8,12 +8,12 @@ function Hearder() {
         <div className="">
           <div className="bg-blue-700 pb-48 pt-20 h-auto w-full  text-center flex justify-center ">
             <div className="">
-              <p className="font-bold text-6xl  mt-10 p-1  text-white ">
-                Say Hello to Operational <br />
-                <span className="text-yellow-400">Excellence</span>
+              <p className="font-bold md:text-6xl  mt-10 p-1  text-white ">
+                Say Hello to
+                <span className="text-yellow-400 ml-1">Excellence</span>
               </p>
               <div className="flex justify-center m-2">
-                <p className="text-gray-300 md:w-2/6 ">
+                <p className="text-gray-300 text-xs md:text-sm md:w-2/6 ">
                   Ensure asset reliability and operational excellence with our
                   cutting-edge predictive maintenance and data-driven analytic
                   models for the increased operational efficiency and optimized
@@ -25,14 +25,13 @@ function Hearder() {
               <div className="mt-10">
                 <button
                   type="button"
-                  className="bg-white mr-3 text-blue-700 pl-2 pr-2 py-2 font-bold md:py-3 md:pr-8 md:pl-8 md:px-4 rounded"
+                  className="bg-white mr-3 md:text-base text-xs text-blue-700 pl-2 pr-2 py-2 font-bold md:py-3 md:pr-8 md:pl-8 md:px-4 rounded"
                 >
-                  {" "}
                   Explore Features
                 </button>
                 <button
                   type="button"
-                  className="  font-bold md:py-2 md:px-4 rounded inline-flex items-center text-white"
+                  className="  font-bold md:py-2 md:px-4  md:text-base text-xs rounded inline-flex items-center text-white"
                 >
                   <span>View Solutions</span>
                   <svg
@@ -68,10 +67,10 @@ function Hearder() {
               <div className="md:grid md:grid-cols-2 ml-5 md:gap-10 mt-10">
                 <div>
                   <h1 className="font-medium text-2xl">Tools</h1>
-                  <p className="text-6xl  mt-3 mb-3 font-semibold ">
+                  <p className="md:text-6xl   mt-3 mb-3 font-semibold ">
                     Continuous asset integrity
                   </p>
-                  <p className="md:w-4/5">
+                  <p className="md:w-4/5 text-sm md:text-base">
                     unlock the power reliable assets from our range of advance
                     technologies designed to ensure the wellbeing of all
                     enterprise assets and prolong their productive life-span.

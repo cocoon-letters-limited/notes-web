@@ -56,7 +56,7 @@ function Logolist() {
           className=" font-bold mr-5 mb-5 rounded-lg w-fit h-fit"
         >
           <img
-            className="md:h-20 h-10"
+            className="md:h-20 h-8"
             src={data.imagePath}
             alt="product"
             sizes=""
