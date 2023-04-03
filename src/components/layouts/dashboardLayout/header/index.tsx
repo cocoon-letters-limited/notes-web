@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import AvatarImage from "assets/images/webp/avatar.png";
 import LogoutIcon from "components/svg/logoutIcon";
 import SearchIcon from "components/svg/searchIcon";
-import Logo from "assets/images/svg/logo/eam_logo.svg";
+import Logo from "assets/NOTEOPX.png";
 
 const DashboardHeader = () => {
   return (
@@ -28,7 +28,7 @@ const DashboardHeader = () => {
       {/* mobile view */}
       <div className="block lg:hidden w-5/12">
         <div className="">
-          <img src={Logo} className="w-14" alt="Logo" />
+          <img src={Logo} className="w-20 md:w-14" alt="Logo" />
           <span className="sr-only">iNote</span>
         </div>
       </div>
@@ -48,8 +48,8 @@ const DashboardHeader = () => {
               />
             </div>
 
-            <div className="hidden lg:flex pl-3 text-sm lg:text-base text-default items-center">
-              <span>David</span>
+            <div className="flex pl-3 text-sm lg:text-base text-default items-center">
+              <span className="hidden lg:block">David</span>
               <span className="pl-1">
                 <svg
                   width="18"
@@ -68,7 +68,7 @@ const DashboardHeader = () => {
             </div>
           </div>
 
-          <button type="button" className="pl-4 lg:pl-0">
+          <button type="button" className="hidden lg:block pl-4 lg:pl-0">
             <LogoutIcon />
           </button>
         </div>

@@ -122,7 +122,7 @@ const NoteSection = () => {
     <>
       <div className="relative mt-8 md:-mt-12">
         <div className="flex md:justify-end">
-          <div className="px-4 py-3 border border-[#B1BFD9] rounded-lg text-base lg:text-lg text-[#051738]">
+          <div className="px-4 py-2 md:py-3 border border-[#B1BFD9] rounded-lg text-base lg:text-lg text-[#051738]">
             <DropDown
               selected={selectedOption}
               options={options}
@@ -134,7 +134,7 @@ const NoteSection = () => {
             <button
               type="button"
               onClick={() => setShowNewDropdownOption(!showNewDropdownOption)}
-              className="py-3 px-6 rounded-lg bg-primary text-white text-base lg:text-lg"
+              className="py-2 md:py-3 px-6 rounded-lg bg-primary text-white text-base lg:text-lg"
             >
               New
             </button>
