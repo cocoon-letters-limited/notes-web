@@ -13,13 +13,13 @@ type IconCardProps = {
 
 const IconCard = ({ icon, color }: IconCardProps) => {
   return (
-    <div className="relative flex items-center justify-center rounded-3xl h-14 w-14">
+    <div className="relative flex items-center justify-center rounded-3xl h-12 xl:h-14 w-12 xl:w-14">
       <div
         className="absolute top-0 left-0 right-0 w-full h-full rounded-3xl"
         style={{ background: color || "#F16B40", opacity: ".2" }}
       />
       <div
-        className="flex items-center justify-center bg-[#F16B40] rounded-2xl h-10 w-10"
+        className="flex items-center justify-center bg-[#F16B40] rounded-2xl h-8 xl:h-10 w-8 xl:w-10"
         style={{ background: color || "#F16B40" }}
       >
         {icon || <FlagIcon />}
@@ -57,7 +57,7 @@ const SummaryCard = ({
     >
       <div className="flex items-center">
         <IconCard icon={icon} color={color} />
-        <p className="flex-1 pl-3 text-base lg:text-lg text-[#224280] font-bold">
+        <p className="flex-1 pl-3 text-base xl:text-lg text-[#224280] font-bold">
           {name}
         </p>
       </div>
