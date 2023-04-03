@@ -60,12 +60,12 @@ const Solution = () => {
         </p>
       </div>
 
-      <div className="md:container md:mx-auto mt-20">
+      <div className="md:container md:mx-auto ">
         <div>
-          <div className="md:grid md:grid-cols-3  ">
+          <div className="md:grid md:grid-cols-3 gap-5 ">
             <div>
               <img
-                className="bg-yellow-50 md:w-50 ml-10 mb-10 rounded"
+                className="bg-yellow-50 md:w-50 object-fit w-screen  rounded"
                 src={rectangle1059}
                 alt="product"
                 sizes=""
@@ -125,8 +125,8 @@ const Solution = () => {
           </div>
 
           <div className="md:grid md:grid-cols-4 md:gap-6 p-10 md:p-0">
-            <div className=" text-center rounded mb-10 overflow-hidden p-7  shadow-lg bg-orange-50">
-              <div className="px-6 py-6">
+            <div className=" text-center rounded mb-10 overflow-hidden  md:p1-5 shadow-lg bg-orange-50">
+              <div className="px-3 py-6">
                 <p className=" text-3xl mb-2 text-orange-800"> Asset</p>
                 <AccordionCustom
                   title="People"
@@ -144,8 +144,8 @@ const Solution = () => {
                 />
               </div>
             </div>
-            <div className="mb-10 text-center rounded overflow-hidden p-7 shadow-lg bg-orange-50">
-              <div className="px-6 py-6">
+            <div className="mb-10 text-center rounded overflow-hidden  shadow-lg bg-orange-50">
+              <div className="px-3 py-6">
                 <p className=" text-3xl mb-2 text-orange-800"> Maintenance</p>
                 <AccordionCustom
                   title="Preventive"
@@ -163,8 +163,8 @@ const Solution = () => {
                 />
               </div>
             </div>
-            <div className=" mb-10 text-center rounded overflow-hidden p-7 shadow-lg  bg-orange-50">
-              <div className="px-6 py-6">
+            <div className=" mb-10 text-center rounded overflow-hidden  shadow-lg  bg-orange-50">
+              <div className="px-3 py-6">
                 <p className=" text-3xl mb-2 text-orange-800"> Work </p>
                 {WorkData.map((data) => (
                   <AccordionCustom
@@ -175,8 +175,8 @@ const Solution = () => {
                 ))}
               </div>
             </div>
-            <div className=" mb-10 text-center rounded overflow-hidden p-7 shadow-lg bg-orange-50">
-              <div className="px-6 py-6">
+            <div className=" mb-10 text-center rounded overflow-hidden  shadow-lg bg-orange-50">
+              <div className="px-3 py-6">
                 <p className=" text-3xl mb-2 text-orange-800"> Report</p>
                 {ReportData.map((data) => (
                   <AccordionCustom
@@ -194,8 +194,8 @@ const Solution = () => {
           </div>
 
           <div className="md:grid md:grid-cols-4 md:gap-6 p-10 md:p-0">
-            <div className=" text-center mb:10 w-100 rounded overflow-hidden bg-green-50 p-7 shadow-lg ">
-              <div className="px-6 py-6">
+            <div className=" text-center mb:10 w-100 rounded overflow-hidden bg-green-50  shadow-lg ">
+              <div className="px-3 py-6">
                 <p className=" text-3xl mb-2 text-green-800">ePTW</p>
                 {ePTWData.map((data) => (
                   <AccordionCustom
@@ -206,8 +206,8 @@ const Solution = () => {
                 ))}
               </div>
             </div>
-            <div className=" text-center mb:10 w-100 rounded overflow-hidden p-7 md:mt-0 mt-10 mb-10 md:mb-0 bg-green-50  shadow-lg ">
-              <div className="px-6 py-6">
+            <div className=" text-center mb:10 w-100 rounded overflow-hidden  md:mt-0 mt-10 mb-10 md:mb-0 bg-green-50  shadow-lg ">
+              <div className="px-3 py-6">
                 <p className=" text-3xl mb-2 text-green-800">Risk Assessment</p>
                 {RiskAssessment.map((data) => (
                   <AccordionCustom
@@ -218,8 +218,8 @@ const Solution = () => {
                 ))}
               </div>
             </div>
-            <div className=" text-center mb:10 w-100 rounded overflow-hidden bg-green-50 mb-10 md:mb-0 p-7 shadow-lg ">
-              <div className="px-6 py-6">
+            <div className=" text-center mb:10 w-100 rounded overflow-hidden bg-green-50 mb-10 md:mb-0  shadow-lg ">
+              <div className="px-3 py-6">
                 <p className=" text-3xl mb-2 text-green-800">Isolation</p>
                 {Isolation.map((data) => (
                   <AccordionCustom
@@ -230,8 +230,8 @@ const Solution = () => {
                 ))}
               </div>
             </div>
-            <div className=" text-center mb:10 w-100 rounded overflow-hidden bg-green-50  p-7 shadow-lg ">
-              <div className="px-6 py-6">
+            <div className=" text-center mb:10 w-100 rounded overflow-hidden bg-green-50  shadow-lg ">
+              <div className="px-3 py-6">
                 <p className=" text-3xl mb-2 text-green-800">Safety Map</p>
                 {SafetyMap.map((data) => (
                   <AccordionCustom
@@ -252,9 +252,9 @@ const Solution = () => {
             {CompetenceDevelopmentCentreData.map((cards) => (
               <div
                 key={cards.id}
-                className=" text-center mb:10 w-100 mb-10 rounded overflow-hidden p-7 shadow-lg bg-red-50"
+                className=" text-center mb:10 w-100 mb-10 rounded overflow-hidden  shadow-lg bg-red-50"
               >
-                <div className="px-6 py-6">
+                <div className="px-3 py-6">
                   <p className=" text-3xl mb-2 text-red-800">
                     {cards.cardTitle}
                   </p>
@@ -277,10 +277,10 @@ const Solution = () => {
             {SupplyChainNetworkData.map((cards) => (
               <div
                 key={cards.id}
-                className=" text-center mb:10 w-100 rounded overflow-hidden p-7 mb-10 shadow-lg "
+                className=" text-center mb:10 w-100 rounded overflow-hidden  mb-10 shadow-lg "
                 style={{ background: "#F1F5FF" }}
               >
-                <div className="px-6 py-6">
+                <div className="px-3 py-6">
                   <p className=" text-3xl mb-2 text-blue-800">
                     {cards.cardTitle}
                   </p>

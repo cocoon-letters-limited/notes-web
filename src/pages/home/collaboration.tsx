@@ -39,7 +39,7 @@ function Collaboration() {
       <div className=" md:p-0">
         <div className="md:flex ">
           <div className="md:w-1/1 md:pl-32 md:mr-32 p-10 mb:p-0 md:container md:mx-auto ">
-            <p className="text-4xl text-blue-700 md:mt-48  font-bold">
+            <p className="md:text-4xl text-blue-700 md:mt-48  font-bold">
               Save more, Make more, <br /> Be more{" "}
             </p>
             <div className="flex mt-5 mb-5">
@@ -69,7 +69,7 @@ function Collaboration() {
                   sizes=""
                 />
               </div>
-              <small className="md:ml-5 text-sm-15">
+              <small className="md:ml-5 text-sm-12 ml-2">
                 NoteOpX has helped more than 1,000 businesses eliminate waste
                 from their operational processes.
               </small>
@@ -77,15 +77,15 @@ function Collaboration() {
             <Link to="/trynow">
               <button
                 type="button"
-                className="bg-blue-700 hover:bg-blue-200 mr-3 text-white  font-bold py-3 pr-8 pl-8 px-4 rounded"
+                className="bg-blue-700 hover:bg-blue-200 mr-3 text-white  font-bold md:py-3 md:pr-8 md:pl-8 md;px-4 p-2 rounded"
               >
                 Try for free
               </button>
             </Link>
 
-            <div className="md:grid-cols-2 md:grid md:p-0 p-10 ">
+            <div className="md:grid-cols-2 md:grid md:p-0 p-2 md:m-10 ">
               {data.map((list) => (
-                <div className="md:mt-20 mt-5 mb-5 md:m-10" key={list.id}>
+                <div className="md:mt-5 mt-5 mb-5 md:m-5 " key={list.id}>
                   <button
                     type="button"
                     className=" rounded-full p-5  flex text-blue-700 items-center justify-center"
@@ -106,8 +106,10 @@ function Collaboration() {
                       />
                     </svg>
                   </button>
-                  <p className="text-2xl md:mt-5 md:mb-5">{list.title}</p>
-                  <p className=" text-gray-400">
+                  <p className="md:text-2xl md:mt-5 md:mb-5 md:w-80 ">
+                    {list.title}
+                  </p>
+                  <p className=" text-gray-400 md:w-80">
                     Odio euismod lacinia at quis. Amet purus gravida quis
                     blandit turpis.
                   </p>
