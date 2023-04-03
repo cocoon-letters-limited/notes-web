@@ -13,7 +13,7 @@ function Pricing() {
             Facility
           </h5>
           <div className="flex justify-center items-baseline text-blue-700 ">
-            <span className="text-3xl font-extrabold tracking-blue-700">
+            <span className="md:text-1xl font-extrabold tracking-blue-700">
               $5,000 Upfront + $40/Users
             </span>
             <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
@@ -94,7 +94,7 @@ function Pricing() {
           </h5>
           <div className="flex justify-center items-baseline text-white ">
             {/* <span className="text-2xl font-semibold">$</span>  */}
-            <span className="text-3xl font-extrabold tracking-blue-700">
+            <span className="text-1xl font-extrabold tracking-blue-700">
               $10,000 Upfront + $100/User/Month
               {/* <span className="text-2xl font-semibold">$</span> */}
             </span>
@@ -140,7 +140,7 @@ function Pricing() {
             Enterprise
           </h5>
           <div className="flex justify-center items-baseline text-blue-700 ">
-            <span className="text-3xl font-extrabold tracking-blue-700">
+            <span className="text-1xl font-extrabold tracking-blue-700">
               {/* $5,000 Upfront + $40/Users */}
               Contact Sales
             </span>
