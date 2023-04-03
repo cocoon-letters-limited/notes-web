@@ -37,8 +37,10 @@ function Pricing() {
                       key={listItem.id}
                       className="flex justify-between  mt-3 "
                     >
-                      <p className="text-blue-700">{listItem.itemTitle}</p>
-                      <p>{listItem.itemValue}</p>
+                      <small className="text-blue-700">
+                        {listItem.itemTitle}
+                      </small>
+                      <small>{listItem.itemValue}</small>
                     </li>
                   ))}
                 </ul>
@@ -123,8 +125,8 @@ function Pricing() {
                         key={listItem.id}
                         className="flex justify-between text-white mt-3 text-white"
                       >
-                        <p>{listItem.itemTitle}</p>
-                        <p>{listItem.itemValue}</p>
+                        <small>{listItem.itemTitle}</small>
+                        <small>{listItem.itemValue}</small>
                       </ul>
                     ),
                   )}
@@ -163,9 +165,11 @@ function Pricing() {
                       className="flex justify-between  mb-2 "
                     >
                       <div className="flex">
-                        <p className="text-blue-700">{listItem.itemTitle}</p>
+                        <small className="text-blue-700">
+                          {listItem.itemTitle}
+                        </small>
                       </div>
-                      <p>{listItem.itemValue}</p>
+                      <small>{listItem.itemValue}</small>
                     </li>
                   ))}
                 </ul>

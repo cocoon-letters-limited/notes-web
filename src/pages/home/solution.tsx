@@ -83,7 +83,7 @@ const Solution = () => {
                   lifespan of your assets.
                 </p>
               </div>
-              <div className=" border-r-2 mt-10 mb-5">
+              <div className=" md:border-r-2 mt-10 mb-5">
                 <h5 className="text-6xl font-extrabold text-purple-700 ">02</h5>
                 <p className="text-2xl pt-5 pb-5">Safety Management System</p>
                 <p className="text-gray-700">
