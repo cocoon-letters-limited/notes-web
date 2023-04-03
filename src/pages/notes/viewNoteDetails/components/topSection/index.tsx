@@ -9,7 +9,7 @@ const GoBackButton = () => {
       <button
         onClick={() => navigate(-1)}
         type="button"
-        className="border-2 border-primary px-2 py-2 rounded-lg focus:outline-none ring-0"
+        className="border md:border-2 border-primary px-1 md:px-2 py-1 md:py-2 rounded-lg focus:outline-none ring-0"
       >
         <svg
           className="w-4 h-4"
@@ -99,7 +99,7 @@ const TopSection = () => {
         <GoBackButton />
         <Title />
       </div>
-      <div className="mt-6 lg:mt-0 flex-1 flex justify-end">
+      <div className="mt-6 xl:mt-0 flex-1 flex justify-end">
         <div className="flex space-x-3">
           <EditButton />
           <DeleteButton />
