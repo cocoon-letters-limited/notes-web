@@ -68,15 +68,15 @@ const MapSection = () => {
 
   return (
     <div className="relative mt-6">
-      <h3 className="text-lg lg:text-xl text-textColor">
+      <h3 className="text-sm-15 lg:text-base xl:text-lg text-textColor">
         Summary of your current work status
       </h3>
       <div className="mt-6">
-        <div className="relative w-full h-full">
+        <div className="relative w-full h-[42rem]">
           <img
             src={NoteImage}
             alt="Note"
-            className="h-[42rem] w-full object-contain"
+            className="h-full w-full object-cover"
           />
 
           <div className="absolute top-2/4 left-1/4">
