@@ -55,7 +55,12 @@ function Logolist() {
           key={data.id}
           className=" font-bold mr-5 mb-5 rounded-lg w-fit h-fit"
         >
-          <img className="h-20" src={data.imagePath} alt="product" sizes="" />
+          <img
+            className="md:h-20 h-10"
+            src={data.imagePath}
+            alt="product"
+            sizes=""
+          />
         </button>
       ))}
     </div>
