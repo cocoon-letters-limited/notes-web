@@ -54,7 +54,9 @@ const Solution = () => {
   return (
     <div>
       <div className="text-center p-10">
-        <p className="text-4xl font-bold text-blue-600">Take total control</p>
+        <p className="md:text-4xl font-bold text-blue-600">
+          Take total control
+        </p>
         <p className="text-gray-400 m-5">
           Optimize Asset Management with Enhanced Visibility and Control.
         </p>

@@ -4,7 +4,7 @@ function Pricing() {
   return (
     <div>
       <div className="text-center md:p-20 ">
-        <p className="text-4xl font-bold text-blue-700">Our pricing</p>
+        <p className="md:text-4xl font-bold text-blue-700">Our pricing</p>
       </div>
 
       <div className="md:grid md:grid-cols-3  container mx-auto gap-10 p-4 md:p-0 mb-20">
@@ -22,7 +22,8 @@ function Pricing() {
           </div>
           <button
             type="button"
-            className="text-white bg-blue-600 hover:bg-blue-700  mt-10 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium 
+            className="text-white bg-blue-600 hover:bg-blue-700  mt-10 focus:ring-4 
+            focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium 
             rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
           >
             Choose plan

@@ -33,19 +33,19 @@ const data: Array<{ title: string; description: string; id: number }> = [
       "   Odio euismod lacinia at quis. Amet purus gravida quis blandit  turpis.",
   },
 ];
-function Collaboration() {
+function SaveMore() {
   return (
     <div className="md:mt-10">
       <div className=" md:p-0">
         <div className="md:flex ">
-          <div className="md:w-1/1 md:pl-32 md:mr-32 p-10 mb:p-0 md:container md:mx-auto ">
+          <div className="md:w-1/1 md:pl-32 md:mr-32 p-5 mb:p-0 md:container md:mx-auto ">
             <p className="md:text-4xl text-blue-700 md:mt-48  font-bold">
               Save more, Make more, Be more
             </p>
             <div className="flex mt-5 mb-5">
               <div className="flex">
                 <img
-                  className="rounded-full object-fill w-8 h-8 "
+                  className="rounded-full object-fill md:w-8 md:h-8 h-3 w-3 "
                   src={production2}
                   alt="product"
                   sizes=""
@@ -69,10 +69,10 @@ function Collaboration() {
                   sizes=""
                 />
               </div>
-              <small className="md:ml-5 text-xs ml-5">
+              <p className="md:ml-5 md:tex-xs text-xs ml-5">
                 NoteOpX has helped more than 1,000 businesses eliminate waste
                 from their operational processes.
-              </small>
+              </p>
             </div>
             <Link to="/trynow">
               <button
@@ -88,7 +88,7 @@ function Collaboration() {
                 <div className="md:mt-5 mt-5 mb-5 md:m-5 " key={list.id}>
                   <button
                     type="button"
-                    className=" rounded-full md:p-5 p-2 flex text-blue-700 items-center justify-center"
+                    className=" rounded-full md:p-3 p-2 flex text-blue-700 items-center justify-center"
                     style={{ background: " #EAEFF8" }}
                   >
                     <svg
@@ -106,10 +106,10 @@ function Collaboration() {
                       />
                     </svg>
                   </button>
-                  <p className="md:text-1xl text-sm md:mt-5 mt-2 md:mb-3 md:w-80 ">
+                  <p className="md:text-base text-sm md:mt-5 mt-2 md:mb-3 md:w-80 ">
                     {list.title}
                   </p>
-                  <p className=" text-gray-400 md:w-80 md:text-base text-xs">
+                  <p className=" text-gray-400 md:w-80 md:text-sm text-xs">
                     Odio euismod lacinia at quis. Amet purus gravida quis
                     blandit turpis.
                   </p>
@@ -130,4 +130,4 @@ function Collaboration() {
   );
 }
 
-export default Collaboration;
+export default SaveMore;

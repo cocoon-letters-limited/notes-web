@@ -27,7 +27,7 @@ function Trynow() {
         </svg>
         <p>back</p>
       </button>
-      <p className="mt-10 text-3xl  mb-10">Try for free</p>
+      <p className="mt-10 text-3xl  mb-10">Contact sales</p>
       <div className="c">
         <div className="grid md:grid-cols-2 md:gap-6 ">
           <div className="">
