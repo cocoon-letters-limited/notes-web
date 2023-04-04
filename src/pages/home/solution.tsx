@@ -52,7 +52,7 @@ function AccordionCustom({
 const Solution = () => {
   // const [ePTW] = useState(ePTWData);
   return (
-    <div>
+    <div id="features">
       <div className="text-center p-10">
         <p className="text-4xl font-bold text-blue-600">Take total control</p>
         <p className="text-gray-400 m-5">

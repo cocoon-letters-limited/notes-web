@@ -2,6 +2,12 @@ import production1 from "assets/Production1.png";
 import Logolist from "./logolist";
 
 function Hearder() {
+  const handleScrollTo = () => {
+    document.querySelector("#features")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
       <div className="w-full" style={{ background: "#F1F5FF" }}>
@@ -25,6 +31,7 @@ function Hearder() {
               <div className="mt-10">
                 <button
                   type="button"
+                  onClick={handleScrollTo}
                   className="bg-white mr-3 md:text-base text-xs text-blue-700 pl-2 pr-2 py-2 font-bold md:py-3 md:pr-8 md:pl-8 md:px-4 rounded"
                 >
                   Explore Features
