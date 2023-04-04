@@ -3,17 +3,17 @@ import { BusinessData, EnterpriseData, facilityData } from "./priceData";
 function Pricing() {
   return (
     <div>
-      <div className="text-center p-20 ">
+      <div className="text-center md:p-20 ">
         <p className="text-4xl font-bold text-blue-700">Our pricing</p>
       </div>
 
-      <div className="md:grid md:grid-cols-3  container mx-auto gap-10 mb-20">
+      <div className="md:grid md:grid-cols-3  container mx-auto gap-10 p-4 md:p-0 mb-20">
         <div className="w-full  p-4 bg-white shadow-lg rounded-lg  sm:p-8 dark:white dark:border-gray-700">
           <h5 className="mb-4 text-xl text-center  font-medium text-gray-500 dark:text-gray-400">
             Facility
           </h5>
           <div className="flex justify-center items-baseline text-blue-700 ">
-            <span className="text-3xl font-extrabold tracking-blue-700">
+            <span className="md:text-1xl font-extrabold tracking-blue-700">
               $5,000 Upfront + $40/Users
             </span>
             <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
@@ -37,8 +37,10 @@ function Pricing() {
                       key={listItem.id}
                       className="flex justify-between  mt-3 "
                     >
-                      <p className="text-blue-700">{listItem.itemTitle}</p>
-                      <p>{listItem.itemValue}</p>
+                      <small className="text-blue-700">
+                        {listItem.itemTitle}
+                      </small>
+                      <small>{listItem.itemValue}</small>
                     </li>
                   ))}
                 </ul>
@@ -92,7 +94,7 @@ function Pricing() {
           </h5>
           <div className="flex justify-center items-baseline text-white ">
             {/* <span className="text-2xl font-semibold">$</span>  */}
-            <span className="text-3xl font-extrabold tracking-blue-700">
+            <span className="text-1xl font-extrabold tracking-blue-700">
               $10,000 Upfront + $100/User/Month
               {/* <span className="text-2xl font-semibold">$</span> */}
             </span>
@@ -123,8 +125,8 @@ function Pricing() {
                         key={listItem.id}
                         className="flex justify-between text-white mt-3 text-white"
                       >
-                        <p>{listItem.itemTitle}</p>
-                        <p>{listItem.itemValue}</p>
+                        <small>{listItem.itemTitle}</small>
+                        <small>{listItem.itemValue}</small>
                       </ul>
                     ),
                   )}
@@ -138,7 +140,7 @@ function Pricing() {
             Enterprise
           </h5>
           <div className="flex justify-center items-baseline text-blue-700 ">
-            <span className="text-3xl font-extrabold tracking-blue-700">
+            <span className="text-1xl font-extrabold tracking-blue-700">
               {/* $5,000 Upfront + $40/Users */}
               Contact Sales
             </span>
@@ -163,9 +165,11 @@ function Pricing() {
                       className="flex justify-between  mb-2 "
                     >
                       <div className="flex">
-                        <p className="text-blue-700">{listItem.itemTitle}</p>
+                        <small className="text-blue-700">
+                          {listItem.itemTitle}
+                        </small>
                       </div>
-                      <p>{listItem.itemValue}</p>
+                      <small>{listItem.itemValue}</small>
                     </li>
                   ))}
                 </ul>
