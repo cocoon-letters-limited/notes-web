@@ -15,7 +15,7 @@ const TabSection = ({ tabList, currentTab }: Props) => {
           to={`/dashboard?tab=${item?.toLowerCase()}`}
           type="button"
           key={item}
-          className={`bg-white py-3 md:py-4 px-6 md:px-8 lg:px-12 font-semibold focus:outline-none ring-0 focus:ring-0 text-base lg:text-lg 
+          className={`bg-white py-2 md:py-3 xl:py-4 px-4 md:px-6 lg:px-8 xl:px-12 font-semibold focus:outline-none ring-0 focus:ring-0 text-sm md:text-sm-15 lg:text-base xl:text-lg  
           ${style.tab} ${
             item?.toLowerCase()?.includes(currentTab) ? style.active : ""
           }`}

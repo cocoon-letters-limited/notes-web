@@ -1,8 +1,3 @@
-/* eslint-disable react/jsx-no-undef */
-/* eslint-disable react/button-has-type */
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable react/no-unknown-property */
-/* eslint-disable prettier/prettier */
 import React from "react";
 import {
   Chart as ChartJS,
@@ -92,7 +87,10 @@ function Bio() {
         <div className="bg-gray-100 p-5 rounded-lg">
           <div className="flex justify-between">
             <p className="font-normal text-2xl">Notes</p>
-            <button className="w-fit px-3 bg-blue-700 text-white rounded-lg">
+            <button
+              type="button"
+              className="w-fit px-3 bg-blue-700 text-white rounded-lg"
+            >
               New
             </button>
           </div>

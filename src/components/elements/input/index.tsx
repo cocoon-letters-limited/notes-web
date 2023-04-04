@@ -8,7 +8,7 @@ type Props = {
   value?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onBlur?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  error?: string;
+  error?: string | false | undefined;
 };
 
 const InputGroup = ({

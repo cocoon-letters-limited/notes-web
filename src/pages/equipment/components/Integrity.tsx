@@ -1,5 +1,3 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable prettier/prettier */
 import { Pagination } from "@mui/material";
 import React from "react";
 
@@ -12,7 +10,10 @@ function Integrity() {
       </div>
       <div className="grid grid-cols-4 gap-5">
         <div className="shadow rounded-lg mt-3 p-5">
-          <button className="rounded-lg w-fit p-2 border-fuchsia-100 border-solid text-white bg-fuchsia-600">
+          <button
+            type="button"
+            className="rounded-lg w-fit p-2 border-fuchsia-100 border-solid text-white bg-fuchsia-600"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -32,7 +33,10 @@ function Integrity() {
           <p className="text-fuchsia-600 text-3xl mt-2">225 hrs</p>
         </div>
         <div className="shadow rounded-lg mt-3 p-5">
-          <button className="rounded-lg w-fit p-2 border-fuchsia-100 border-solid text-white bg-fuchsia-600">
+          <button
+            type="button"
+            className="rounded-lg w-fit p-2 border-fuchsia-100 border-solid text-white bg-fuchsia-600"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -52,7 +56,10 @@ function Integrity() {
           <p className="text-fuchsia-600 text-3xl mt-2">225 hrs</p>
         </div>
         <div className="shadow rounded-lg mt-3 p-5">
-          <button className="rounded-lg w-fit p-2 border-fuchsia-100 border-solid text-white bg-fuchsia-600">
+          <button
+            type="button"
+            className="rounded-lg w-fit p-2 border-fuchsia-100 border-solid text-white bg-fuchsia-600"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

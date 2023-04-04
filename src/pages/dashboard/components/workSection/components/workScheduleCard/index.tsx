@@ -16,7 +16,7 @@ const ListDropdownButton = ({
     <button
       type="button"
       onClick={onClick}
-      className={`focus:outline-none py-4 px-4  flex items-center bg-[#5577EE] w-full text-white ${
+      className={`focus:outline-none py-4 px-4  flex items-center bg-[#5577EE] w-full text-white text-sm-15 xl:text-base ${
         show ? "rounded-t-lg" : "rounded-lg"
       }`}
     >
@@ -101,10 +101,9 @@ const WorkScheduleCard = () => {
   const handleToggleTab = (value: string) => {
     setSelectedTab(value);
   };
-  console.log(selectedTab);
 
   return (
-    <div className="relative bg-transparent rounded-xl h-[27rem] px-6 pt-6 pb-6 border-2 border-dashed">
+    <div className="relative bg-transparent rounded-xl h-[27rem] px-4 xl:px-6 pt-6 pb-6 border-2 border-dashed">
       <p className="font-bold text-base lg:text-lg text-[#230B34]">
         Work Schedule
       </p>

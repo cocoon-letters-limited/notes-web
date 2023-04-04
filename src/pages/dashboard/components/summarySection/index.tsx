@@ -46,11 +46,11 @@ const SummarySection = () => {
   return (
     <div className="relative mt-6">
       <div className="flex flex-col md:flex-row md:justify-between md:items-center">
-        <h3 className="text-lg lg:text-xl text-textColor">
+        <h3 className="text-sm-15 lg:text-base xl:text-lg text-textColor">
           Summary of your current work status
         </h3>
 
-        <div className="text-base lg:text-lg text-primary">
+        <div className="mt-4 md:mt-0 text-sm-15 lg:text-base xl:text-lg text-primary">
           <DropDown
             selected={selectedOption}
             options={options}
@@ -60,7 +60,7 @@ const SummarySection = () => {
         </div>
       </div>
 
-      <div className="mt-6 lg:mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="mt-6 lg:mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
         {selectedSummaryData?.map((data) => (
           <SummaryCard
             key={data?.id}

@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        sans: ["Mulish", ...defaultTheme.fontFamily.sans],
         serif: ["Mulish", ...defaultTheme.fontFamily.serif],
         mono: [...defaultTheme.fontFamily.mono],
       },

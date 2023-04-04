@@ -15,11 +15,11 @@ type CardProps = {
 const Card = ({ icon, title, content }: CardProps) => {
   return (
     <div className="">
-      <div className="text-primary font-bold text-sm lg:text-sm-15 flex items-center">
+      <div className="text-primary font-bold text-sm xl:text-sm-15 flex items-center">
         <span>{icon}</span>
         <span className="pl-1">{title}</span>
       </div>
-      <div className="mt-2 text-sm-15 lg:text-base text-[#051738]">
+      <div className="mt-2 text-sm-15 xl:text-base text-[#051738]">
         <p>{content}</p>
       </div>
     </div>
@@ -28,27 +28,27 @@ const Card = ({ icon, title, content }: CardProps) => {
 
 const WorkOrderCard = () => {
   return (
-    <div className="relative bg-white rounded-xl h-[27rem] overflow-auto px-6 pt-6">
+    <div className="relative bg-white rounded-xl h-[27rem] overflow-auto px-4 xl:px-6 pt-6">
       <div className="flex flex-row flex-wrap justify-between items-center">
         <p className="font-bold text-base lg:text-lg text-[#230B34]">
           Work Order
         </p>
-        <div className="bg-white border border-[#B1BFD9] text-[#08B919] font-semibold px-4 py-1 rounded text-xs lg:text-sm">
+        <div className="bg-white border border-[#B1BFD9] text-[#08B919] font-semibold px-4 py-1 rounded text-xs xl:text-sm">
           Ongoing
         </div>
       </div>
 
       <div className="mt-3 flex flex-row flex-wrap justify-between items-center">
         <div className="">
-          <p className="font-bold text-sm-15 lg:text-base text-[#230B34]">
+          <p className="font-bold text-sm-15 xl:text-base text-[#230B34]">
             Fix burning gas leakage
           </p>
-          <p className="mt-2 text-primary text-xs lg:text-sm">
+          <p className="mt-2 text-primary text-xs xl:text-sm">
             #WO-2021-08-02-0003
           </p>
         </div>
         <div className="">
-          <div className="bg-[#F92F1B] text-white font-semibold px-4 py-1 rounded text-xs lg:text-sm">
+          <div className="bg-[#F92F1B] text-white font-semibold px-4 py-1 rounded text-xs xl:text-sm">
             High
           </div>
         </div>
