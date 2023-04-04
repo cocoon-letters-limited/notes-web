@@ -9,7 +9,7 @@ const MiddleSection = () => {
             <p className="tracking-[.5em] text-sm-15 lg:text-base uppercase">
               Features
             </p>
-            <h1 className="mt-3 text-default text-4xl md:text-5xl lg:text-6xl xl:text-7xl xl:leading-tight font-semibold">
+            <h1 className="mt-3 text-default text-4xl md:text-5xl lg:text-6xl xl:text-7xl xl:leading-none font-bold">
               All in one place.
             </h1>
           </div>

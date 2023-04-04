@@ -7,7 +7,7 @@ const TopSection = () => {
   return (
     <section className="relative bg-[#3B69E6]">
       <div className="container px-4 md:px-8 xl:px-4 mx-auto pt-14 md:pt-16 lg:pt-20 pb-20 lg:pb-24 relative">
-        <div className="flex flex-row flex-wrap items-center">
+        <div className="flex flex-col lg:flex-row flex-wrap lg:items-center">
           <div className="">
             <button
               type="button"
@@ -31,7 +31,7 @@ const TopSection = () => {
               <span className="pl-2">Back</span>
             </button>
           </div>
-          <div className="flex-1 pl-6 md:pl-8 lg:pl-12">
+          <div className="flex-1 pt-4 lg:pt-0 pl-0 lg:pl-12">
             <h1 className="text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium">
               The Business of Branding
             </h1>

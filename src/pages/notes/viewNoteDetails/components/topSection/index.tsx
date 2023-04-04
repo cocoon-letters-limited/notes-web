@@ -9,7 +9,7 @@ const GoBackButton = () => {
       <button
         onClick={() => navigate(-1)}
         type="button"
-        className="border-2 border-primary px-2 py-2 rounded-lg focus:outline-none ring-0"
+        className="border md:border-2 border-primary px-1 md:px-2 py-1 md:py-2 rounded-lg focus:outline-none ring-0"
       >
         <svg
           className="w-4 h-4"
@@ -42,7 +42,7 @@ const EditButton = () => {
   return (
     <Link
       to="/notes/123/edit"
-      className="border-2 border-primary px-6 py-3 rounded-lg flex flex-row items-center text-primary"
+      className="border-2 border-primary px-6 py-2 lg:py-3 rounded-lg flex flex-row items-center text-primary text-sm-15 xl:text-base"
     >
       <span>Edit</span>
       <span className="pl-4">
@@ -69,7 +69,7 @@ const DeleteButton = () => {
   return (
     <button
       type="button"
-      className="border-2 border-primary px-6 py-3 rounded-lg flex flex-row items-center bg-primary text-white"
+      className="border-2 border-primary px-6 py-3 rounded-lg flex flex-row items-center bg-primary text-white text-sm-15 xl:text-base"
     >
       <span>Delete</span>
       <span className="pl-4">
@@ -99,7 +99,7 @@ const TopSection = () => {
         <GoBackButton />
         <Title />
       </div>
-      <div className="mt-6 lg:mt-0 flex-1 flex justify-end">
+      <div className="mt-8 lg:mt-8 xl:mt-0 flex-1 flex lg:justify-end">
         <div className="flex space-x-3">
           <EditButton />
           <DeleteButton />

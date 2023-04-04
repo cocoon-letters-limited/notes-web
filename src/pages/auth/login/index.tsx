@@ -46,7 +46,7 @@ const Login = () => {
 
   return (
     <AuthLayout image={LoginImage} linkTitle="Sign up" linkUrl="/signup">
-      <div className="mt-16 lg:mt-28">
+      <div className="mt-14 md:mt-16 xl:mt-28">
         <Formik
           initialValues={initialValues}
           validate={validate}

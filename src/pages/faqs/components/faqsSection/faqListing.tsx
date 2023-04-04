@@ -29,7 +29,7 @@ const FaqsListing = ({ faqs }: FaqsListingProps) => {
           className="block w-full text-left focus:outline-none ring-0 focus:ring-0 pt-4 pb-4 lg:pt-6 lg:pb-6"
         >
           <div className="flex flex-row justify-between items-center">
-            <p className="w-11/12 text-textColor font-medium md:font-semibold text-sm-15 md:text-base lg:text-lg">
+            <p className="w-11/12 text-textColor font-medium md:font-semibold text-sm-15 lg:text-base xl:text-lg">
               {data.question}
             </p>
 
@@ -64,7 +64,7 @@ const FaqsListing = ({ faqs }: FaqsListingProps) => {
           {/* FAQ Answer */}
           {selectedFaq?.id === data.id && show && (
             <div className="mt-6">
-              <p className="text-sm-15 leading-6 md:text-base md:leading-7 lg:text-lg lg:leading-7 text-textColor">
+              <p className="text-sm-15 leading-6 lg:text-base lg:leading-7 xl:text-lg xl:leading-7 text-textColor">
                 {data.answer}
               </p>
             </div>

@@ -4,7 +4,7 @@ import BlogDetailImage from "assets/images/webp/blogDetail.webp";
 const ContentSection = () => {
   return (
     <section className="relative bg-white">
-      <div className="container px-4 md:px-8 xl:px-4 mx-auto pt-24 md:pt-28 lg:pt-32 pb-32 lg:pb-40 relative">
+      <div className="container px-4 md:px-8 xl:px-4 mx-auto pt-20 md:pt-24 lg:pt-28 xl:pt-32 pb-32 lg:pb-40 relative">
         <div className="mb-8 lg:mb-12">
           <img src={BlogDetailImage} alt="" />
         </div>
