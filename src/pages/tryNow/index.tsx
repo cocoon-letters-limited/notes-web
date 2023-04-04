@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function Trynow() {
   const navigate = useNavigate();
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto p-2">
       <button
         onClick={() => navigate("/")}
         type="button"
@@ -103,7 +103,7 @@ function Trynow() {
             />
           </div>
         </div>
-        <div className="flex mt-10 mb-10">
+        <div className="flex mt-10 mb-10 flex-row-reverse ">
           <button
             type="button"
             className="text-white w-fit bg-gray-200 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg

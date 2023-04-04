@@ -7,7 +7,7 @@ function Pricing() {
         <p className="text-4xl font-bold text-blue-700">Our pricing</p>
       </div>
 
-      <div className="md:grid md:grid-cols-3  container mx-auto gap-10 mb-20">
+      <div className="md:grid md:grid-cols-3  container mx-auto gap-10 p-4 md:p-0 mb-20">
         <div className="w-full  p-4 bg-white shadow-lg rounded-lg  sm:p-8 dark:white dark:border-gray-700">
           <h5 className="mb-4 text-xl text-center  font-medium text-gray-500 dark:text-gray-400">
             Facility
