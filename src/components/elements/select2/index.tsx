@@ -1,28 +1,27 @@
-import React from "react";
+import React, { ChangeEvent } from "react";
 
 type Props = {
-  type?: string;
   label: string;
-  placeholder?: string;
   name?: string;
   value?: string;
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onBlur?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  error?: string | false | undefined;
+  onChange?: (e: ChangeEvent<HTMLSelectElement>) => void;
+  error?: string;
+  options: {
+    label: string;
+    value: string;
+  }[];
   className?: string;
   labelColor?: string;
 };
 
-const InputGroup = ({
-  type,
+const SelectGroup2 = ({
   label,
   labelColor,
-  placeholder,
   name,
   value,
-  onChange,
-  onBlur,
+  options,
   error,
+  onChange,
   className,
 }: Props) => {
   const defaultClassName =
@@ -40,21 +39,23 @@ const InputGroup = ({
         {label}
       </label>
       <div className="relative input input-field w-full mb-2">
-        <input
-          type={type || "text"}
+        <select
           className={`${defaultClassName} ${
             error ? "border-red-600" : " border-[#D8DDE7]"
           }`}
-          placeholder={placeholder}
-          name={name}
-          value={value}
           onChange={onChange}
-          onBlur={onBlur}
-        />
+          value={value}
+        >
+          <option>-- Select --</option>
+          {options.map((option) => (
+            <option key={value} value={option?.value}>
+              {option?.label}
+            </option>
+          ))}
+        </select>
       </div>
-      <span className="text-red-600 text-xs lg:text-sm">{error}</span>
     </div>
   );
 };
 
-export default InputGroup;
+export default SelectGroup2;
