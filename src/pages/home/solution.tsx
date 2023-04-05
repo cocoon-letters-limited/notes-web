@@ -53,9 +53,11 @@ const Solution = () => {
   // const [ePTW] = useState(ePTWData);
   return (
     <div id="features">
-      <div className="text-center p-10">
-        <p className="text-4xl font-bold text-blue-600">Take total control</p>
-        <p className="text-gray-400 m-5">
+      <div className="text-center md:p-10 p-5">
+        <p className="md:text-4xl font-bold text-blue-600">
+          Take total control
+        </p>
+        <p className="text-gray-400 m-5 md:text-base text-xs">
           Optimize Asset Management with Enhanced Visibility and Control.
         </p>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import Hearder from "./hearder";
 import Solution from "./solution";
 import Pricing from "./pricing";
-import Collaboration from "./collaboration";
+import SaveMore from "./savemore";
 import NotesSection from "./notesSection";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
       <Hearder />
       <Solution />
       <NotesSection />
-      <Collaboration />
+      <SaveMore />
       <Pricing />
     </div>
   );

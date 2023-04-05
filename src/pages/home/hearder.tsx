@@ -14,7 +14,7 @@ function Hearder() {
         <div className="">
           <div className="bg-blue-700 pb-48 pt-20 h-auto w-full  text-center flex justify-center ">
             <div className="">
-              <p className="font-bold md:text-6xl  mt-10 p-1  text-white ">
+              <p className="font-bold md:text-6xl text-2xl mt-10 p-1  text-white ">
                 Say Hello to
                 <span className="text-yellow-400 ml-1">Excellence</span>
               </p>
@@ -73,7 +73,7 @@ function Hearder() {
 
               <div className="md:grid md:grid-cols-2 ml-5 md:gap-10 mt-10">
                 <div>
-                  <h1 className="font-medium text-2xl">Tools</h1>
+                  <h1 className="font-medium text-2xl">Tools for</h1>
                   <p className="md:text-6xl   mt-3 mb-3 font-semibold ">
                     Continuous asset integrity
                   </p>
