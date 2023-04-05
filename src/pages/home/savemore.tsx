@@ -83,7 +83,7 @@ function SaveMore() {
               </button>
             </Link>
 
-            <div className="md:grid-cols-2 md:grid md:p-0 p-2 md:m-10 ">
+            <div className="md:grid-cols-2 md:grid gap-3 md:p-0 p-2 md:m-10 ">
               {data.map((list) => (
                 <div className="md:mt-5 mt-5 mb-5 md:m-5 " key={list.id}>
                   <button
