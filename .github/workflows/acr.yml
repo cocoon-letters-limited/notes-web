@@ -37,7 +37,7 @@ jobs:
           GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
           IMAGE_TAG: ${{ env.IMAGE_TAG }}
   deploy:
-    name: Build container
+    name: Deploy service
     runs-on: ubuntu-latest
     steps:
       - name: Checkout private tools
