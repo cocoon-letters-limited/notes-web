@@ -6,8 +6,8 @@ import SuccessImage from "assets/images/webp/tick.png";
 const SignupSuccessful = () => {
   return (
     <AuthLayout image={SignupImage} linkTitle="Login" linkUrl="/login">
-      <div className="pt-8 lg:pt-12 flex flex-col items-center mx-auto text-center">
-        <div className="w-8/12 mx-auto">
+      <div className="pt-8 md:pt-12 flex flex-col items-center mx-auto text-center">
+        <div className="w-8/12 md:w-5/12 lg:w-8/12 mx-auto">
           <img src={SuccessImage} alt="Success icon" />
         </div>
         <div className="mt-6">

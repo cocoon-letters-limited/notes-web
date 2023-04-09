@@ -64,7 +64,7 @@ const Card = () => {
 
 const DiscoveryCallCard = () => {
   return (
-    <div className="relative bg-white rounded-xl h-[27rem] overflow-auto px-6 pt-6">
+    <div className="relative bg-white rounded-xl h-[27rem] overflow-auto px-4 xl:px-6 pt-6">
       <Card />
       <Card />
     </div>

@@ -71,7 +71,7 @@ const Card = () => {
 
 const CategoriesListSection = () => {
   return (
-    <div className="hidden lg:block w-full md:w-4/12 bg-white h-full rounded-lg">
+    <div className="hidden xl:block w-full md:w-4/12 bg-white h-full rounded-lg">
       <div className="w-full bg-primary py-4 px-6 rounded-t-lg">
         <p className="text-lg lg:text-xl font-bold text-white">Categories</p>
       </div>
@@ -91,8 +91,8 @@ const CategoriesListSection = () => {
 
 const NoteListSection = () => {
   return (
-    <div className="flex-1 md:pl-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6">
+    <div className="flex-1 xl:pl-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-6">
         <Card />
         <Card />
         <Card />
@@ -120,9 +120,9 @@ const NoteSection = () => {
 
   return (
     <>
-      <div className="relative mt-8 lg:-mt-12">
-        <div className="flex lg:justify-end">
-          <div className="px-4 py-3 border border-[#B1BFD9] rounded-lg text-base lg:text-lg text-[#051738]">
+      <div className="relative mt-8 md:-mt-12">
+        <div className="flex md:justify-end">
+          <div className="px-4 py-2 md:py-3 border border-[#B1BFD9] rounded-lg text-base lg:text-lg text-[#051738]">
             <DropDown
               selected={selectedOption}
               options={options}
@@ -134,7 +134,7 @@ const NoteSection = () => {
             <button
               type="button"
               onClick={() => setShowNewDropdownOption(!showNewDropdownOption)}
-              className="py-3 px-6 rounded-lg bg-primary text-white text-base lg:text-lg"
+              className="py-2 md:py-3 px-6 rounded-lg bg-primary text-white text-base lg:text-lg"
             >
               New
             </button>

@@ -82,7 +82,9 @@ const EquipmentCard = () => {
 
   return (
     <div className="bg-[#F6F7FB] px-6 py-6 rounded-lg h-[27rem]">
-      <h4 className="text-lg lg:text-xl text-[#224280] font-bold">Equipment</h4>
+      <h4 className="text-base md:text-lg xl:text-xl text-[#224280] font-bold">
+        Equipment
+      </h4>
 
       <div className="mt-1 overflow-auto">
         <Chart

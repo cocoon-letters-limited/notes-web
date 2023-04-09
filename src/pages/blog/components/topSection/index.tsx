@@ -3,7 +3,7 @@ import React from "react";
 const TopSection = () => {
   return (
     <section className="relative bg-[#3B69E6]">
-      <div className="container px-4 md:px-8 xl:px-4 mx-auto pt-24 md:pt-28 lg:pt-32 pb-32 lg:pb-40 relative">
+      <div className="container px-4 md:px-8 xl:px-4 mx-auto pt-20 md:pt-24 lg:pt-28 xl:pt-28 pb-24 md:pb-28 lg:pb-32 relative">
         <div className="flex flex-row flex-wrap justify-between">
           <div className="w-full md:w-5/12 flex flex-row items-start">
             <div className="w-3 md:w-4 h-4 md:h-5 bg-[#FFC700]" />

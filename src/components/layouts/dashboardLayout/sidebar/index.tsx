@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "assets/images/svg/logo/eam_logo.svg";
+import Logo from "assets/NOTEOPX.png";
 import { useLocation } from "react-router-dom";
 import SidebarMenuItem from "./sidebarMenuItem";
 import menuData from "./menuData";
@@ -8,7 +8,7 @@ import MenuToggler from "./menuToggler";
 const LogoSection = () => {
   return (
     <div className="h-16 md:h-20 bg-white rounded-lg px-4 flex justify-center items-center">
-      <img src={Logo} className="w-14" alt="Logo" />
+      <img src={Logo} className="w-28" alt="Logo" />
       <span className="sr-only">iNote</span>
     </div>
   );
