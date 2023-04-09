@@ -36,3 +36,17 @@ jobs:
           GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
           GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
           IMAGE_TAG: ${{ env.IMAGE_TAG }}
+  deploy:
+    name: Build container
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setting context
+        uses: Azure/aks-set-context@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          cluster-name: ${{ secrets.CLUSTER_NAME }}
+          resource-group: ${{ secrets.RESOURCE_GROUP }}
+      - uses: Azure/k8s-deploy@v4
+        with:
+          manifests: |
+            web.yml
