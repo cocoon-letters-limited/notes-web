@@ -38,6 +38,7 @@ jobs:
           IMAGE_TAG: ${{ env.IMAGE_TAG }}
   deploy:
     name: Deploy service
+    needs: build-container
     runs-on: ubuntu-latest
     steps:
       - name: Checkout private tools
