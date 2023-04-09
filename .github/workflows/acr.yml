@@ -43,7 +43,7 @@ jobs:
       - name: Checkout private tools
         uses: actions/checkout@v3
         with:
-          repository: https://github.com/cocoon-letters-limited/notes-manifest.git
+          repository: cocoon-letters-limited/notes-manifest
           token: ${{ secrets.GIT_TOKEN }} # `GH_PAT` is a secret that contains your PAT
           path: .
       - name: Setting context
