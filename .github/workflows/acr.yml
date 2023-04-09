@@ -40,6 +40,12 @@ jobs:
     name: Build container
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout private tools
+        uses: actions/checkout@v3
+        with:
+          repository: https://github.com/cocoon-letters-limited/notes-manifest.git
+          token: ${{ secrets.GIT_TOKEN }} # `GH_PAT` is a secret that contains your PAT
+          path: .
       - name: Setting context
         uses: Azure/aks-set-context@v1
         with:
