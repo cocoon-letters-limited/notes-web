@@ -3,14 +3,14 @@ import CheckoutSection from "./components/checkoutSection";
 
 const Checkout = () => {
   useEffect(() => {
-    document.querySelector("body")?.scrollTo({
+    document.querySelector(".checkout")?.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   }, []);
 
   return (
-    <div>
+    <div className="checkout">
       <CheckoutSection />
     </div>
   );
