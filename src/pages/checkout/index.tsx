@@ -1,16 +1,14 @@
 import React, { useEffect } from "react";
+import scrollToTop from "utils/scrollToTop";
 import CheckoutSection from "./components/checkoutSection";
 
 const Checkout = () => {
   useEffect(() => {
-    document.querySelector(".checkout")?.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    scrollToTop();
   }, []);
 
   return (
-    <div className="checkout">
+    <div>
       <CheckoutSection />
     </div>
   );
