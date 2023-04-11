@@ -93,7 +93,7 @@ function NotesSection() {
                 onClick={() => setNoteChange(false)}
                 type="button"
                 className={`
-               rounded-full md:p-5 w-fit p-2 h-fit border-2 
+               rounded-full md:p-3 w-fit p-2 h-fit border-2 
                ${
                  !noteChange
                    ? "border-blue-700 text-blue-700 "
@@ -109,7 +109,7 @@ function NotesSection() {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="fill-current md:w-8 md:h-8 w-4 h-4 "
+                  className="fill-current md:w-6 md:h-6 w-4 h-4 "
                 >
                   <path
                     strokeLinecap="round"
@@ -121,8 +121,8 @@ function NotesSection() {
               <button
                 onClick={() => setNoteChange(true)}
                 type="button"
-                className={`  p-2
-               rounded-full w-fit h-fit md:p-5 border-2
+                className={` 
+                rounded-full md:p-3 w-fit p-2 h-fit border-2 
               ${
                 noteChange
                   ? "border-blue-700 text-blue-700 "
@@ -137,7 +137,7 @@ function NotesSection() {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="fill-current  md:w-8 md:h-8 w-4 h-4 "
+                  className="fill-current  md:w-6 md:h-6 w-4 h-4 "
                 >
                   <path
                     strokeLinecap="round"
@@ -191,7 +191,7 @@ function NotesSection() {
                   key={note.id}
                   className="rounded-lg py-2 px-4 md:m-0 m-5 shadow-lg bg-white"
                 >
-                  <div className="md:px-6 md:py-6 py-3">
+                  <div className=" p-2 ">
                     <div className="flex ">
                       <img
                         className="rounded-full md:h-16 h-8 md:mt-0 mt-2 md:mr-0 mr-3 w-8 object-none md:w-16"
