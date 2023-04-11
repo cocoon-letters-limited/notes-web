@@ -36,7 +36,7 @@ export const facilityData: Array<{
       {
         id: 92,
         itemTitle: " Work order lifecycle",
-        itemValue: "  Default (Not customizable) ",
+        itemValue: "  Not customizable ",
       },
       {
         id: 91,
@@ -118,7 +118,7 @@ export const facilityData: Array<{
       {
         id: 8945232,
         itemTitle: " Permit Template ",
-        itemValue: "  Default (Not customizable)",
+        itemValue: "  Not customizable",
       },
       {
         id: 389,

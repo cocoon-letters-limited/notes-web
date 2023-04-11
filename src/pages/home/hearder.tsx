@@ -7,6 +7,11 @@ function Hearder() {
       behavior: "smooth",
     });
   };
+  // const scrollToSolution = () => {
+  //   document.querySelector("#features")?.scrollIntoView({
+  //     behavior: "smooth",
+  //   });
+  // };
 
   return (
     <div>
