@@ -47,7 +47,7 @@ function EquipmentProfileLaypout() {
 
   return (
     <div>
-      <div className="flex">
+      <div className="md:flex w-screen">
         <div className="bg-white p-4 rounded-2xl basis-1/4">
           <div className=" flex justify-center align-center">
             <img
