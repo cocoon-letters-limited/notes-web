@@ -1,10 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import CheckoutForm from "./components/CheckoutForm";
 import CheckoutPaymentMethods from "./components/CheckoutPaymentMethods";
 
-const GoBackButton = () => {
+type GoBackButtonProps = {
+  handleClick: () => void;
+};
+
+const GoBackButton = ({ handleClick }: GoBackButtonProps) => {
   return (
     <button
       type="button"
+      onClick={handleClick}
       className="text-primary text-sm-15 lg:text-base xl:text-lg flex items-center font-semibold"
     >
       <span>
@@ -27,11 +33,16 @@ const GoBackButton = () => {
 };
 
 const CheckoutSection = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(-1);
+  };
   return (
     <section className="relative bg-white">
       <div className="container px-4 md:px-8 xl:px-4 mx-auto pt-20 md:pt-24 lg:pt-28 pb-32 lg:pb-40 relative">
         <div className="">
-          <GoBackButton />
+          <GoBackButton handleClick={handleClick} />
         </div>
 
         <CheckoutForm />

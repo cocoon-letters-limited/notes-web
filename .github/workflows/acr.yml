@@ -36,3 +36,25 @@ jobs:
           GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
           GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
           IMAGE_TAG: ${{ env.IMAGE_TAG }}
+  deploy:
+    name: Deploy service
+    needs: build-container
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout private tools
+        uses: actions/checkout@v3
+        with:
+          ref: refs/heads/develop
+          repository: cocoon-letters-limited/notes-manifest
+          token: ${{ secrets.GIT_TOKEN }} # `GH_PAT` is a secret that contains your PAT
+          path: .
+      - name: Setting context
+        uses: Azure/aks-set-context@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          cluster-name: ${{ secrets.CLUSTER_NAME }}
+          resource-group: ${{ secrets.RESOURCE_GROUP }}
+      - uses: Azure/k8s-deploy@v4
+        with:
+          manifests: |
+            web.yml
