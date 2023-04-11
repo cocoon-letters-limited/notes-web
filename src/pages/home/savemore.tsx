@@ -38,7 +38,7 @@ function SaveMore() {
     <div className="md:mt-10">
       <div className=" md:p-0">
         <div className="md:flex ">
-          <div className="md:w-1/1 md:pl-32 md:mr-32 p-5 mb:p-0 md:container md:mx-auto ">
+          <div className="md:w-1/1 md:pl-15 md:mr-32 p-10 mb:p-0 md:container md:mx-auto ">
             <p className="md:text-4xl text-blue-700 md:mt-48  font-bold">
               Save more, Make more, Be more
             </p>
@@ -83,7 +83,7 @@ function SaveMore() {
               </button>
             </Link>
 
-            <div className="md:grid-cols-2 md:grid gap-3 md:p-0 p-2 md:m-10 ">
+            <div className="md:grid-cols-2 md:grid gap-3 md:p-0 p-2 md:m-5 ">
               {data.map((list) => (
                 <div className="md:mt-5 mt-5 mb-5 md:m-5 " key={list.id}>
                   <button
