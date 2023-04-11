@@ -85,10 +85,10 @@ function NotesSection() {
       >
         <div className=" mb:p-0 md:container md:mx-auto">
           <div className="flex justify-between">
-            <p className="md:text-5xl  font-bold text-blue-600 md:p-0 p-10  text-sm ">
+            <p className="md:text-5xl  font-bold text-blue-600 md:p-0 p-5  text-sm ">
               NOTE is loved by users
             </p>
-            <div className="flex md:mt-0 mt-10 mr-5 md:mr-0">
+            <div className="flex md:mt-0 mt-5 mr-5 md:mr-0">
               <button
                 onClick={() => setNoteChange(false)}
                 type="button"
@@ -149,11 +149,11 @@ function NotesSection() {
             </div>
           </div>
           {noteChange ? (
-            <div className="md:grid grid-cols-3 gap-10 md:mt-10 ">
+            <div className="md:grid grid-cols-3 gap-10 md:mt-10 mt-5  ">
               {noteList.map((note) => (
                 <div
                   key={note.id}
-                  className="rounded-lg py-2 px-4 md:m-0 m-10 shadow-lg bg-white"
+                  className="rounded-lg py-2 px-4 md:m-0 m-5 shadow-lg bg-white"
                 >
                   <div className="md:px-6 md:py-6 py-3">
                     <div className="flex ">
@@ -185,11 +185,11 @@ function NotesSection() {
               ))}
             </div>
           ) : (
-            <div className="md:grid grid-cols-3 gap-10 mt-10 ">
+            <div className="md:grid grid-cols-3 gap-10 md:mt-10 mt-5 ">
               {noteListOne.map((note) => (
                 <div
                   key={note.id}
-                  className="rounded-lg py-2 px-4 md:m-0 m-10 shadow-lg bg-white"
+                  className="rounded-lg py-2 px-4 md:m-0 m-5 shadow-lg bg-white"
                 >
                   <div className="md:px-6 md:py-6 py-3">
                     <div className="flex ">
