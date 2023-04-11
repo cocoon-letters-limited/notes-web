@@ -167,12 +167,12 @@ function NotesSection() {
                         <p className="md:text-1xl font-semibold text-sm">
                           {note.username}
                         </p>
-                        <p className="text-slate-400 md:text-base text-xs">
+                        <p className="text-slate-400 md:text-base text-sm">
                           {note.subtitle}
                         </p>
                       </div>
                     </div>
-                    <p className="text-gray-400 mt-5 mb-5 md:text-base text-xs">
+                    <p className="text-gray-400 mt-5 mb-5 md:text-base text-sm">
                       {note.description}
                     </p>
                     <Rating

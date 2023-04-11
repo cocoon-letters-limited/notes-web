@@ -11,7 +11,9 @@ const Footer = () => {
               <a href="https://flowbite.com/" className="flex items-center">
                 <img src={Logo} className="h-8 mr-3" alt="FlowBite Logo" />
               </a>
-              <p>Manage file easily. Everywhere, everytime.</p>
+              <p className="mt-5">
+                Manage file easily, <br /> Everywhere, everytime.
+              </p>
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
@@ -71,7 +73,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-4">
                     <Link to="/trynow" className="hover:underline">
-                      Contact salses
+                      Contact sales
                     </Link>
                   </li>
                   <li className="mb-4">

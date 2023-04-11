@@ -43,7 +43,7 @@ function SaveMore() {
               Save more, Make more, Be more
             </p>
             <div className="flex mt-5 mb-5">
-              <p className="md:ml-5 md:tex-xs text-xs ml-5 text-base">
+              <p className="md:ml-5 md:tex-xs  text-base">
                 NoteOpX has helped more than 1,000 businesses eliminate waste
                 from their operational processes.
               </p>
@@ -51,9 +51,9 @@ function SaveMore() {
             <Link to="/trynow">
               <button
                 type="button"
-                className="bg-blue-700 hover:bg-blue-200 mr-3 text-white text-sm md:text-base font-bold md:py-3 md:pr-8 md:pl-8 md;px-4 p-2 rounded"
+                className="bg-blue-700 ml-5 hover:bg-blue-200 mr-3 text-white text-sm md:text-base font-bold md:py-3 md:pr-8 md:pl-8 md;px-4 p-2 rounded"
               >
-                Try for free
+                Contact sales
               </button>
             </Link>
 
@@ -80,7 +80,7 @@ function SaveMore() {
                       />
                     </svg>
                   </button>
-                  <p className="md:text-base text-sm md:mt-5 mt-2 md:mb-3 md:w-80 ">
+                  <p className="md:text-base text-sm md:mt-5 mt-2 md:mb-3 md:w-52 ">
                     {list.title}
                   </p>
                   <p className=" text-gray-400 md:w-80 md:text-sm text-xs">
