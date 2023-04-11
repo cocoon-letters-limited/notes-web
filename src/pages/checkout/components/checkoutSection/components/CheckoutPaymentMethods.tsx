@@ -36,7 +36,7 @@ const paymentOptions = [
     isSelected: false,
   },
   {
-    id: 5,
+    id: 6,
     icon: appleLogo,
     title: "",
     isSelected: false,
