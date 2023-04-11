@@ -85,7 +85,7 @@ function NotesSection() {
       >
         <div className=" mb:p-0 md:container md:mx-auto">
           <div className="flex justify-between">
-            <p className="md:text-5xl  font-bold text-blue-600 md:p-0 p-5  text-sm ">
+            <p className="md:text-3xl  font-bold text-blue-600 md:p-0 p-5  text-sm ">
               NOTE is loved by users
             </p>
             <div className="flex md:mt-0 mt-5 mr-5 md:mr-0">
@@ -153,9 +153,9 @@ function NotesSection() {
               {noteList.map((note) => (
                 <div
                   key={note.id}
-                  className="rounded-lg py-2 px-4 md:m-0 m-5 shadow-lg bg-white"
+                  className="rounded-lg p-2  md:m-0 m-5 shadow-lg bg-white"
                 >
-                  <div className="md:px-6 md:py-6 py-3">
+                  <div className="md:px-3 md:py-6 py-3">
                     <div className="flex ">
                       <img
                         className="rounded-full md:h-16 h-8 md:mt-0 mt-2 md:mr-0 mr-3 w-8 object-none md:w-16"

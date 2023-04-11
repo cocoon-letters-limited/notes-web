@@ -42,7 +42,7 @@ function SaveMore() {
             <p className="md:text-3xl text-blue-700 md:mt-48  font-bold">
               Save more, Make more, Be more
             </p>
-            <div className="flex mt-5 mb-5">
+            <div className="flex mt-2 mb-5">
               <p className="md:ml-5 md:tex-xs  text-base">
                 NoteOpX has helped more than 1,000 businesses eliminate waste
                 from their operational processes.

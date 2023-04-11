@@ -27,7 +27,6 @@ function Trynow() {
         </svg>
         <p>back</p>
       </button>
-      <p className="mt-10 text-3xl  mb-10">Contact sales</p>
       <div className="c">
         <div className="grid md:grid-cols-2 md:gap-6 ">
           <div className="">
@@ -116,7 +115,7 @@ function Trynow() {
             className="text-white w-fit bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg
              text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
-            Contact salas
+            Contact sales
           </button>
         </div>
       </div>
