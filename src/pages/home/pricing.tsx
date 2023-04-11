@@ -23,7 +23,7 @@ function Pricing() {
           </div>
           <Link
             to="/checkout?subscriptionType=facility"
-            className="text-white bg-blue-600 hover:bg-blue-700  mt-10 focus:ring-4 
+            className="text-white bg-blue-600 hover:bg-blue-300  mt-10 focus:ring-4 
             focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium 
             rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
           >
@@ -142,18 +142,14 @@ function Pricing() {
             Enterprise
           </h5>
           <div className="flex justify-center items-baseline text-blue-700 ">
-            <span className="text-1xl font-extrabold tracking-blue-700">
-              {/* $5,000 Upfront + $40/Users */}
-              Contact Sales
-            </span>
             {/* <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
               /month
             </span> */}
           </div>
-          <Link to="/checkout">
+          <Link to="/trynow">
             <button
               type="button"
-              className="text-white bg-blue-600 hover:bg-blue-700  mt-10 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+              className="text-white bg-blue-600 hover:bg-white  mt-10 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
             >
               Choose plan
             </button>

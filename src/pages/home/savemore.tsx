@@ -43,33 +43,7 @@ function SaveMore() {
               Save more, Make more, Be more
             </p>
             <div className="flex mt-5 mb-5">
-              <div className="flex">
-                <img
-                  className="rounded-full object-fill md:w-8 md:h-8 h-3 w-3 "
-                  src={production2}
-                  alt="product"
-                  sizes=""
-                />
-                <img
-                  className="rounded-full w-8 h-8 -ml-2 "
-                  src={production2}
-                  alt="product"
-                  sizes=""
-                />
-                <img
-                  className="rounded-full  w-8 h-8  -ml-2"
-                  src={production2}
-                  alt="product"
-                  sizes=""
-                />
-                <img
-                  className="rounded-full  w-8 h-8  -ml-2"
-                  src={production2}
-                  alt="product"
-                  sizes=""
-                />
-              </div>
-              <p className="md:ml-5 md:tex-xs text-xs ml-5">
+              <p className="md:ml-5 md:tex-xs text-xs ml-5 text-base">
                 NoteOpX has helped more than 1,000 businesses eliminate waste
                 from their operational processes.
               </p>
