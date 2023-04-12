@@ -132,7 +132,7 @@ const Solution = () => {
           <div className="md:grid md:grid-cols-4 md:gap-6 p-5 md:p-0">
             <div className=" text-center rounded mb-10 overflow-hidden  md:p1-5 shadow-lg bg-[#FAF9F1]">
               <div className="md:px-3 md:py-6">
-                <p className=" md:text-2xl m-2  text-orange-800"> Asset</p>
+                <p className=" md:text-2xl m-2  text-[#E2BE2A]"> Asset</p>
                 <AccordionCustom
                   title="People"
                   discription=" Boost productivity by optimizing workforce, task and performance management"
@@ -151,7 +151,7 @@ const Solution = () => {
             </div>
             <div className="mb-10 text-center rounded overflow-hidden  shadow-lg bg-[#FAF9F1]">
               <div className="md:px-3 md:py-6">
-                <p className=" md:text-2xl m-2 text-orange-800">Maintenance</p>
+                <p className=" md:text-2xl m-2 text-[#E2BE2A]">Maintenance</p>
                 <AccordionCustom
                   title="Preventive"
                   discription=" Minimize equipment failure and unplanned disruptions with 
@@ -170,7 +170,7 @@ const Solution = () => {
             </div>
             <div className=" mb-10 text-center rounded overflow-hidden  shadow-lg  bg-[#FAF9F1]">
               <div className="md:px-3 md:py-6">
-                <p className=" md:text-2xl m-2 text-orange-800"> Work </p>
+                <p className=" md:text-2xl m-2 text-[#E2BE2A]"> Work </p>
                 {WorkData.map((data) => (
                   <AccordionCustom
                     key={data.id}
@@ -182,7 +182,7 @@ const Solution = () => {
             </div>
             <div className=" mb-10 text-center rounded overflow-hidden  shadow-lg bg-[#FAF9F1]">
               <div className="md:px-3 md:py-6">
-                <p className=" md:text-2xl m-2 text-orange-800"> Report</p>
+                <p className=" md:text-2xl m-2 text-[#E2BE2A]"> Report</p>
                 {ReportData.map((data) => (
                   <AccordionCustom
                     key={data.id}
