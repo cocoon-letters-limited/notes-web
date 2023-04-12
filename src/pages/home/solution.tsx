@@ -76,7 +76,7 @@ const Solution = () => {
 
             <div className="md:grid md:ml-10 ml-4">
               <div className=" md:border-r-2   md:mb-5">
-                <h5 className="text-6xl font-extrabold text-yellow-600 ">01</h5>
+                <h5 className="text-6xl font-extrabold text-[#F0E915] ">01</h5>
                 <p className="md:text-2xl pt-5 md:pb-5">
                   Maintenance Management System
                 </p>
@@ -86,7 +86,7 @@ const Solution = () => {
                 </p>
               </div>
               <div className=" md:border-r-2 mt-10 mb-5">
-                <h5 className="text-6xl font-extrabold text-purple-700 ">02</h5>
+                <h5 className="text-6xl font-extrabold text-[ #60C5BF]">02</h5>
                 <p className="md:text-2xl pt-5 md:pb-5">
                   Safety Management System
                 </p>
@@ -99,7 +99,7 @@ const Solution = () => {
 
             <div className="md:grid  ">
               <div className="md:ml-10 ml-5 mb-5">
-                <h5 className="text-6xl font-extrabold text-green-700 ">03</h5>
+                <h5 className="text-6xl font-extrabold text-[#C773AF] ">03</h5>
                 <p className="md:text-2xl pt-5 md:pb-5">
                   Competence Development Centre{" "}
                 </p>
@@ -111,7 +111,7 @@ const Solution = () => {
               </div>
 
               <div className="md:m-10 m-5 mb-5">
-                <h5 className="text-6xl font-extrabold text-gray-200 ">04</h5>
+                <h5 className="text-6xl font-extrabold text-[#054CD6] ">04</h5>
                 <p className="md:text-2xl pt-5 md:pb-5">
                   B-2-B Supply Chain Network
                 </p>
@@ -132,7 +132,7 @@ const Solution = () => {
           <div className="md:grid md:grid-cols-4 md:gap-6 p-5 md:p-0">
             <div className=" text-center rounded mb-10 overflow-hidden  md:p1-5 shadow-lg bg-[#FAF9F1]">
               <div className="md:px-3 md:py-6">
-                <p className=" md:text-2xl m-2  text-orange-800"> Asset</p>
+                <p className=" md:text-2xl m-2  text-[#E2BE2A]"> Asset</p>
                 <AccordionCustom
                   title="People"
                   discription=" Boost productivity by optimizing workforce, task and performance management"
@@ -151,7 +151,7 @@ const Solution = () => {
             </div>
             <div className="mb-10 text-center rounded overflow-hidden  shadow-lg bg-[#FAF9F1]">
               <div className="md:px-3 md:py-6">
-                <p className=" md:text-2xl m-2 text-orange-800">Maintenance</p>
+                <p className=" md:text-2xl m-2 text-[#E2BE2A]">Maintenance</p>
                 <AccordionCustom
                   title="Preventive"
                   discription=" Minimize equipment failure and unplanned disruptions with 
@@ -170,7 +170,7 @@ const Solution = () => {
             </div>
             <div className=" mb-10 text-center rounded overflow-hidden  shadow-lg  bg-[#FAF9F1]">
               <div className="md:px-3 md:py-6">
-                <p className=" md:text-2xl m-2 text-orange-800"> Work </p>
+                <p className=" md:text-2xl m-2 text-[#E2BE2A]"> Work </p>
                 {WorkData.map((data) => (
                   <AccordionCustom
                     key={data.id}
@@ -182,7 +182,7 @@ const Solution = () => {
             </div>
             <div className=" mb-10 text-center rounded overflow-hidden  shadow-lg bg-[#FAF9F1]">
               <div className="md:px-3 md:py-6">
-                <p className=" md:text-2xl m-2 text-orange-800"> Report</p>
+                <p className=" md:text-2xl m-2 text-[#E2BE2A]"> Report</p>
                 {ReportData.map((data) => (
                   <AccordionCustom
                     key={data.id}
@@ -264,7 +264,7 @@ const Solution = () => {
                 className=" text-center mb:10 w-100 mb-10 rounded overflow-hidden  shadow-lg bg-[#FDF4FA]"
               >
                 <div className="px-3 py-6">
-                  <p className=" md:text-2xl mb-2 text-red-800">
+                  <p className=" md:text-2xl mb-2 text-[#C773AF]">
                     {cards.cardTitle}
                   </p>
                   {cards.itemList.map((data: any) => (
@@ -290,7 +290,7 @@ const Solution = () => {
                 style={{ background: "#F1F5FF" }}
               >
                 <div className="px-3 py-6">
-                  <p className=" md:text-2xl mb-2 text-blue-800">
+                  <p className=" md:text-2xl mb-2 text-[#054CD6]">
                     {cards.cardTitle}
                   </p>
                   {cards.itemList.map((data: any) => (
