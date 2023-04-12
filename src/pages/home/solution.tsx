@@ -76,7 +76,7 @@ const Solution = () => {
 
             <div className="md:grid md:ml-10 ml-4">
               <div className=" md:border-r-2   md:mb-5">
-                <h5 className="text-6xl font-extrabold text-yellow-600 ">01</h5>
+                <h5 className="text-6xl font-extrabold text-[#F0E915] ">01</h5>
                 <p className="md:text-2xl pt-5 md:pb-5">
                   Maintenance Management System
                 </p>
@@ -86,7 +86,7 @@ const Solution = () => {
                 </p>
               </div>
               <div className=" md:border-r-2 mt-10 mb-5">
-                <h5 className="text-6xl font-extrabold text-purple-700 ">02</h5>
+                <h5 className="text-6xl font-extrabold text-[ #60C5BF]">02</h5>
                 <p className="md:text-2xl pt-5 md:pb-5">
                   Safety Management System
                 </p>
@@ -99,7 +99,7 @@ const Solution = () => {
 
             <div className="md:grid  ">
               <div className="md:ml-10 ml-5 mb-5">
-                <h5 className="text-6xl font-extrabold text-green-700 ">03</h5>
+                <h5 className="text-6xl font-extrabold text-[#C773AF] ">03</h5>
                 <p className="md:text-2xl pt-5 md:pb-5">
                   Competence Development Centre{" "}
                 </p>
@@ -111,7 +111,7 @@ const Solution = () => {
               </div>
 
               <div className="md:m-10 m-5 mb-5">
-                <h5 className="text-6xl font-extrabold text-gray-200 ">04</h5>
+                <h5 className="text-6xl font-extrabold text-[#054CD6] ">04</h5>
                 <p className="md:text-2xl pt-5 md:pb-5">
                   B-2-B Supply Chain Network
                 </p>
@@ -264,7 +264,7 @@ const Solution = () => {
                 className=" text-center mb:10 w-100 mb-10 rounded overflow-hidden  shadow-lg bg-[#FDF4FA]"
               >
                 <div className="px-3 py-6">
-                  <p className=" md:text-2xl mb-2 text-red-800">
+                  <p className=" md:text-2xl mb-2 text-[#C773AF]">
                     {cards.cardTitle}
                   </p>
                   {cards.itemList.map((data: any) => (
@@ -290,7 +290,7 @@ const Solution = () => {
                 style={{ background: "#F1F5FF" }}
               >
                 <div className="px-3 py-6">
-                  <p className=" md:text-2xl mb-2 text-blue-800">
+                  <p className=" md:text-2xl mb-2 text-[#054CD6]">
                     {cards.cardTitle}
                   </p>
                   {cards.itemList.map((data: any) => (
