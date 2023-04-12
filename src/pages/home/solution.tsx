@@ -1,9 +1,4 @@
-import {
-  Accordion,
-  AccordionSummary,
-  Typography,
-  AccordionDetails,
-} from "@mui/material";
+import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import rectangle1059 from "assets/Rectangle1059.png";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import {
@@ -38,12 +33,10 @@ function AccordionCustom({
         aria-controls="panel1a-content"
         id="panel1a-header"
       >
-        <Typography> {title}</Typography>
+        <p> {title}</p>
       </AccordionSummary>
       <AccordionDetails>
-        <Typography className="text-left text-gray-500">
-          {discription}
-        </Typography>
+        <p className="text-left text-gray-500">{discription}</p>
       </AccordionDetails>
     </Accordion>
   );
@@ -86,7 +79,7 @@ const Solution = () => {
                 </p>
               </div>
               <div className=" md:border-r-2 mt-10 mb-5">
-                <h5 className="text-6xl font-extrabold text-[ #60C5BF]">02</h5>
+                <h5 className="text-6xl font-extrabold text-[#60C5BF]">02</h5>
                 <p className="md:text-2xl pt-5 md:pb-5">
                   Safety Management System
                 </p>
