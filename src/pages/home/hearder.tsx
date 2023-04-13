@@ -1,4 +1,3 @@
-import production1 from "assets/Production1.png";
 import Logolist from "./logolist";
 
 function Hearder() {
@@ -65,12 +64,20 @@ function Hearder() {
             </div>
           </div>
           <div className="md:flex md:justify-center ">
-            <img
-              className="bg-yellow-50 md:w-50 -mt-20 object-fit rounded-lg"
-              src={production1}
-              alt="product"
-              sizes=""
-            />
+            <video
+              controls
+              className="bg-yellow-50  -mt-20 object-fit rounded-lg"
+            >
+              <source
+                src="https://noteopxds.blob.core.windows.net/media/vid.mp4"
+                type="video/mp4"
+              />
+              <track
+                kind="captions"
+                src="path/to/captions.vtt"
+                label="English"
+              />
+            </video>
           </div>
           <div className="md:container md:mx-auto ">
             <div className="my-10 py-20">
