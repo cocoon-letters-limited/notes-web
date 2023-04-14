@@ -26,19 +26,19 @@ function Pricing() {
       </div>
 
       <div className="md:grid md:grid-cols-3  container mx-auto gap-10 p-4 md:p-0 mb-20">
-        <div className="w-full  p-4 bg-white shadow-lg rounded-lg  sm:p-8 dark:white dark:border-gray-700">
+        <div className="w-full  p-3 bg-white shadow-lg rounded-lg  sm:p-6 dark:white dark:border-gray-700">
           <h5 className="mb-4 text-xl text-center  font-medium text-gray-500 dark:text-gray-400">
             Facility
           </h5>
           <p className="text-center">
             The national average cost of buying coin easy.
           </p>
-          <div className="flex justify-center items-baseline text-blue-700 ">
-            <span className="md:text-1xl font-extrabold tracking-blue-700">
+          <div className="flex mt-2 justify-center items-baseline text-blue-700 ">
+            <span className=" font-extrabold tracking-blue-700">
               $ {!checked ? 5000 * 1 : 5000 * 12} Upfront + ${" "}
               {!checked ? 40 * 1 : 400 * 12} /Users
             </span>
-            <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
+            <span className="ml-1  font-normal text-gray-500 dark:text-gray-400">
               / {!checked ? "Monthly" : "Annualy"}
             </span>
           </div>
@@ -70,7 +70,7 @@ function Pricing() {
             ))}
           </ul>
         </div>
-        <div className="w-full mt-5 mb-5  p-4 bg-blue-700 shadow-lg rounded-lg  sm:p-8 dark:white dark:border-gray-700">
+        <div className="w-full mt-5 mb-5  p-4 bg-blue-700 shadow-lg rounded-lg  sm:p-6 dark:white dark:border-gray-700">
           <h5 className="mb-4 text-xl text-center  font-medium text-white dark:text-gray-400">
             Business
           </h5>
@@ -79,11 +79,13 @@ function Pricing() {
           </p>
           <div className="flex justify-center items-baseline text-white ">
             {/* <span className="text-2xl font-semibold">$</span>  */}
-            <span className="text-1xl font-extrabold tracking-blue-700">
+            <span className="text-1xl mt-2 font-extrabold tracking-blue-700">
               ${!checked ? 10000 * 1 : 10000 * 12} Upfront + $
               {!checked ? 100 * 1 : 100 * 12} /User/{" "}
-              {!checked ? "Monthly" : "Annualy"}
-              {/* <span className="text-2xl font-semibold">$</span> */}
+              <span className=" font-semibold">
+                {" "}
+                {!checked ? "Monthly" : "Annualy"}
+              </span>
             </span>
             {/* <span className="ml-1 text-xl font-normal text-white dark:text-gray-400">
               /month
@@ -122,7 +124,7 @@ function Pricing() {
             )}
           </ul>
         </div>
-        <div className="w-full  p-4 bg-white shadow-lg rounded-lg  sm:p-8 dark:white dark:border-gray-700">
+        <div className="w-full  p-4 bg-white shadow-lg rounded-lg  sm:p-6 dark:white dark:border-gray-700">
           <h5 className="mb-4 text-xl text-center  font-medium text-gray-500 dark:text-gray-400">
             Enterprise
           </h5>
