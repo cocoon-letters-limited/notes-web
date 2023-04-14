@@ -5,7 +5,6 @@ import { BusinessData, EnterpriseData, facilityData } from "./priceData";
 
 function Pricing() {
   const [checked, setChecked] = React.useState(true);
-  // const [monthly , setMonthly] = React.useState(0)
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setChecked(event.target.checked);
@@ -40,7 +39,7 @@ function Pricing() {
               {!checked ? 40 * 1 : 400 * 12} /Users
             </span>
             <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
-              /month
+              / {!checked ? "Monthly" : "Annualy"}
             </span>
           </div>
           <Link
@@ -82,7 +81,8 @@ function Pricing() {
             {/* <span className="text-2xl font-semibold">$</span>  */}
             <span className="text-1xl font-extrabold tracking-blue-700">
               ${!checked ? 10000 * 1 : 10000 * 12} Upfront + $
-              {!checked ? 100 * 1 : 100 * 12} /User/Month
+              {!checked ? 100 * 1 : 100 * 12} /User/{" "}
+              {!checked ? "Monthly" : "Annualy"}
               {/* <span className="text-2xl font-semibold">$</span> */}
             </span>
             {/* <span className="ml-1 text-xl font-normal text-white dark:text-gray-400">
