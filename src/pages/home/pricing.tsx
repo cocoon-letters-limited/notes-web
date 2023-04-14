@@ -1,11 +1,29 @@
 import { Link } from "react-router-dom";
+import Switch from "@mui/material/Switch";
+import React from "react";
 import { BusinessData, EnterpriseData, facilityData } from "./priceData";
 
 function Pricing() {
+  const [checked, setChecked] = React.useState(true);
+  // const [monthly , setMonthly] = React.useState(0)
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setChecked(event.target.checked);
+  };
+
   return (
     <div>
       <div className="text-center md:p-20 ">
         <p className="md:text-4xl font-bold text-blue-700">Our pricing</p>
+        <div>
+          <span>Monthly</span>
+          <Switch
+            checked={checked}
+            onChange={handleChange}
+            inputProps={{ "aria-label": "controlled" }}
+          />
+          <span>Annualy</span>
+        </div>
       </div>
 
       <div className="md:grid md:grid-cols-3  container mx-auto gap-10 p-4 md:p-0 mb-20">
@@ -13,9 +31,13 @@ function Pricing() {
           <h5 className="mb-4 text-xl text-center  font-medium text-gray-500 dark:text-gray-400">
             Facility
           </h5>
+          <p className="text-center">
+            The national average cost of buying coin easy.
+          </p>
           <div className="flex justify-center items-baseline text-blue-700 ">
             <span className="md:text-1xl font-extrabold tracking-blue-700">
-              $5,000 Upfront + $40/Users
+              $ {!checked ? 5000 * 1 : 5000 * 12} Upfront + ${" "}
+              {!checked ? 40 * 1 : 400 * 12} /Users
             </span>
             <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
               /month
@@ -53,15 +75,19 @@ function Pricing() {
           <h5 className="mb-4 text-xl text-center  font-medium text-white dark:text-gray-400">
             Business
           </h5>
+          <p className="text-center text-gray-200">
+            The national average cost of buying coin easy.
+          </p>
           <div className="flex justify-center items-baseline text-white ">
             {/* <span className="text-2xl font-semibold">$</span>  */}
             <span className="text-1xl font-extrabold tracking-blue-700">
-              $10,000 Upfront + $100/User/Month
+              ${!checked ? 10000 * 1 : 10000 * 12} Upfront + $
+              {!checked ? 100 * 1 : 100 * 12} /User/Month
               {/* <span className="text-2xl font-semibold">$</span> */}
             </span>
-            <span className="ml-1 text-xl font-normal text-white dark:text-gray-400">
+            {/* <span className="ml-1 text-xl font-normal text-white dark:text-gray-400">
               /month
-            </span>
+            </span> */}
           </div>
           <Link
             to="/checkout?subscriptionType=business"
@@ -100,6 +126,9 @@ function Pricing() {
           <h5 className="mb-4 text-xl text-center  font-medium text-gray-500 dark:text-gray-400">
             Enterprise
           </h5>
+          <p className="text-center">
+            The national average cost of buying coin easy.
+          </p>
           <div className="flex justify-center items-baseline text-blue-700 ">
             {/* <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
               /month
