@@ -16,7 +16,7 @@ const TeamSection = () => {
         </div>
 
         <div className="mt-16 lg:mt-20 xl:mt-24 w-full md:w-11/12 mx-auto">
-          <div className="flex flex-col md:flex-row flex-wrap md:justify-center">
+          <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3">
             {teamData.map((team) => (
               <TeamCard
                 key={team.id}

@@ -8,8 +8,8 @@ type Props = {
 
 const TeamCard = ({ profilePicture, name, role }: Props) => {
   return (
-    <div className="mb-12 lg:mb-16 w-10/12 md:w-4/12 lg:w-3/12 mx-auto text-center px-8">
-      <div className="">
+    <div className="mb-12 lg:mb-16 mx-auto text-center px-8">
+      <div className="w-9/12 mx-auto">
         <img
           src={profilePicture || AvatarImage}
           alt="Tunde Avatar"
