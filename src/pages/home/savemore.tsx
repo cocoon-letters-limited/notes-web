@@ -55,7 +55,7 @@ function SaveMore() {
                  text-white text-sm md:text-base font-bold
                   md:py-3 md:pr-8 md:pl-8  p-2 rounded"
               >
-                Contact sales
+                Try for
               </button>
             </Link>
 
