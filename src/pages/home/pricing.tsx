@@ -28,7 +28,7 @@ function Pricing() {
       <div className="md:grid md:grid-cols-3  container mx-auto gap-10 p-4 md:p-0 mb-20">
         <div className="w-full  p-3 bg-white shadow-lg rounded-lg  sm:p-4 dark:white dark:border-gray-700">
           <h5 className="mb-4 text-2xl  text-center text-blue-700 font-bold">
-            Standard
+            Standard.
           </h5>
           <p className="text-center text-[#969696]">
             The national average cost of buying coin easy.
