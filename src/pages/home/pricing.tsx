@@ -27,10 +27,10 @@ function Pricing() {
 
       <div className="md:grid md:grid-cols-3  container mx-auto gap-10 p-4 md:p-0 mb-20">
         <div className="w-full  p-3 bg-white shadow-lg rounded-lg  sm:p-4 dark:white dark:border-gray-700">
-          <h5 className="mb-4 text-xl text-center  font-medium text-gray-500 dark:text-gray-400">
-            Facility
+          <h5 className="mb-4 text-2xl  text-center text-blue-700 font-bold">
+            Standart
           </h5>
-          <p className="text-center">
+          <p className="text-center text-[#969696]">
             The national average cost of buying coin easy.
           </p>
           <div className="flex mt-2 justify-center items-baseline text-blue-700 ">
@@ -126,10 +126,10 @@ function Pricing() {
         </div>
         <div className="w-full  p-4 grid place-items-center bg-white shadow-lg rounded-lg  sm:p-6 dark:white dark:border-gray-700">
           <div>
-            <h5 className="mb-4 text-xl text-center  font-medium text-gray-500 dark:text-gray-400">
-              Enterprise
+            <h5 className="mb-4 text-2xl  text-center text-blue-700 font-bold">
+              Premium+
             </h5>
-            <p className="text-center">
+            <p className="text-center text-[#969696]">
               The national average cost of buying coin easy.
             </p>
             <p className=" text-center text-5xl px-20 py-5 text-blue-700 font-bold ">
