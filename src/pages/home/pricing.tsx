@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Switch from "@mui/material/Switch";
 import React from "react";
-import { BusinessData, EnterpriseData, facilityData } from "./priceData";
+import { BusinessData, facilityData } from "./priceData";
 
 function Pricing() {
   const [checked, setChecked] = React.useState(true);
@@ -124,28 +124,29 @@ function Pricing() {
             )}
           </ul>
         </div>
-        <div className="w-full  p-4 bg-white shadow-lg rounded-lg  sm:p-6 dark:white dark:border-gray-700">
-          <h5 className="mb-4 text-xl text-center  font-medium text-gray-500 dark:text-gray-400">
-            Enterprise
-          </h5>
-          <p className="text-center">
-            The national average cost of buying coin easy.
-          </p>
-          <div className="flex justify-center items-baseline text-blue-700 ">
-            {/* <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
-              /month
-            </span> */}
-          </div>
-          <Link to="/trynow">
-            <button
-              type="button"
-              className="text-white bg-blue-600  mt-10 hover:bg-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
-            >
-              Choose plan
-            </button>
-          </Link>
+        <div className="w-full  p-4 grid place-items-center bg-white shadow-lg rounded-lg  sm:p-6 dark:white dark:border-gray-700">
+          <div>
+            <h5 className="mb-4 text-xl text-center  font-medium text-gray-500 dark:text-gray-400">
+              Enterprise
+            </h5>
+            <p className="text-center">
+              The national average cost of buying coin easy.
+            </p>
+            <p className=" text-center text-5xl px-20 py-5 text-blue-700 font-bold ">
+              Specially crafted for you
+            </p>
 
-          <ul className="space-y-5 my-7">
+            <Link to="/trynow">
+              <button
+                type="button"
+                className="text-white bg-blue-600  mt-10 hover:bg-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+              >
+                Contact Sales
+              </button>
+            </Link>
+          </div>
+
+          {/* <ul className="space-y-5 my-7">
             {EnterpriseData.map((data) => (
               <li key={data.id}>
                 <strong className="text-xl mt-10 ">{data.title}</strong>
@@ -166,7 +167,7 @@ function Pricing() {
                 </ul>
               </li>
             ))}
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>
