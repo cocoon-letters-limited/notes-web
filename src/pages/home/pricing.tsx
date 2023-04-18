@@ -1,20 +1,20 @@
 import { Link } from "react-router-dom";
-import Switch from "@mui/material/Switch";
+// import Switch from "@mui/material/Switch";
 import React from "react";
 import { BusinessData, facilityData } from "./priceData";
 
 function Pricing() {
-  const [checked, setChecked] = React.useState(true);
+  const [checked] = React.useState(false);
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setChecked(event.target.checked);
-  };
+  // const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   setChecked(event.target.checked);
+  // };
 
   return (
     <div>
       <div className="text-center md:p-20 ">
         <p className="md:text-4xl font-bold text-blue-700">Our pricing</p>
-        <div>
+        {/* <div>
           <span>Monthly</span>
           <Switch
             checked={checked}
@@ -22,13 +22,13 @@ function Pricing() {
             inputProps={{ "aria-label": "controlled" }}
           />
           <span>Annualy</span>
-        </div>
+        </div> */}
       </div>
 
       <div className="md:grid md:grid-cols-3  container mx-auto gap-10 p-4 md:p-0 mb-20">
         <div className="w-full  p-3 bg-white shadow-lg rounded-lg  sm:p-4 dark:white dark:border-gray-700">
           <h5 className="mb-4 text-2xl  text-center text-blue-700 font-bold">
-            Standard.
+            Facility
           </h5>
           <p className="text-center text-[#969696]">
             The national average cost of buying coin easy.
@@ -36,7 +36,7 @@ function Pricing() {
           <div className="flex mt-2 justify-center items-baseline text-blue-700 ">
             <span className=" font-extrabold tracking-blue-700">
               {`$${!checked ? 5000 * 1 : 5000 * 12} Upfront + 
-              $${!checked ? 40 * 1 : 400 * 12}/Users`}
+              $${!checked ? 40 * 1 : 400 * 12}/User`}
             </span>
             <small className="ml-1   text-gray-500 dark:text-gray-400">
               / {!checked ? "Monthly" : "Annualy"}
@@ -127,7 +127,7 @@ function Pricing() {
         <div className="w-full  p-4 grid  bg-white shadow-lg rounded-lg  sm:p-6 dark:white dark:border-gray-700">
           <div>
             <h5 className="mb-4 text-2xl  text-center text-blue-700 font-bold">
-              Premium+
+              Enterprise
             </h5>
             <p className="text-center text-[#969696] ">
               The national average cost of buying coin easy.

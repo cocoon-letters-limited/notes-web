@@ -1,3 +1,5 @@
+import { useState } from "react";
+import thumbNailImage from "assets/Production1.png";
 import Logolist from "./logolist";
 
 function Hearder() {
@@ -6,6 +8,12 @@ function Hearder() {
       behavior: "smooth",
     });
   };
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handleClick = () => {
+    setIsPlaying(true);
+  };
+
   // const scrollToSolution = () => {
   //   document.querySelector("#features")?.scrollIntoView({
   //     behavior: "smooth",
@@ -64,20 +72,43 @@ function Hearder() {
             </div>
           </div>
           <div className="md:flex md:justify-center ">
-            <video
-              controls
-              className="bg-yellow-50  -mt-20 object-fit rounded-lg"
-            >
-              <source
-                src="https://noteopxds.blob.core.windows.net/media/vid.mp4"
-                type="video/mp4"
-              />
-              <track
-                kind="captions"
-                src="path/to/captions.vtt"
-                label="English"
-              />
-            </video>
+            <div>
+              {isPlaying ? (
+                <video
+                  autoPlay
+                  controls
+                  className="bg-yellow-50  -mt-20 object-fit rounded-lg"
+                >
+                  <source
+                    src="https://noteopxds.blob.core.windows.net/media/vid.mp4"
+                    type="video/mp4"
+                  />
+                  <track
+                    kind="captions"
+                    src="path/to/captions.vtt"
+                    label="English"
+                  />
+                </video>
+              ) : (
+                <button type="button" className="-mt-20" onClick={handleClick}>
+                  {/* <img src={thumbNailImage} alt="Video thumbnail" /> */}
+                  <div className="relative">
+                    <img
+                      className="w-full h-auto"
+                      src={thumbNailImage}
+                      alt="Video thumbnail"
+                    />
+                    <div className="absolute inset-0 flex  justify-center items-center">
+                      <div className="h-fit w-fit p-2 bg-red-700 text-white rounded-xl">
+                        <svg viewBox="0 0 24 24" width="24px" height="24px">
+                          <path fill="currentColor" d="M6 4l15 8-15 8z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              )}
+            </div>
           </div>
           <div className="md:container md:mx-auto ">
             <div className="my-10 py-20">
