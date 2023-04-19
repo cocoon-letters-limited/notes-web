@@ -42,7 +42,7 @@ function Pricing() {
               / {!checked ? "Monthly" : "Annualy"}
             </small>
           </div>
-          <p className="mt-2  text-center">Build annually.</p>
+          <p className="mt-2  text-center">Billed annually.</p>
           <Link
             to="/checkout?subscriptionType=facility"
             className="text-white bg-blue-600 hover:bg-blue-900  mt-10 dark:focus:ring-blue-900 font-medium 
@@ -92,7 +92,7 @@ function Pricing() {
               /month
             </span> */}
           </div>
-          <p className="mt-2 text-white text-center">Build annually.</p>
+          <p className="mt-2 text-white text-center">Billed annually.</p>
           <Link
             to="/checkout?subscriptionType=business"
             className="text-blue-700 bg-white mt-10 hover:bg-graye-100  font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
