@@ -1,39 +1,56 @@
 import production2 from "assets/Production2.png";
+import badge from "assets/homepageicons/badge.png";
+import badge1 from "assets/homepageicons/badge-1.png";
+import badge3 from "assets/homepageicons/badge-3.png";
+import badge2 from "assets/homepageicons/badge-2.png";
+import badge4 from "assets/homepageicons/badge-4.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-const data: Array<{ title: string; description: string; id: number }> = [
+const data: Array<{
+  title: string;
+  iconLink: string;
+  description: string;
+  id: number;
+}> = [
   {
     id: 1,
+    iconLink: badge,
     title: "Standardize operational safety processes",
     description:
       "   Odio euismod lacinia at quis. Amet purus gravida quis blandit  turpis.",
   },
   {
     id: 2,
+    iconLink: badge1,
     title: " Extend asset productive lifespan",
     description:
       "   Odio euismod lacinia at quis. Amet purus gravida quis blandit  turpis.",
   },
   {
     id: 3,
+    iconLink: badge2,
     title: " Eliminate demand and supply tailback",
     description:
       "   Odio euismod lacinia at quis. Amet purus gravida quis blandit  turpis.",
   },
   {
     id: 4,
+    iconLink: badge3,
     title: "Reduce downtime and costs",
     description:
       "   Odio euismod lacinia at quis. Amet purus gravida quis blandit  turpis.",
   },
   {
     id: 5,
+    iconLink: badge4,
     title: "Optimize maintenance process",
     description:
       "   Odio euismod lacinia at quis. Amet purus gravida quis blandit  turpis.",
   },
 ];
 function SaveMore() {
+  const [mainData] = useState(data);
   return (
     <div className="md:mt-10">
       <div className=" md:p-0">
@@ -60,27 +77,14 @@ function SaveMore() {
             </Link>
 
             <div className="md:grid-cols-2 md:grid gap-3 md:p-0 p-2 md:m-5 ">
-              {data.map((list) => (
+              {mainData.map((list) => (
                 <div className="md:mt-5 mt-5 mb-5 md:m-2" key={list.id}>
                   <button
                     type="button"
-                    className=" rounded-full md:p-3 p-2 flex text-blue-700 items-center justify-center"
+                    className=" rounded-full flex text-blue-700 items-center justify-center"
                     style={{ background: " #EAEFF8" }}
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="md:w-6 md:h-6 w-3 h-3"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-                      />
-                    </svg>
+                    <img src={list.iconLink} className="h-10 w-10" alt="" />
                   </button>
                   <p className="md:text-base text-sm md:mt-5 mt-2 md:mb-3 md:w-52 ">
                     {list.title}
