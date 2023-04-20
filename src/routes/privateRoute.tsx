@@ -6,6 +6,7 @@ import Notes from "pages/notes";
 import Equipment from "pages/equipment/index";
 import EquipmentProfileLaypout from "pages/equipment/equipmentProfile";
 import ViewNoteDetails from "pages/notes/viewNoteDetails";
+import Workforce from "pages/workforce";
 
 const privateRoute = {
   path: "/",
@@ -27,6 +28,10 @@ const privateRoute = {
     {
       path: "notes/:slug",
       element: <ViewNoteDetails />,
+    },
+    {
+      path: "manpower",
+      element: <Workforce />,
     },
     {
       path: "material",
