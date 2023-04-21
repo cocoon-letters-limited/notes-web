@@ -4,6 +4,7 @@ import { Box, Tab } from "@mui/material";
 import Profile from "./components/profile";
 import WorkforceBio from "./components/bio/workforceBio";
 import Relationships from "./components/relationships";
+import WorkforceTraning from "./components/Training";
 
 function Layout() {
   const [value, setValue] = React.useState("1");
@@ -39,7 +40,9 @@ function Layout() {
             <TabPanel value="4">
               <Relationships />
             </TabPanel>
-            <TabPanel value="5">Item Three</TabPanel>
+            <TabPanel value="5">
+              <WorkforceTraning />
+            </TabPanel>
             <TabPanel value="6">Item Three</TabPanel>
           </TabContext>
         </Box>
