@@ -6,24 +6,23 @@ import { DateCalendar } from "@mui/x-date-pickers-pro";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DemoContainer, DemoItem } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import React from "react";
 
 function WorkforceBio() {
   return (
     <div>
-      <div className=" bg-[#F6F7FB] p-4 rounded-lg">
+      <div className=" bg-[#F6F7FB] p-4 rounded-lg rounded-lg">
         <div className="grid-cols-2 grid gap-2">
           <div className="col-span-1">
-            <p className="text-gray-400 font-semibold">Employee ID</p>
+            <p className="text-gray-400 ">Employee ID</p>
             <p className="text-xs">34990599</p>
           </div>
           <div className="col-span-1 grid-cols-3 grid gap-3">
             <div>
-              <p className="text-gray-400 font-semibold">Department</p>
+              <p className="text-gray-400 ">Department</p>
               <p className="text-xs">Maintenance</p>
             </div>
             <div>
-              <p className="text-gray-400 font-semibold">Rating</p>
+              <p className="text-gray-400 ">Rating</p>
               <Rating name="simple-controlled" value={4} />
             </div>
             <div className="grid justify-items-end">
@@ -46,27 +45,27 @@ function WorkforceBio() {
         </div>
         <div className="grid-cols-2 grid gap-2 mt-3">
           <div>
-            <p className="text-gray-400 font-semibold">Employee ID</p>
+            <p className="text-gray-400 ">Employee ID</p>
             <p className="text-xs">34990599</p>
           </div>
           <div className="col-span-1 grid-cols-3 grid gap-3">
             <div>
-              <p className="text-gray-400 font-semibold">Department</p>
+              <p className="text-gray-400 ">Department</p>
               <p className="text-xs">Maintenance</p>
             </div>
             <div>
-              <p className="text-gray-400 font-semibold">Condition</p>
+              <p className="text-gray-400 ">Condition</p>
               <button
-                className=" bg-[#E0FFE3] border-4 p-2 text-xs rounded-lg text-green-600 border-green-300"
+                className=" bg-[#E0FFE3] border-4 px-2 py-1 text-xs rounded-lg text-green-600 border-green-300"
                 type="button"
               >
                 Onboard
               </button>
             </div>
             <div>
-              <p className="text-gray-400 font-semibold">Status</p>
+              <p className="text-gray-400 ">Status</p>
               <button
-                className=" bg-[#E0FFE3] border-4 p-2 text-xs rounded-lg text-green-600 border-green-300"
+                className=" bg-[#E0FFE3] border-4 px-2 py-1 text-xs  rounded-lg text-green-600 border-green-300"
                 type="button"
               >
                 Fit
@@ -76,19 +75,19 @@ function WorkforceBio() {
         </div>
         <div className="grid-cols-2 grid gap-2 mt-3">
           <div>
-            <p className="text-gray-400 font-semibold">Employee ID</p>
+            <p className="text-[#AEB4CB]">Employee ID</p>
             <p className="text-xs">34990599</p>
           </div>
           <div className="col-span-1 grid-cols-3 grid gap-3">
             <div>
-              <p className="text-gray-400 font-semibold">Level</p>
+              <p className="text-[#AEB4CB]">Level</p>
               <p className="text-xs">1</p>
             </div>
           </div>
         </div>
         <div className="grid-cols-2 grid gap-2 mt-3">
           <div>
-            <p className="text-gray-400 font-semibold">Team</p>
+            <p className="text-[#AEB4CB] ">Team</p>
             <div>
               <button
                 type="submit"
@@ -118,56 +117,54 @@ function WorkforceBio() {
           </div>
           <div className="col-span-1 grid-cols-3 grid gap-3">
             <div>
-              <p className="text-gray-400 font-semibold">Degree(s)</p>
+              <p className="text-[#AEB4CB]">Degree(s)</p>
               <div>
-                <span>Bsc</span>
-                <span className="ml-2">Msc.</span>
+                <span className="text-xs">Bsc</span>
+                <span className="ml-3 text-xs">Msc.</span>
               </div>
             </div>
             <div className="col-span-2 ">
-              <p className="text-gray-400 font-semibold">
-                Specializations Certificates
-              </p>
+              <p className="text-[#AEB4CB]">Specializations Certificates</p>
               <div>
-                <span>Cert 1</span>
-                <span className="ml-2">Cert 1</span>
+                <span className="text-xs">Cert 1</span>
+                <span className="text-xs ml-2">Cert 1</span>
               </div>
             </div>
-            <p className="text-gray-400 font-semibold">WAGES</p>
+            <p className="text-[#AEB4CB]">WAGES</p>
           </div>
         </div>
         <div className="grid-cols-2 grid gap-2 mt-3">
           <div>
-            <p className="text-gray-400 font-semibold">Contract till</p>
+            <p className="text-[#AEB4CB]">Contract till</p>
             <p className="text-xs">April, 2022</p>
           </div>
           <div className="col-span-1 grid-cols-4 grid gap-3">
             <div>
-              <p className="text-gray-400 font-semibold">Standard</p>
+              <p className="text-[#AEB4CB]">Standard</p>
               <p className="text-xs">$1000</p>
             </div>
             <div className="">
-              <p className="text-gray-400 font-semibold">Holiday</p>
+              <p className="text-[#AEB4CB]">Holiday</p>
               <p className="text-xs">$1000</p>
             </div>
             <div>
-              <p className="text-gray-400 font-semibold">Overtime</p>
+              <p className="text-[#AEB4CB]">Overtime</p>
               <p className="text-xs">$1000</p>
             </div>
             <div>
-              <p className="text-gray-400 font-semibold">Travel</p>
+              <p className="text-[#AEB4CB]">Travel</p>
               <p className="text-xs">$1000</p>
             </div>
           </div>
         </div>
-        <p className="my-2 text-gray-400 font-semibold">CREW CALENDAR</p>
+        <p className="my-2 text-[#AEB4CB]">CREW CALENDAR</p>
         <div className="flex">
           <div>
-            <p className="text-gray-400 font-semibold">Shift frequency</p>
+            <p className="text-[#AEB4CB]">Shift frequency</p>
             <p className="text-xs">Every 14 days</p>
           </div>
           <div className="ml-4">
-            <p className="text-gray-400 font-semibold">Next shift date</p>
+            <p className="text-[#AEB4CB]">Next shift date</p>
             <p className="text-xs">08. 04. 2021</p>
           </div>
         </div>
@@ -195,7 +192,7 @@ function WorkforceBio() {
           <div className="p-3 bg-white rounded-lg mt-4">
             <div className="border-l-8 border-fuchsia-600 pl-3">
               <div className="flex">
-                <p className="font-medium  mr-5">Use of Metal plates</p>
+                <p className="  mr-5">Use of Metal plates</p>
                 <span className="bg-fuchsia-600  text-white  text-xs font-medium  px-2.5 py-1 rounded-full  dark:text-white">
                   Lesson note
                 </span>
@@ -210,7 +207,7 @@ function WorkforceBio() {
           <div className="p-3 bg-white rounded-lg mt-4">
             <div className="border-l-8 border-fuchsia-600 pl-3">
               <div className="flex">
-                <p className="font-medium  mr-5">Use of Metal plates</p>
+                <p className="  mr-5">Use of Metal plates</p>
                 <span className="bg-fuchsia-600  text-white  text-xs font-medium  px-2.5 py-1 rounded-full  dark:text-white">
                   Lesson note
                 </span>
