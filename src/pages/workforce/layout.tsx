@@ -2,7 +2,8 @@ import React from "react";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import { Box, Tab } from "@mui/material";
 import Profile from "./components/profile";
-import Bio from "./components/bio";
+import WorkforceBio from "./components/bio/workforceBio";
+import Relationships from "./components/relationships";
 
 function Layout() {
   const [value, setValue] = React.useState("1");
@@ -31,11 +32,13 @@ function Layout() {
               </TabList>
             </Box>
             <TabPanel value="1">
-              <Bio />
+              <WorkforceBio />
             </TabPanel>
             <TabPanel value="2">Item Two</TabPanel>
             <TabPanel value="3">Item Three</TabPanel>
-            <TabPanel value="4">Item Two</TabPanel>
+            <TabPanel value="4">
+              <Relationships />
+            </TabPanel>
             <TabPanel value="5">Item Three</TabPanel>
             <TabPanel value="6">Item Three</TabPanel>
           </TabContext>
