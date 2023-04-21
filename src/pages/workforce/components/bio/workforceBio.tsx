@@ -8,43 +8,56 @@ import { DemoContainer, DemoItem } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import React from "react";
 
-function Bio() {
+function WorkforceBio() {
   return (
     <div>
       <div className=" bg-[#F6F7FB] p-4 rounded-lg">
         <div className="grid-cols-2 grid gap-2">
           <div className="col-span-1">
             <p className="text-gray-400 font-semibold">Employee ID</p>
-            <p>34990599</p>
+            <p className="text-xs">34990599</p>
           </div>
           <div className="col-span-1 grid-cols-3 grid gap-3">
             <div>
               <p className="text-gray-400 font-semibold">Department</p>
-              <p>Maintenance</p>
+              <p className="text-xs">Maintenance</p>
             </div>
             <div>
               <p className="text-gray-400 font-semibold">Rating</p>
               <Rating name="simple-controlled" value={4} />
             </div>
-            <div>
-              <p>icon</p>
+            <div className="grid justify-items-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-6 h-6 text-blue-700"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                />
+              </svg>
             </div>
           </div>
         </div>
         <div className="grid-cols-2 grid gap-2 mt-3">
           <div>
             <p className="text-gray-400 font-semibold">Employee ID</p>
-            <p>34990599</p>
+            <p className="text-xs">34990599</p>
           </div>
           <div className="col-span-1 grid-cols-3 grid gap-3">
             <div>
               <p className="text-gray-400 font-semibold">Department</p>
-              <p>Maintenance</p>
+              <p className="text-xs">Maintenance</p>
             </div>
             <div>
               <p className="text-gray-400 font-semibold">Condition</p>
               <button
-                className=" bg-[#E0FFE3] border-4 p-2 rounded-lg text-green-600 border-green-300"
+                className=" bg-[#E0FFE3] border-4 p-2 text-xs rounded-lg text-green-600 border-green-300"
                 type="button"
               >
                 Onboard
@@ -53,7 +66,7 @@ function Bio() {
             <div>
               <p className="text-gray-400 font-semibold">Status</p>
               <button
-                className=" bg-[#E0FFE3] border-4 p-2 rounded-lg text-green-600 border-green-300"
+                className=" bg-[#E0FFE3] border-4 p-2 text-xs rounded-lg text-green-600 border-green-300"
                 type="button"
               >
                 Fit
@@ -64,12 +77,12 @@ function Bio() {
         <div className="grid-cols-2 grid gap-2 mt-3">
           <div>
             <p className="text-gray-400 font-semibold">Employee ID</p>
-            <p>34990599</p>
+            <p className="text-xs">34990599</p>
           </div>
           <div className="col-span-1 grid-cols-3 grid gap-3">
             <div>
               <p className="text-gray-400 font-semibold">Level</p>
-              <p>1</p>
+              <p className="text-xs">1</p>
             </div>
           </div>
         </div>
@@ -79,25 +92,25 @@ function Bio() {
             <div>
               <button
                 type="submit"
-                className=" bg-[#054CD6] h-fix w-fit px-3 py-2 rounded-lg text-white"
+                className=" bg-[#054CD6] text-xs h-fix w-fit px-3 py-2 rounded-lg text-white"
               >
                 ICT Unit 2
               </button>
               <button
                 type="submit"
-                className=" bg-[#3D405B] h-fix ml-2 w-fit px-3 py-2 rounded-lg text-white"
+                className=" bg-[#3D405B] text-xs h-fix ml-2 w-fit px-3 py-2 rounded-lg text-white"
               >
                 ICT Unit 3
               </button>
               <button
                 type="submit"
-                className=" bg-[#560BAD] h-fix w-fit ml-2 px-3 py-2 rounded-lg text-white"
+                className=" text-xs bg-[#560BAD]  h-fix w-fit ml-2 px-3 py-2 rounded-lg text-white"
               >
                 ICT Unit 4
               </button>
               <button
                 type="submit"
-                className=" bg-[#B5179E] h-fix w-fit mt-2 px-3 py-2 rounded-lg text-white"
+                className=" bg-[#B5179E] text-xs h-fix w-fit mt-2 px-3 py-2 rounded-lg text-white"
               >
                 Maintenance Unit 2
               </button>
@@ -126,24 +139,24 @@ function Bio() {
         <div className="grid-cols-2 grid gap-2 mt-3">
           <div>
             <p className="text-gray-400 font-semibold">Contract till</p>
-            <p>April, 2022</p>
+            <p className="text-xs">April, 2022</p>
           </div>
           <div className="col-span-1 grid-cols-4 grid gap-3">
             <div>
               <p className="text-gray-400 font-semibold">Standard</p>
-              <p>$1000</p>
+              <p className="text-xs">$1000</p>
             </div>
             <div className="">
               <p className="text-gray-400 font-semibold">Holiday</p>
-              <p>$1000</p>
+              <p className="text-xs">$1000</p>
             </div>
             <div>
               <p className="text-gray-400 font-semibold">Overtime</p>
-              <p>$1000</p>
+              <p className="text-xs">$1000</p>
             </div>
             <div>
               <p className="text-gray-400 font-semibold">Travel</p>
-              <p>$1000</p>
+              <p className="text-xs">$1000</p>
             </div>
           </div>
         </div>
@@ -151,11 +164,11 @@ function Bio() {
         <div className="flex">
           <div>
             <p className="text-gray-400 font-semibold">Shift frequency</p>
-            <p>Every 14 days</p>
+            <p className="text-xs">Every 14 days</p>
           </div>
           <div className="ml-4">
             <p className="text-gray-400 font-semibold">Next shift date</p>
-            <p>08. 04. 2021</p>
+            <p className="text-xs">08. 04. 2021</p>
           </div>
         </div>
       </div>
@@ -171,10 +184,10 @@ function Bio() {
         </div>
         <div className="bg-gray-100 p-5 rounded-lg">
           <div className="flex justify-between">
-            <p className="font-normal text-2xl">Notes</p>
+            <p className="font-normal ">Notes</p>
             <button
               type="button"
-              className="w-fit px-3 bg-blue-700 text-white rounded-lg"
+              className="w-fit px-3 bg-blue-700 text-xs text-white rounded-lg"
             >
               New
             </button>
@@ -182,7 +195,7 @@ function Bio() {
           <div className="p-3 bg-white rounded-lg mt-4">
             <div className="border-l-8 border-fuchsia-600 pl-3">
               <div className="flex">
-                <p className="font-medium text-1xl mr-5">Use of Metal plates</p>
+                <p className="font-medium  mr-5">Use of Metal plates</p>
                 <span className="bg-fuchsia-600  text-white  text-xs font-medium  px-2.5 py-1 rounded-full  dark:text-white">
                   Lesson note
                 </span>
@@ -197,7 +210,7 @@ function Bio() {
           <div className="p-3 bg-white rounded-lg mt-4">
             <div className="border-l-8 border-fuchsia-600 pl-3">
               <div className="flex">
-                <p className="font-medium text-1xl mr-5">Use of Metal plates</p>
+                <p className="font-medium  mr-5">Use of Metal plates</p>
                 <span className="bg-fuchsia-600  text-white  text-xs font-medium  px-2.5 py-1 rounded-full  dark:text-white">
                   Lesson note
                 </span>
@@ -215,4 +228,4 @@ function Bio() {
   );
 }
 
-export default Bio;
+export default WorkforceBio;
