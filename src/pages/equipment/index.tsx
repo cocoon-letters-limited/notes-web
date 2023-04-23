@@ -4,7 +4,7 @@ import EquipmentProfileLaypout from "./equipmentProfile";
 
 function Equipment() {
   return (
-    <div className="container ">
+    <div className=" ">
       <EquipmentProfileLaypout />
       {/* <EquipmentRegister /> */}
     </div>
