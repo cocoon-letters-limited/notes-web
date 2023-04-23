@@ -34,6 +34,10 @@ const privateRoute = {
       element: <Workforce />,
     },
     {
+      path: "equipment",
+      element: <Equipment />,
+    },
+    {
       path: "material",
       element: <Equipment />,
       children: [

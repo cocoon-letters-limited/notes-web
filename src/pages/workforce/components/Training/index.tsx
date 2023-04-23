@@ -3,9 +3,9 @@ import WorkForceTraningDetails from "./details";
 
 const list = [
   { name: "ll", id: 1 },
-  { name: "ll", id: 1 },
-  { name: "ll", id: 1 },
-  { name: "ll", id: 1 },
+  { name: "ll", id: 3 },
+  { name: "ll", id: 2 },
+  { name: "ll", id: 5 },
 ];
 function WorkforceTraning() {
   return (

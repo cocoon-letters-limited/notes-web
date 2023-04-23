@@ -46,6 +46,12 @@ const menuData = [
         url: "/machine",
       },
       {
+        id: 7,
+        icon: <MachineIcon />,
+        title: "Equipment",
+        url: "/equipment",
+      },
+      {
         id: 2,
         icon: <MaterialIcon />,
         title: "Material",

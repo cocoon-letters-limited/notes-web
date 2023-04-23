@@ -10,7 +10,7 @@ import EditBio from "../equipmentEdit/editBio";
 
 function Bio() {
   return (
-    <div>
+    <div className="container">
       <EditBio />
       <div className="bg-gray-100 p-10 flex rounded-lg">
         <div className="w-3/4">
