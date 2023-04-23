@@ -6,6 +6,8 @@ import WorkforceBio from "./components/bio/workforceBio";
 import Relationships from "./components/relationships";
 import WorkforceTraning from "./components/Training";
 import Workfocefiles from "./components/files";
+import Timesheet from "./components/Timesheet";
+import WorkForceIntegrity from "./components/Integrity";
 
 function Layout() {
   const [value, setValue] = React.useState("1");
@@ -36,8 +38,12 @@ function Layout() {
             <TabPanel value="1">
               <WorkforceBio />
             </TabPanel>
-            <TabPanel value="2">Item Two</TabPanel>
-            <TabPanel value="3">Item Three</TabPanel>
+            <TabPanel value="2">
+              <Timesheet />
+            </TabPanel>
+            <TabPanel value="3">
+              <WorkForceIntegrity />
+            </TabPanel>
             <TabPanel value="4">
               <Relationships />
             </TabPanel>
