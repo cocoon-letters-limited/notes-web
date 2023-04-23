@@ -39,7 +39,11 @@ const NoteCard = () => {
   );
 };
 
-const BioScreen = () => {
+type Props = {
+  handleShowEdit: () => void;
+};
+
+const BioScreen = ({ handleShowEdit }: Props) => {
   return (
     <div className="relative w-full">
       <div className="relative bg-[#F6F7FB] px-4 lg:px-6 xl:px-8 pt-8 pb-12 rounded-lg">
@@ -48,6 +52,7 @@ const BioScreen = () => {
             type="button"
             className="focus:outline-none"
             aria-label="Edit"
+            onClick={handleShowEdit}
           >
             <EditIcon />
           </button>

@@ -1,14 +1,14 @@
 .noteCard {
-    postion: relative;
+  postion: relative;
 }
 
 .noteCard::after {
-    content: "";
-    position: absolute;
-    top: 12px;
-    left: 8px;
-    width: 4px;
-    height:  82%;
-    background: #DA1BF9;
-    border-radius: 8px; 
-} 
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  width: 4px;
+  height: 82%;
+  background: #da1bf9;
+  border-radius: 8px;
+}
