@@ -6,6 +6,8 @@ import Notes from "pages/notes";
 import Equipment from "pages/equipment/index";
 import EquipmentProfileLaypout from "pages/equipment/equipmentProfile";
 import ViewNoteDetails from "pages/notes/viewNoteDetails";
+import Material from "pages/material";
+import MaterialProfile from "pages/material/materialProfile";
 
 const privateRoute = {
   path: "/",
@@ -29,7 +31,7 @@ const privateRoute = {
       element: <ViewNoteDetails />,
     },
     {
-      path: "material",
+      path: "equipment",
       element: <Equipment />,
       children: [
         {
@@ -37,6 +39,14 @@ const privateRoute = {
           element: <EquipmentProfileLaypout />,
         },
       ],
+    },
+    {
+      path: "material",
+      element: <Material />,
+    },
+    {
+      path: "material/:slug",
+      element: <MaterialProfile />,
     },
   ],
 };
