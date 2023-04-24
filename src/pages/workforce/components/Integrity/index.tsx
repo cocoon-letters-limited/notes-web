@@ -1,14 +1,11 @@
 import React from "react";
 import { RadarChart } from "./radarChart";
 import { IntegrityBarChart } from "./integrityBarChart";
+import IntegrityTables from "./integrityTables";
 
 function WorkForceIntegrity() {
   return (
     <div>
-      <div className="flex justify-between">
-        <p>Live Feed from Sensors for various reading of equipment</p>
-        <p>Maintenance</p>
-      </div>
       <div className="grid grid-cols-3 gap-5">
         <div className="shadow rounded-lg mt-3 p-5">
           <button
@@ -88,16 +85,16 @@ function WorkForceIntegrity() {
               <thead className="text-xs text-white uppercase rounded bg-blue-700 dark:bg-blue-700 dark:text-white">
                 <tr>
                   <th scope="col" className="px-6 py-3">
-                    Name
+                    Work Order No.
                   </th>
                   <th scope="col" className="px-6 py-3">
-                    Role
+                    Work Order Title
                   </th>
                   <th scope="col" className="px-6 py-3">
-                    Status
+                    Ratings
                   </th>
                   <th scope="col" className="px-6 py-3">
-                    Condition
+                    Date
                   </th>
                 </tr>
               </thead>
@@ -113,37 +110,8 @@ function WorkForceIntegrity() {
               </tbody>
             </table>
           </div>
-          <p className="flex justify-between my-3">Work Histor</p>
-          <div className="relative overflow-x-auto shadow-md sm:rounded-lg mt-3">
-            <table className="w-full text-sm text-left ">
-              <thead className="text-xs text-white uppercase rounded bg-blue-700 dark:bg-blue-700 dark:text-white">
-                <tr>
-                  <th scope="col" className="px-6 py-3">
-                    Name
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    Role
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    Status
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    Condition
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row" className="px-6 py-3">
-                    .
-                  </th>
-                  <td className="px-6 py-4">.</td>
-                  <td className="px-6 py-4">.</td>
-                  <td className="px-6 py-4">.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <p className="flex justify-between my-3">Assessment Report</p>
+          <IntegrityTables />
         </div>
         <div className=" p-5">
           <div>
@@ -151,12 +119,50 @@ function WorkForceIntegrity() {
             <div className="  my-5 rounded-lg bg-slate-100 " />
             <IntegrityBarChart />
           </div>
-          <div className="h-72">
-            <p>Competence Radar</p>
+          <div className="">
+            <p className="mt-5">Competence Radar</p>
             <div className="  my-5 rounded-lg bg-slate-100" />
             <RadarChart />
           </div>
         </div>
+      </div>
+
+      <div className="relative overflow-x-auto mt-10">
+        <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+          <thead className="text-xs text-gray-700 uppercase 0">
+            <tr>
+              <th scope="col" className="px-6 py-3">
+                S/N
+              </th>
+              <th scope="col" className="px-6 py-3">
+                Certificate Title
+              </th>
+              <th scope="col" className="px-6 py-3">
+                Certificate Number
+              </th>
+              <th scope="col" className="px-6 py-3">
+                Expiry Date
+              </th>
+              <th scope="col" className="px-6 py-3">
+                Status
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="bg-white  dark:bg-gray-800 dark:border-gray-700  hover:bg-gray-50 dark:hover:bg-gray-600">
+              <th
+                scope="row"
+                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                1
+              </th>
+              <td className="px-6 py-4">Vaccination Records</td>
+              <td className="px-6 py-4">CTFc5893jh</td>
+              <td className="px-6 py-4">08. 06. 2022</td>
+              <td className="px-6 py-4">Valid</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );

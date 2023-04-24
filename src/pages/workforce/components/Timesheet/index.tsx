@@ -8,15 +8,13 @@ import React from "react";
 
 function Timesheet() {
   return (
-    <div>
-      <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <DemoContainer components={["DateCalendar", "DateCalendar"]}>
-          <DemoItem label="Static variant">
-            <DateCalendar defaultValue={dayjs("2022-04-17")} />
-          </DemoItem>
-        </DemoContainer>
-      </LocalizationProvider>
-    </div>
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <DemoContainer components={["DateCalendar", "DateCalendar"]}>
+        <DemoItem label="Static variant">
+          <DateCalendar defaultValue={dayjs("2022-04-17")} />
+        </DemoItem>
+      </DemoContainer>
+    </LocalizationProvider>
   );
 }
 
