@@ -1,65 +1,66 @@
 /* Sidebar */
 #sidebar {
-    transition: width ease-in-out 200ms;
+  transition: width ease-in-out 200ms;
 }
 
 #sidebar.menuClose {
-    width: 6rem !important;
+  width: 6rem !important;
 }
 
 #sidebar a span.menu-title {
-    animation: fadeIn ease-in-out 300ms 200ms both;
+  animation: fadeIn ease-in-out 300ms 200ms both;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateX(-4px);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-4px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 #sidebar a {
-    transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
 }
 
 #sidebar a:hover {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 #sidebar a svg {
-    filter: none;
-    transition: filter ease-in-out 200ms;
+  filter: none;
+  transition: filter ease-in-out 200ms;
 }
 
 #sidebar a:hover svg {
-    filter: invert(17%) sepia(94%) saturate(5223%) hue-rotate(219deg) brightness(90%) contrast(96%);
+  filter: invert(17%) sepia(94%) saturate(5223%) hue-rotate(219deg)
+    brightness(90%) contrast(96%);
 }
 
 .sidebar-active svg {
-    filter: invert(17%) sepia(94%) saturate(5223%) hue-rotate(219deg) brightness(90%) contrast(96%) !important;
+  filter: invert(17%) sepia(94%) saturate(5223%) hue-rotate(219deg)
+    brightness(90%) contrast(96%) !important;
 }
-
 
 /* Condition stats */
 .condition-high {
-    background: #E0FFE3;
-    border: 2px solid #16F62C;
-    color: #16F62C;
+  background: #e0ffe3;
+  border: 2px solid #16f62c;
+  color: #16f62c;
 }
 
 .condition-low {
-    background: #E3EDFF;
-    border: 2px solid #054CD6;
-    color: #054CD6;
+  background: #e3edff;
+  border: 2px solid #054cd6;
+  color: #054cd6;
 }
 
 .condition-out {
-    background: #FFDFDC;
-    border: 2px solid #F92F1B;
-    color: #F92F1B;
+  background: #ffdfdc;
+  border: 2px solid #f92f1b;
+  color: #f92f1b;
 }

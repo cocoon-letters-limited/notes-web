@@ -13,6 +13,7 @@ import { useCustomPagination } from "hooks/useCustomPagination";
 import { useEffect } from "react";
 import Pagination from "../pagination";
 import style from "./style.module.css";
+import tableCheckbox from "./tableCheckbox";
 
 type TableInstanceWithHooks<T extends object> = TableInstance<T> &
   UsePaginationInstanceProps<T> &
@@ -31,6 +32,9 @@ const TableGroup = ({ showPagination, columns, data }: Props) => {
     { columns, data },
     usePagination,
     useRowSelect,
+    (hooks) => {
+      tableCheckbox(hooks);
+    },
   ) as TableInstanceWithHooks<any>;
 
   const {
