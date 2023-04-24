@@ -3,11 +3,12 @@ import React from "react";
 import QRCodeImage from "assets/images/svg/qrcode_sm.svg";
 import { Column } from "react-table";
 import MapIcon from "components/svg/mapIcon";
+import { Link } from "react-router-dom";
 
 type DataProps = {
   id: number;
   storeId: string;
-  metalSheet: string;
+  name: string;
   qrCode: string;
   location: string;
   manufacturer: string;
@@ -20,6 +21,18 @@ type DataProps = {
 
 type ValueProps = {
   value?: any;
+};
+
+const NameCard = ({ value }: ValueProps) => {
+  return (
+    <Link
+      to="/material/12"
+      aria-label={`${value}`}
+      className="hover:text-primary"
+    >
+      {value}
+    </Link>
+  );
 };
 
 const QRCodeCard = ({ value }: ValueProps) => {
@@ -65,7 +78,8 @@ const Material = () => {
       },
       {
         Header: "Name",
-        accessor: "metalSheet",
+        accessor: "name",
+        Cell: NameCard,
       },
       {
         Header: "_",
@@ -112,7 +126,7 @@ const Material = () => {
       {
         id: 1,
         storeId: "MT1993812",
-        metalSheet: "Metal Sheet",
+        name: "Metal Sheet",
         qrCode: "123453",
         location: "12345",
         manufacturer: "Siemens",
@@ -125,7 +139,7 @@ const Material = () => {
       {
         id: 2,
         storeId: "MT1993812",
-        metalSheet: "Metal Sheet",
+        name: "Metal Sheet",
         qrCode: "123453",
         location: "12345",
         manufacturer: "Siemens",
@@ -138,7 +152,7 @@ const Material = () => {
       {
         id: 3,
         storeId: "MT1993812",
-        metalSheet: "Metal Sheet",
+        name: "Metal Sheet",
         qrCode: "123453",
         location: "12345",
         manufacturer: "Siemens",
