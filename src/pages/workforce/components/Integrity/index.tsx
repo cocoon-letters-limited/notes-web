@@ -82,30 +82,30 @@ function WorkForceIntegrity() {
           <p className="flex justify-between my-3">Work Histor</p>
           <div className="relative overflow-x-auto shadow-md sm:rounded-lg mt-3">
             <table className="w-full text-sm text-left ">
-              <thead className="text-xs text-white uppercase rounded bg-blue-700 dark:bg-blue-700 dark:text-white">
+              <thead className="text-xs  text-white uppercase rounded bg-blue-700 dark:bg-blue-700 dark:text-white">
                 <tr>
-                  <th scope="col" className="px-6 py-3">
+                  <th scope="col" className="p-2">
                     Work Order No.
                   </th>
-                  <th scope="col" className="px-6 py-3">
+                  <th scope="col" className="">
                     Work Order Title
                   </th>
-                  <th scope="col" className="px-6 py-3">
+                  <th scope="col" className="">
                     Ratings
                   </th>
-                  <th scope="col" className="px-6 py-3">
+                  <th scope="col" className="">
                     Date
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row" className="px-6 py-3">
+                  <th scope="row" className="">
                     .
                   </th>
-                  <td className="px-6 py-4">.</td>
-                  <td className="px-6 py-4">.</td>
-                  <td className="px-6 py-4">.</td>
+                  <td className="">.</td>
+                  <td className="">.</td>
+                  <td className="">.</td>
                 </tr>
               </tbody>
             </table>
