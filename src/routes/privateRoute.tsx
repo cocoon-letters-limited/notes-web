@@ -7,6 +7,7 @@ import Equipment from "pages/equipment/index";
 import EquipmentProfileLaypout from "pages/equipment/equipmentProfile";
 import ViewNoteDetails from "pages/notes/viewNoteDetails";
 import Workforce from "pages/workforce";
+import EquipmentList from "pages/equipment/EquipmentList";
 
 const privateRoute = {
   path: "/",
@@ -36,13 +37,13 @@ const privateRoute = {
     {
       path: "equipment",
       element: <Equipment />,
-    },
-    {
-      path: "material",
-      element: <Equipment />,
       children: [
         {
-          path: "equipment-profile",
+          path: "",
+          element: <EquipmentList />,
+        },
+        {
+          path: "equipment-bio",
           element: <EquipmentProfileLaypout />,
         },
       ],

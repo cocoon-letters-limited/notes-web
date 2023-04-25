@@ -3,7 +3,7 @@ import { IconButton } from "@mui/material";
 import ViewEquipment from "./viewEquipment";
 import AddEquipment from "./addEquipment";
 
-function EquipmentRegister() {
+function EquipmentList() {
   const [showEquipment, setShowEquipment] = React.useState(false);
   return (
     <div>
@@ -62,4 +62,4 @@ function EquipmentRegister() {
   );
 }
 
-export default EquipmentRegister;
+export default EquipmentList;

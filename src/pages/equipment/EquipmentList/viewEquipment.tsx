@@ -76,19 +76,17 @@ function ViewEquipment() {
                 </div>
               </th>
               <td className="p-2">
-                <button
-                  type="button"
-                  className="w-fit px-5 border-solid py-2 text-xs border-2 border-green-500 bg-green-200 "
-                >
-                  IGC
-                </button>
-              </td>
-              <td className="p-2">EBMM</td>
-              <td className="p-2">
-                <Link to="equipment-profile">
-                  Electric Block Moulding Machine
+                <Link to="/equipment/equipment-bio">
+                  <button
+                    type="button"
+                    className="w-fit px-5 border-solid py-2 text-xs border-2 border-green-500 bg-green-200 "
+                  >
+                    IGC
+                  </button>
                 </Link>
               </td>
+              <td className="p-2">EBMM</td>
+              <td className="p-2">Electric Block Moulding Machine</td>
               <td className="p-2 text-left">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
