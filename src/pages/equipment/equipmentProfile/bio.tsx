@@ -61,10 +61,10 @@ function Bio() {
         </div>
         <div className="bg-gray-100 p-5 rounded-lg">
           <div className="flex justify-between">
-            <p className="font-normal text-2xl">Notes</p>
+            <p className="font-normal ">Notes</p>
             <button
               type="button"
-              className="w-fit px-3 bg-blue-700 text-white rounded-lg"
+              className="w-fit px-3 bg-blue-700 text-xs text-white rounded-lg"
             >
               New
             </button>
@@ -72,7 +72,7 @@ function Bio() {
           <div className="p-3 bg-white rounded-lg mt-4">
             <div className="border-l-8 border-fuchsia-600 pl-3">
               <div className="flex">
-                <p className="font-medium text-1xl mr-5">Use of Metal plates</p>
+                <p className="font-medium  mr-5">Use of Metal plates</p>
                 <span className="bg-fuchsia-600  text-white  text-xs font-medium  px-2.5 py-1 rounded-full  dark:text-white">
                   Lesson note
                 </span>
@@ -87,7 +87,7 @@ function Bio() {
           <div className="p-3 bg-white rounded-lg mt-4">
             <div className="border-l-8 border-fuchsia-600 pl-3">
               <div className="flex">
-                <p className="font-medium text-1xl mr-5">Use of Metal plates</p>
+                <p className="font-medium  mr-5">Use of Metal plates</p>
                 <span className="bg-fuchsia-600  text-white  text-xs font-medium  px-2.5 py-1 rounded-full  dark:text-white">
                   Lesson note
                 </span>

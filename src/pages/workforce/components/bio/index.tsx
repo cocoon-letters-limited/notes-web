@@ -1,7 +1,14 @@
 import React from "react";
+import WorkforceBioView from "./workforceBioView";
+import WorkforceeEditeBio from "./WorkforceeEditeBio";
 
-function Bio() {
-  return <div>Bio</div>;
+function WorkforceBio() {
+  return (
+    <div>
+      <WorkforceBioView />
+      <WorkforceeEditeBio />
+    </div>
+  );
 }
 
-export default Bio;
+export default WorkforceBio;

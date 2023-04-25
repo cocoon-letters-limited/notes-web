@@ -7,7 +7,7 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DemoContainer, DemoItem } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 
-function WorkforceBio() {
+function WorkforceBioView() {
   return (
     <div>
       <div className=" bg-[#F6F7FB] p-4 rounded-lg rounded-lg">
@@ -225,4 +225,4 @@ function WorkforceBio() {
   );
 }
 
-export default WorkforceBio;
+export default WorkforceBioView;

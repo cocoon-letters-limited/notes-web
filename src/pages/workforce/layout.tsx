@@ -2,7 +2,7 @@ import React from "react";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import { Box, Tab } from "@mui/material";
 import Profile from "./components/profile";
-import WorkforceBio from "./components/bio/workforceBio";
+import WorkforceBio from "./components/bio/workforceBioView";
 import Relationships from "./components/relationships";
 import WorkforceTraning from "./components/Training";
 import Workfocefiles from "./components/files";
