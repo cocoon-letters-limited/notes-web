@@ -46,21 +46,27 @@
     brightness(90%) contrast(96%) !important;
 }
 
-/* Condition stats */
-.condition-high {
+/* Status */
+.status-green {
   background: #e0ffe3;
   border: 2px solid #16f62c;
   color: #16f62c;
 }
 
-.condition-low {
+.status-blue {
   background: #e3edff;
   border: 2px solid #054cd6;
   color: #054cd6;
 }
 
-.condition-out {
+.status-red {
   background: #ffdfdc;
   border: 2px solid #f92f1b;
   color: #f92f1b;
 }
+
+.status-yellow {
+    background: #FFF1CF;
+    border: 2px solid #F9C81B;
+    color: #F9C81B;
+  }

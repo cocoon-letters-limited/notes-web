@@ -8,6 +8,8 @@ import EquipmentProfileLaypout from "pages/equipment/equipmentProfile";
 import ViewNoteDetails from "pages/notes/viewNoteDetails";
 import Material from "pages/material";
 import MaterialProfile from "pages/material/materialProfile";
+import Maintenance from "pages/maintenance";
+import CreateMaintenance from "pages/maintenance/createMaintenance";
 
 const privateRoute = {
   path: "/",
@@ -47,6 +49,14 @@ const privateRoute = {
     {
       path: "material/:slug",
       element: <MaterialProfile />,
+    },
+    {
+      path: "maintenance",
+      element: <Maintenance />,
+    },
+    {
+      path: "maintenance/create",
+      element: <CreateMaintenance />,
     },
   ],
 };
