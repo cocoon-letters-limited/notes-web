@@ -1,12 +1,9 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 function DepreciationEdit() {
   return (
     <div className="w-full">
       <div className="grid md:grid-cols-2 md:gap-6">
         <div className="relative z-0 w-full mb-6 group">
-          <label htmlFor="email" className="block mb-2 text-sm font-medium">
-            Current Value
-          </label>
+          <p className="block mb-2 text-sm font-medium">Current Value</p>
           <input
             type="text"
             id="email"
@@ -16,9 +13,7 @@ function DepreciationEdit() {
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
-          <label htmlFor="email" className="block mb-2 text-sm font-medium ">
-            Manufacturer name
-          </label>
+          <p className="block mb-2 text-sm font-medium ">Manufacturer name</p>
           <input
             type="text"
             id="email"
@@ -30,12 +25,7 @@ function DepreciationEdit() {
       </div>
       <div className="grid md:grid-cols-2 md:gap-6">
         <div className="relative z-0 w-full mb-6 group">
-          <label
-            htmlFor="countries"
-            className="block mb-2 text-sm font-medium "
-          >
-            Depreciation Method
-          </label>
+          <p className="block mb-2 text-sm font-medium ">Depreciation Method</p>
           <select
             id="countries"
             className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -47,12 +37,7 @@ function DepreciationEdit() {
           </select>
         </div>
         <div className="relative z-0 w-full mb-6 group">
-          <label
-            htmlFor="ScheduleNumber"
-            className="block mb-2 text-sm font-medium "
-          >
-            Schedule number
-          </label>
+          <p className="block mb-2 text-sm font-medium ">Schedule number</p>
           <input
             type="text"
             id="ScheduleNumber"
@@ -64,9 +49,9 @@ function DepreciationEdit() {
       </div>
       <div className="grid md:grid-cols-2 md:gap-6">
         <div className="relative z-0 w-full mb-6 group">
-          <label htmlFor="Function" className="block mb-2 text-sm font-medium ">
+          <p className="block mb-2 text-sm font-medium ">
             Last re-adjusted date
-          </label>
+          </p>
           <input
             type="text"
             id="Function"
@@ -76,9 +61,7 @@ function DepreciationEdit() {
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
-          <label htmlFor="Function" className="block mb-2 text-sm font-medium ">
-            Depreciation (%)
-          </label>
+          <p className="block mb-2 text-sm font-medium ">Depreciation (%)</p>
           <input
             type="text"
             id="Function"
@@ -90,9 +73,7 @@ function DepreciationEdit() {
       </div>
       <div className="grid md:grid-cols-2 md:gap-6">
         <div className="relative z-0 w-full mb-6 group">
-          <label htmlFor="Function" className="block mb-2 text-sm font-medium ">
-            Date Capitalised
-          </label>
+          <p className="block mb-2 text-sm font-medium ">Date Capitalised</p>
           <input
             type="text"
             id="Function"
@@ -102,9 +83,9 @@ function DepreciationEdit() {
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
-          <label htmlFor="Function" className="block mb-2 text-sm font-medium ">
+          <p className="block mb-2 text-sm font-medium ">
             Last re-adjusted Value
-          </label>
+          </p>
           <input
             type="text"
             id="Function"
@@ -116,9 +97,7 @@ function DepreciationEdit() {
       </div>
       <div className="grid md:grid-cols-2 md:gap-6">
         <div className="relative z-0 w-full mb-6 group">
-          <label htmlFor="Function" className="block mb-2 text-sm font-medium ">
-            Capital Value
-          </label>
+          <p className="block mb-2 text-sm font-medium ">Capital Value</p>
           <input
             type="text"
             id="Function"
@@ -128,9 +107,7 @@ function DepreciationEdit() {
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
-          <label htmlFor="Function" className="block mb-2 text-sm font-medium ">
-            Written Down Value
-          </label>
+          <p className="block mb-2 text-sm font-medium ">Written Down Value</p>
           <input
             type="text"
             id="Function"

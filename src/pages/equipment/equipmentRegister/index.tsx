@@ -1,10 +1,5 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/button-has-type */
 import React from "react";
-// import { PhotoCamera } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
-// import AddEquipment from "./addEquipment";
 import ViewEquipment from "./viewEquipment";
 import AddEquipment from "./addEquipment";
 
@@ -17,6 +12,7 @@ function EquipmentRegister() {
           <p className="text-2xl">Equipment</p>
         ) : (
           <button
+            type="button"
             className="bg-blue-200 border border-2 border-blue-700 w-fit px-5"
             onClick={() => setShowEquipment(false)}
           >
@@ -46,10 +42,14 @@ function EquipmentRegister() {
               />
             </svg>
           </IconButton>
-          <button className="w-fit py-2 border-2 border-solid rounded-lg mx-2 px-3 border-blue-700 text-blue-700">
+          <button
+            type="button"
+            className="w-fit py-2 border-2 border-solid rounded-lg mx-2 px-3 border-blue-700 text-blue-700"
+          >
             Subscribe
           </button>
           <button
+            type="button"
             onClick={() => setShowEquipment(true)}
             className="w-fit py-2 border-2 bg-blue-700 rounded-lg px-3 border-blue-700 text-white"
           >
