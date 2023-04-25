@@ -1,12 +1,14 @@
 import React from "react";
-import EquipmentRegister from "./equipmentRegister";
-import EquipmentProfileLaypout from "./equipmentProfile";
-
+import { Outlet } from "react-router-dom";
+// import EquipmentList from "./EquipmentList";
+// import EquipmentProfileLaypout from "./equipmentProfile";
+//
 function Equipment() {
   return (
     <div className=" ">
-      <EquipmentRegister />
-      <EquipmentProfileLaypout />
+      <Outlet />
+      {/* <EquipmentList /> */}
+      {/* <EquipmentProfileLaypout /> */}
     </div>
   );
 }
