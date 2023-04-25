@@ -47,8 +47,8 @@ function EquipmentProfileLaypout() {
 
   return (
     <div>
-      <div className="md:flex">
-        <div className="bg-white p-4 rounded-2xl basis-1/4">
+      <div className="grid grid-cols-4 gap-4">
+        <div className="bg-white p-4 rounded-2xl  ">
           <div className=" flex justify-center align-center">
             <img
               src={production1}
@@ -92,7 +92,7 @@ function EquipmentProfileLaypout() {
           </div>
         </div>
 
-        <div className="bg-white rounded-lg ml-3  w-full">
+        <div className="bg-white rounded-lg ml-3  w-full col-span-3">
           <Box sx={{ width: "100%" }}>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs
