@@ -9,11 +9,11 @@ function EquipmentRegister() {
     <div>
       <div className="flex justify-between">
         {!showEquipment ? (
-          <p className="text-2xl">Equipment</p>
+          <p className="">Equipment</p>
         ) : (
           <button
             type="button"
-            className="bg-blue-200 border border-2 border-blue-700 w-fit px-5"
+            className="bg-blue-200 rounded-2xl  w-fit px-5"
             onClick={() => setShowEquipment(false)}
           >
             x
