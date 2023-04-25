@@ -1,4 +1,3 @@
-/* eslint-disable react/button-has-type */
 import { Pagination, Rating } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -77,7 +76,10 @@ function ViewEquipment() {
                 </div>
               </th>
               <td className="p-2">
-                <button className="w-fit px-5 border-solid py-2 text-xs border-2 border-green-500 bg-green-200 ">
+                <button
+                  type="button"
+                  className="w-fit px-5 border-solid py-2 text-xs border-2 border-green-500 bg-green-200 "
+                >
                   IGC
                 </button>
               </td>
@@ -115,7 +117,10 @@ function ViewEquipment() {
                 <Rating name="read-only" value={6} readOnly />
               </td>
               <td className="p-2">
-                <button className="w-fit px-5 border-solid py-2 border-2 border-green-500 bg-green-200 ">
+                <button
+                  type="button"
+                  className="w-fit px-5 border-solid py-2 border-2 border-green-500 bg-green-200 "
+                >
                   IGC
                 </button>
               </td>

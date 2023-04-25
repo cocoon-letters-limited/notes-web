@@ -1,12 +1,9 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 function IdentificationEdit() {
   return (
     <div className="w-full">
       <div className="grid md:grid-cols-2 md:gap-6">
         <div className="relative z-0 w-full mb-6 group">
-          <label htmlFor="email" className="block mb-2 text-sm font-medium">
-            Owning team name
-          </label>
+          <p className="block mb-2 text-sm font-medium">Owning team name</p>
           <input
             type="text"
             id="email"
@@ -16,9 +13,7 @@ function IdentificationEdit() {
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
-          <label htmlFor="email" className="block mb-2 text-sm font-medium ">
-            Serial number
-          </label>
+          <p className="block mb-2 text-sm font-medium ">Serial number</p>
           <input
             type="text"
             id="email"
@@ -30,12 +25,7 @@ function IdentificationEdit() {
       </div>
       <div className="grid md:grid-cols-2 md:gap-6">
         <div className="relative z-0 w-full mb-6 group">
-          <label
-            htmlFor="countries"
-            className="block mb-2 text-sm font-medium "
-          >
-            Owning team code
-          </label>
+          <p className="block mb-2 text-sm font-medium ">Owning team code</p>
           <select
             id="countries"
             className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -47,12 +37,7 @@ function IdentificationEdit() {
           </select>
         </div>
         <div className="relative z-0 w-full mb-6 group">
-          <label
-            htmlFor="ScheduleNumber"
-            className="block mb-2 text-sm font-medium "
-          >
-            Schedule number
-          </label>
+          <p className="block mb-2 text-sm font-medium ">Schedule number</p>
           <input
             type="text"
             id="ScheduleNumber"
@@ -63,9 +48,7 @@ function IdentificationEdit() {
         </div>
       </div>
       <div className="relative z-0 w-full mb-6 group">
-        <label htmlFor="Function" className="block mb-2 text-sm font-medium ">
-          Function
-        </label>
+        <p className="block mb-2 text-sm font-medium ">Function</p>
         <input
           type="text"
           id="Function"
