@@ -104,8 +104,8 @@ function Integrity() {
               />
             </svg>
           </button>
-          <span className="m-2 text-gray-400">Running Hours</span>
-          <p className="text-fuchsia-600 text-3xl mt-2">225 hrs</p>
+          <span className="m-2 text-gray-400 text-xs">Running Hours</span>
+          <p className="text-fuchsia-600  mt-2">225 hrs</p>
         </div>
         <div className="shadow rounded-lg mt-3 p-5">
           <button
@@ -127,8 +127,8 @@ function Integrity() {
               />
             </svg>
           </button>
-          <span className="m-2 text-gray-400">Running Hours</span>
-          <p className="text-fuchsia-600 text-3xl mt-2">225 hrs</p>
+          <span className="m-2 text-gray-400 text-xs">Running Hours</span>
+          <p className="text-fuchsia-600  mt-2">225 hrs</p>
         </div>
         <div className="shadow rounded-lg mt-3 p-5">
           <button
@@ -150,8 +150,8 @@ function Integrity() {
               />
             </svg>
           </button>
-          <span className="m-2 text-gray-400">Running Hours</span>
-          <p className="text-fuchsia-600 text-3xl mt-2">225 hrs</p>
+          <span className="m-2 text-gray-400 text-xs">Running Hours</span>
+          <p className="text-fuchsia-600  mt-2">225 hrs</p>
         </div>
       </div>
       <p className="text-blue-700 my-5">Create Procedure</p>
