@@ -9,7 +9,7 @@ import Workfocefiles from "./components/files";
 import Timesheet from "./components/Timesheet";
 import WorkForceIntegrity from "./components/Integrity";
 
-function Layout() {
+function ManpowerLayout() {
   const [value, setValue] = React.useState("1");
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
@@ -60,4 +60,4 @@ function Layout() {
   );
 }
 
-export default Layout;
+export default ManpowerLayout;

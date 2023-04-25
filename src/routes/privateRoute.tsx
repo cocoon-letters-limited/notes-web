@@ -8,6 +8,8 @@ import EquipmentProfileLaypout from "pages/equipment/equipmentProfile";
 import ViewNoteDetails from "pages/notes/viewNoteDetails";
 import Workforce from "pages/workforce";
 import EquipmentList from "pages/equipment/EquipmentList";
+import WorkoforceLIst from "pages/workforce/workforceList";
+import ManpowerLayout from "pages/workforce/layout";
 
 const privateRoute = {
   path: "/",
@@ -33,6 +35,16 @@ const privateRoute = {
     {
       path: "manpower",
       element: <Workforce />,
+      children: [
+        {
+          path: "",
+          element: <WorkoforceLIst />,
+        },
+        {
+          path: "ManpowerLayout",
+          element: <ManpowerLayout />,
+        },
+      ],
     },
     {
       path: "equipment",

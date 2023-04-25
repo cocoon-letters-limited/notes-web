@@ -1,8 +1,8 @@
 import React from "react";
-import Layout from "./layout";
+import { Outlet } from "react-router-dom";
 
 function Workforce() {
-  return <Layout />;
+  return <Outlet />;
 }
 
 export default Workforce;
