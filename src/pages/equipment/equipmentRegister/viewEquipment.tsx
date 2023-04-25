@@ -15,7 +15,7 @@ function ViewEquipment() {
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-white uppercase bg-blue-700 dark:bg-gray-700 dark:text-gray-400">
             <tr>
-              <th scope="col" className="p-2">
+              <th scope="col" className="p-3">
                 <span className="flex items-center">
                   <input
                     id="default-checkbox"
@@ -25,37 +25,37 @@ function ViewEquipment() {
                   />
                 </span>
               </th>
-              <th scope="col" className="p-2 pr-3">
+              <th scope="col" className="p-3">
                 Status
               </th>
-              <th scope="col" className="p-2">
+              <th scope="col" className="p-3">
                 Code
               </th>
-              <th scope="col" className="p-2">
+              <th scope="col" className="p-3">
                 Name
               </th>
-              <th scope="col" className="">
+              <th scope="col" className="p-3">
                 <span>Location</span>
               </th>
-              <th scope="col" className="p-2">
+              <th scope="col" className="p-3">
                 Manufacturer
               </th>
-              <th scope="col" className="p-2">
+              <th scope="col" className="p-3">
                 Model
               </th>
-              <th scope="col" className="p-2">
+              <th scope="col" className="p-3">
                 Type
               </th>
-              <th scope="col" className="p-2">
+              <th scope="col" className="p-3">
                 Condition - Potential
               </th>
-              <th scope="col" className="p-2">
+              <th scope="col" className="p-3">
                 PM Status
               </th>
-              <th scope="col" className="p-2">
+              <th scope="col" className="p-3">
                 <span className="">Criticality</span>
               </th>
-              <th scope="col" className="p-2">
+              <th scope="col" className="p-3">
                 <span className="">Level</span>
               </th>
             </tr>
@@ -64,7 +64,7 @@ function ViewEquipment() {
             <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
               <th
                 scope="row"
-                className="p-2 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                className="p-3 font-medium text-gray-900 whitespace-nowrap dark:text-white"
               >
                 <div className="flex items-center">
                   <input
