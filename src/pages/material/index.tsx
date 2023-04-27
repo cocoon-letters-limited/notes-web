@@ -5,7 +5,7 @@ import { Column } from "react-table";
 import MapIcon from "components/svg/mapIcon";
 import { Link } from "react-router-dom";
 
-type DataProps = {
+export type DataProps = {
   id: number;
   storeId: string;
   name: string;

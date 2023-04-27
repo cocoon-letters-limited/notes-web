@@ -1,11 +1,17 @@
 import React from "react";
 
-function WorkForceTraningDetails() {
+interface ChildProps {
+  onClick: () => void;
+}
+
+const WorkForceTraningDetails: React.FC<ChildProps> = ({ onClick }) => {
   return (
     <div>
       <div className="flex justify-between mt-2">
         <div>
-          <span>back icon</span>
+          <button type="button" onClick={onClick}>
+            back icon
+          </button>
           <span className="font-semibold ml-3">Digital Marketing Strategy</span>
         </div>
         <button
@@ -58,6 +64,6 @@ function WorkForceTraningDetails() {
       </ol>
     </div>
   );
-}
+};
 
 export default WorkForceTraningDetails;

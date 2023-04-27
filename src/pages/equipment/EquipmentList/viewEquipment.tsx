@@ -1,8 +1,149 @@
-import { Pagination, Rating } from "@mui/material";
+import { Rating } from "@mui/material";
+import TableGroup from "components/elements/tableGroup";
+import { DataProps } from "pages/material";
 import React from "react";
 import { Link } from "react-router-dom";
+import { Column } from "react-table";
 
 function ViewEquipment() {
+  const columns = React.useMemo<Column<any>[]>(
+    () => [
+      {
+        Header: "STATUS",
+        accessor: "storeId", // accessor is the "key" in the data
+        Cell: (
+          <button
+            type="button"
+            className="w-fit px-3 border-solid py-1 text-xs border-2 border-green-500 bg-green-200 "
+          >
+            IGC
+          </button>
+        ),
+      },
+      {
+        Header: "CODE",
+        accessor: "CODE",
+        Cell: "EBMM",
+      },
+      {
+        Header: "NAME",
+        accessor: "NAME",
+        Cell: (
+          <Link to="/equipment/equipment-bio">
+            {" "}
+            Electric Block Moulding Machine
+          </Link>
+        ),
+      },
+      {
+        Header: "LOCATION",
+        accessor: "LOCATION",
+        Cell: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="w-6 h-6 text-blue-700"
+          >
+            <path
+              fillRule="evenodd"
+              d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+              clipRule="evenodd"
+            />
+          </svg>
+        ),
+      },
+      {
+        Header: "MANUFACTURER	",
+        accessor: "MANUFACTURER	",
+        Cell: "Block",
+      },
+      {
+        Header: "MODEL	",
+        accessor: "MODEL	",
+        Cell: "2018	",
+      },
+      {
+        Header: "TYPE",
+        accessor: "TYPE",
+        Cell: "Blue",
+      },
+      {
+        Header: "PM STATUS",
+        accessor: "PM STATUS",
+        Cell: (
+          <button
+            type="button"
+            className="w-fit px-3 border-solid py-1 text-xs border-2 border-green-500 bg-green-200 "
+          >
+            IGC
+          </button>
+        ),
+      },
+      {
+        Header: "CONDITION - POTENTIAL	",
+        accessor: "CONDITION - POTENTIAL	",
+        Cell: <Rating name="read-only" size="small" value={6} readOnly />,
+      },
+      {
+        Header: "CRITICALITY",
+        accessor: "	CRITICALITY",
+        Cell: "1",
+      },
+      {
+        Header: "LEVEL",
+        accessor: "LEVEL",
+        Cell: "1",
+      },
+    ],
+    [],
+  );
+
+  const data: DataProps[] = React.useMemo(
+    () => [
+      {
+        id: 1,
+        storeId: "MT1993812",
+        name: "Metal Sheet",
+        qrCode: "123453",
+        location: "12345",
+        manufacturer: "Siemens",
+        quantity: 48,
+        unit: "M^3",
+        condition: "High",
+        criticality: 1,
+        price: "2,500",
+      },
+      {
+        id: 2,
+        storeId: "MT1993812",
+        name: "Metal Sheet",
+        qrCode: "123453",
+        location: "12345",
+        manufacturer: "Siemens",
+        quantity: 48,
+        unit: "M^3",
+        condition: "Low",
+        criticality: 1,
+        price: "2,500",
+      },
+      {
+        id: 3,
+        storeId: "MT1993812",
+        name: "Metal Sheet",
+        qrCode: "123453",
+        location: "12345",
+        manufacturer: "Siemens",
+        quantity: 48,
+        unit: "M^3",
+        condition: "Out of Stock",
+        criticality: 1,
+        price: "2,500",
+      },
+    ],
+    [],
+  );
+
   return (
     <div>
       <div className="flex space-x-2 my-5">
@@ -11,130 +152,8 @@ function ViewEquipment() {
         </span>
         <span className="leading-tight font-semibold">In Good condition</span>
       </div>
-      <div className="relative overflow-x-auto shadow-md sm:rounded-lg  ">
-        <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-          <thead className="text-xs text-white uppercase bg-blue-700 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-              <th scope="col" className="p-3">
-                <span className="flex items-center">
-                  <input
-                    id="default-checkbox"
-                    type="checkbox"
-                    value=""
-                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                  />
-                </span>
-              </th>
-              <th scope="col" className="p-3 text-xs">
-                Status
-              </th>
-              <th scope="col" className="p-3 text-xs">
-                Code
-              </th>
-              <th scope="col" className="p-3 text-xs">
-                Name
-              </th>
-              <th scope="col" className="p-3 text-xs">
-                <span>Location</span>
-              </th>
-              <th scope="col" className="p-3 text-xs">
-                Manufacturer
-              </th>
-              <th scope="col" className="p-3 text-xs">
-                Model
-              </th>
-              <th scope="col" className="p-3 text-xs">
-                Type
-              </th>
-              <th scope="col" className="p-3 text-xs">
-                Condition - Potential
-              </th>
-              <th scope="col" className="p-3 text-xs">
-                PM Status
-              </th>
-              <th scope="col" className="p-3 text-xs">
-                <span className="">Criticality</span>
-              </th>
-              <th scope="col" className="p-3 text-xs">
-                <span className="">Level</span>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <th
-                scope="row"
-                className="p-3 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
-                <div className="flex items-center">
-                  <input
-                    id="default-checkbox"
-                    type="checkbox"
-                    value=""
-                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                  />
-                </div>
-              </th>
-              <td className="p-2">
-                <Link to="/equipment/equipment-bio">
-                  <button
-                    type="button"
-                    className="w-fit px-3 border-solid py-1 border-2 border-green-500 bg-green-200 text-xs"
-                  >
-                    IGC
-                  </button>
-                </Link>
-              </td>
-              <td className="p-2 text-xs">EBMM</td>
-              <td className="p-2 text-xs">Electric Block Moulding Machine</td>
-              <td className="p-2 text-left">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-4 text-blue-400 h-4"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                  />
-                </svg>
-              </td>
-              <td className="p-3 text-xs">Block</td>
-              <td className="p-2 text-xs">2018</td>
-              <td className="p-2 text-xs">Blue</td>
-              <td className="p-2">
-                <Rating name="read-only" size="small" value={6} readOnly />
-              </td>
-              <td className="p-2">
-                <button
-                  type="button"
-                  className="w-fit px-3 border-solid py-1 border-2 border-green-500 bg-green-200 text-xs"
-                >
-                  IGC
-                </button>
-              </td>
-              <td className="p-2">
-                <span>1 </span>
-              </td>
-              <td className="p-2">
-                <span>1 </span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div className="flex my-5">
-        <Pagination count={10} variant="outlined" color="primary" />
-      </div>
+
+      <TableGroup columns={columns} data={data} showPagination />
     </div>
   );
 }
