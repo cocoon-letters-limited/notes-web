@@ -9,7 +9,7 @@ const list = [
   { name: "ll", id: 5 },
 ];
 function WorkforceTraning() {
-  const [showDetails, setShowDetails] = useState(false);
+  const [showDetails, setShowDetails] = useState(true);
   const handleClick = () => {
     setShowDetails(true);
   };
