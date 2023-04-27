@@ -8,7 +8,7 @@ const CreateMaintenance = () => {
   return (
     <section className="relative h-full pt-4">
       <h1 className="text-default font-bold text-xl lg:text-2xl xl:text-3xl">
-        Create
+        Create Maintenance
       </h1>
 
       <div className="mt-8 bg-white rounded-md pt-6 lg:pt-8 pb-16 px-4">
