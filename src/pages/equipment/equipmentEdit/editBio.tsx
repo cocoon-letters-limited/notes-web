@@ -113,7 +113,7 @@ function EditBio() {
         </div>
       </div>
 
-      <div className="bg-white rounded-lg  py-5 w-full">
+      <div className="bg-white rounded-lg  w-full">
         <Box sx={{ width: "100%" }}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <Tabs

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import { Box, Button, Menu, MenuItem, Modal, Pagination } from "@mui/material";
 import React from "react";
 import {
@@ -104,8 +103,8 @@ function Integrity() {
               />
             </svg>
           </button>
-          <span className="m-2 text-gray-400">Running Hours</span>
-          <p className="text-fuchsia-600 text-3xl mt-2">225 hrs</p>
+          <span className="m-2 text-gray-400 text-xs">Running Hours</span>
+          <p className="text-fuchsia-600  mt-2">225 hrs</p>
         </div>
         <div className="shadow rounded-lg mt-3 p-5">
           <button
@@ -127,8 +126,8 @@ function Integrity() {
               />
             </svg>
           </button>
-          <span className="m-2 text-gray-400">Running Hours</span>
-          <p className="text-fuchsia-600 text-3xl mt-2">225 hrs</p>
+          <span className="m-2 text-gray-400 text-xs">Running Hours</span>
+          <p className="text-fuchsia-600  mt-2">225 hrs</p>
         </div>
         <div className="shadow rounded-lg mt-3 p-5">
           <button
@@ -150,8 +149,8 @@ function Integrity() {
               />
             </svg>
           </button>
-          <span className="m-2 text-gray-400">Running Hours</span>
-          <p className="text-fuchsia-600 text-3xl mt-2">225 hrs</p>
+          <span className="m-2 text-gray-400 text-xs">Running Hours</span>
+          <p className="text-fuchsia-600  mt-2">225 hrs</p>
         </div>
       </div>
       <p className="text-blue-700 my-5">Create Procedure</p>
@@ -216,12 +215,9 @@ function Integrity() {
                                   dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600
                                  dark:border-gray-500"
                           />
-                          <label
-                            htmlFor="checkbox-item-4"
-                            className="w-full ml-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300"
-                          >
+                          <p className="w-full ml-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">
                             Default checkbox
-                          </label>
+                          </p>
                         </div>
                       </MenuItem>
                       <MenuItem onClick={handleClose}>
@@ -235,12 +231,9 @@ function Integrity() {
                                   dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600
                                  dark:border-gray-500"
                           />
-                          <label
-                            htmlFor="checkbox-item-4"
-                            className="w-full ml-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300"
-                          >
+                          <p className="w-full ml-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">
                             Default checkbox
-                          </label>
+                          </p>
                         </div>
                       </MenuItem>
                     </Menu>

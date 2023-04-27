@@ -47,8 +47,8 @@ function EquipmentProfileLaypout() {
 
   return (
     <div>
-      <div className="md:flex w-screen">
-        <div className="bg-white p-4 rounded-2xl basis-1/4">
+      <div className="grid grid-cols-4 gap-4">
+        <div className="bg-white p-4 rounded-2xl  ">
           <div className=" flex justify-center align-center">
             <img
               src={production1}
@@ -57,17 +57,17 @@ function EquipmentProfileLaypout() {
             />
           </div>
           <div className="text-center">
-            <p className="font-semibold text-1xl ">Electrict block moulding</p>
+            <p className="font-semibold text-xs ">Electrict block moulding</p>
             <button
               type="button"
-              className="circle w-auto px-4 mb-4 mt-1 text-white rounded-full p-1 text-sm bg-blue-700"
+              className="circle w-auto px-4 mb-4 mt-1 text-xs text-white rounded-full p-1  bg-blue-700"
             >
               EBM2392
             </button>
           </div>
 
           <div className="p-3 bg-slate-100 mt-4 rounded-lg">
-            <p className="font-semibold m-4">Maintenance history</p>
+            <p className="font-semibold m-4 text-xs">Maintenance history</p>
 
             <ol className="relative border-l ml-4 border-blue-700 dark:border-gray-700">
               <li className="mb-10 ml-4">
@@ -92,7 +92,7 @@ function EquipmentProfileLaypout() {
           </div>
         </div>
 
-        <div className="bg-white rounded-lg ml-3 p-5 w-full">
+        <div className="bg-white rounded-lg ml-3  w-full col-span-3">
           <Box sx={{ width: "100%" }}>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs

@@ -1,4 +1,3 @@
-/* eslint-disable react/button-has-type */
 import { Pagination, Rating } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -12,51 +11,51 @@ function ViewEquipment() {
         </span>
         <span className="leading-tight font-semibold">In Good condition</span>
       </div>
-      <div className="relative overflow-x-auto shadow-md sm:rounded-lg ">
+      <div className="relative overflow-x-auto shadow-md sm:rounded-lg  ">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-white uppercase bg-blue-700 dark:bg-gray-700 dark:text-gray-400">
             <tr>
-              <th scope="col" className="px-6 py-3">
-                <div className="flex items-center">
+              <th scope="col" className="p-3">
+                <span className="flex items-center">
                   <input
                     id="default-checkbox"
                     type="checkbox"
                     value=""
                     className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                   />
-                </div>
+                </span>
               </th>
-              <th scope="col" className="px-6 py-3">
-                <div className="flex items-center">Status</div>
+              <th scope="col" className="p-3 text-xs">
+                Status
               </th>
-              <th scope="col" className="px-6 py-3">
-                <div className="flex items-center">Code</div>
+              <th scope="col" className="p-3 text-xs">
+                Code
               </th>
-              <th scope="col" className="px-6 py-3">
-                <div className="flex items-center">Name</div>
+              <th scope="col" className="p-3 text-xs">
+                Name
               </th>
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="p-3 text-xs">
                 <span>Location</span>
               </th>
-              <th scope="col" className="px-6 py-3">
-                <div className="flex items-center">Manufacturer</div>
+              <th scope="col" className="p-3 text-xs">
+                Manufacturer
               </th>
-              <th scope="col" className="px-6 py-3">
-                <div className="flex items-center">Model</div>
+              <th scope="col" className="p-3 text-xs">
+                Model
               </th>
-              <th scope="col" className="px-6 py-3">
-                <div className="flex items-center">Type</div>
+              <th scope="col" className="p-3 text-xs">
+                Type
               </th>
-              <th scope="col" className="px-6 py-3">
-                <div className="flex items-center">Condition - Potential </div>
+              <th scope="col" className="p-3 text-xs">
+                Condition - Potential
               </th>
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="p-3 text-xs">
                 PM Status
               </th>
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="p-3 text-xs">
                 <span className="">Criticality</span>
               </th>
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="p-3 text-xs">
                 <span className="">Level</span>
               </th>
             </tr>
@@ -65,7 +64,7 @@ function ViewEquipment() {
             <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
               <th
                 scope="row"
-                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                className="p-3 font-medium text-gray-900 whitespace-nowrap dark:text-white"
               >
                 <div className="flex items-center">
                   <input
@@ -76,25 +75,26 @@ function ViewEquipment() {
                   />
                 </div>
               </th>
-              <td className="px-6 py-4">
-                <button className="w-fit px-5 border-solid py-2 border-2 border-green-500 bg-green-200 ">
-                  IGC
-                </button>
-              </td>
-              <td className="px-6 py-4">EBMM</td>
-              <td className="px-6 py-4">
-                <Link to="equipment-profile">
-                  Electric Block Moulding Machine
+              <td className="p-2">
+                <Link to="/equipment/equipment-bio">
+                  <button
+                    type="button"
+                    className="w-fit px-3 border-solid py-1 border-2 border-green-500 bg-green-200 text-xs"
+                  >
+                    IGC
+                  </button>
                 </Link>
               </td>
-              <td className="px-6 py-4 text-right">
+              <td className="p-2 text-xs">EBMM</td>
+              <td className="p-2 text-xs">Electric Block Moulding Machine</td>
+              <td className="p-2 text-left">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="w-4 text-blue-400 h-4"
                 >
                   <path
                     strokeLinecap="round"
@@ -108,21 +108,24 @@ function ViewEquipment() {
                   />
                 </svg>
               </td>
-              <td className="px-6 py-4">Block</td>
-              <td className="px-6 py-4">2018</td>
-              <td className="px-6 py-4">Blue</td>
-              <td className="px-6 py-4">
-                <Rating name="read-only" value={6} readOnly />
+              <td className="p-3 text-xs">Block</td>
+              <td className="p-2 text-xs">2018</td>
+              <td className="p-2 text-xs">Blue</td>
+              <td className="p-2">
+                <Rating name="read-only" size="small" value={6} readOnly />
               </td>
-              <td className="px-6 py-4">
-                <button className="w-fit px-5 border-solid py-2 border-2 border-green-500 bg-green-200 ">
+              <td className="p-2">
+                <button
+                  type="button"
+                  className="w-fit px-3 border-solid py-1 border-2 border-green-500 bg-green-200 text-xs"
+                >
                   IGC
                 </button>
               </td>
-              <td className="px-6 py-4">
+              <td className="p-2">
                 <span>1 </span>
               </td>
-              <td className="px-6 py-4">
+              <td className="p-2">
                 <span>1 </span>
               </td>
             </tr>

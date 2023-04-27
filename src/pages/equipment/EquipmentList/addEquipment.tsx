@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable react/button-has-type */
 import React from "react";
 
 function AddEquipment() {
@@ -7,12 +5,9 @@ function AddEquipment() {
     <div>
       <div className="bg-white p-10 rounded-lg my-10 flex align-center justify-center">
         <form className="w-1/2 justify-center ">
-          <label
-            htmlFor="countries"
-            className="block mb-2 text-sm font-medium text-gray-900 "
-          >
+          <p className="block mb-2 text-sm font-medium text-gray-900 ">
             Status
-          </label>
+          </p>
           <select
             id="countries"
             className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -24,12 +19,9 @@ function AddEquipment() {
             <option value="DE">Germany</option>
           </select>
           <div className="my-3">
-            <label
-              htmlFor="email"
-              className="block mb-2 text-sm font-medium text-gray-900 "
-            >
+            <p className="block mb-2 text-sm font-medium text-gray-900 ">
               Status
-            </label>
+            </p>
             <input
               type="email"
               id="email"
@@ -39,12 +31,9 @@ function AddEquipment() {
             />
           </div>
           <div>
-            <label
-              htmlFor="countries"
-              className="block mb-2 text-sm font-medium text-gray-900 "
-            >
+            <p className="block mb-2 text-sm font-medium text-gray-900 ">
               Manufacturer
-            </label>
+            </p>
             <select
               id="countries"
               className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -57,12 +46,9 @@ function AddEquipment() {
             </select>
           </div>
           <div className="my-3">
-            <label
-              htmlFor="email"
-              className="block mb-2 text-sm font-medium text-gray-900 "
-            >
+            <p className="block mb-2 text-sm font-medium text-gray-900 ">
               Status
-            </label>
+            </p>
             <input
               type="email"
               id="email"
@@ -72,12 +58,9 @@ function AddEquipment() {
             />
           </div>
           <div className="my-3">
-            <label
-              htmlFor="email"
-              className="block mb-2 text-sm font-medium text-gray-900 "
-            >
+            <p className="block mb-2 text-sm font-medium text-gray-900 ">
               Status
-            </label>
+            </p>
             <input
               type="email"
               id="email"
@@ -107,10 +90,10 @@ function AddEquipment() {
                     d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
                   />
                 </svg>
-                <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
+                <div className="mb-2 text-sm text-gray-500 dark:text-gray-400">
                   <span className="font-semibold">Click to upload</span> or drag
                   and drop
-                </p>
+                </div>
                 <p className="text-xs text-gray-500 dark:text-gray-400">
                   SVG, PNG, JPG or GIF (MAX. 800x400px)
                 </p>
