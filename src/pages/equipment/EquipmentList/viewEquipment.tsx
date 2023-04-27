@@ -11,7 +11,7 @@ function ViewEquipment() {
         </span>
         <span className="leading-tight font-semibold">In Good condition</span>
       </div>
-      <div className="relative overflow-x-auto shadow-md sm:rounded-lg w-fit ">
+      <div className="relative overflow-x-auto shadow-md sm:rounded-lg  ">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-white uppercase bg-blue-700 dark:bg-gray-700 dark:text-gray-400">
             <tr>
@@ -25,37 +25,37 @@ function ViewEquipment() {
                   />
                 </span>
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3 text-xs">
                 Status
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3 text-xs">
                 Code
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3 text-xs">
                 Name
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3 text-xs">
                 <span>Location</span>
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3 text-xs">
                 Manufacturer
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3 text-xs">
                 Model
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3 text-xs">
                 Type
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3 text-xs">
                 Condition - Potential
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3 text-xs">
                 PM Status
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3 text-xs">
                 <span className="">Criticality</span>
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3 text-xs">
                 <span className="">Level</span>
               </th>
             </tr>
@@ -79,14 +79,14 @@ function ViewEquipment() {
                 <Link to="/equipment/equipment-bio">
                   <button
                     type="button"
-                    className="w-fit px-5 border-solid py-2 text-xs border-2 border-green-500 bg-green-200 "
+                    className="w-fit px-3 border-solid py-1 border-2 border-green-500 bg-green-200 text-xs"
                   >
                     IGC
                   </button>
                 </Link>
               </td>
-              <td className="p-2">EBMM</td>
-              <td className="p-2">Electric Block Moulding Machine</td>
+              <td className="p-2 text-xs">EBMM</td>
+              <td className="p-2 text-xs">Electric Block Moulding Machine</td>
               <td className="p-2 text-left">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ function ViewEquipment() {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="w-4 text-blue-400 h-4"
                 >
                   <path
                     strokeLinecap="round"
@@ -108,16 +108,16 @@ function ViewEquipment() {
                   />
                 </svg>
               </td>
-              <td className="p-3">Block</td>
-              <td className="p-2">2018</td>
-              <td className="p-2">Blue</td>
+              <td className="p-3 text-xs">Block</td>
+              <td className="p-2 text-xs">2018</td>
+              <td className="p-2 text-xs">Blue</td>
               <td className="p-2">
-                <Rating name="read-only" value={6} readOnly />
+                <Rating name="read-only" size="small" value={6} readOnly />
               </td>
               <td className="p-2">
                 <button
                   type="button"
-                  className="w-fit px-5 border-solid py-2 border-2 border-green-500 bg-green-200 "
+                  className="w-fit px-3 border-solid py-1 border-2 border-green-500 bg-green-200 text-xs"
                 >
                   IGC
                 </button>

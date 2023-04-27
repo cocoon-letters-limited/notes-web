@@ -25,28 +25,28 @@ function List() {
                   />
                 </span>
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3  text-xs">
                 Staff ID
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3  text-xs">
                 Role
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3  text-xs">
                 Name
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3  text-xs">
                 Availability
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3  text-xs">
                 Form
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3 text-xs">
                 Department
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3 text-xs">
                 Workgroups
               </th>
-              <th scope="col" className="p-3">
+              <th scope="col" className="p-3 text-xs">
                 icon
               </th>
             </tr>
@@ -66,9 +66,9 @@ function List() {
                   />
                 </div>
               </th>
-              <td className="p-2">78863</td>
-              <td className="p-3">John Obidi</td>
-              <td className="p-2">Operator 2</td>
+              <td className="p-2  text-xs">78863</td>
+              <td className="p-3  text-xs">John Obidi</td>
+              <td className="p-2  text-xs">Operator 2</td>
               <td className="p-2">
                 <Link to="/manpower/ManpowerLayout">
                   <button
