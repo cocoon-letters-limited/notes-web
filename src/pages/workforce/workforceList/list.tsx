@@ -11,7 +11,7 @@ function List() {
         </span>
         <span className="leading-tight font-semibold">On board</span>
       </div>
-      <div className="relative overflow-x-auto shadow-md sm:rounded-lg w-fit ">
+      <div className="relative overflow-x-auto shadow-md sm:rounded-lg  ">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-white uppercase bg-blue-700 dark:bg-blue-700 dark:text-white">
             <tr>
@@ -81,16 +81,16 @@ function List() {
               </td>
               <td className="p-2">.</td>
               <td className="p-2">Maintenance</td>
-              <td className="p-2 grid grid-cols-3 gap-2">
+              <td className="p-2 ">
                 <button
                   type="button"
-                  className="w-fit px-3 py-1 text-xs text-white rounded-lg bg-[#560BAD] "
+                  className="w-fit px-3 py-1  text-xs text-white rounded-lg bg-[#560BAD] "
                 >
                   ICT Unit 2
                 </button>
                 <button
                   type="button"
-                  className="w-fit px-3 py-1 text-xs text-white rounded-lg bg-blue-700 "
+                  className="w-fit px-3 py-1 mx-2 text-xs text-white rounded-lg bg-blue-700 "
                 >
                   ICT Unit 2
                 </button>
@@ -102,7 +102,7 @@ function List() {
                 </button>
                 <button
                   type="button"
-                  className="w-fit px-3 py-1 text-xs text-white rounded-lg bg-[#3D405B] "
+                  className="w-fit px-3 py-1 text-xs  ml-2  text-white rounded-lg bg-[#3D405B] "
                 >
                   ICT Unit 2
                 </button>

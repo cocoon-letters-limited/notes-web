@@ -64,7 +64,7 @@ function Notes() {
 
       <div className="grid grid-cols-3 h-full gap-5 mt-5">
         <div className=" rounded-lg  shadow bg-white">
-          <h2 className="mb-5 text-2xl font-extrabold tracking-tight rounded-t-lg  p-5 text-white bg-blue-700">
+          <h2 className="mb-5  font-extrabold tracking-tight rounded-t-lg  p-5 text-white bg-blue-700">
             Categories
           </h2>
           <div className=" p-4 bg-white ml-2 mr-2">
