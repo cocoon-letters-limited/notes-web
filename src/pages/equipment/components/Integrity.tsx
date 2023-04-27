@@ -1,7 +1,122 @@
-import { Pagination } from "@mui/material";
+import TableGroup from "components/elements/tableGroup";
+import { DataProps } from "pages/material";
 import React from "react";
+import { Column } from "react-table";
 
 function Integrity() {
+  const columns = React.useMemo<Column<any>[]>(
+    () => [
+      {
+        Header: "TITLE",
+        accessor: "TITLE", // accessor is the "key" in the data
+      },
+      {
+        Header: "PM TYPE",
+        accessor: "PM TYPE	",
+        Cell: "",
+      },
+      {
+        Header: "AVAILABILITY",
+        accessor: "AVAILABILITY",
+        Cell: (
+          <button
+            type="button"
+            className="px-3 w-fit border border-2 border-red-400 bg-red-100 rounded-lg text-red-400"
+          >
+            Onboard
+          </button>
+        ),
+      },
+      {
+        Header: "FORM",
+        accessor: "manufacturer",
+      },
+      {
+        Header: "DEPARTMENT	",
+        accessor: "DEPARTMENT	",
+        Cell: "DEPARTMENT",
+      },
+      {
+        Header: "WORKGROUPS",
+        accessor: "WORKGROUPS",
+        Cell: (
+          <div>
+            <button
+              type="button"
+              className="w-fit px-3 py-1  text-xs text-white rounded-lg bg-[#560BAD] "
+            >
+              ICT Unit 2
+            </button>
+            <button
+              type="button"
+              className="w-fit px-3 py-1 mx-2 text-xs text-white rounded-lg bg-blue-700 "
+            >
+              ICT Unit 2
+            </button>
+            <button
+              type="button"
+              className="w-fit px-3 py-1 text-xs text-white rounded-lg bg-[#B5179E] "
+            >
+              ICT Unit 2
+            </button>
+            <button
+              type="button"
+              className="w-fit px-3 py-1 text-xs  ml-2  text-white rounded-lg bg-[#3D405B] "
+            >
+              ICT Unit 2
+            </button>
+          </div>
+        ),
+      },
+    ],
+    [],
+  );
+
+  const data: DataProps[] = React.useMemo(
+    () => [
+      {
+        id: 1,
+        storeId: "MT1993812",
+        name: "Metal Sheet",
+        qrCode: "123453",
+        location: "12345",
+        manufacturer: "Siemens",
+        quantity: 48,
+        unit: "M^3",
+        condition: "High",
+        criticality: 1,
+        price: "2,500",
+      },
+      {
+        id: 2,
+        storeId: "MT1993812",
+        name: "Metal Sheet",
+        qrCode: "123453",
+        location: "12345",
+        manufacturer: "Siemens",
+        quantity: 48,
+        unit: "M^3",
+        condition: "Low",
+        criticality: 1,
+        price: "2,500",
+      },
+      {
+        id: 3,
+        storeId: "MT1993812",
+        name: "Metal Sheet",
+        qrCode: "123453",
+        location: "12345",
+        manufacturer: "Siemens",
+        quantity: 48,
+        unit: "M^3",
+        condition: "Out of Stock",
+        criticality: 1,
+        price: "2,500",
+      },
+    ],
+    [],
+  );
+
   return (
     <div>
       <div className="flex justify-between">
@@ -80,11 +195,12 @@ function Integrity() {
         </div>
       </div>
       <p className="text-blue-700 my-3">Create Procedure</p>
+
+      <TableGroup columns={columns} data={data} showPagination />
       <div className="grid grid-cols-2">
         <div className="">
           <div className="flex justify-between my-3">
             <p>PM Procedures</p>
-            <Pagination count={3} />
           </div>
           <div className="flex justify-between rounded-lg bg-blue-700 p-5 text-white">
             <p>PM Title</p>
