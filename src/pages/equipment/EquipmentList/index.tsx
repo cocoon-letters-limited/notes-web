@@ -19,7 +19,7 @@ function EquipmentList() {
             x
           </button>
         )}
-        <div className="text-blue-700">
+        <div className="text-blue-700  text-xs">
           <span>Upload csv</span>
           <IconButton
             color="primary"
@@ -33,7 +33,7 @@ function EquipmentList() {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-4 h-4"
             >
               <path
                 strokeLinecap="round"
@@ -44,14 +44,14 @@ function EquipmentList() {
           </IconButton>
           <button
             type="button"
-            className="w-fit py-2 border-2 border-solid rounded-lg mx-2 px-3 border-blue-700 text-blue-700"
+            className="w-fit py-2 border-2 border-solid rounded-lg  text-xs mx-2 px-3 border-blue-700 text-blue-700"
           >
             Subscribe
           </button>
           <button
             type="button"
             onClick={() => setShowEquipment(true)}
-            className="w-fit py-2 border-2 bg-blue-700 rounded-lg px-3 border-blue-700 text-white"
+            className="w-fit py-2 border-2 bg-blue-700 text-xs rounded-lg px-3 border-blue-700 text-white"
           >
             New Equipment
           </button>
