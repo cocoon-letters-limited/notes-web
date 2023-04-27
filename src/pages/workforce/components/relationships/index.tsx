@@ -1,7 +1,100 @@
 import { Rating } from "@mui/material";
+import TableGroup from "components/elements/tableGroup";
 import React from "react";
+import { Column } from "react-table";
+import { DataProps } from "pages/material";
 
 function Relationships() {
+  const columns = React.useMemo<Column<any>[]>(
+    () => [
+      {
+        Header: "NAME",
+        accessor: "NAME", // accessor is the "key" in the data
+        Cell: "Adeniji Victor	",
+      },
+      {
+        Header: "ROLE",
+        accessor: "	ROLE",
+        Cell: "Maintenance Superintendent",
+      },
+      {
+        Header: "RATINGS",
+        accessor: "RATINGS",
+        Cell: <Rating name="simple-controlled" value={4} />,
+      },
+      {
+        Header: "STATUS	",
+        accessor: "STATUS	",
+        Cell: (
+          <button
+            type="button"
+            className="text-xs text-[#16F62C] px-3 border-[#16F62C] border-2 py-1 bg-[#C9FFCE] "
+          >
+            Fit
+          </button>
+        ),
+      },
+      {
+        Header: "CONDITION	",
+        accessor: "DATE	",
+        Cell: (
+          <button
+            type="button"
+            className="text-xs text-[#F92F1B] px-3 border-[#F92F1B] border-2 py-1 bg-[#FFDADF] "
+          >
+            Holiday
+          </button>
+        ),
+      },
+    ],
+    [],
+  );
+
+  const data: DataProps[] = React.useMemo(
+    () => [
+      {
+        id: 1,
+        storeId: "MT1993812",
+        name: "Metal Sheet",
+        qrCode: "123453",
+        location: "12345",
+        manufacturer: "Siemens",
+        quantity: 48,
+        unit: "M^3",
+        condition: "High",
+        criticality: 1,
+        price: "2,500",
+      },
+      {
+        id: 2,
+        storeId: "MT1993812",
+        name: "Metal Sheet",
+        qrCode: "123453",
+        location: "12345",
+        manufacturer: "Siemens",
+        quantity: 48,
+        unit: "M^3",
+        condition: "Low",
+        criticality: 1,
+        price: "2,500",
+      },
+      {
+        id: 3,
+        storeId: "MT1993812",
+        name: "Metal Sheet",
+        qrCode: "123453",
+        location: "12345",
+        manufacturer: "Siemens",
+        quantity: 48,
+        unit: "M^3",
+        condition: "Out of Stock",
+        criticality: 1,
+        price: "2,500",
+      },
+    ],
+    [],
+  );
+
   return (
     <div>
       <div className="inline-flex rounded-md shadow-sm" role="group">
@@ -24,59 +117,8 @@ function Relationships() {
           Handover notes
         </button>
       </div>
-      <div className="relative overflow-x-auto shadow-md sm:rounded-lg mt-3">
-        <table className="w-full text-sm text-left ">
-          <thead className="text-xs text-white uppercase rounded bg-blue-700 dark:bg-blue-700 dark:text-white">
-            <tr>
-              <th scope="col" className="px-6 py-3">
-                Name
-              </th>
-              <th scope="col" className="px-6 py-3">
-                Role
-              </th>
-              <th scope="col" className="px-6 py-3">
-                Rating
-              </th>
-              <th scope="col" className="px-6 py-3">
-                Status
-              </th>
-              <th scope="col" className="px-6 py-3">
-                Condition
-              </th>
-              <th scope="col" className="px-6 py-3">
-                Icon
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row" className="px-6 py-3">
-                Adeniji Victor
-              </th>
-              <td className="px-6 py-4">Maintenance Superintendent</td>
-              <td className="px-6 py-4">
-                <Rating name="simple-controlled" value={4} />
-              </td>
-              <td className="px-6 py-4">
-                <button
-                  type="button"
-                  className="text-xs text-[#16F62C] px-3 border-[#16F62C] border-2 py-1 bg-[#C9FFCE] "
-                >
-                  Fit
-                </button>
-              </td>
-              <td className="px-6 py-4">
-                <button
-                  type="button"
-                  className="text-xs text-[#F92F1B] px-3 border-[#F92F1B] border-2 py-1 bg-[#FFDADF] "
-                >
-                  Holiday
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+
+      <TableGroup columns={columns} data={data} showPagination />
     </div>
   );
 }
