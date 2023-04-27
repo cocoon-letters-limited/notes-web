@@ -1,0 +1,14 @@
+.tr {
+  box-shadow: 0px 4px 20px rgba(199, 199, 199, 0.25);
+}
+.tableHeadRow .th:first-child,
+.tr .td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.tableHeadRow .th:last-child,
+.tr .td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
