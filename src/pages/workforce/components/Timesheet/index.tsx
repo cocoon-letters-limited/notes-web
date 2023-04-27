@@ -6,12 +6,17 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import dayjs from "dayjs";
 import React from "react";
 
+import style from "./style.module.css";
+
 function Timesheet() {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DemoContainer components={["DateCalendar", "DateCalendar"]}>
         <DemoItem label="Static variant">
-          <DateCalendar defaultValue={dayjs("2022-04-17")} />
+          <DateCalendar
+            className={`text-white font-semibold text-2xl px-6 py-4 lg:py-5 text-left ${style.button}`}
+            defaultValue={dayjs("2022-04-17")}
+          />
         </DemoItem>
       </DemoContainer>
     </LocalizationProvider>

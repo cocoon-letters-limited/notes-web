@@ -1,9 +1,36 @@
 import React from "react";
+import { Column } from "react-table";
+import TableGroup from "components/elements/tableGroup";
+import { DataProps } from "pages/material";
 import { RadarChart } from "./radarChart";
 import { IntegrityBarChart } from "./integrityBarChart";
-import IntegrityTables from "./integrityTables";
 
 function WorkForceIntegrity() {
+  const columns = React.useMemo<Column<any>[]>(
+    () => [
+      {
+        Header: "WORK ORDER NO.",
+        accessor: "storeId", // accessor is the "key" in the data
+      },
+      {
+        Header: "WORK ORDER NO.",
+        accessor: "	WORK ORDER TITLE",
+        Cell: "Operator 2	",
+      },
+      {
+        Header: "RATINGS",
+        accessor: "RATINGS",
+      },
+      {
+        Header: "DATE	",
+        accessor: "DATE	",
+        Cell: "DEPARTMENT",
+      },
+    ],
+    [],
+  );
+
+  const data: DataProps[] = React.useMemo(() => [], []);
   return (
     <div>
       <div className="grid grid-cols-3 gap-5">
@@ -80,38 +107,11 @@ function WorkForceIntegrity() {
       <div className="grid grid-cols-2">
         <div className="">
           <p className="flex justify-between my-3">Work Histor</p>
-          <div className="relative overflow-x-auto shadow-md sm:rounded-lg mt-3">
-            <table className="w-full text-sm text-left ">
-              <thead className="text-xs  text-white uppercase rounded bg-blue-700 dark:bg-blue-700 dark:text-white">
-                <tr>
-                  <th scope="col" className="p-2">
-                    Work Order No.
-                  </th>
-                  <th scope="col" className="">
-                    Work Order Title
-                  </th>
-                  <th scope="col" className="">
-                    Ratings
-                  </th>
-                  <th scope="col" className="">
-                    Date
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row" className="">
-                    .
-                  </th>
-                  <td className="">.</td>
-                  <td className="">.</td>
-                  <td className="">.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+
+          <TableGroup columns={columns} data={data} showPagination />
+
           <p className="flex justify-between my-3">Assessment Report</p>
-          <IntegrityTables />
+          <TableGroup columns={columns} data={data} showPagination />
         </div>
         <div className=" p-5">
           <div>
@@ -128,7 +128,7 @@ function WorkForceIntegrity() {
       </div>
 
       <div className="relative overflow-x-auto mt-10">
-        <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <table className="w-full text-sm text-left text-gray-500 ">
           <thead className="text-xs text-gray-700 uppercase 0">
             <tr>
               <th scope="col" className="px-6 py-3">
@@ -149,7 +149,7 @@ function WorkForceIntegrity() {
             </tr>
           </thead>
           <tbody>
-            <tr className="bg-white  dark:bg-gray-800 dark:border-gray-700  hover:bg-gray-50 dark:hover:bg-gray-600">
+            <tr className="bg-white  dark:bg-gray-100 dark:border-gray-700  hover:bg-gray-50 dark:hover:bg-gray-600">
               <th
                 scope="row"
                 className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
