@@ -9,7 +9,7 @@ function IntegrityTables() {
       {
         Header: "Title",
         accessor: "PM Title", // accessor is the "key" in the data
-        Cell: "Service of machine",
+        Cell: "Service of...",
       },
       {
         Header: "PM TYPE",
