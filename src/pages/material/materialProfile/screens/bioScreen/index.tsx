@@ -6,12 +6,12 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import style from "./style.module.css";
 
-type CardProps = {
+export type CardProps = {
   name: string;
   value: any;
 };
 
-const Card = ({ name, value }: CardProps) => {
+export const Card = ({ name, value }: CardProps) => {
   return (
     <div className="text-default text-sm-15 lg:text-base">
       <p className="font-bold">{name}</p>
