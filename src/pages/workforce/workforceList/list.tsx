@@ -65,9 +65,10 @@ function List() {
             >
               ICT Unit 2
             </button>
+            <br />
             <button
               type="button"
-              className="w-fit px-3 py-1 text-xs  ml-2  text-white rounded-lg bg-[#3D405B] "
+              className="w-fit px-3 py-1 text-xs  mt-2  text-white rounded-lg bg-[#3D405B] "
             >
               ICT Unit 2
             </button>
@@ -131,7 +132,9 @@ function List() {
         </span>
         <span className="leading-tight font-semibold">On board</span>
       </div>
-      <TableGroup columns={columns} data={data} showPagination />
+      <div className="">
+        <TableGroup columns={columns} data={data} showPagination />
+      </div>
     </div>
   );
 }
