@@ -1,7 +1,7 @@
 import React from "react";
 
 import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
-import IntegrityChart from "./integrityChart";
+import EquipmentCard from "pages/dashboard/components/criticalSummarySection/components/equipmentCard";
 import IntegrityCard from "./integrityCard";
 import IntegrityTables from "./IntegrityTables";
 import IntegrityPopUp from "./integrityPopUp";
@@ -73,9 +73,7 @@ function Integrity() {
         </div>
         <div className=" px-5">
           <p>Predictive Maintenance</p>
-          <div className=" p-3 my-5 rounded-lg bg-slate-100">
-            <IntegrityChart />
-          </div>
+          <EquipmentCard />
         </div>
       </div>
     </div>
