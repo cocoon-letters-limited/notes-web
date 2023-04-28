@@ -31,8 +31,8 @@ function ViewEquipment() {
         Cell: <Link to="/equipment/equipment-bio"> Electric Block...</Link>,
       },
       {
-        Header: "LOCATION",
-        accessor: "LOCATION",
+        Header: "LOC..",
+        accessor: "LOC..",
         Cell: (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -49,8 +49,8 @@ function ViewEquipment() {
         ),
       },
       {
-        Header: "MANUFACTURER	",
-        accessor: "MANUFACTURER	",
+        Header: "MANUFA...",
+        accessor: "MANUF...	",
         Cell: "Block",
       },
       {
@@ -81,8 +81,8 @@ function ViewEquipment() {
         Cell: <Rating name="read-only" size="small" value={6} readOnly />,
       },
       {
-        Header: "CRITICALITY",
-        accessor: "	CRITICALITY",
+        Header: "CRITICA...",
+        accessor: "	CRITICA...",
         Cell: "1",
       },
       {
