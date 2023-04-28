@@ -28,12 +28,7 @@ function ViewEquipment() {
       {
         Header: "NAME",
         accessor: "NAME",
-        Cell: (
-          <Link to="/equipment/equipment-bio">
-            {" "}
-            Electric Block Moulding Machine
-          </Link>
-        ),
+        Cell: <Link to="/equipment/equipment-bio"> Electric Block...</Link>,
       },
       {
         Header: "LOCATION",
@@ -152,8 +147,9 @@ function ViewEquipment() {
         </span>
         <span className="leading-tight font-semibold">In Good condition</span>
       </div>
-
-      <TableGroup columns={columns} data={data} showPagination />
+      <div className="overflow-hidden">
+        <TableGroup columns={columns} data={data} showPagination />
+      </div>
     </div>
   );
 }
