@@ -28,7 +28,7 @@ function ViewEquipment() {
       {
         Header: "NAME",
         accessor: "NAME",
-        Cell: <Link to="/equipment/equipment-bio"> Electric Block...</Link>,
+        Cell: <Link to="/equipment/equipment-bio"> Electric...</Link>,
       },
       {
         Header: "LOC..",
@@ -81,8 +81,8 @@ function ViewEquipment() {
         Cell: <Rating name="read-only" size="small" value={6} readOnly />,
       },
       {
-        Header: "CRITICA...",
-        accessor: "	CRITICA...",
+        Header: "CRITI...",
+        accessor: "	CRITI...",
         Cell: "1",
       },
       {
