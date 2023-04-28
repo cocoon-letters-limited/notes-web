@@ -1,9 +1,9 @@
 import { Box, Tabs, Tab, Typography } from "@mui/material";
 import React from "react";
 import production1 from "assets/images/webp/login.webp";
-import Integrity from "./Integrity";
+import Integrity from "./integrity/Integrity";
 import Bio from "./bio";
-import Relationships from "./relationships";
+import Relationships from "./equipmentRelationship/relationships";
 import Hierarchy from "./hierarchy";
 
 interface TabPanelProps {

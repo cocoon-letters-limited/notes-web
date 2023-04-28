@@ -7,6 +7,7 @@ import MuiAccordionSummary, {
 } from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
+import RelationshipTable from "./relationshipTable";
 
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -68,45 +69,7 @@ export default function Relationships() {
         <AccordionDetails>
           <p className="my-3">Procedure</p>
           <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-            <table className="w-full text-sm text-left ">
-              <thead className="text-xs text-white uppercase rounded bg-blue-700 dark:bg-blue-700 dark:text-white">
-                <tr>
-                  <th scope="col" className="px-6 py-3">
-                    Title
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    PM Type
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    PM Number
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    Equipment Type
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    Valid until
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row" className="px-6 py-4">
-                    Microsoft Surface Pro
-                  </th>
-                  <td className="px-6 py-4">White</td>
-                  <td className="px-6 py-4">Laptop PC</td>
-                  <td className="px-6 py-4">$1999</td>
-                </tr>
-                <tr>
-                  <th scope="row" className="px-6 py-4">
-                    Magic Mouse 2
-                  </th>
-                  <td className="px-6 py-4">Black</td>
-                  <td className="px-6 py-4">Accessories</td>
-                  <td className="px-6 py-4">$99</td>
-                </tr>
-              </tbody>
-            </table>
+            <RelationshipTable />
           </div>
         </AccordionDetails>
       </Accordion>
