@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import WorkforceBioView from "./workforceBioView";
 import WorkforceeEditeBio from "./WorkforceeEditeBio";
 
 function WorkforceBio() {
+  const [showEdit, setShowEdit] = useState(false);
+
   return (
     <div>
-      <WorkforceBioView />
-      <WorkforceeEditeBio />
+      {showEdit ? (
+        <WorkforceBioView onChildClick={setShowEdit(false)} />
+      ) : (
+        <WorkforceeEditeBio onChildClick={setShowEdit(true)} />
+      )}
     </div>
   );
 }

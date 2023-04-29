@@ -2,6 +2,7 @@ import React from "react";
 import { Column } from "react-table";
 import TableGroup from "components/elements/tableGroup";
 import { DataProps } from "pages/material";
+import { DataCard } from "pages/material/materialProfile/screens/integrityScreen";
 import { RadarChart } from "./radarChart";
 import { IntegrityBarChart } from "./integrityBarChart";
 
@@ -34,75 +35,9 @@ function WorkForceIntegrity() {
   return (
     <div>
       <div className="grid grid-cols-3 gap-5">
-        <div className="shadow rounded-lg mt-3 p-5">
-          <button
-            type="button"
-            className="rounded-lg w-fit p-2 border-fuchsia-100 border-solid text-white bg-fuchsia-600"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-3 h-3"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-          </button>
-          <span className="m-2 text-gray-400 text-xs">Working Hours</span>
-          <p className="text-fuchsia-600  mt-2">5.98hrs</p>
-        </div>
-        <div className="shadow rounded-lg mt-3 p-5">
-          <button
-            type="button"
-            className="rounded-lg w-fit p-2 border-fuchsia-100 border-solid text-white bg-[#F16B40]"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-3 h-3"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-          </button>
-          <span className="m-2 text-gray-400 text-xs">Condition</span>
-          <p className="text-fuchsia-600  mt-2">Onboard</p>
-        </div>
-        <div className="shadow rounded-lg mt-3 p-5">
-          <button
-            type="button"
-            className="rounded-lg w-fit p-2 border-fuchsia-100 border-solid text-white bg-[#4C78E8]"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-3 h-3"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-          </button>
-          <span className="m-2 text-gray-400 text-xs">Running Hours</span>
-          <p className="text-fuchsia-600  mt-2">225 hrs</p>
-        </div>
+        <DataCard name="Working Hours" value="5.98hrs" color="#E84CD8" />
+        <DataCard name="Availability" value="Fit" color="#4C78E8" />
+        <DataCard name="Condition" value="Onboard" color="#F16B40" />
       </div>
       <div className="grid grid-cols-2">
         <div className="">
