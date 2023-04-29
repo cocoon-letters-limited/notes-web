@@ -23,7 +23,7 @@ function Workfocefiles() {
                 clipRule="evenodd"
               />
             </svg>
-            Active
+            Files
           </button>
 
           <button
@@ -42,7 +42,7 @@ function Workfocefiles() {
                 clipRule="evenodd"
               />
             </svg>
-            Disabled
+            Trash
           </button>
         </div>
 
