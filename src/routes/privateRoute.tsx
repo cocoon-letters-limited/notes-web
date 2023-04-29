@@ -12,6 +12,7 @@ import Workforce from "pages/workforce";
 import EquipmentList from "pages/equipment/EquipmentList";
 import WorkoforceLIst from "pages/workforce/workforceList";
 import ManpowerLayout from "pages/workforce/layout";
+import Safety from "pages/safety";
 
 const privateRoute = {
   path: "/",
@@ -33,6 +34,10 @@ const privateRoute = {
     {
       path: "notes/:slug",
       element: <ViewNoteDetails />,
+    },
+    {
+      path: "safety",
+      element: <Safety />,
     },
     {
       path: "manpower",
