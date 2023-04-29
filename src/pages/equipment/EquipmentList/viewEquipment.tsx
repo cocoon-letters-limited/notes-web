@@ -28,7 +28,7 @@ function ViewEquipment() {
       {
         Header: "NAME",
         accessor: "NAME",
-        Cell: <Link to="/equipment/equipment-bio"> Electric...</Link>,
+        Cell: <Link to="/machine/machine-bio"> Electric...</Link>,
       },
       {
         Header: "LOC..",

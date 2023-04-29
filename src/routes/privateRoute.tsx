@@ -49,7 +49,7 @@ const privateRoute = {
       ],
     },
     {
-      path: "equipment",
+      path: "machine",
       element: <Equipment />,
       children: [
         {
@@ -57,7 +57,7 @@ const privateRoute = {
           element: <EquipmentList />,
         },
         {
-          path: "equipment-bio",
+          path: "machine-bio",
           element: <EquipmentProfileLaypout />,
         },
       ],
