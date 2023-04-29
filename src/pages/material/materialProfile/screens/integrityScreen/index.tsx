@@ -31,7 +31,7 @@ type Props = {
   color?: string;
 };
 
-const DataCard = ({ name, value, icon, color }: Props) => {
+export const DataCard = ({ name, value, icon, color }: Props) => {
   return (
     <div
       className={`relative bg-white px-4 py-4 lg:px-4 lg:py-6 rounded-xl flex flex-col justify-between ${style.card}`}

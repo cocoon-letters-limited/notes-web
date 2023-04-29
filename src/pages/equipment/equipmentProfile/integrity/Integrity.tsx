@@ -1,8 +1,6 @@
 import React from "react";
-
-import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
 import EquipmentCard from "pages/dashboard/components/criticalSummarySection/components/equipmentCard";
-import IntegrityCard from "./integrityCard";
+import { DataCard } from "pages/material/materialProfile/screens/integrityScreen";
 import IntegrityTables from "./IntegrityTables";
 import IntegrityPopUp from "./integrityPopUp";
 
@@ -14,54 +12,14 @@ function Integrity() {
         <IntegrityPopUp />
       </div>
       <div className="grid grid-cols-4 gap-5">
-        <IntegrityCard
-          childElement={<AccessAlarmIcon />}
-          iconColor="red-400"
-          title="Running Hours"
-          detail="225 hrs"
-        />
-        <IntegrityCard
-          childElement={<AccessAlarmIcon />}
-          iconColor="blue-400"
-          title="Temperature"
-          detail="2"
-        />
-        <IntegrityCard
-          childElement={<AccessAlarmIcon />}
-          iconColor="red-400"
-          title="Running Hours"
-          detail="225 hrs"
-        />
-        <IntegrityCard
-          childElement={<AccessAlarmIcon />}
-          iconColor="green-600"
-          title="Running Hours"
-          detail="225 hrs"
-        />
-        <IntegrityCard
-          childElement={<AccessAlarmIcon />}
-          iconColor="red-400"
-          title="Running Hours"
-          detail="225 hrs"
-        />
-        <IntegrityCard
-          childElement={<AccessAlarmIcon />}
-          iconColor="blue-400"
-          title="Temperature"
-          detail="2"
-        />
-        <IntegrityCard
-          childElement={<AccessAlarmIcon />}
-          iconColor="red-400"
-          title="Running Hours"
-          detail="225 hrs"
-        />
-        <IntegrityCard
-          childElement={<AccessAlarmIcon />}
-          iconColor="green-600"
-          title="Running Hours"
-          detail="225 hrs"
-        />
+        <DataCard name="Running Hours" value="225 hrs" color="#E84CD8" />
+        <DataCard name="Temperature" value="225 hrs" color="#4C78E8" />
+        <DataCard name="Running Hours" value="225 hrs" color="#F16B40" />
+        <DataCard name="Running Hours" value="225 hrs" color="#16F62C" />
+        <DataCard name="Running Hours" value="225 hrs" color="#E84CD8" />
+        <DataCard name="Running Hours" value="225 hrs" color="#4C78E8" />
+        <DataCard name="Running Hours" value="225 hrs" color="#F16B40" />
+        <DataCard name="Running Hours" value="225 hrs" color="#16F62C" />
       </div>
       <p className="text-blue-700 my-5">Create Procedure</p>
       <div className="grid grid-cols-2">

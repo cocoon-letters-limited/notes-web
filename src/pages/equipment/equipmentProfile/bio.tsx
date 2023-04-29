@@ -43,7 +43,7 @@ const NoteCard = () => {
 function Bio() {
   const [showEdit, setShowEdit] = useState(false);
   return (
-    <div className="container">
+    <>
       {showEdit && (
         <div>
           <button type="button" onClick={() => setShowEdit(false)} className="">
@@ -130,7 +130,7 @@ function Bio() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
 
