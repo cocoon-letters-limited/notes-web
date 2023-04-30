@@ -1,26 +1,26 @@
+import FileUploadOutlinedIcon from "@mui/icons-material/FileUploadOutlined";
+import DetailSefety from "./detailSefety";
+
 function Safety() {
   return (
     <div>
-      <div>
-        <div className="grid-cols-3 grid">
-          <div className="col-span-1">
-            <p className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-              Title:
-            </p>
-            <input
-              type="text"
-              id="first_name"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Softwebdigital"
-              required
-            />
+      <div className="bg-white rounded-lg p-4">
+        <div className="grid-cols-5 gap-1 grid">
+          <div className="col-span-3">
+            <button
+              type="button"
+              className="focus:outline-none flex border border-[#054CD6] items-center px-3 py-3 space-x-3 text-sm-10 lg:text-base text-primary rounded-lg font-semibold"
+            >
+              <span>Attach Risk Assessment</span>
+              <span>
+                <FileUploadOutlinedIcon />
+              </span>
+            </button>
           </div>
           <p className="text-right">Status: Issued</p>
           <p className="text-right">Risk assessment No: RA102322</p>
         </div>
-      </div>
-      <div>
-        <div>.</div>
+        <DetailSefety />
       </div>
     </div>
   );

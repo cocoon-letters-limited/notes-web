@@ -9,6 +9,7 @@ type Props = {
   onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
   onBlur?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
   error?: string;
+  className?: string;
 };
 
 const TextareaGroup = ({
@@ -20,9 +21,9 @@ const TextareaGroup = ({
   onBlur,
   rows,
   error,
+  className,
 }: Props) => {
-  const defaultClassName =
-    "mt-3 text-primary block px-5 py-4 text-sm md:text-sm-15 lg:text-base w-full rounded-md border-[2px] bg-white placeholder-[#B1BFD9] focus:outline-none focus:border-primary";
+  const defaultClassName = `mt-3 text-primary block px-5 py-4 text-sm md:text-sm-15 lg:text-base w-full rounded-md border-[2px] bg-white placeholder-[#B1BFD9] focus:outline-none focus:border-primary${className}`;
 
   return (
     <div className="mb-4 lg:mb-8">
