@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import CommentsModal from "./commentsModal";
 
 type CardProps = {
   title: string;
   statusText?: string;
   statusTextColor?: string;
   statusBgColor?: string;
+  onClick: () => void;
 };
 
 const Card = ({
@@ -12,9 +14,14 @@ const Card = ({
   statusText,
   statusTextColor,
   statusBgColor,
+  onClick,
 }: CardProps) => {
   return (
-    <div className="bg-white rounded-lg px-4 lg:px-6 pt-6 pb-8 rounded-lg">
+    <button
+      type="button"
+      onClick={onClick}
+      className="focus:outline-none text-left bg-white rounded-lg px-4 lg:px-6 pt-6 pb-8 rounded-lg"
+    >
       <p className="text-sm-15">{title}</p>
 
       <hr className="border-[0.2px] border-[#D1D1D1]m my-4" />
@@ -34,11 +41,17 @@ const Card = ({
           {statusText || "Requested"}
         </p>
       </div>
-    </div>
+    </button>
   );
 };
 
 const CommentsSection = () => {
+  const [showCommentModal, setShowCommentModal] = useState(false);
+
+  const handleShowModal = () => {
+    setShowCommentModal(!showCommentModal);
+  };
+
   return (
     <section className="mt-2 mb-12 relative">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -47,26 +60,36 @@ const CommentsSection = () => {
           statusText="Requested"
           statusTextColor="text-[#FF7A00]"
           statusBgColor="bg-[#FFE4CB]"
+          onClick={handleShowModal}
         />
         <Card
           title="Work approval comment"
           statusText="Approved"
           statusTextColor="text-[#44CF03]"
           statusBgColor="bg-[#D5FFCB]"
+          onClick={handleShowModal}
         />
         <Card
           title="Work issued comment"
           statusText="Issued"
           statusTextColor="text-[#ffffff]"
           statusBgColor="bg-[#25BB00]"
+          onClick={handleShowModal}
         />
         <Card
           title="Work closure comment"
           statusText="Closed"
           statusTextColor="text-[#ffffff]"
           statusBgColor="bg-[#FF0404]"
+          onClick={handleShowModal}
         />
       </div>
+
+      {/* Comment Modal */}
+      <CommentsModal
+        open={showCommentModal}
+        handleClose={() => setShowCommentModal(false)}
+      />
     </section>
   );
 };
