@@ -14,6 +14,7 @@ import Workforce from "pages/workforce";
 import EquipmentList from "pages/equipment/EquipmentList";
 import WorkoforceLIst from "pages/workforce/workforceList";
 import ManpowerLayout from "pages/workforce/layout";
+import MaintenanceDetails from "pages/maintenance/maintenanceDetails";
 
 const privateRoute = {
   path: "/",
@@ -75,6 +76,10 @@ const privateRoute = {
     {
       path: "maintenance",
       element: <Maintenance />,
+    },
+    {
+      path: "maintenance/:slug",
+      element: <MaintenanceDetails />,
     },
     {
       path: "maintenance/create",
