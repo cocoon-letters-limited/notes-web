@@ -43,7 +43,7 @@ const menuData = [
         id: 1,
         icon: <MachineIcon />,
         title: "Machine",
-        url: "/machine",
+        url: "/equipment",
       },
       {
         id: 2,

@@ -1,29 +1,25 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/button-has-type */
 import React from "react";
-// import { PhotoCamera } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
-// import AddEquipment from "./addEquipment";
 import ViewEquipment from "./viewEquipment";
 import AddEquipment from "./addEquipment";
 
-function EquipmentRegister() {
+function EquipmentList() {
   const [showEquipment, setShowEquipment] = React.useState(false);
   return (
     <div>
       <div className="flex justify-between">
         {!showEquipment ? (
-          <p className="text-2xl">Equipment</p>
+          <p className="">Equipment</p>
         ) : (
           <button
-            className="bg-blue-200 border border-2 border-blue-700 w-fit px-5"
+            type="button"
+            className="bg-blue-200 rounded-2xl  w-fit px-5"
             onClick={() => setShowEquipment(false)}
           >
             x
           </button>
         )}
-        <div className="text-blue-700">
+        <div className="text-blue-700  text-xs">
           <span>Upload csv</span>
           <IconButton
             color="primary"
@@ -37,7 +33,7 @@ function EquipmentRegister() {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-4 h-4"
             >
               <path
                 strokeLinecap="round"
@@ -46,12 +42,16 @@ function EquipmentRegister() {
               />
             </svg>
           </IconButton>
-          <button className="w-fit py-2 border-2 border-solid rounded-lg mx-2 px-3 border-blue-700 text-blue-700">
+          <button
+            type="button"
+            className="w-fit py-2 border-2 border-solid rounded-lg  text-xs mx-2 px-3 border-blue-700 text-blue-700"
+          >
             Subscribe
           </button>
           <button
+            type="button"
             onClick={() => setShowEquipment(true)}
-            className="w-fit py-2 border-2 bg-blue-700 rounded-lg px-3 border-blue-700 text-white"
+            className="w-fit py-2 border-2 bg-blue-700 text-xs rounded-lg px-3 border-blue-700 text-white"
           >
             New Equipment
           </button>
@@ -62,4 +62,4 @@ function EquipmentRegister() {
   );
 }
 
-export default EquipmentRegister;
+export default EquipmentList;

@@ -6,10 +6,10 @@ import React from "react";
 function Notification() {
   return (
     <div className="p-5">
-      <h1 className="font-semibold text-4xl">Notifications</h1>
+      <h1 className="font-semibold ">Notifications</h1>
       <div className="rounded shadow p-4 my-4 bg-white">
         <div className="flex justify-between ">
-          <p className="text-2xl">(Notifications type)</p>
+          <p className="">(Notifications type)</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -25,16 +25,16 @@ function Notification() {
             />
           </svg>
         </div>
-        <p className="my-3">
+        <p className="my-3 text-xs">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis cras
           adipiscing rhoncus, vel integer. Ante in a risus mauris convallis
           arcu, aliquam ut. Porttitor pellentesque ac dolor nec, volutpat
           cursus. Id elementum condimentum nunc ullamcorper.
         </p>
-        <button className="w-fit px-5 p-3 rounded-lg text-white bg-blue-700">
+        <button className="w-fit px-5 p-2 text-xs rounded-lg text-white bg-blue-700">
           View
         </button>
-        <button className="w-fit px-5 p-3 rounded-lg ml-4 text-dark bg-blue-200">
+        <button className="w-fit  px-5 p-2 text-xs rounded-lg ml-4 text-dark bg-blue-200">
           Dismss
         </button>
       </div>

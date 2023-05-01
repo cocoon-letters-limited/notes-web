@@ -10,6 +10,10 @@ import Material from "pages/material";
 import MaterialProfile from "pages/material/materialProfile";
 import Maintenance from "pages/maintenance";
 import CreateMaintenance from "pages/maintenance/createMaintenance";
+import Workforce from "pages/workforce";
+import EquipmentList from "pages/equipment/EquipmentList";
+import WorkoforceLIst from "pages/workforce/workforceList";
+import ManpowerLayout from "pages/workforce/layout";
 
 const privateRoute = {
   path: "/",
@@ -33,11 +37,29 @@ const privateRoute = {
       element: <ViewNoteDetails />,
     },
     {
+      path: "manpower",
+      element: <Workforce />,
+      children: [
+        {
+          path: "",
+          element: <WorkoforceLIst />,
+        },
+        {
+          path: "ManpowerLayout",
+          element: <ManpowerLayout />,
+        },
+      ],
+    },
+    {
       path: "equipment",
       element: <Equipment />,
       children: [
         {
-          path: "equipment-profile",
+          path: "",
+          element: <EquipmentList />,
+        },
+        {
+          path: "equipment-bio",
           element: <EquipmentProfileLaypout />,
         },
       ],
