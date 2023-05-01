@@ -3,6 +3,7 @@ import React from "react";
 import { Column } from "react-table";
 import MapIcon from "components/svg/mapIcon";
 import { Link } from "react-router-dom";
+import ActionButtonSection from "./components/actionButtonSection";
 
 type DataProps = {
   woNumber: string;
@@ -222,21 +223,7 @@ const Maintenance = () => {
         Maintenance
       </h1>
 
-      <div className="flex flex-row flex-wrap justify-center md:justify-end items-center space-x-4 xl:space-x-6">
-        <button
-          type="button"
-          className="focus:outline-none flex items-center py-3 space-x-4 text-sm-15 lg:text-base text-primary border-2 border-primary rounded-lg px-6 font-semibold"
-        >
-          Subscribe
-        </button>
-
-        <Link
-          to="/maintenance/create"
-          className="focus:outline-none flex items-center py-3 space-x-4 text-sm-15 lg:text-base text-white border-2 border-primary bg-primary rounded-lg px-6 font-semibold"
-        >
-          New Maintenance
-        </Link>
-      </div>
+      <ActionButtonSection />
 
       <div className="mt-12">
         <TableGroup columns={columns} data={data} showPagination />
