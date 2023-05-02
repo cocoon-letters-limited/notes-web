@@ -30,7 +30,7 @@ const InputGroup = ({
     "mt-3 text-primary block px-5 h-14 lg:h-16 text-sm md:text-sm-15 lg:text-base w-full rounded-md border-[2px] bg-white placeholder-[#B1BFD9] focus:outline-none focus:border-primary";
 
   return (
-    <div className="mb-4 lg:mb-8">
+    <div className="mb-4 lg:mb-4">
       <label
         htmlFor={name}
         className={`text-sm-15 lg:text-base font-semibold ${

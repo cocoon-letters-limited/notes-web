@@ -1,29 +1,73 @@
-function Safety() {
-  return (
-    <div>
-      <div>
-        <div className="grid-cols-3 grid">
-          <div className="col-span-1">
-            <p className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-              Title:
-            </p>
-            <input
-              type="text"
-              id="first_name"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Softwebdigital"
-              required
-            />
-          </div>
-          <p className="text-right">Status: Issued</p>
-          <p className="text-right">Risk assessment No: RA102322</p>
+import { useState } from "react";
+import CreateSafety from "./createSafety";
+import RadiographyPermit from "./radiographyPermit";
+
+import ConfinedCertificate from "./ConfinedCertificate";
+import IsolationCertificate from "./IsolationCertificate";
+import Title from "./component/title";
+// create switch
+function Safety(): JSX.Element {
+  const [currentIndex, setCurrentIndex] = useState(2);
+
+  switch (currentIndex) {
+    case 0:
+      return (
+        <div>
+          <Title
+            title="Isolation Certificate"
+            goBack={() => setCurrentIndex(3)}
+          />
+          <IsolationCertificate nextPage={setCurrentIndex(0)} />;
         </div>
-      </div>
-      <div>
-        <div>.</div>
-      </div>
-    </div>
-  );
+      );
+    case 1:
+      return (
+        <div>
+          <Title
+            title="Safety Systems Isolation Certificate"
+            goBack={() => setCurrentIndex(4)}
+          />
+          <CreateSafety />
+        </div>
+      );
+    case 2:
+      return (
+        <div>
+          <Title title="Radiography Permit" goBack={() => setCurrentIndex(1)} />
+          <RadiographyPermit />
+        </div>
+      );
+    case 3:
+      return (
+        <div>
+          <Title
+            title="Confined Space Entry Certificate"
+            goBack={() => setCurrentIndex(2)}
+          />
+          <ConfinedCertificate />;
+        </div>
+      );
+    case 4:
+      return (
+        <div>
+          <Title
+            title="Confined Space Entry Certificate"
+            goBack={() => setCurrentIndex(3)}
+          />
+          <CreateSafety />
+        </div>
+      );
+    default:
+      return (
+        <div>
+          <Title
+            title="Confined Space Entry Certificate"
+            goBack={() => setCurrentIndex(0)}
+          />
+          <ConfinedCertificate />
+        </div>
+      );
+  }
 }
 
 export default Safety;
