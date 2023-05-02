@@ -25,15 +25,23 @@ type Props = {
   showPagination?: boolean;
   columns: Column<any>[];
   data: any[];
+  hasCheckboxColumn?: boolean;
 };
 
-const TableGroup = ({ showPagination, columns, data }: Props) => {
+const TableGroup = ({
+  showPagination,
+  columns,
+  data,
+  hasCheckboxColumn = true,
+}: Props) => {
   const tableInstance = useTable(
     { columns, data },
     usePagination,
     useRowSelect,
     (hooks) => {
-      tableCheckbox(hooks);
+      if (hasCheckboxColumn) {
+        tableCheckbox(hooks);
+      }
     },
   ) as TableInstanceWithHooks<any>;
 
@@ -132,20 +140,20 @@ const TableGroup = ({ showPagination, columns, data }: Props) => {
             }
           </tbody>
         </table>
-        <div className="">
-          {showPagination && (
-            <Pagination
-              canPreviousPage={canPreviousPage}
-              canNextPage={canNextPage}
-              previousPage={previousPage}
-              nextPage={nextPage}
-              paginationRange={paginationRange}
-              pageIndex={pageIndex}
-              gotoPage={gotoPage}
-              pageOptions={pageOptions}
-            />
-          )}
-        </div>
+      </div>
+      <div className="">
+        {showPagination && (
+          <Pagination
+            canPreviousPage={canPreviousPage}
+            canNextPage={canNextPage}
+            previousPage={previousPage}
+            nextPage={nextPage}
+            paginationRange={paginationRange}
+            pageIndex={pageIndex}
+            gotoPage={gotoPage}
+            pageOptions={pageOptions}
+          />
+        )}
       </div>
     </div>
   );
