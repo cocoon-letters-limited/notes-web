@@ -16,7 +16,7 @@ function HearderSafety() {
           </button>
         </div>
         <p className="text-right">Status: Issued</p>
-        <p className="text-right">Risk assessment No: RA102322</p>
+        <p className="text-left">Risk assessment No: RA102322</p>
       </div>
     </div>
   );
