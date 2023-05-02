@@ -1,44 +1,8 @@
 import React from "react";
 import InputGroup from "components/elements/input";
 import SelectGroup from "components/elements/select";
-
-type RadioButtonProps = {
-  label: string;
-};
-
-const RadioButton = ({ label }: RadioButtonProps) => {
-  return (
-    <label htmlFor="default-radio-1" className="flex items-center">
-      <input
-        id="default-radio-1"
-        type="radio"
-        value=""
-        name="default-radio"
-        className="w-4 h-4 lg:w-5 lg:h-5 text-primary bg-white border-[#B1BFD9] focus:ring-primary"
-      />
-      <span className="ml-2 lg:ml-3 text-sm ">{label}</span>
-    </label>
-  );
-};
-
-type CheckboxProps = {
-  label: string;
-};
-
-const Checkbox = ({ label }: CheckboxProps) => {
-  return (
-    <label htmlFor="checked-checkbox" className="flex items-center">
-      <input
-        id="checked-checkbox"
-        type="checkbox"
-        value=""
-        className="w-4 h-4 lg:w-5 lg:h-5 text-primary bg-white rounded border-[#B1BFD9] focus:ring-primary"
-      />
-
-      <span className="ml-2 lg:ml-3 text-sm ">{label}</span>
-    </label>
-  );
-};
+import RadioButtonGroup from "components/elements/radioButton";
+import CheckboxGroup from "components/elements/checkbox";
 
 const PolicyForm = () => {
   return (
@@ -72,11 +36,11 @@ const PolicyForm = () => {
 
       <div className="lg:pl-2 xl:pl-4 lg:mt-8">
         <div className="mb-8 space-y-4 lg:space-y-6">
-          <Checkbox label="Non Stock?" />
-          <Checkbox label="Auto requsition?" />
-          <Checkbox label="Maximum replenishment?" />
-          <Checkbox label="Auto add to BOM?" />
-          <Checkbox label="Quality check req?" />
+          <CheckboxGroup label="Non Stock?" />
+          <CheckboxGroup label="Auto requsition?" />
+          <CheckboxGroup label="Maximum replenishment?" />
+          <CheckboxGroup label="Auto add to BOM?" />
+          <CheckboxGroup label="Quality check req?" />
         </div>
 
         <InputGroup type="text" label="Holding percent" placeholder="" />
@@ -85,9 +49,9 @@ const PolicyForm = () => {
         <div className="mb-8">
           <p className="text-sm lg:text-sm-15 mb-4">Re-order policy</p>
           <div className="mb-4 space-y-4">
-            <RadioButton label="Use current stock levels" />
-            <RadioButton label="Include bonded items" />
-            <RadioButton label="Bonded and allocated items" />
+            <RadioButtonGroup label="Use current stock levels" />
+            <RadioButtonGroup label="Include bonded items" />
+            <RadioButtonGroup label="Bonded and allocated items" />
           </div>
         </div>
 
@@ -96,9 +60,9 @@ const PolicyForm = () => {
             Re-order quantity insufficient policy
           </p>
           <div className="mb-4 space-y-4">
-            <RadioButton label="Accept re-order quantity" />
-            <RadioButton label="Add re-order quantities to exceed re-order level" />
-            <RadioButton label="Exceed re-order level by" />
+            <RadioButtonGroup label="Accept re-order quantity" />
+            <RadioButtonGroup label="Add re-order quantities to exceed re-order level" />
+            <RadioButtonGroup label="Exceed re-order level by" />
           </div>
         </div>
       </div>

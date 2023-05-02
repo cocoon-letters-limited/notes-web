@@ -8,10 +8,14 @@ import EquipmentProfileLaypout from "pages/equipment/equipmentProfile";
 import ViewNoteDetails from "pages/notes/viewNoteDetails";
 import Material from "pages/material";
 import MaterialProfile from "pages/material/materialProfile";
+import Maintenance from "pages/maintenance";
+import CreateMaintenance from "pages/maintenance/createMaintenance";
 import Workforce from "pages/workforce";
 import EquipmentList from "pages/equipment/EquipmentList";
 import WorkoforceLIst from "pages/workforce/workforceList";
 import ManpowerLayout from "pages/workforce/layout";
+import MaintenanceDetails from "pages/maintenance/maintenanceDetails";
+import MaintenanceWorkOrder from "pages/maintenance/maintenanceWorkOrder";
 import Safety from "pages/safety";
 
 const privateRoute = {
@@ -74,6 +78,22 @@ const privateRoute = {
     {
       path: "material/:slug",
       element: <MaterialProfile />,
+    },
+    {
+      path: "maintenance",
+      element: <Maintenance />,
+    },
+    {
+      path: "maintenance/:slug",
+      element: <MaintenanceDetails />,
+    },
+    {
+      path: "maintenance/create",
+      element: <CreateMaintenance />,
+    },
+    {
+      path: "maintenance/:slug/work-order",
+      element: <MaintenanceWorkOrder />,
     },
   ],
 };
