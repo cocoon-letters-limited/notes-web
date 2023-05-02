@@ -4,7 +4,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import EditIcon from "components/svg/editIcon";
 import { DateCalendar } from "@mui/x-date-pickers-pro";
 import EquipmentCard from "pages/dashboard/components/criticalSummarySection/components/equipmentCard";
-import EditBio from "../equipmentEdit/editBio";
+import EditBio from "../../equipmentEdit/editBio";
 import style from "./style.module.css";
 
 export type CardProps = {
@@ -43,7 +43,7 @@ const NoteCard = () => {
 function Bio() {
   const [showEdit, setShowEdit] = useState(false);
   return (
-    <div className="container">
+    <>
       {showEdit && (
         <div>
           <button type="button" onClick={() => setShowEdit(false)} className="">
@@ -102,8 +102,10 @@ function Bio() {
               </div>
             </div>
           </div>
-          <EquipmentCard />
-          <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="mt-2">
+            <EquipmentCard />
+          </div>
+          <div className="mt-2 grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="bg-[#F6F7FB] p-5 rounded-lg">
               <p className="font-bold text-xl text-default">Notes</p>
               <div className="">
@@ -130,7 +132,7 @@ function Bio() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
 

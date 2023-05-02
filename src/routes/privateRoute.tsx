@@ -16,6 +16,7 @@ import WorkoforceLIst from "pages/workforce/workforceList";
 import ManpowerLayout from "pages/workforce/layout";
 import MaintenanceDetails from "pages/maintenance/maintenanceDetails";
 import MaintenanceWorkOrder from "pages/maintenance/maintenanceWorkOrder";
+import Safety from "pages/safety";
 
 const privateRoute = {
   path: "/",
@@ -39,6 +40,10 @@ const privateRoute = {
       element: <ViewNoteDetails />,
     },
     {
+      path: "safety",
+      element: <Safety />,
+    },
+    {
       path: "manpower",
       element: <Workforce />,
       children: [
@@ -53,7 +58,7 @@ const privateRoute = {
       ],
     },
     {
-      path: "equipment",
+      path: "machine",
       element: <Equipment />,
       children: [
         {
@@ -61,7 +66,7 @@ const privateRoute = {
           element: <EquipmentList />,
         },
         {
-          path: "equipment-bio",
+          path: "machine-bio",
           element: <EquipmentProfileLaypout />,
         },
       ],

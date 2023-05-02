@@ -15,7 +15,9 @@ function IntegrityCard({
     <div className="shadow rounded-lg mt-3 p-5">
       <button
         type="button"
-        className={`rounded-lg w-fit p-2 border-fuchsia-100 border-solid text-white bg-${iconColor}`}
+        className={`rounded-lg w-fit p-2 border-fuchsia-100 border-solid text-white bg-${
+          iconColor || "red"
+        }-700 bg-${iconColor}`}
       >
         {childElement}
       </button>
