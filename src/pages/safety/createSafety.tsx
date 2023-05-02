@@ -1,11 +1,13 @@
 import InputGroup from "components/elements/input";
-import SelectGroup2 from "components/elements/select2";
+// import SelectGroup2 from "components/elements/select2";
 import TextareaGroup from "components/elements/textarea";
 import React from "react";
+import HearderSafety from "./component/HearderSafety";
 
 function CreateSafety() {
   return (
-    <div>
+    <div className="bg-white p-4 rounded-lg">
+      <HearderSafety />
       <div>
         <div className="grid gap-2 mb-6 md:grid-cols-2 mt-2">
           <InputGroup label="Worksite Location" />
@@ -27,15 +29,15 @@ function CreateSafety() {
           </div>
         </div>
         <p className="text-">AUTHORISATION</p>
-        <SelectGroup2
+        {/* <SelectGroup2
           label=""
           options={[{ label: "Worksite Location", value: "" }]}
-        />
+        /> */}
         <p className="text-">SANCTION TO TEST </p>
-        <SelectGroup2
+        {/* <SelectGroup2
           label=""
           options={[{ label: "Worksite Location", value: "" }]}
-        />
+        /> */}
         <div className="flex flex-row-reverse space-x-2 ">
           <button
             type="submit"
