@@ -18,6 +18,7 @@ import MaintenanceDetails from "pages/maintenance/maintenanceDetails";
 import MaintenanceWorkOrder from "pages/maintenance/maintenanceWorkOrder";
 import SatetyLayout from "pages/safety/safetyList";
 import CreateSafetyLayout from "pages/safety/createSafety";
+import RiskAssessment from "pages/RiskAssessment";
 // import RiskAssessment from "pages/RiskAssessment";
 // import Safety from "pages/safety";
 
@@ -49,6 +50,10 @@ const privateRoute = {
         {
           path: "",
           element: <SatetyLayout />,
+        },
+        {
+          path: "riskassessment",
+          element: <RiskAssessment />,
         },
         {
           path: "CreateSafety",
