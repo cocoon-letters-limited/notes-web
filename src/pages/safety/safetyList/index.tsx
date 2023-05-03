@@ -19,7 +19,17 @@ const DropDownLink = ({ linkUrl, linkTitle }: DropdownLinkProps) => {
     </Link>
   );
 };
+const TypeStatusCard = ({ value }: ValueProps) => {
+  const styleClassName = value === "Cold" ? "status-blue" : "status-red";
 
+  return (
+    <div
+      className={`text-xs px-4 py-2 rounded text-center font-semibold ${styleClassName}`}
+    >
+      {value}
+    </div>
+  );
+};
 type DataProps = {
   woNumber: string;
   title: string;
@@ -35,19 +45,6 @@ type DataProps = {
 
 type ValueProps = {
   value?: any;
-};
-
-const WoNumberCard = ({ value }: ValueProps) => {
-  return (
-    <Link
-      to="/safety/CreateSafety"
-      aria-label={`${value}`}
-      className="hover:text-primary flex flex-col space-y-2"
-    >
-      <span>{value}</span>
-      <span className="text-xs text-primary">Preventive</span>
-    </Link>
-  );
 };
 
 const LocationIconCard = ({ value }: ValueProps) => {
@@ -99,18 +96,6 @@ const NextDueCard = ({ value }: ValueProps) => {
   );
 };
 
-const TypeStatusCard = ({ value }: ValueProps) => {
-  const styleClassName = value === "Cold" ? "status-blue" : "status-red";
-
-  return (
-    <div
-      className={`text-xs px-4 py-2 rounded text-center font-semibold ${styleClassName}`}
-    >
-      {value}
-    </div>
-  );
-};
-
 const StatusCard = ({ value }: ValueProps) => {
   const styleClassName =
     // eslint-disable-next-line no-nested-ternary
@@ -148,24 +133,27 @@ const ActionCard = ({ value }: ValueProps) => {
 
 const SatetyLayout = () => {
   const [show, setShow] = useState(false);
-  const columns = React.useMemo<Column<DataProps>[]>(
+  const columns = React.useMemo<Column<any>[]>(
     () => [
       {
         Header: "WO Number",
-        accessor: "woNumber",
-        Cell: WoNumberCard,
+        accessor: "Permit Number",
+        Cell: "PMT-349220",
+      },
+      {
+        Header: "WO Number",
+        accessor: "WO Number",
+        Cell: "WO-2021-80 -02-0003",
       },
       {
         Header: "Title",
-        accessor: "title",
+        accessor: "Title",
+        Cell: "CNC Machine",
       },
       {
-        Header: "Equipment",
-        accessor: "equipment",
-      },
-      {
-        Header: "Equipment No",
-        accessor: "equipmentNo",
+        Header: "Type",
+        accessor: "Type",
+        Cell: TypeStatusCard,
       },
       {
         Header: "Start - Finish Date",
@@ -173,9 +161,9 @@ const SatetyLayout = () => {
         Cell: DateCard,
       },
       {
-        Header: "Type",
-        accessor: "type",
-        Cell: TypeStatusCard,
+        Header: "Equipment",
+        accessor: "Equipment",
+        Cell: "CNC Machine",
       },
       {
         Header: "Location",
