@@ -1,6 +1,6 @@
 import { FormControlLabel, Checkbox } from "@mui/material";
 import React from "react";
-import HearderSafety from "./component/HearderSafety";
+import HearderSafety from "../component/HearderSafety";
 
 export function CardContent({
   title,

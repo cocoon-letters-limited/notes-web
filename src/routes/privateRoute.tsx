@@ -16,7 +16,9 @@ import WorkoforceLIst from "pages/workforce/workforceList";
 import ManpowerLayout from "pages/workforce/layout";
 import MaintenanceDetails from "pages/maintenance/maintenanceDetails";
 import MaintenanceWorkOrder from "pages/maintenance/maintenanceWorkOrder";
-import Safety from "pages/safety";
+import SatetyLayout from "pages/safety/safetyList";
+import CreateSafetyLayout from "pages/safety/createSafety";
+// import Safety from "pages/safety";
 
 const privateRoute = {
   path: "/",
@@ -41,7 +43,17 @@ const privateRoute = {
     },
     {
       path: "safety",
-      element: <Safety />,
+      // element: <Safety />,
+      children: [
+        {
+          path: "",
+          element: <SatetyLayout />,
+        },
+        {
+          path: "CreateSafety",
+          element: <CreateSafetyLayout />,
+        },
+      ],
     },
     {
       path: "manpower",

@@ -1,8 +1,8 @@
 import React from "react";
 import CustomRadio from "components/elements/radio";
 import TextareaGroup from "components/elements/textarea";
-import HearderSafety from "./component/HearderSafety";
-import SafetyFooter from "./component/SafetyFooter";
+import HearderSafety from "../component/HearderSafety";
+import SafetyFooter from "../component/SafetyFooter";
 
 function ConfinedCertificate() {
   return (
