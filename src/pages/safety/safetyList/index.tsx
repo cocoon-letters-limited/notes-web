@@ -152,7 +152,7 @@ const SatetyLayout = () => {
       },
       {
         Header: "Type",
-        accessor: "Type",
+        accessor: "type",
         Cell: TypeStatusCard,
       },
       {
