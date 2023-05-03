@@ -136,7 +136,7 @@ const SatetyLayout = () => {
   const columns = React.useMemo<Column<any>[]>(
     () => [
       {
-        Header: "WO Number",
+        Header: "Permit Number",
         accessor: "Permit Number",
         Cell: "PMT-349220",
       },
@@ -152,7 +152,7 @@ const SatetyLayout = () => {
       },
       {
         Header: "Type",
-        accessor: "Type",
+        accessor: "type",
         Cell: TypeStatusCard,
       },
       {
