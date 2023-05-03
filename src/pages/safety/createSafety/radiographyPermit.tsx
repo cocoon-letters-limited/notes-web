@@ -3,7 +3,7 @@ import InputGroup from "components/elements/input";
 import TextareaGroup from "components/elements/textarea";
 
 import CustomRadio from "components/elements/radio";
-import HearderSafety from "./component/HearderSafety";
+import HearderSafety from "../component/HearderSafety";
 
 function RadiographyPermit() {
   return (
@@ -25,7 +25,7 @@ function RadiographyPermit() {
         </div>
         <div className="grid gap-3 mb-6 md:grid-cols-2 mt-2">
           <div className="space-y-3">
-            <p>Details</p>
+            <p className="font-semibold">Details</p>
             <div className="flex justify-between">
               <p>Remotely Controlled Equipment</p>
               <CustomRadio
@@ -100,7 +100,7 @@ function RadiographyPermit() {
             </div>
           </div>
           <div className="space-y-3 px-5">
-            <p>Personal Equipment</p>
+            <p className="font-semibold">Personal Equipment</p>
             <div className="flex justify-between">
               <p>Remotely Controlled Equipment</p>
               <CustomRadio

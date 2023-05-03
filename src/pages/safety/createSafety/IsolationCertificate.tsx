@@ -1,8 +1,8 @@
 import React from "react";
 import InputGroup from "components/elements/input";
 import CustomRadio from "components/elements/radio";
-import HearderSafety from "./component/HearderSafety";
-import SafetyFooter from "./component/SafetyFooter";
+import HearderSafety from "../component/HearderSafety";
+import SafetyFooter from "../component/SafetyFooter";
 
 function IsolationCertificate({ nextPage, privPage }: any) {
   return (
