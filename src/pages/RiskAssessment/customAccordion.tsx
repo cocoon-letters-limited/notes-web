@@ -19,7 +19,7 @@ const CustomAccordion = () => {
       <div>
         <button
           type="button"
-          className=" rounded-full p-3 bg-[#E0EBFF]"
+          className=" rounded-full m-2 p-3 bg-[#E0EBFF]"
           onClick={() => setIsOpen((x) => !x)}
         >
           {!isOpen ? <RemoveIcon /> : <AddIcon />}
@@ -35,7 +35,7 @@ const CustomAccordion = () => {
         </div>
 
         {!isOpen && (
-          <div className="grid grid-cols-5 grid-rows-6">
+          <div className="ease-in-out delay-150 duration-300 -translate-y-1  grid grid-cols-5 grid-rows-6">
             <div className="border-r border-l  border-blue-950 bg-full pt-8 row-span-2 text-center justify-center">
               <p>Lidikelihood</p>
             </div>
