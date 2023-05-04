@@ -7,7 +7,7 @@ import IsolationCertificate from "./IsolationCertificate";
 import Title from "../component/title";
 // create switch
 function CreateSafetyLayout(): JSX.Element {
-  const [currentIndex, setCurrentIndex] = useState(2);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   switch (currentIndex) {
     case 0:
@@ -15,9 +15,9 @@ function CreateSafetyLayout(): JSX.Element {
         <div>
           <Title
             title="Isolation Certificate"
-            goBack={() => setCurrentIndex(3)}
+            goBack={() => setCurrentIndex(1)}
           />
-          <IsolationCertificate nextPage={setCurrentIndex(0)} />;
+          <IsolationCertificate />;
         </div>
       );
     case 1:
@@ -25,7 +25,7 @@ function CreateSafetyLayout(): JSX.Element {
         <div>
           <Title
             title="Safety Systems Isolation Certificate"
-            goBack={() => setCurrentIndex(4)}
+            goBack={() => setCurrentIndex(2)}
           />
           <CreateSafety />
         </div>
@@ -33,7 +33,7 @@ function CreateSafetyLayout(): JSX.Element {
     case 2:
       return (
         <div>
-          <Title title="Radiography Permit" goBack={() => setCurrentIndex(1)} />
+          <Title title="Radiography Permit" goBack={() => setCurrentIndex(3)} />
           <RadiographyPermit />
         </div>
       );
@@ -42,7 +42,7 @@ function CreateSafetyLayout(): JSX.Element {
         <div>
           <Title
             title="Confined Space Entry Certificate"
-            goBack={() => setCurrentIndex(2)}
+            goBack={() => setCurrentIndex(4)}
           />
           <ConfinedCertificate />;
         </div>
@@ -51,10 +51,10 @@ function CreateSafetyLayout(): JSX.Element {
       return (
         <div>
           <Title
-            title="Confined Space Entry Certificate"
-            goBack={() => setCurrentIndex(3)}
+            title="Isolation Certificate"
+            goBack={() => setCurrentIndex(0)}
           />
-          <CreateSafety />
+          <IsolationCertificate />;
         </div>
       );
     default:
