@@ -3,6 +3,7 @@ import InputGroup from "components/elements/input";
 import TextareaGroup from "components/elements/textarea";
 import React from "react";
 import HearderSafety from "../component/HearderSafety";
+// import MultipleSelectChipCustom from "../component/mutiselectot";
 
 function CreateSafety() {
   return (
@@ -29,11 +30,15 @@ function CreateSafety() {
           </div>
         </div>
         <p className="text-">AUTHORISATION</p>
-        {/* <SelectGroup2
-          label=""
-          options={[{ label: "Worksite Location", value: "" }]}
-        /> */}
+
+        <InputGroup label="Add authorization" />
+        {/* <MultipleSelectChipCustom /> */}
         <p className="text-">SANCTION TO TEST </p>
+        <InputGroup label="Permission is granted to test subject to the following precautions" />
+        <InputGroup label="Add authorization:" />
+        <p className="text-">SAFETY SYSTEM DE-ISOLATION </p>
+        <InputGroup label="Permission is granted to" />
+        <InputGroup label="Add authorization:" />
         {/* <SelectGroup2
           label=""
           options={[{ label: "Worksite Location", value: "" }]}

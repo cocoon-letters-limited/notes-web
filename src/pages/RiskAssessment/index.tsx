@@ -1,28 +1,7 @@
 import React from "react";
+import CustomButton from "components/elements/CustomButton";
 import { PieChartCustom } from "./pieChartCustom";
 import CustomAccordion from "./customAccordion";
-
-const ButtonGroup = ({ title, buttonStyleType }: any) => {
-  return (
-    <div>
-      {buttonStyleType !== "outline" ? (
-        <button
-          type="button"
-          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-        >
-          {title}
-        </button>
-      ) : (
-        <button
-          type="button"
-          className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800"
-        >
-          {title}
-        </button>
-      )}
-    </div>
-  );
-};
 
 const InputGroup = ({ label }: any) => {
   return (
@@ -60,53 +39,56 @@ function RiskAssessment() {
         <div className="col-span-6">
           <p className="my-3 font-semibold">Select possible hazards</p>
           <div className="flex flex-wrap">
-            <ButtonGroup title="Confined Space Entry" />
-            <ButtonGroup buttonStyleType="outline" title="Awkward Access" />
-            <ButtonGroup buttonStyleType="outline" title="Unguarded Opening" />
-            <ButtonGroup buttonStyleType="outline" title="Dropped Object" />
-            <ButtonGroup buttonStyleType="outline" title="Vibration" />
-            <ButtonGroup
+            <CustomButton
+              buttonStyleType="solid"
+              title="Confined Space Entry"
+            />
+            <CustomButton buttonStyleType="outline" title="Awkward Access" />
+            <CustomButton buttonStyleType="outline" title="Unguarded Opening" />
+            <CustomButton buttonStyleType="outline" title="Dropped Object" />
+            <CustomButton buttonStyleType="outline" title="Vibration" />
+            <CustomButton
               buttonStyleType="outline"
               title="Confined Space Entry"
             />
-            <ButtonGroup title="Awkward Access" />
+            <CustomButton buttonStyleType="solid" title="Awkward Access" />
           </div>
           <p className="text-right my-3 text-[#054CD6]">More hazards...</p>
           <p className="my-3 font-semibold">Select possible controls:</p>
           <div className="flex flex-wrap">
-            <ButtonGroup
+            <CustomButton
               buttonStyleType="outline"
               title="Erect signs and barriers"
             />
-            <ButtonGroup
+            <CustomButton
               buttonStyleType="outline"
               title="Keep worksite free of trip hazards"
             />
-            <ButtonGroup
+            <CustomButton
               buttonStyleType="outline"
               title="Check worksite for potential dropped objects"
             />
-            <ButtonGroup
+            <CustomButton
               buttonStyleType="outline"
               title="Safety harness to be worn"
             />
-            <ButtonGroup
+            <CustomButton
               buttonStyleType="outline"
               title="Inertia reel to be  worn"
             />
-            <ButtonGroup
+            <CustomButton
               buttonStyleType="outline"
               title="Standby man to be in attendance"
             />
-            <ButtonGroup
+            <CustomButton
               buttonStyleType="outline"
               title="Waste to be disposed of correctly"
             />
-            <ButtonGroup
+            <CustomButton
               buttonStyleType="outline"
               title="Use safe manual handling techniques"
             />
-            <ButtonGroup
+            <CustomButton
               buttonStyleType="outline"
               title="Ensure correct PPE to be worn"
             />
@@ -116,6 +98,13 @@ function RiskAssessment() {
       </div>
       <div className="mt-4">
         <CustomAccordion />
+      </div>
+      <div className="flex justify-between py-5">
+        <p className="text-blue-700">Attach to safety permit</p>
+        <div className="flex">
+          <CustomButton buttonStyleType="plain-gray" title="Cancel" />
+          <CustomButton buttonStyleType="solid" title="Submit" />
+        </div>
       </div>
     </div>
   );
