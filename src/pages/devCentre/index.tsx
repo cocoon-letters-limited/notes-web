@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ActionButtonSection from "./components/actionButtonSection";
 import TabSection from "./components/tabSection";
 import RecordedSection from "./components/recordedSection";
+import AssestmentSection from "./components/assessmentSection";
 
 const DevCentre = () => {
   const [selectedTab, setSelectedTab] = useState("Calendar");
@@ -15,7 +16,7 @@ const DevCentre = () => {
       case "Recorded":
         return <RecordedSection />;
       case "Assessment":
-        return "";
+        return <AssestmentSection />;
       default:
         return <RecordedSection />;
     }
