@@ -17,11 +17,13 @@ import ManpowerLayout from "pages/workforce/layout";
 import MaintenanceDetails from "pages/maintenance/maintenanceDetails";
 import MaintenanceWorkOrder from "pages/maintenance/maintenanceWorkOrder";
 import SatetyLayout from "pages/safety/safetyList";
-import CreateSafetyLayout from "pages/safety/createSafety";
 import RiskAssessment from "pages/RiskAssessment";
 import Permit from "pages/PERMIT";
-// import RiskAssessment from "pages/RiskAssessment";
-// import Safety from "pages/safety";
+import IsolationCertificate from "pages/safety/createCertification/IsolationCertificate";
+import SystemsIsolation from "pages/safety/createCertification/SystemsIsolation/SystemsIsolation";
+import SystemsIsolationDetail from "pages/safety/createCertification/SystemsIsolation/SystemsIsolationDetail";
+import RadiographyPermit from "pages/safety/createCertification/radiographyPermit";
+import ConfinedCertificate from "pages/safety/createCertification/ConfinedCertificate";
 
 const privateRoute = {
   path: "/",
@@ -50,19 +52,34 @@ const privateRoute = {
     },
     {
       path: "safety",
-      // element: <Safety />,
       children: [
         {
           path: "",
           element: <SatetyLayout />,
         },
         {
-          path: "riskassessment",
+          path: "risk-assessment",
           element: <RiskAssessment />,
         },
         {
-          path: "CreateSafety",
-          element: <CreateSafetyLayout />,
+          path: "radiographyPermit",
+          element: <RadiographyPermit />,
+        },
+        {
+          path: "confined-certificate",
+          element: <ConfinedCertificate />,
+        },
+        {
+          path: "systems-isolation",
+          element: <SystemsIsolation />,
+        },
+        {
+          path: "systems-isolation-detail",
+          element: <SystemsIsolationDetail />,
+        },
+        {
+          path: "isolation-certification",
+          element: <IsolationCertificate />,
         },
       ],
     },
