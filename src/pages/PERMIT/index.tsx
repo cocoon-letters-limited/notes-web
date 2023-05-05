@@ -6,6 +6,9 @@ import React from "react";
 import ClearIcon from "@mui/icons-material/Clear";
 import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 import { Badge } from "@mui/material";
+// import FormGroup from "@mui/material/FormGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
 
 const RedioBTtn = ({ title, id }: any) => {
   return (
@@ -24,21 +27,7 @@ const RedioBTtn = ({ title, id }: any) => {
     </div>
   );
 };
-const CheckBoxBtn = ({ title, id }: any) => {
-  return (
-    <label className="fo" htmlFor={id}>
-      <input
-        type="checkbox"
-        className="form-check-input"
-        name=""
-        id=""
-        value="checkedValue"
-        checked
-      />
-      <span> {title}</span>
-    </label>
-  );
-};
+
 function Permit() {
   return (
     <>
@@ -136,24 +125,25 @@ function Permit() {
             </div>
             <div className="col-span-2">
               <p className="font-semibold mb-2">Issue</p>
-              <CheckBoxBtn
-                title="I, Area Authority, declare that all hazards have been identified and all specified control measures are in place and it is now safe for the work specified on the WP to be performed."
-                className="my-3"
-                id="1"
+              <FormControlLabel
+                control={
+                  <Checkbox style={{ color: "#054CD6" }} defaultChecked />
+                }
+                label="I, Area Authority, declare that all hazards have been identified and all specified control measures are in place and it is now safe for the work specified on the WP to be performed."
               />
               <br />
-              <CheckBoxBtn
-                title="I, Area Authority, declare that all hazards have been identified and all specified control measures are in place and it is now safe for the work specified on the WP to be performed."
-                className="my-3"
-                id="2"
+              <FormControlLabel
+                control={<Checkbox style={{ color: "#054CD6" }} />}
+                label="I, Area Authority, declare that all hazards have been identified and all specified control measures are in place and it is now safe for the work specified on the WP to be performed."
               />
               <br />
               <p className="font-semibold my-2">WP Registry</p>
-              <CheckBoxBtn
-                title="Registered in WP Register, all prerequisite controls as verified by the AA are in place. This WP is automatically suspended on activation of the general
+              <FormControlLabel
+                control={
+                  <Checkbox style={{ color: "#054CD6" }} defaultChecked />
+                }
+                label="Registered in WP Register, all prerequisite controls as verified by the AA are in place. This WP is automatically suspended on activation of the general
                 alarm or instruction via the public address system and must be returned to its point of issue prior to recommencement of work."
-                className=""
-                id="2"
               />
             </div>
           </div>
