@@ -8,7 +8,9 @@ function WorkoforceLIst() {
     <div>
       <div className="flex justify-between">
         {!showEquipment ? (
-          <p className="">Workforce</p>
+          <p className="text-default font-bold text-xl lg:text-2xl xl:text-3xl">
+            Workforce
+          </p>
         ) : (
           <button
             type="button"
@@ -18,7 +20,7 @@ function WorkoforceLIst() {
             x
           </button>
         )}
-        <div className="text-blue-700  text-xs">
+        <div className="text-blue-700">
           <span>Upload csv</span>
           <IconButton
             color="primary"
@@ -43,16 +45,16 @@ function WorkoforceLIst() {
           </IconButton>
           <button
             type="button"
-            className="w-fit py-2 border-2 border-solid rounded-lg mx-2  text-xs px-3 border-blue-700 text-blue-700"
+            className="w-fit focus:outline-none mr-2 items-center py-3 text-sm-15 lg:text-base text-primary border-2 border-primary rounded-lg px-6 font-semibold"
           >
             Subscribe
           </button>
           <button
             type="button"
             onClick={() => setShowEquipment(true)}
-            className="w-fit py-2 border-2 bg-blue-700 rounded-lg px-3  text-xs border-blue-700 text-white"
+            className="w-fit focus:outline-none items-center py-3 space-x-4 text-sm-15 lg:text-base text-white border-2 border-primary bg-primary rounded-lg px-6 font-semibold"
           >
-            New Workforce
+            New Equipment
           </button>
         </div>
       </div>
