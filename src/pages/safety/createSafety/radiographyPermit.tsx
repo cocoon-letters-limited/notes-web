@@ -2,7 +2,7 @@ import React from "react";
 import InputGroup from "components/elements/input";
 import TextareaGroup from "components/elements/textarea";
 
-import CustomRadio from "components/elements/radio";
+import CustomRadio from "components/elements/customRadioButton";
 import HearderSafety from "../component/HearderSafety";
 
 function RadiographyPermit() {

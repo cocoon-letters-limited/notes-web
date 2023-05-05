@@ -1,5 +1,5 @@
 import React from "react";
-import CustomRadio from "components/elements/radio";
+import CustomRadio from "components/elements/customRadioButton";
 import TextareaGroup from "components/elements/textarea";
 import HearderSafety from "../component/HearderSafety";
 import SafetyFooter from "../component/SafetyFooter";

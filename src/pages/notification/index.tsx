@@ -6,7 +6,7 @@ import React from "react";
 function Notification() {
   return (
     <div className="p-5">
-      <h1 className="font-semibold ">Notifications</h1>
+      <h1 className="text-default font-bold text-xl lg:text-2xl xl:text-3xl ">Notifications</h1>
       <div className="rounded shadow p-4 my-4 bg-white">
         <div className="flex justify-between ">
           <p className="">(Notifications type)</p>

@@ -1,0 +1,184 @@
+import CustomButton from "components/elements/CustomButton";
+import InputGroup from "components/elements/input";
+import FileUploadOutlinedIcon from "@mui/icons-material/FileUploadOutlined";
+import Title from "pages/safety/component/title";
+import React from "react";
+import ClearIcon from "@mui/icons-material/Clear";
+import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
+import { Badge } from "@mui/material";
+
+const RedioBTtn = ({ title, id }: any) => {
+  return (
+    <div>
+      <label htmlFor={id}>
+        {title}
+        <input
+          type="radio"
+          className="ml-2"
+          name=""
+          id=""
+          value="checkedValue"
+          checked
+        />
+      </label>
+    </div>
+  );
+};
+const CheckBoxBtn = ({ title, id }: any) => {
+  return (
+    <label className="fo" htmlFor={id}>
+      <input
+        type="checkbox"
+        className="form-check-input"
+        name=""
+        id=""
+        value="checkedValue"
+        checked
+      />
+      <span> {title}</span>
+    </label>
+  );
+};
+function Permit() {
+  return (
+    <>
+      <div>
+        <Title title="Hot Work (Spark Potential) Permit" goBack={() => {}} />
+      </div>
+      <div className="bg-white p-4 rounded-lg">
+        <div>
+          <div className="grid-cols-7 gap-1 grid">
+            <div className="col-span-4">
+              <button
+                type="button"
+                className="focus:outline-none flex border border-[#054CD6] items-center px-3 py-3 space-x-3 text-sm-10 lg:text-base text-primary rounded-lg font-semibold"
+              >
+                <span>Attach Risk Assessment</span>
+                <span>
+                  <FileUploadOutlinedIcon />
+                </span>
+              </button>
+            </div>
+            <div className="text-right">
+              <span className="mr-6"> Status</span>
+              <Badge badgeContent={4} color="success" />
+              <span className="ml-5">Issued</span>
+            </div>
+            <p className="text-left col-span-2 pl-5">Permit No:102384</p>
+          </div>
+        </div>
+        <div>
+          <div className="grid gap-2 mb-6 md:grid-cols-3 mt-2">
+            <div className="col-span-1">
+              <InputGroup label="Equipment ID:" />
+            </div>
+            <div className="col-span-2">
+              <InputGroup label="Task Description:" />
+            </div>
+            <div className="col-span-1">
+              <InputGroup label="Hazard category:" />
+            </div>
+            <div className="col-span-2">
+              <InputGroup label="Hazard " />
+            </div>
+            <div className="col-span-3">
+              <InputGroup label="Controls" />
+            </div>
+            <div className="col-span-1">
+              <InputGroup label="Cross Referenced Certificates:" />
+            </div>
+            <div className="col-span-2">
+              <InputGroup label="Sanction to test:" />
+            </div>
+            <div className="col-span-2" />
+            <div className="flex flex-row-reverse">
+              <CustomButton title="Cancel" buttonStyleType="plain-gray" />
+              <CustomButton title="Submit" buttonStyleType="solid" />
+            </div>
+            <div className="col-span-3">
+              <InputGroup label="Add authorization:" />
+            </div>
+          </div>
+          <div className="grid gap-2 mb-6 md:grid-cols-3">
+            <div className="col-span-1">
+              <p className="font-semibold">Site Gas Test</p>
+              <div className="flex justify-between my-2">
+                <RedioBTtn title="Flammable" id="1" />
+                <RedioBTtn title="Toxic" />
+                <RedioBTtn title="Other" />
+              </div>
+
+              <InputGroup label="Enter gas name" />
+              <p>
+                Initialled by Authorised Gas Tester as being within acceptable
+                gas test limits:
+              </p>
+              <p className="text-sm my-2">Initial Test:</p>
+              <div className="flex space-x-1 my-3">
+                <InsertDriveFileIcon color="error" />
+                <p>Initial test 1.pdf</p>
+                <ClearIcon color="primary" />
+              </div>
+              <p className="font-semibold my-2">Re-issue and Return</p>
+              <p className="text-xs my-3">Issued 20.03.2023 @ 5:30pm</p>
+              <button
+                type="button"
+                className="text-sm py-2 bg-[#054CD6] px-3 rounded text-white mr-2"
+              >
+                Issue
+              </button>
+              <button
+                type="button"
+                className="text-sm py-2 bg-[#DCE8FF] px-3 rounded text-[#054CD6] mr-2"
+              >
+                Return
+              </button>
+            </div>
+            <div className="col-span-2">
+              <p className="font-semibold mb-2">Issue</p>
+              <CheckBoxBtn
+                title="I, Area Authority, declare that all hazards have been identified and all specified control measures are in place and it is now safe for the work specified on the WP to be performed."
+                className="my-3"
+                id="1"
+              />
+              <br />
+              <CheckBoxBtn
+                title="I, Area Authority, declare that all hazards have been identified and all specified control measures are in place and it is now safe for the work specified on the WP to be performed."
+                className="my-3"
+                id="2"
+              />
+              <br />
+              <p className="font-semibold my-2">WP Registry</p>
+              <CheckBoxBtn
+                title="Registered in WP Register, all prerequisite controls as verified by the AA are in place. This WP is automatically suspended on activation of the general
+                alarm or instruction via the public address system and must be returned to its point of issue prior to recommencement of work."
+                className=""
+                id="2"
+              />
+            </div>
+          </div>
+          {/* <SelectGroup2
+    label=""
+    options={[{ label: "Worksite Location", value: "" }]}
+  /> */}
+          <div className="flex flex-row-reverse space-x-2 ">
+            <button
+              type="submit"
+              className="ml-2  bg-[#E4EAF6] hover:bg-[#E4EAF6] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-[#E4EAF6] dark:hover:bg-[#E4EAF6] dark:focus:ring-blue-800"
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              className="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Permit;
