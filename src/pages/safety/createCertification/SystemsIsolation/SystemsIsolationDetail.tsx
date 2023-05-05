@@ -1,6 +1,6 @@
 import { FormControlLabel, Checkbox } from "@mui/material";
 import React from "react";
-import HearderSafety from "../component/HearderSafety";
+import HearderSafety from "../../component/HearderSafety";
 
 export function CardContent({
   title,
@@ -18,7 +18,7 @@ export function CardContent({
     </div>
   );
 }
-function DetailSefety() {
+function SystemsIsolationDetail() {
   return (
     <div>
       <div className="bg-white p-5 space-y-5 rounded-lg">
@@ -122,4 +122,4 @@ function DetailSefety() {
   );
 }
 
-export default DetailSefety;
+export default SystemsIsolationDetail;

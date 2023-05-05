@@ -2,10 +2,10 @@ import InputGroup from "components/elements/input";
 // import SelectGroup2 from "components/elements/select2";
 import TextareaGroup from "components/elements/textarea";
 import React from "react";
-import HearderSafety from "../component/HearderSafety";
+import HearderSafety from "../../component/HearderSafety";
 // import MultipleSelectChipCustom from "../component/mutiselectot";
 
-function CreateSafety() {
+function SystemsIsolation() {
   return (
     <div className="bg-white p-4 rounded-lg">
       <HearderSafety />
@@ -62,4 +62,4 @@ function CreateSafety() {
   );
 }
 
-export default CreateSafety;
+export default SystemsIsolation;

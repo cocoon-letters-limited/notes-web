@@ -114,7 +114,7 @@ function Pricing() {
                     }) => (
                       <ul
                         key={listItem.id}
-                        className="flex justify-between text-white mt-3 text-white"
+                        className="flex justify-between text-white mt-3 "
                       >
                         <small>{listItem.itemTitle}</small>
                         <small>{listItem.itemValue}</small>
@@ -126,7 +126,7 @@ function Pricing() {
             )}
           </ul>
         </div>
-        <div className="w-full  p-4 grid  bg-white shadow-lg rounded-lg  sm:p-6 dark:white dark:border-gray-700">
+        <div className="w-fit  p-4 grid  bg-white shadow-lg rounded-lg  sm:p-6 dark:white dark:border-gray-700">
           <div>
             <h5 className="mb-4 text-2xl  text-center text-blue-700 font-bold">
               Enterprise
@@ -141,7 +141,7 @@ function Pricing() {
             <Link to="/trynow">
               <button
                 type="button"
-                className="text-white bg-blue-600  mt-10 hover:bg-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+                className="text-white p-2 rounded-lg bg-blue-600  mt-10  w-full text-center"
               >
                 Contact Sales
               </button>
