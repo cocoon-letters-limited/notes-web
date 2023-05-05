@@ -127,20 +127,32 @@ function Permit() {
               <p className="font-semibold mb-2">Issue</p>
               <FormControlLabel
                 control={
-                  <Checkbox style={{ color: "#054CD6" }} defaultChecked />
+                  <Checkbox
+                    sx={{ "& .MuiSvgIcon-root": { fontSize: 32 } }}
+                    style={{ color: "#054CD6" }}
+                    defaultChecked
+                  />
                 }
                 label="I, Area Authority, declare that all hazards have been identified and all specified control measures are in place and it is now safe for the work specified on the WP to be performed."
               />
               <br />
               <FormControlLabel
-                control={<Checkbox style={{ color: "#054CD6" }} />}
+                control={
+                  <Checkbox
+                    style={{ color: "#054CD6" }}
+                    sx={{ "& .MuiSvgIcon-root": { fontSize: 32 } }}
+                  />
+                }
                 label="I, Area Authority, declare that all hazards have been identified and all specified control measures are in place and it is now safe for the work specified on the WP to be performed."
               />
               <br />
               <p className="font-semibold my-2">WP Registry</p>
               <FormControlLabel
                 control={
-                  <Checkbox style={{ color: "#054CD6" }} defaultChecked />
+                  <Checkbox
+                    style={{ color: "#054CD6" }}
+                    sx={{ "& .MuiSvgIcon-root": { fontSize: 32 } }}
+                  />
                 }
                 label="Registered in WP Register, all prerequisite controls as verified by the AA are in place. This WP is automatically suspended on activation of the general
                 alarm or instruction via the public address system and must be returned to its point of issue prior to recommencement of work."
