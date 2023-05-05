@@ -17,6 +17,7 @@ import ManpowerLayout from "pages/workforce/layout";
 import MaintenanceDetails from "pages/maintenance/maintenanceDetails";
 import MaintenanceWorkOrder from "pages/maintenance/maintenanceWorkOrder";
 import Safety from "pages/safety";
+import DevCentre from "pages/devCentre";
 
 const privateRoute = {
   path: "/",
@@ -94,6 +95,10 @@ const privateRoute = {
     {
       path: "maintenance/:slug/work-order",
       element: <MaintenanceWorkOrder />,
+    },
+    {
+      path: "dev-centre",
+      element: <DevCentre />,
     },
   ],
 };
