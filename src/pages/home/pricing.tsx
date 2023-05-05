@@ -126,7 +126,7 @@ function Pricing() {
             )}
           </ul>
         </div>
-        <div className="w-fit  p-4 grid  bg-white shadow-lg rounded-lg  sm:p-6 dark:white dark:border-gray-700">
+        <div className="w-fit  p-4 grid  bg-white shadow-lg rounded-lg   sm:p-6 dark:white dark:border-gray-700">
           <div>
             <h5 className="mb-4 text-2xl  text-center text-blue-700 font-bold">
               Enterprise
@@ -134,7 +134,7 @@ function Pricing() {
             <p className="text-center text-[#969696] ">
               The national average cost of buying coin easy.
             </p>
-            <p className=" text-center text-5xl px-20  py-20 text-blue-700 font-bold ">
+            <p className=" text-center text-5xl mt-20 p-16 text-blue-700 font-bold ">
               Specially crafted for you
             </p>
 
