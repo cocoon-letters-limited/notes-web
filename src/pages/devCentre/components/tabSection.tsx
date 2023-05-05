@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "../style.module.css";
 
 interface TabItemProps {
@@ -32,9 +32,11 @@ const TabItem = ({
   );
 };
 
-const TabSection = () => {
-  const [selectedTab, setSelectedTab] = useState("Calendar");
-
+interface TabSectionProps {
+  selectedTab: string;
+  setSelectedTab: any;
+}
+const TabSection = ({ selectedTab, setSelectedTab }: TabSectionProps) => {
   const tabList = [
     {
       id: 1,

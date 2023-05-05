@@ -1,14 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import ActionButtonSection from "./components/actionButtonSection";
 import TabSection from "./components/tabSection";
+import RecordedSection from "./components/recordedSection";
 
 const DevCentre = () => {
+  const [selectedTab, setSelectedTab] = useState("Calendar");
+
+  const renderScreen = (val: string) => {
+    switch (val) {
+      case "Calendar":
+        return "";
+      case "Live training":
+        return "";
+      case "Recorded":
+        return <RecordedSection />;
+      case "Assessment":
+        return "";
+      default:
+        return <RecordedSection />;
+    }
+  };
+
   return (
     <section className="relative h-full pt-4">
       <div className="w-full flex flex-wrap flex-col lg:flex-row lg:justify-between">
         <ActionButtonSection />
-        <TabSection />
+        <TabSection selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
       </div>
+
+      {renderScreen(selectedTab)}
     </section>
   );
 };
