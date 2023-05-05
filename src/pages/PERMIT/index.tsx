@@ -48,7 +48,7 @@ function Permit() {
                 </span>
               </button>
             </div>
-            <div className="text-right">
+            <div className="">
               <span className="mr-6"> Status</span>
               <Badge badgeContent={4} color="success" />
               <span className="ml-5">Issued</span>
