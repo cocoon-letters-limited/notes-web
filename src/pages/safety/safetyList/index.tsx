@@ -239,11 +239,23 @@ const SatetyLayout = () => {
           {show && (
             <div
               onMouseLeave={() => setShow(false)}
-              className="absolute z-10 space-y-4 top-28 mt-2 bg-white text-sm md:text-sm-15 px-4 py-4 rounded-lg"
+              className="absolute z-10 space-y-4 top-20 right-9 mt-2 bg-white text-sm md:text-sm-15 px-4 py-4 rounded-lg"
             >
               <DropDownLink
-                linkTitle="Hot work"
-                linkUrl="/safety/CreateSafety"
+                linkTitle="Confined certificate"
+                linkUrl="/safety/confined-certificate"
+              />
+              <DropDownLink
+                linkTitle="Radiography permit"
+                linkUrl="/safety/radiographyPermit"
+              />
+              <DropDownLink
+                linkTitle="Isolation certification"
+                linkUrl="/safety/isolation-certification"
+              />
+              <DropDownLink
+                linkTitle="Systems isolation"
+                linkUrl="/safety/systems-isolation"
               />
             </div>
           )}

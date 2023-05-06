@@ -3,10 +3,12 @@ import InputGroup from "components/elements/input";
 import CustomRadio from "components/elements/customRadioButton";
 import HearderSafety from "../component/HearderSafety";
 import SafetyFooter from "../component/SafetyFooter";
+import Title from "../component/title";
 
 function IsolationCertificate({ nextPage, privPage }: any) {
   return (
     <div>
+      <Title title="Isolation Certificate" />
       <div className="bg-white p-5 space-y-5 rounded-lg">
         <HearderSafety />
         <div>

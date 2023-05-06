@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const ColorBox = ({ title, color }: any) => {
   return (
@@ -29,8 +30,15 @@ const CustomAccordion = () => {
       <div className="w-full ">
         <div className="border p-2  col-span-5 boder  border-blue-950">
           <div className="flex justify-between p-3">
-            <p>Hazard: Dropped object</p>
-            <p>Initial likelihood:</p>
+            <div>
+              <span className="text-[#8F9BB1]">Hazard</span> : Dropped object
+            </div>
+            <div>
+              Initial likelihood:
+              <span className="text-[#054CD6] ml-2">
+                Certain <ArrowDropDownIcon />
+              </span>
+            </div>
           </div>
         </div>
 
@@ -49,14 +57,14 @@ const CustomAccordion = () => {
             <ColorBox title=" Critical" />
             <ColorBox title=" Catastrophic" />
             <ColorBox title=" Certain" />
-            <ColorBox title="High" color="#FFB27A" />
-            <ColorBox title="High" color="#FFB27A" />
+            <ColorBox title="High" color="bg-[#FFB27A]" />
+            <ColorBox title="High" color="bg-[#FFB27A]" />
             <ColorBox title="Very high" color="bg-[#FF7A7A]" />
             <ColorBox title="Very high" color="bg-[#FF7A7A]" />
             <ColorBox title="Possible" color="bg-[white]" />
             <ColorBox title="Medium" color="bg-[#FCFF7A]" />
-            <ColorBox title="High" color="#FFB27A" />
-            <ColorBox title="High" color="#FFB27A" />
+            <ColorBox title="High" color="bg-[#FFB27A]" />
+            <ColorBox title="High" color="bg-[#FFB27A]" />
             <ColorBox title="Very high" color="bg-[#FF7A7A]" />
             <ColorBox title="Unlikely" color="" />
             <ColorBox title="Low" color="bg-[#CEFFCD]" />
