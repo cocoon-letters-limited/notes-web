@@ -3,6 +3,7 @@ import ActionButtonSection from "./components/actionButtonSection";
 import TabSection from "./components/tabSection";
 import RecordedSection from "./components/recordedSection";
 import AssestmentSection from "./components/assessmentSection";
+import LiveTrainingSection from "./components/liveTrainingSection";
 
 const DevCentre = () => {
   const [selectedTab, setSelectedTab] = useState("Calendar");
@@ -12,7 +13,7 @@ const DevCentre = () => {
       case "Calendar":
         return "";
       case "Live training":
-        return "";
+        return <LiveTrainingSection />;
       case "Recorded":
         return <RecordedSection />;
       case "Assessment":

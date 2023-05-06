@@ -9,7 +9,8 @@ type OutlineCardProps = {
 
 const OutlineCard = ({ title, description }: OutlineCardProps) => {
   return (
-    <div className="pb-8">
+    <div className="pb-8 pl-4 md:pl-6 lg:pl-8 relative">
+      <div className="absolute -left-1.5 top-2 h-3 w-3 bg-primary rounded-full" />
       <h3 className="text-default text-lg lg:text-xl font-bold">{title}</h3>
       <p className="mt-2 text-sm-15 lg:text-base w-full md:w-11/12">
         {description}
@@ -20,7 +21,7 @@ const OutlineCard = ({ title, description }: OutlineCardProps) => {
 
 const DevCentreDetails = () => {
   return (
-    <section className="relative h-full pt-4 bg-white px-6 lg:px-8 xl:px-12 pt-6 lg:pt-8 pb-36">
+    <section className="relative h-full bg-white px-6 lg:px-8 xl:px-12 pt-6 lg:pt-8 pb-36">
       <div className="flex flex-row flex-wrap justify-between">
         <div className="w-full md:w-6/12 lg:w-7/12">
           <GoBackButton title="Digital Marketing Strategy" />
@@ -36,7 +37,7 @@ const DevCentreDetails = () => {
             risus amet id amet, scelerisque tellus.
           </p>
 
-          <div className="relative pt-4">
+          <div className="relative block mt-8 border-l border-[#CFD2E4]">
             <OutlineCard
               title="Introduction"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis diam
