@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import RecordedVideoDetails from "./components/recordedVideoDetails";
 import WatchVideo from "./components/recordedVideoDetails/watchVideo";
+import AssessmentDetails from "./components/assessmentDetails";
 
 const DevCentreDetails = () => {
   const location = useLocation();
@@ -26,7 +27,6 @@ const DevCentreDetails = () => {
       };
     }
     setSlugData(newObject);
-    console.log(newObject);
   }, [location]);
 
   const renderScreen = (obj: any) => {
@@ -35,6 +35,10 @@ const DevCentreDetails = () => {
     }
     if (obj?.type === "recorded") {
       return <RecordedVideoDetails />;
+    }
+
+    if (obj?.type === "assessment") {
+      return <AssessmentDetails />;
     }
 
     return null;
