@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import LiveImage from "assets/images/webp/dev_centre/live.webp";
 import MicIcon from "components/svg/micIcon";
 import VideoIcon from "components/svg/videoIcon";
 import LiveTrainingListSlider from "./liveTrainingListSlider";
+import LiveTrainingParticipants from "./liveTrainingParticipants";
+import LiveTrainingTab from "./liveTrainingTab";
+import LiveTrainingChat from "./liveTrainingChat";
 
 const LiveTrainingSection = () => {
+  const [selectedTab, setSelectedTab] = useState("Participants");
+
   return (
-    <div className="mt-8">
+    <div className="relative mt-8">
       <div className="flex flex-row flex-wrap">
-        <div className="w-full lg:w-8/12">
+        <div className="w-full lg:w-8/12 pr-6">
           <div className="">
             <LiveTrainingListSlider />
           </div>
@@ -38,6 +43,17 @@ const LiveTrainingSection = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="w-full lg:w-4/12 bg-white rounded-lg px-3 lg:px-4 pt-4 pb-6">
+          <LiveTrainingTab
+            selectedTab={selectedTab}
+            setSelectedTab={setSelectedTab}
+          />
+          {selectedTab === "Participants" ? (
+            <LiveTrainingParticipants />
+          ) : (
+            <LiveTrainingChat />
+          )}
         </div>
       </div>
     </div>
