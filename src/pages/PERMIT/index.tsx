@@ -9,6 +9,7 @@ import { Badge } from "@mui/material";
 // import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
+import { Link } from "react-router-dom";
 
 const RedioBTtn = ({ title, id }: any) => {
   return (
@@ -32,21 +33,23 @@ function Permit() {
   return (
     <>
       <div>
-        <Title title="Hot Work (Spark Potential) Permit" goBack={() => {}} />
+        <Title title="Hot Work (Spark Potential) Permit" />
       </div>
       <div className="bg-white p-4 rounded-lg">
         <div>
           <div className="grid-cols-7 gap-1 grid">
             <div className="col-span-4">
-              <button
-                type="button"
-                className="focus:outline-none flex border border-[#054CD6] items-center px-3 py-3 space-x-3 text-sm-10 lg:text-base text-primary rounded-lg font-semibold"
-              >
-                <span>Attach Risk Assessment</span>
-                <span>
-                  <FileUploadOutlinedIcon />
-                </span>
-              </button>
+              <Link to="safety/risk-assessment">
+                <button
+                  type="button"
+                  className="focus:outline-none flex border border-[#054CD6] items-center px-3 py-3 space-x-3 text-sm-10 lg:text-base text-primary rounded-lg font-semibold"
+                >
+                  <span>Attach Risk Assessment</span>
+                  <span>
+                    <FileUploadOutlinedIcon />
+                  </span>
+                </button>
+              </Link>
             </div>
             <div className="">
               <span className="mr-6"> Status</span>
