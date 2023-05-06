@@ -32,16 +32,15 @@
   color: var(--color-primary);
 }
 
-
 .assessmentCard {
-    box-shadow: 0px 5px 20px rgba(213, 213, 213, 0.25);
-    transition: all ease-in-out 200ms;
+  box-shadow: 0px 5px 20px rgba(213, 213, 213, 0.25);
+  transition: all ease-in-out 200ms;
 }
 
 .assessmentCard:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
-.assessmentCard:hover h3{
-    color: var(--color-primary);
+.assessmentCard:hover h3 {
+  color: var(--color-primary);
 }
