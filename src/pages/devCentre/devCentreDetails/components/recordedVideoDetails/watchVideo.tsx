@@ -1,6 +1,8 @@
 import GoBackButton from "components/blocks/goBackButton";
 import React from "react";
 import VideoImage from "assets/images/webp/dev_centre/playCard.webp";
+import StarIcon from "components/svg/starIcon";
+import VideoTimelines from "./components/videoTimelines";
 
 const WatchVideo = () => {
   return (
@@ -37,6 +39,45 @@ const WatchVideo = () => {
               Lesson 5 - Exporting your display ads
             </h2>
           </div>
+
+          <div className="mt-12">
+            <div className="flex flex-row justify-between pb-4 border-b border-[#CFD2E4]">
+              <div className="flex flex-row items-center space-x-6 md:space-x-8 lg:space-x-12">
+                <button
+                  type="button"
+                  className="text-sm-15 lg:text-base text-primary font-semibold"
+                >
+                  Notes
+                </button>
+                <button
+                  type="button"
+                  className="text-sm-15 lg:text-base text-default font-semibold"
+                >
+                  Comments
+                </button>
+              </div>
+              <div className="flex items-center">
+                <StarIcon />
+                <StarIcon />
+                <StarIcon />
+                <StarIcon />
+                <StarIcon />
+              </div>
+            </div>
+
+            <div className="mt-4">
+              <p className="text-sm-15 lg:text-base text-[#4E4B66]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
+                donec nunc et, odio risus. Quam ac in hac enim id libero etiam.
+                Facilisi tincidunt sit faucibus diam at amet. Non dignissim enim
+                sit risus nulla mi aenean elementum.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full md:w-5/12 lg:w-4/12 md:pl-6 lg:pl-8">
+          <VideoTimelines />
         </div>
       </div>
     </section>
