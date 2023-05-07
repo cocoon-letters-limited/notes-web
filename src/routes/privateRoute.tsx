@@ -20,6 +20,7 @@ import Safety from "pages/safety";
 import DevCentre from "pages/devCentre";
 import DevCentreDetails from "pages/devCentre/devCentreDetails";
 import CreateCourse from "pages/devCentre/devCentreDetails/createCourse";
+import CreateAssessment from "pages/devCentre/devCentreDetails/createAssessment";
 
 const privateRoute = {
   path: "/",
@@ -109,6 +110,10 @@ const privateRoute = {
     {
       path: "dev-centre/create-course",
       element: <CreateCourse />,
+    },
+    {
+      path: "dev-centre/create-assessment",
+      element: <CreateAssessment />,
     },
   ],
 };
