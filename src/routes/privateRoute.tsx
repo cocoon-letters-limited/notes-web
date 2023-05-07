@@ -19,6 +19,7 @@ import MaintenanceWorkOrder from "pages/maintenance/maintenanceWorkOrder";
 import Safety from "pages/safety";
 import DevCentre from "pages/devCentre";
 import DevCentreDetails from "pages/devCentre/devCentreDetails";
+import CreateCourse from "pages/devCentre/devCentreDetails/createCourse";
 
 const privateRoute = {
   path: "/",
@@ -104,6 +105,10 @@ const privateRoute = {
     {
       path: "dev-centre/:slug",
       element: <DevCentreDetails />,
+    },
+    {
+      path: "dev-centre/create-course",
+      element: <CreateCourse />,
     },
   ],
 };
