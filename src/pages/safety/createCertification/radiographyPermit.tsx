@@ -15,20 +15,21 @@ function RadiographyPermit() {
         <HearderSafety />
         <div>
           <div className="grid gap-2 mb-6 md:grid-cols-2 mt-2">
-            <InputGroup label="Worksite Location" />
+            <InputGroup label="Site:" />
             <InputGroup label="System" />
-            <InputGroup label="Equipment/system to be isolated" />
-            <InputGroup label="Identification Works Tag No" />
+            <InputGroup label="Precise Work Site:" />
+            <InputGroup label="Precise Work Site:" />
           </div>
           <div className="col-span-6">
-            <TextareaGroup label="Description" />
+            <TextareaGroup label="Detailed description of plant/equipment to be worked on" />
           </div>
           <div className="grid gap-2 mb-6 md:grid-cols-2">
-            <InputGroup label="Reason for isolation" />
-            <InputGroup label="Worksite Location" />
+            <InputGroup label="Size of source to be used:" />
+            <InputGroup label="No. of shots:" />
           </div>
           <div className="grid gap-3 mb-6 md:grid-cols-2 mt-2">
             <div className="space-y-3">
+              <InputGroup label="Secs. per shot:" />
               <p className="font-semibold">Details</p>
               <div className="flex justify-between">
                 <p>Remotely Controlled Equipment</p>
@@ -107,7 +108,7 @@ function RadiographyPermit() {
             <div className="space-y-3 px-5">
               <p className="font-semibold">Personal Equipment</p>
               <div className="flex justify-between">
-                <p>Remotely Controlled Equipment</p>
+                <p>Ear Protection</p>
                 <CustomRadio
                   options={[
                     { label: "yes", value: "no" },
@@ -119,7 +120,7 @@ function RadiographyPermit() {
                 />
               </div>
               <div className="flex justify-between">
-                <p>Automatic Fire Fighting Equipment</p>
+                <p>Eye Protection</p>
                 <CustomRadio
                   options={[
                     { label: "yes", value: "no" },
@@ -131,7 +132,7 @@ function RadiographyPermit() {
                 />
               </div>
               <div className="flex justify-between">
-                <p>Isolation Certificate</p>
+                <p>Helmet/Boots/Gloves/Overalls</p>
                 <CustomRadio
                   options={[
                     { label: "yes", value: "no" },
@@ -143,7 +144,19 @@ function RadiographyPermit() {
                 />
               </div>
               <div className="flex justify-between">
-                <p>Entry Permit</p>
+                <p>Film Badge and/or Dosi-meter</p>
+                <CustomRadio
+                  options={[
+                    { label: "yes", value: "no" },
+                    { label: "No", value: "No" },
+                  ]}
+                  name="options"
+                  selectedValue="yes"
+                  onChange={() => {}}
+                />
+              </div>
+              <div className="flex justify-between">
+                <p>Other</p>
                 <CustomRadio
                   options={[
                     { label: "yes", value: "no" },
