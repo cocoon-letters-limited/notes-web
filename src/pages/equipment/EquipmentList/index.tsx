@@ -9,7 +9,9 @@ function EquipmentList() {
     <div>
       <div className="flex justify-between">
         {!showEquipment ? (
-          <p className="">Equipment</p>
+          <p className="text-default font-bold text-xl lg:text-2xl xl:text-3xl">
+            Equipment
+          </p>
         ) : (
           <button
             type="button"
@@ -19,7 +21,7 @@ function EquipmentList() {
             x
           </button>
         )}
-        <div className="text-blue-700  text-xs">
+        <div className="text-blue-700 ">
           <span>Upload csv</span>
           <IconButton
             color="primary"
@@ -44,14 +46,14 @@ function EquipmentList() {
           </IconButton>
           <button
             type="button"
-            className="w-fit py-2 border-2 border-solid rounded-lg  text-xs mx-2 px-3 border-blue-700 text-blue-700"
+            className="w-fit focus:outline-none mr-2 items-center py-3 text-sm-15 lg:text-base text-primary border-2 border-primary rounded-lg px-6 font-semibold"
           >
             Subscribe
           </button>
           <button
             type="button"
             onClick={() => setShowEquipment(true)}
-            className="w-fit py-2 border-2 bg-blue-700 text-xs rounded-lg px-3 border-blue-700 text-white"
+            className="w-fit focus:outline-none items-center py-3 space-x-4 text-sm-15 lg:text-base text-white border-2 border-primary bg-primary rounded-lg px-6 font-semibold"
           >
             New Equipment
           </button>

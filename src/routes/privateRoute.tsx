@@ -16,11 +16,19 @@ import WorkoforceLIst from "pages/workforce/workforceList";
 import ManpowerLayout from "pages/workforce/layout";
 import MaintenanceDetails from "pages/maintenance/maintenanceDetails";
 import MaintenanceWorkOrder from "pages/maintenance/maintenanceWorkOrder";
-import Safety from "pages/safety";
+// import Safety from "pages/safety";
 import DevCentre from "pages/devCentre";
 import DevCentreDetails from "pages/devCentre/devCentreDetails";
 import CreateCourse from "pages/devCentre/devCentreDetails/createCourse";
 import CreateAssessment from "pages/devCentre/devCentreDetails/createAssessment";
+import SatetyLayout from "pages/safety/safetyList";
+import RiskAssessment from "pages/safety/RiskAssessment";
+import Permit from "pages/safety/PERMIT";
+import IsolationCertificate from "pages/safety/createCertification/IsolationCertificate";
+import SystemsIsolation from "pages/safety/createCertification/SystemsIsolation/SystemsIsolation";
+import SystemsIsolationDetail from "pages/safety/createCertification/SystemsIsolation/SystemsIsolationDetail";
+import RadiographyPermit from "pages/safety/createCertification/radiographyPermit";
+import ConfinedCertificate from "pages/safety/createCertification/ConfinedCertificate";
 
 const privateRoute = {
   path: "/",
@@ -44,8 +52,41 @@ const privateRoute = {
       element: <ViewNoteDetails />,
     },
     {
+      path: "Permit",
+      element: <Permit />,
+    },
+    {
       path: "safety",
-      element: <Safety />,
+      children: [
+        {
+          path: "",
+          element: <SatetyLayout />,
+        },
+        {
+          path: "risk-assessment",
+          element: <RiskAssessment />,
+        },
+        {
+          path: "radiographyPermit",
+          element: <RadiographyPermit />,
+        },
+        {
+          path: "confined-certificate",
+          element: <ConfinedCertificate />,
+        },
+        {
+          path: "systems-isolation",
+          element: <SystemsIsolation />,
+        },
+        {
+          path: "systems-isolation-detail",
+          element: <SystemsIsolationDetail />,
+        },
+        {
+          path: "isolation-certification",
+          element: <IsolationCertificate />,
+        },
+      ],
     },
     {
       path: "manpower",
