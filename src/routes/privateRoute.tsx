@@ -16,6 +16,11 @@ import WorkoforceLIst from "pages/workforce/workforceList";
 import ManpowerLayout from "pages/workforce/layout";
 import MaintenanceDetails from "pages/maintenance/maintenanceDetails";
 import MaintenanceWorkOrder from "pages/maintenance/maintenanceWorkOrder";
+// import Safety from "pages/safety";
+import DevCentre from "pages/devCentre";
+import DevCentreDetails from "pages/devCentre/devCentreDetails";
+import CreateCourse from "pages/devCentre/devCentreDetails/createCourse";
+import CreateAssessment from "pages/devCentre/devCentreDetails/createAssessment";
 import SatetyLayout from "pages/safety/safetyList";
 import RiskAssessment from "pages/safety/RiskAssessment";
 import Permit from "pages/safety/PERMIT";
@@ -134,6 +139,22 @@ const privateRoute = {
     {
       path: "maintenance/:slug/work-order",
       element: <MaintenanceWorkOrder />,
+    },
+    {
+      path: "dev-centre",
+      element: <DevCentre />,
+    },
+    {
+      path: "dev-centre/:slug",
+      element: <DevCentreDetails />,
+    },
+    {
+      path: "dev-centre/create-course",
+      element: <CreateCourse />,
+    },
+    {
+      path: "dev-centre/create-assessment",
+      element: <CreateAssessment />,
     },
   ],
 };
