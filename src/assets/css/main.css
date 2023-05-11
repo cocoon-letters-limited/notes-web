@@ -70,3 +70,51 @@
   border: 2px solid #f9c81b;
   color: #f9c81b;
 }
+
+/* Calendar */
+.customCalendar {
+  position: relative;
+}
+
+.customCalendar .css-cwhad8-MuiDateCalendar-root {
+  width: 100% !important;
+}
+
+.customCalendar .css-i5q14k-MuiDayCalendar-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customCalendar .css-rhmlg1-MuiTypography-root-MuiDayCalendar-weekDayLabel {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #888f99;
+  width: 14.28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customCalendar
+  .css-1cafy48-MuiPickersSlideTransition-root-MuiDayCalendar-slideTransition {
+  min-height: 50rem;
+}
+
+.customCalendar .css-flbe84-MuiDayCalendar-weekContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.customCalendar .css-1c32n2y-MuiBadge-root {
+  width: 14.28%;
+  height: 6rem;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

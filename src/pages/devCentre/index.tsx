@@ -4,6 +4,7 @@ import TabSection from "./components/tabSection";
 import RecordedSection from "./components/recordedSection";
 import AssestmentSection from "./components/assessmentSection";
 import LiveTrainingSection from "./components/liveTrainingSection";
+import CalendarSection from "./components/calendarSection";
 
 const DevCentre = () => {
   const [selectedTab, setSelectedTab] = useState("Calendar");
@@ -11,7 +12,7 @@ const DevCentre = () => {
   const renderScreen = (val: string) => {
     switch (val) {
       case "Calendar":
-        return "";
+        return <CalendarSection />;
       case "Live training":
         return <LiveTrainingSection />;
       case "Recorded":
