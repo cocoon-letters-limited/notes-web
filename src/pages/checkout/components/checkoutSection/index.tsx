@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import CheckoutForm from "./components/CheckoutForm";
-import CheckoutPaymentMethods from "./components/CheckoutPaymentMethods";
+// import CheckoutPaymentMethods from "./components/CheckoutPaymentMethods";
 
 type GoBackButtonProps = {
   handleClick: () => void;
@@ -46,7 +46,7 @@ const CheckoutSection = () => {
         </div>
 
         <CheckoutForm />
-        <CheckoutPaymentMethods />
+        {/* <CheckoutPaymentMethods /> */}
         <div className="flex flex-row flex-wrap justify-between" />
       </div>
     </section>

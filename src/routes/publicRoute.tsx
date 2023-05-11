@@ -48,7 +48,7 @@ const publicRoute = {
       element: <BlogDetails />,
     },
     {
-      path: "checkout",
+      path: "checkout/:subscriptionType",
       element: <Checkout />,
     },
   ],
