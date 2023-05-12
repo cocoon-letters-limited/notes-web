@@ -1,6 +1,7 @@
-import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
+// import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import rectangle1059 from "assets/Rectangle1059.png";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useState } from "react";
 import {
   CompetenceDevelopmentCentreData,
   Isolation,
@@ -19,26 +20,19 @@ function AccordionCustom({
   title: string;
   discription: string;
 }) {
+  const [open, setOpen] = useState(false);
   return (
-    <Accordion
-      square
-      style={{
-        background: "none",
-        boxShadow: "none",
-        border: "none",
-      }}
-    >
-      <AccordionSummary
-        expandIcon={<ExpandMoreIcon />}
-        aria-controls="panel1a-content"
-        id="panel1a-header"
-      >
+    <div className="p-3">
+      <div className="flex justify-between ">
         <p> {title}</p>
-      </AccordionSummary>
-      <AccordionDetails>
-        <p className="text-left text-gray-500">{discription}</p>
-      </AccordionDetails>
-    </Accordion>
+        <button type="submit" onClick={() => setOpen(!open)}>
+          <ExpandMoreIcon />
+        </button>
+      </div>
+      <div>
+        {open && <p className="text-left text-gray-500">{discription}</p>}
+      </div>
+    </div>
   );
 }
 
