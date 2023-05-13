@@ -8,6 +8,11 @@ function Hearder() {
       behavior: "smooth",
     });
   };
+  const handleScrollFX = () => {
+    document.querySelector("#Taketotalcontrol")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handleClick = () => {
@@ -50,6 +55,7 @@ function Hearder() {
                 </button>
                 <button
                   type="button"
+                  onClick={handleScrollFX}
                   className="  font-bold md:py-2 md:px-4  md:text-base text-xs rounded inline-flex items-center text-white"
                 >
                   <span>View Solutions</span>

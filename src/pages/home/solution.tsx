@@ -39,8 +39,8 @@ function AccordionCustom({
 const Solution = () => {
   // const [ePTW] = useState(ePTWData);
   return (
-    <div id="features">
-      <div className="text-center md:p-10 p-5">
+    <div>
+      <div id="features" className="text-center md:p-10 p-5">
         <p className="md:text-4xl font-bold text-blue-600">
           Take total control
         </p>
@@ -67,7 +67,7 @@ const Solution = () => {
                 <p className="md:text-2xl pt-5 md:pb-5">
                   Maintenance Management System
                 </p>
-                <p className="text-gray-700 md:text-base text-xs">
+                <p className="text-gray-700 md:text-base text-xs md:pr-2">
                   Streamline maintenance processes and extend the productive
                   lifespan of your assets.
                 </p>
@@ -77,7 +77,7 @@ const Solution = () => {
                 <p className="md:text-2xl pt-5 md:pb-5">
                   Safety Management System
                 </p>
-                <p className="text-gray-700 md:text-base text-xs">
+                <p className="text-gray-700 md:text-base text-xs  md:pr-2">
                   Manage permits and enhance safety processes across your entire
                   organization.
                 </p>
@@ -111,7 +111,7 @@ const Solution = () => {
           </div>
 
           <div className="text-center md:p-20 pt-10 ">
-            <p className="md:text-4xl font-bold ">
+            <p className="md:text-4xl font-bold " id="Taketotalcontrol">
               Maintenance Management System
             </p>
           </div>
