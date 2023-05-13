@@ -4,12 +4,12 @@ import Logolist from "./logolist";
 
 function Hearder() {
   const handleScrollTo = () => {
-    document.querySelector("#features")?.scrollIntoView({
+    document.querySelector("#Taketotalcontrol")?.scrollIntoView({
       behavior: "smooth",
     });
   };
   const handleScrollFX = () => {
-    document.querySelector("#Taketotalcontrol")?.scrollIntoView({
+    document.querySelector("#features")?.scrollIntoView({
       behavior: "smooth",
     });
   };
