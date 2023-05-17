@@ -52,7 +52,7 @@ const data: Array<{
 function SaveMore() {
   const [mainData] = useState(data);
   return (
-    <div className="md:mt-10">
+    <div id="solutions" className="md:mt-10">
       <div className=" md:p-0">
         <div className="md:flex ">
           <div className="md:w-1/1 md:pl-15 md:mr-32 p-10 mb:p-0 md:container md:mx-auto ">

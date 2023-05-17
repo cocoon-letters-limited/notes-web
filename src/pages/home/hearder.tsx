@@ -14,11 +14,11 @@ function Hearder() {
     setIsPlaying(true);
   };
 
-  // const scrollToSolution = () => {
-  //   document.querySelector("#features")?.scrollIntoView({
-  //     behavior: "smooth",
-  //   });
-  // };
+  const scrollToSolution = () => {
+    document.querySelector("#solutions")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div>
@@ -50,6 +50,7 @@ function Hearder() {
                 </button>
                 <button
                   type="button"
+                  onClick={scrollToSolution}
                   className="  font-bold md:py-2 md:px-4  md:text-base text-xs rounded inline-flex items-center text-white"
                 >
                   <span>View Solutions</span>

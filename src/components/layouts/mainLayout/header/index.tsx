@@ -80,14 +80,14 @@ const Header = () => {
                   FAQ
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink
                   to="contact-us"
                   className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-blue-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-blue-700 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Contact us
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
