@@ -11,8 +11,9 @@ const Header = () => {
       <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded  font-dark">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
           <div className="flex items-center">
-            <img src={Logo} className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
-            {/* <span className="self-center text-xl font-semibold whitespace-nowrap ">Flowbite</span> */}
+            <Link to="/">
+              <img src={Logo} className="h-6 mr-3 sm:h-9" alt="iNoteOpx" />
+            </Link>
           </div>
           <div className="flex md:order-2">
             <Link to="/trynow">

@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="mx-auto w-full container p-4 sm:p-6">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
-              <a href="https://flowbite.com/" className="flex items-center">
-                <img src={Logo} className="h-8 mr-3" alt="FlowBite Logo" />
-              </a>
+              <Link to="/" className="flex items-center">
+                <img src={Logo} alt="iNote Opx" className="h-8 mr-3" />
+              </Link>
               <p className="mt-5">
                 Manage file easily, <br /> Everywhere, everytime.
               </p>
