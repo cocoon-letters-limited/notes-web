@@ -4,6 +4,11 @@ import Logolist from "./logolist";
 
 function Hearder() {
   const handleScrollTo = () => {
+    document.querySelector("#Taketotalcontrol")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+  const handleScrollFX = () => {
     document.querySelector("#features")?.scrollIntoView({
       behavior: "smooth",
     });
@@ -14,11 +19,11 @@ function Hearder() {
     setIsPlaying(true);
   };
 
-  const scrollToSolution = () => {
-    document.querySelector("#solutions")?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
+  // const scrollToSolution = () => {
+  //   document.querySelector("#solutions")?.scrollIntoView({
+  //     behavior: "smooth",
+  //   });
+  // };
 
   return (
     <div>
@@ -50,7 +55,7 @@ function Hearder() {
                 </button>
                 <button
                   type="button"
-                  onClick={scrollToSolution}
+                  onClick={handleScrollFX}
                   className="  font-bold md:py-2 md:px-4  md:text-base text-xs rounded inline-flex items-center text-white"
                 >
                   <span>View Solutions</span>
