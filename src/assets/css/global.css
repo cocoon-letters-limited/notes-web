@@ -3,6 +3,27 @@
   --color-primary: #054cd6;
   --color-textColor: #696969;
 }
+.react-calendar__month-view__weekdays__weekday {
+  padding:20px;
+  text-align: center
+}
+.react-calendar__month-view__days__day{
+  padding:25px;
+  border:1px solid #F6F7FB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.react-calendar__month-view__days__day abbr {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ECEEF5; /* You can change the background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; /* You can change the font size */
+}
 
 @tailwind base;
 @tailwind components;

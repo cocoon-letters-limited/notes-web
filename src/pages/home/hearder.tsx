@@ -19,11 +19,11 @@ function Hearder() {
     setIsPlaying(true);
   };
 
-  const scrollToSolution = () => {
-    document.querySelector("#solutions")?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
+  // const scrollToSolution = () => {
+  //   document.querySelector("#solutions")?.scrollIntoView({
+  //     behavior: "smooth",
+  //   });
+  // };
 
   return (
     <div>
