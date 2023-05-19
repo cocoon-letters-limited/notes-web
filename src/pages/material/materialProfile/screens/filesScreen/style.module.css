@@ -1,0 +1,6 @@
+.activeFileTab {
+     transition: all ease-in-out 200ms;
+}
+.activeFileTab span svg path {
+    fill: white;
+}
