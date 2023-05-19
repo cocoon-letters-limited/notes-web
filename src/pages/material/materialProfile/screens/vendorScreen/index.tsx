@@ -1,5 +1,6 @@
 import StarIcon from "components/svg/starIcon";
-import React from "react";
+import React, { useState } from "react";
+import AddVendorModal from "./addVendorModal";
 
 const Row = () => {
   return (
@@ -20,11 +21,14 @@ const Row = () => {
 };
 
 const VendorScreen = () => {
+  const [showAddVendorModal, setShowAddVendorModal] = useState(false);
+
   return (
     <div className="mt-4">
       <div className="flex flex-row justify-end">
         <button
           type="button"
+          onClick={() => setShowAddVendorModal(!showAddVendorModal)}
           className="focus:outline-none py-4 px-6 lg:px-8 rounded-lg bg-primary text-white text-sm-15 lg:text-base font-semibold"
         >
           Add vendor
@@ -44,6 +48,12 @@ const VendorScreen = () => {
           <Row />
         </div>
       </div>
+
+      {/* Add vendorModal */}
+      <AddVendorModal
+        open={showAddVendorModal}
+        handleClose={() => setShowAddVendorModal(false)}
+      />
     </div>
   );
 };

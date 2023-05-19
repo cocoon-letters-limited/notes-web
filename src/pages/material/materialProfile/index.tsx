@@ -6,6 +6,7 @@ import BioScreen from "./screens/bioScreen";
 import IntegrityScreen from "./screens/integrityScreen";
 import VendorScreen from "./screens/vendorScreen";
 import EditScreen from "./screens/editScreen";
+import FilesScreen from "./screens/filesScreen";
 
 const MaterialProfile = () => {
   const [showEdit, setShowEdit] = useState(false);
@@ -34,6 +35,9 @@ const MaterialProfile = () => {
 
       case "Vendor":
         return <VendorScreen />;
+
+      case "Files":
+        return <FilesScreen />;
 
       default:
         return null;
