@@ -89,10 +89,10 @@ function SaveMore() {
                   <p className="md:text-base text-sm md:mt-5 mt-2 md:mb-3 md:w-52 ">
                     {list.title}
                   </p>
-                  <p className=" text-gray-400 md:text-sm text-xs md:w-64">
+                  {/* <p className=" text-gray-400 md:text-sm text-xs md:w-64">
                     Odio euismod lacinia at quis. Amet purus gravida quis
                     blandit turpis.
-                  </p>
+                  </p> */}
                 </div>
               ))}
             </div>

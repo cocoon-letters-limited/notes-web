@@ -1,6 +1,7 @@
-import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
-import rectangle1059 from "assets/Rectangle1059.png";
+// import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useState } from "react";
+import img from "assets/notesectionimage.jpeg";
 import {
   CompetenceDevelopmentCentreData,
   Isolation,
@@ -19,34 +20,27 @@ function AccordionCustom({
   title: string;
   discription: string;
 }) {
+  const [open, setOpen] = useState(false);
   return (
-    <Accordion
-      square
-      style={{
-        background: "none",
-        boxShadow: "none",
-        border: "none",
-      }}
-    >
-      <AccordionSummary
-        expandIcon={<ExpandMoreIcon />}
-        aria-controls="panel1a-content"
-        id="panel1a-header"
-      >
+    <div className="p-3">
+      <div className="flex justify-between ">
         <p> {title}</p>
-      </AccordionSummary>
-      <AccordionDetails>
-        <p className="text-left text-gray-500">{discription}</p>
-      </AccordionDetails>
-    </Accordion>
+        <button type="submit" onClick={() => setOpen(!open)}>
+          <ExpandMoreIcon />
+        </button>
+      </div>
+      <div>
+        {open && <p className="text-left text-gray-500">{discription}</p>}
+      </div>
+    </div>
   );
 }
 
 const Solution = () => {
   // const [ePTW] = useState(ePTWData);
   return (
-    <div id="features">
-      <div className="text-center md:p-10 p-5">
+    <div>
+      <div id="features" className="text-center md:p-10 p-5">
         <p className="md:text-4xl font-bold text-blue-600">
           Take total control
         </p>
@@ -60,8 +54,8 @@ const Solution = () => {
           <div className="md:grid md:grid-cols-3 gap-5 ">
             <div>
               <img
-                className=" md:w-50 object-fit w-screen p-5 rounded"
-                src={rectangle1059}
+                className=" md:w-50 object-cover w-screen rounded bg-black h-full"
+                src={img}
                 alt="product"
                 sizes=""
               />
@@ -73,7 +67,7 @@ const Solution = () => {
                 <p className="md:text-2xl pt-5 md:pb-5">
                   Maintenance Management System
                 </p>
-                <p className="text-gray-700 md:text-base text-xs">
+                <p className="text-gray-700 md:text-base text-xs md:pr-2">
                   Streamline maintenance processes and extend the productive
                   lifespan of your assets.
                 </p>
@@ -83,7 +77,7 @@ const Solution = () => {
                 <p className="md:text-2xl pt-5 md:pb-5">
                   Safety Management System
                 </p>
-                <p className="text-gray-700 md:text-base text-xs">
+                <p className="text-gray-700 md:text-base text-xs  md:pr-2">
                   Manage permits and enhance safety processes across your entire
                   organization.
                 </p>
@@ -117,7 +111,7 @@ const Solution = () => {
           </div>
 
           <div className="text-center md:p-20 pt-10 ">
-            <p className="md:text-4xl font-bold ">
+            <p className="md:text-4xl font-bold " id="Taketotalcontrol">
               Maintenance Management System
             </p>
           </div>
