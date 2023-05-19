@@ -1,5 +1,5 @@
 import { useState } from "react";
-import thumbNailImage from "assets/Production1.png";
+import thumbNailImage from "assets/thumbtail.jpeg";
 import Logolist from "./logolist";
 
 function Hearder() {
@@ -100,7 +100,7 @@ function Hearder() {
                   {/* <img src={thumbNailImage} alt="Video thumbnail" /> */}
                   <div className="relative">
                     <img
-                      className="w-full h-auto"
+                      className="w-full h-auto rounded"
                       src={thumbNailImage}
                       alt="Video thumbnail"
                     />

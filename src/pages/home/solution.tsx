@@ -1,7 +1,7 @@
 // import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
-import rectangle1059 from "assets/Rectangle1059.png";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useState } from "react";
+import img from "assets/notesectionimage.jpeg";
 import {
   CompetenceDevelopmentCentreData,
   Isolation,
@@ -54,8 +54,8 @@ const Solution = () => {
           <div className="md:grid md:grid-cols-3 gap-5 ">
             <div>
               <img
-                className=" md:w-50 object-fit w-screen p-5 rounded"
-                src={rectangle1059}
+                className=" md:w-50 object-cover w-screen rounded bg-black h-full"
+                src={img}
                 alt="product"
                 sizes=""
               />
