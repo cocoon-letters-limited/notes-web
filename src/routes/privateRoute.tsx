@@ -29,6 +29,7 @@ import SystemsIsolation from "pages/safety/createCertification/SystemsIsolation/
 import SystemsIsolationDetail from "pages/safety/createCertification/SystemsIsolation/SystemsIsolationDetail";
 import RadiographyPermit from "pages/safety/createCertification/radiographyPermit";
 import ConfinedCertificate from "pages/safety/createCertification/ConfinedCertificate";
+import Vendor from "pages/vendor";
 
 const privateRoute = {
   path: "/",
@@ -155,6 +156,11 @@ const privateRoute = {
     {
       path: "dev-centre/create-assessment",
       element: <CreateAssessment />,
+    },
+
+    {
+      path: "marketplace",
+      element: <Vendor />,
     },
   ],
 };
