@@ -30,6 +30,7 @@ import SystemsIsolationDetail from "pages/safety/createCertification/SystemsIsol
 import RadiographyPermit from "pages/safety/createCertification/radiographyPermit";
 import ConfinedCertificate from "pages/safety/createCertification/ConfinedCertificate";
 import Vendor from "pages/vendor";
+import VendorDetails from "pages/vendor/vendorDetails";
 
 const privateRoute = {
   path: "/",
@@ -161,6 +162,10 @@ const privateRoute = {
     {
       path: "marketplace",
       element: <Vendor />,
+    },
+    {
+      path: "marketplace/:slug",
+      element: <VendorDetails />,
     },
   ],
 };
