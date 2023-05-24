@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import OverviewSection from "./components/overviewSection";
 import ItemsListingSection from "./components/itemsListingSection";
 import TabListSection from "./components/tabListSection";
+import OngoingOrderSection from "./components/ongoingOrderSection";
+import OrderHistory from "./components/orderHistory";
+import ReviewsSection from "./components/reviewsSection";
+import InvoiceSection from "./components/invoiceSection";
 
 const VendorDetails = () => {
   const [selectedTab, setSelectedTab] = useState("Items");
@@ -9,7 +13,7 @@ const VendorDetails = () => {
   const tabList = [
     "Items",
     "Ongoing orders",
-    "Order Hsitory",
+    "Order History",
     "Invoice",
     "Reviews",
   ];
@@ -22,18 +26,18 @@ const VendorDetails = () => {
     if (selectedTab === "Items") {
       return <ItemsListingSection />;
     }
-    // if (selectedTab === "Ongoing orders") {
-    //   return <OverviewSection />;
-    // }
-    // if (selectedTab === "Order Hsitory") {
-    //   return <OverviewSection />;
-    // }
-    // if (selectedTab === "Invoice") {
-    //   return <OverviewSection />;
-    // }
-    // if (selectedTab === "Reviews") {
-    //   return <OverviewSection />;
-    // }
+    if (selectedTab === "Ongoing orders") {
+      return <OngoingOrderSection />;
+    }
+    if (selectedTab === "Order History") {
+      return <OrderHistory />;
+    }
+    if (selectedTab === "Invoice") {
+      return <InvoiceSection />;
+    }
+    if (selectedTab === "Reviews") {
+      return <ReviewsSection />;
+    }
 
     return null;
   };
