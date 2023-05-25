@@ -3,6 +3,7 @@ import VendorTabListSection from "./components/vendorTabListSection";
 import VendorScreen from "./components/screens/vendorScreen";
 import InvoicesScreen from "./components/screens/invoicesScreen";
 import PayrollScreen from "./components/screens/payrollScreen";
+import OrdersScreen from "./components/screens/ordersScreen";
 
 const Vendor = () => {
   const tabList = [
@@ -27,7 +28,7 @@ const Vendor = () => {
       case "Balance sheet":
         return null;
       case "Orders":
-        return null;
+        return <OrdersScreen />;
       case "Invoices":
         return <InvoicesScreen />;
       case "Vendor":
