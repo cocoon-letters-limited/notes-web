@@ -26,12 +26,16 @@ type Props = {
   columns: Column<any>[];
   data: any[];
   hasCheckboxColumn?: boolean;
+  tableHeadBgColor?: string;
+  tableHeadTextColor?: string;
 };
 
 const TableGroup = ({
   showPagination,
   columns,
   data,
+  tableHeadBgColor,
+  tableHeadTextColor,
   hasCheckboxColumn = true,
 }: Props) => {
   const tableInstance = useTable(
@@ -86,7 +90,9 @@ const TableGroup = ({
                 // Apply the header row props
                 <tr
                   {...headerGroup.getHeaderGroupProps()}
-                  className={`bg-primary ${style.tableHeadRow}`}
+                  className={`${tableHeadBgColor || "bg-primary"} ${
+                    style.tableHeadRow
+                  }`}
                 >
                   {
                     // Loop over the headers in each row
@@ -94,7 +100,11 @@ const TableGroup = ({
                       // Apply the header cell props
                       <th
                         {...column.getHeaderProps()}
-                        className={`text-white text-sm font-semibold px-6 py-4 lg:py-5 text-left ${style.th}`}
+                        className={`${
+                          tableHeadTextColor || "text-white"
+                        } text-sm font-semibold px-6 py-4 lg:py-5 text-left ${
+                          style.th
+                        }`}
                       >
                         {
                           // Render the header

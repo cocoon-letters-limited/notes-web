@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import VendorTabListSection from "./components/vendorTabListSection";
 import VendorScreen from "./components/screens/vendorScreen";
+import InvoicesScreen from "./components/screens/invoicesScreen";
+import PayrollScreen from "./components/screens/payrollScreen";
 
 const Vendor = () => {
   const tabList = [
@@ -27,11 +29,11 @@ const Vendor = () => {
       case "Orders":
         return null;
       case "Invoices":
-        return null;
+        return <InvoicesScreen />;
       case "Vendor":
         return <VendorScreen />;
       case "Payroll":
-        return null;
+        return <PayrollScreen />;
       default:
         return null;
     }
