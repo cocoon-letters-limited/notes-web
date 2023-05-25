@@ -77,7 +77,14 @@ function IntegrityTables() {
     [],
   );
 
-  return <TableGroup columns={columns} data={data} showPagination />;
+  return (
+    <TableGroup
+      hasCheckboxColumn={false}
+      columns={columns}
+      data={data}
+      showPagination
+    />
+  );
 }
 
 export default IntegrityTables;
