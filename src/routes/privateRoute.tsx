@@ -28,6 +28,7 @@ import SystemsIsolation from "pages/safety/createCertification/SystemsIsolation/
 import SystemsIsolationDetail from "pages/safety/createCertification/SystemsIsolation/SystemsIsolationDetail";
 import RadiographyPermit from "pages/safety/createCertification/radiographyPermit";
 import ConfinedCertificate from "pages/safety/createCertification/ConfinedCertificate";
+import Schedule from "pages/schedule";
 // import DevCentreDetails from "pages/devCentre/devCentreDetails";
 
 const privateRoute = {
@@ -147,6 +148,10 @@ const privateRoute = {
     {
       path: "dev-centre/:slug",
       // element: <DevCentreDetails />,
+    },
+    {
+      path: "schedule/",
+      element: <Schedule />,
     },
     {
       path: "dev-centre/create-course",

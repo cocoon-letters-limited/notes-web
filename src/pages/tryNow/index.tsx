@@ -9,7 +9,7 @@ import { TryForFreeAPI } from "store/tryforfree/tryforfree.slice";
 type Props = {
   name: string;
   email: string;
-  password: string;
+  // password: string;
   companyName: string;
   companySize: number;
   billingAddress: string;
@@ -25,7 +25,7 @@ function Trynow() {
   const initialValues: Props = {
     name: "",
     email: "",
-    password: "",
+    // password: "",
     companyName: "",
     companySize: 0,
     billingAddress: "",
@@ -127,7 +127,7 @@ function Trynow() {
                     {errors.email && touched.email && errors.email}
                   </p>
                 </div>
-                <div className="">
+                {/* <div className="">
                   <p className="block mb-2 text-sm font-medium text-gray-900 ">
                     Password
                   </p>
@@ -141,7 +141,7 @@ function Trynow() {
                     value={values.password}
                     required
                   />
-                </div>
+                </div> */}
                 <div className="">
                   <p className="block mb-2 text-sm font-medium text-gray-900 ">
                     Company size

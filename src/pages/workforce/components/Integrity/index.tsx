@@ -43,10 +43,20 @@ function WorkForceIntegrity() {
         <div className="">
           <p className="flex justify-between my-3">Work Histor</p>
 
-          <TableGroup columns={columns} data={data} showPagination />
+          <TableGroup
+            columns={columns}
+            hasCheckboxColumn={false}
+            data={data}
+            showPagination
+          />
 
           <p className="flex justify-between my-3">Assessment Report</p>
-          <TableGroup columns={columns} data={data} showPagination />
+          <TableGroup
+            hasCheckboxColumn={false}
+            columns={columns}
+            data={data}
+            showPagination
+          />
         </div>
         <div className=" p-5">
           <div>

@@ -86,5 +86,12 @@ export default function RelationshipTable() {
     [],
   );
 
-  return <TableGroup columns={columns} data={data} showPagination />;
+  return (
+    <TableGroup
+      hasCheckboxColumn={false}
+      columns={columns}
+      data={data}
+      showPagination
+    />
+  );
 }

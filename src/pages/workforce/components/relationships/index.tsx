@@ -118,7 +118,12 @@ function Relationships() {
         </button>
       </div>
 
-      <TableGroup columns={columns} data={data} showPagination />
+      <TableGroup
+        hasCheckboxColumn={false}
+        columns={columns}
+        data={data}
+        showPagination
+      />
     </div>
   );
 }
