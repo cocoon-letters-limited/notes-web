@@ -31,6 +31,7 @@ import RadiographyPermit from "pages/safety/createCertification/radiographyPermi
 import ConfinedCertificate from "pages/safety/createCertification/ConfinedCertificate";
 import Vendor from "pages/vendor";
 import VendorDetails from "pages/vendor/vendorDetails";
+import VendorCreateOrder from "pages/vendor/vendorCreateOrder";
 
 const privateRoute = {
   path: "/",
@@ -162,6 +163,10 @@ const privateRoute = {
     {
       path: "marketplace",
       element: <Vendor />,
+    },
+    {
+      path: "/create-order",
+      element: <VendorCreateOrder />,
     },
     {
       path: "marketplace/:slug",

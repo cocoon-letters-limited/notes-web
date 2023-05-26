@@ -109,7 +109,7 @@ const OrdersScreen = () => {
         </form>
 
         <Link
-          to="/marteplace/create-order"
+          to="/create-order"
           className="px-6 py-3 rounded-lg bg-primary text-white"
         >
           New
