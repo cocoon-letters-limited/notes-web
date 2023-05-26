@@ -54,7 +54,7 @@ const Solution = () => {
           <div className="md:grid md:grid-cols-3 gap-5 ">
             <div>
               <img
-                className=" md:w-50 object-cover w-screen rounded bg-black h-full"
+                className=" md:w-50 object-contain w-screen rounded bg-black "
                 src={img}
                 alt="product"
                 sizes=""
