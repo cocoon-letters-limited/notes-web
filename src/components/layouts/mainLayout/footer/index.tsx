@@ -26,7 +26,7 @@ const Footer = () => {
                       About us
                     </Link>
                   </li>
-                  {/* <li className="mb-4">
+                  <li className="mb-4">
                     <Link to="/blog" className="hover:underline">
                       Blog
                     </Link>
@@ -35,10 +35,10 @@ const Footer = () => {
                     <Link to="/contact-us" className="hover:underline">
                       Contact us
                     </Link>
-                  </li> */}
+                  </li>
                 </ul>
               </div>
-              {/* <div>
+              <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
                   Our Works
                 </h2>
@@ -59,7 +59,7 @@ const Footer = () => {
                     </Link>
                   </li>
                 </ul>
-              </div> */}
+              </div>
 
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
@@ -71,7 +71,7 @@ const Footer = () => {
                       FAQ
                     </Link>
                   </li>
-                  {/* <li className="mb-4">
+                  <li className="mb-4">
                     <Link to="/trynow" className="hover:underline">
                       Contact sales
                     </Link>
@@ -80,7 +80,7 @@ const Footer = () => {
                     <Link to="/signup" className="hover:underline">
                       Sign In
                     </Link>
-                  </li> */}
+                  </li>
                 </ul>
               </div>
             </div>
