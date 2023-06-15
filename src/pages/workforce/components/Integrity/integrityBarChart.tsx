@@ -27,13 +27,13 @@ export const options = {
       position: "top" as const,
     },
     title: {
-      display: true,
-      text: "Chart.js Bar Chart",
+      display: false,
+      text: "",
     },
   },
 };
 
-const labels = ["January", "February", "March", "April", "May", "June", "July"];
+const labels = [""];
 
 export const data = {
   labels,
