@@ -94,7 +94,6 @@ function Relationships() {
     ],
     [],
   );
-
   return (
     <div>
       <div className="inline-flex rounded-md shadow-sm" role="group">
@@ -117,7 +116,6 @@ function Relationships() {
           Handover notes
         </button>
       </div>
-
       <TableGroup
         hasCheckboxColumn={false}
         columns={columns}
