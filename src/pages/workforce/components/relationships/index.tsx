@@ -89,7 +89,7 @@ function Relationships() {
         unit: "M^3",
         condition: "Out of Stock",
         criticality: 1,
-        price: "2,500",
+        price: "2,50",
       },
     ],
     [],
