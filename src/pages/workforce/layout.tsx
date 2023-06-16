@@ -2,17 +2,15 @@ import React, { useState } from "react";
 import BioScreen from "pages/material/materialProfile/screens/bioScreen";
 import Breadcrumbs from "components/elements/breadcrumb";
 import Tabs from "components/elements/Tabs";
+import FilePage from "components/sharedpage/file";
 import Profile from "./components/profile";
 import WorkforceBio from "./components/bio/workforceBioView";
 import Relationships from "./components/relationships";
-// import WorkforceTraning from "./components/Training";
-import Workfocefiles from "./components/files";
 import Timesheet from "./components/Timesheet";
 import WorkForceIntegrity from "./components/Integrity";
 import WorkforceTraning from "./components/Training";
 
 function ManpowerLayout() {
-  // const [showEdit, setShowEdit] = useState(false);
   const [selectedTab, setSelectedTab] = useState("Bio");
   const [disableTab, setDisableTab] = useState(false);
 
@@ -43,7 +41,7 @@ function ManpowerLayout() {
         return <BioScreen handleShowEdit={handleShowEdit} />;
 
       case "Files":
-        return <Workfocefiles />;
+        return <FilePage />;
 
       case "Relationships":
         return <Relationships />;

@@ -1,6 +1,6 @@
 import React from "react";
-import EquipmentCard from "pages/dashboard/components/criticalSummarySection/components/equipmentCard";
 import { DataCard } from "pages/material/materialProfile/screens/integrityScreen";
+import LineChart from "components/elements/lineChart";
 import IntegrityTables from "./IntegrityTables";
 import IntegrityPopUp from "./integrityPopUp";
 
@@ -31,7 +31,7 @@ function Integrity() {
         </div>
         <div className=" px-5">
           <p>Predictive Maintenance</p>
-          <EquipmentCard />
+          <LineChart />
         </div>
       </div>
     </div>

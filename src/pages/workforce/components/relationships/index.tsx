@@ -94,34 +94,40 @@ function Relationships() {
     ],
     [],
   );
+  const myStyles = {
+    width: "750px",
+  };
+
   return (
-    <div>
-      <div className="inline-flex rounded-md shadow-sm" role="group">
-        <button
-          type="button"
-          className="px-4 py-2 text-sm font-medium text-blue-700 bg-transparent border border-blue-700 rounded-l-lg hover:bg-blue-700 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-blue-700 focus:text-white dark:border-blue-700 dark:text-blue-700 dark:hover:text-white dark:hover:bg-blue-700 dark:focus:bg-blue-700"
-        >
-          Departments
-        </button>
-        <button
-          type="button"
-          className="px-4 py-2 text-sm font-medium text-blue-700 bg-transparent border-t border-b border-blue-700 hover:bg-blue-700 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-blue-700 focus:text-white dark:border-blue-700 dark:text-blue-700 dark:hover:text-white dark:hover:bg-blue-700 dark:focus:bg-blue-700"
-        >
-          Workgroups
-        </button>
-        <button
-          type="button"
-          className="px-4 py-2 text-sm font-medium text-blue-700 bg-transparent border border-blue-700 rounded-r-md hover:bg-blue-700 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-blue-700 focus:text-white dark:border-blue-700 dark:text-blue-700 dark:hover:text-white dark:hover:bg-blue-700 dark:focus:bg-blue-700"
-        >
-          Handover notes
-        </button>
+    <div style={myStyles}>
+      <div>
+        <div className="inline-flex rounded-md shadow-sm" role="group">
+          <button
+            type="button"
+            className="px-4 py-2 text-sm font-medium text-blue-700 bg-transparent border border-blue-700 rounded-l-lg hover:bg-blue-700 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-blue-700 focus:text-white dark:border-blue-700 dark:text-blue-700 dark:hover:text-white dark:hover:bg-blue-700 dark:focus:bg-blue-700"
+          >
+            Departments
+          </button>
+          <button
+            type="button"
+            className="px-4 py-2 text-sm font-medium text-blue-700 bg-transparent border-t border-b border-blue-700 hover:bg-blue-700 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-blue-700 focus:text-white dark:border-blue-700 dark:text-blue-700 dark:hover:text-white dark:hover:bg-blue-700 dark:focus:bg-blue-700"
+          >
+            Workgroups
+          </button>
+          <button
+            type="button"
+            className="px-4 py-2 text-sm font-medium text-blue-700 bg-transparent border border-blue-700 rounded-r-md hover:bg-blue-700 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-blue-700 focus:text-white dark:border-blue-700 dark:text-blue-700 dark:hover:text-white dark:hover:bg-blue-700 dark:focus:bg-blue-700"
+          >
+            Handover notes
+          </button>
+        </div>
+        <TableGroup
+          hasCheckboxColumn={false}
+          columns={columns}
+          data={data}
+          showPagination
+        />
       </div>
-      <TableGroup
-        hasCheckboxColumn={false}
-        columns={columns}
-        data={data}
-        showPagination
-      />
     </div>
   );
 }
