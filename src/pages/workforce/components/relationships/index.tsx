@@ -1,105 +1,36 @@
 import { Rating } from "@mui/material";
-import TableGroup from "components/elements/tableGroup";
-import React from "react";
-import { Column } from "react-table";
-import { DataProps } from "pages/material";
+
+const Row = () => {
+  return (
+    <div className="grid grid-cols-5 gap-6 rounded-xl py-6 px-6 text-sm overflow-x-auto text-center border-b border-[#F6F7FB]">
+      <p className="">Adeniji Victor</p>
+      <p className="">CAT Contractors</p>
+      <div>
+        <Rating name="simple-controlled" value={4} />
+      </div>
+      <div>
+        <button
+          type="button"
+          className="text-xs text-[#16F62C] px-3 border-[#16F62C] border-2 py-1 bg-[#C9FFCE] "
+        >
+          Fit
+        </button>
+      </div>
+      <div>
+        <button
+          type="button"
+          className="text-xs text-[#F92F1B] px-3 border-[#F92F1B] border-2 py-1 bg-[#FFDADF] "
+        >
+          Holiday
+        </button>
+      </div>
+    </div>
+  );
+};
 
 function Relationships() {
-  const columns = React.useMemo<Column<any>[]>(
-    () => [
-      {
-        Header: "NAME",
-        accessor: "NAME", // accessor is the "key" in the data
-        Cell: "Adeniji Victor	",
-      },
-      {
-        Header: "ROLE",
-        accessor: "	ROLE",
-        Cell: "Maintenance Superintendent",
-      },
-      {
-        Header: "RATINGS",
-        accessor: "RATINGS",
-        Cell: <Rating name="simple-controlled" value={4} />,
-      },
-      {
-        Header: "STATUS	",
-        accessor: "STATUS	",
-        Cell: (
-          <button
-            type="button"
-            className="text-xs text-[#16F62C] px-3 border-[#16F62C] border-2 py-1 bg-[#C9FFCE] "
-          >
-            Fit
-          </button>
-        ),
-      },
-      {
-        Header: "CONDITION	",
-        accessor: "DATE	",
-        Cell: (
-          <button
-            type="button"
-            className="text-xs text-[#F92F1B] px-3 border-[#F92F1B] border-2 py-1 bg-[#FFDADF] "
-          >
-            Holiday
-          </button>
-        ),
-      },
-    ],
-    [],
-  );
-
-  const data: DataProps[] = React.useMemo(
-    () => [
-      {
-        id: 1,
-        storeId: "MT1993812",
-        name: "Metal Sheet",
-        qrCode: "123453",
-        location: "12345",
-        manufacturer: "Siemens",
-        quantity: 48,
-        unit: "M^3",
-        condition: "High",
-        criticality: 1,
-        price: "2,500",
-      },
-      {
-        id: 2,
-        storeId: "MT1993812",
-        name: "Metal Sheet",
-        qrCode: "123453",
-        location: "12345",
-        manufacturer: "Siemens",
-        quantity: 48,
-        unit: "M^3",
-        condition: "Low",
-        criticality: 1,
-        price: "2,500",
-      },
-      {
-        id: 3,
-        storeId: "MT1993812",
-        name: "Metal Sheet",
-        qrCode: "123453",
-        location: "12345",
-        manufacturer: "Siemens",
-        quantity: 48,
-        unit: "M^3",
-        condition: "Out of Stock",
-        criticality: 1,
-        price: "2,50",
-      },
-    ],
-    [],
-  );
-  const myStyles = {
-    width: "750px",
-  };
-
   return (
-    <div style={myStyles}>
+    <div>
       <div>
         <div className="inline-flex rounded-md shadow-sm" role="group">
           <button
@@ -121,12 +52,19 @@ function Relationships() {
             Handover notes
           </button>
         </div>
-        <TableGroup
-          hasCheckboxColumn={false}
-          columns={columns}
-          data={data}
-          showPagination
-        />
+        <div className="mt-6 lg:mt-8">
+          <div className="grid grid-cols-5 gap-6 bg-primary rounded-xl py-5 px-6 text-white text-sm overflow-x-auto text-center">
+            <p className="">Name</p>
+            <p className="">Role</p>
+            <p className="">Rating</p>
+            <p className="">Status</p>
+            <p className="">Condition</p>
+          </div>
+          <div className="">
+            <Row />
+            <Row />
+          </div>
+        </div>
       </div>
     </div>
   );
