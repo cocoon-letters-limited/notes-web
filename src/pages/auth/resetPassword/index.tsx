@@ -30,7 +30,7 @@ const ResetPassword = () => {
       toast.error("Invalid token. Try re-initiate the forgot password");
       navigate("/forgot-password");
     }
-  }, [location]);
+  }, [location, navigate]);
 
   const initialValues: Props = {
     token: "",

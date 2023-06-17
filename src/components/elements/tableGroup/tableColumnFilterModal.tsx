@@ -20,11 +20,8 @@ const TableColumnFilterModal = ({ columns, onClose }: Props) => {
         {columns.map((column) => (
           <div key={column.id}>
             <label className="text-sm font-semibold text-black">
-              <input
-                type="checkbox"
-                className="mr-2"
-                {...column.getToggleHiddenProps()}
-              />{" "}
+              <input type="checkbox" className="mr-2" />
+              {/* {column.getToggleHiddenProps()} */}
               {convertFirstLetterToUppercase(column.id)}
             </label>
           </div>
