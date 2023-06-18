@@ -14,7 +14,7 @@ import Pagination from "../pagination";
 import style from "./style.module.css";
 import tableCheckbox from "./tableCheckbox";
 import TableColumnFilterModal from "./tableColumnFilterModal";
-
+// git push
 type TableInstanceWithHooks<T extends object> = TableInstance<T> &
   UsePaginationInstanceProps<T> &
   UseSortByInstanceProps<T> & {
