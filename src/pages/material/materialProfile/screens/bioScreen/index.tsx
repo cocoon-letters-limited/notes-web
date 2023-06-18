@@ -87,7 +87,7 @@ const BioScreen = ({ handleShowEdit }: Props) => {
 
       <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="bg-[#F6F7FB] p-5 rounded-lg">
-          <p className="font-bold text-xl text-default">Notes</p>
+          <p className="font-bold text-xl text-default">Schedule</p>
           <div className="">
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DateCalendar />

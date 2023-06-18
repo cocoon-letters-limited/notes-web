@@ -32,6 +32,7 @@ import ConfinedCertificate from "pages/safety/createCertification/ConfinedCertif
 import Vendor from "pages/vendor";
 import VendorDetails from "pages/vendor/vendorDetails";
 import VendorCreateOrder from "pages/vendor/vendorCreateOrder";
+import VendorItemDetails from "pages/vendor/vendorItemDetails";
 
 const privateRoute = {
   path: "/",
@@ -171,6 +172,10 @@ const privateRoute = {
     {
       path: "marketplace/:slug",
       element: <VendorDetails />,
+    },
+    {
+      path: "marketplace/:slug/items/:ordersId",
+      element: <VendorItemDetails />,
     },
   ],
 };
