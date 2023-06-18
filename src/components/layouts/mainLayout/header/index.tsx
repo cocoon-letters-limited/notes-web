@@ -11,8 +11,9 @@ const Header = () => {
       <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded  font-dark">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
           <div className="flex items-center">
-            <img src={Logo} className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
-            {/* <span className="self-center text-xl font-semibold whitespace-nowrap ">Flowbite</span> */}
+            <Link to="/">
+              <img src={Logo} className="h-6 mr-3 sm:h-9" alt="iNoteOpx" />
+            </Link>
           </div>
           <div className="flex md:order-2">
             <Link to="/trynow">
@@ -80,14 +81,14 @@ const Header = () => {
                   FAQ
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink
                   to="contact-us"
                   className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-blue-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-blue-700 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Contact us
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

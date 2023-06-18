@@ -17,8 +17,7 @@ import ManpowerLayout from "pages/workforce/layout";
 import MaintenanceDetails from "pages/maintenance/maintenanceDetails";
 import MaintenanceWorkOrder from "pages/maintenance/maintenanceWorkOrder";
 // import Safety from "pages/safety";
-import DevCentre from "pages/devCentre";
-import DevCentreDetails from "pages/devCentre/devCentreDetails";
+// import DevCentre from "pages/devCentre";
 import CreateCourse from "pages/devCentre/devCentreDetails/createCourse";
 import CreateAssessment from "pages/devCentre/devCentreDetails/createAssessment";
 import SatetyLayout from "pages/safety/safetyList";
@@ -34,6 +33,8 @@ import VendorDetails from "pages/vendor/vendorDetails";
 import VendorCreateOrder from "pages/vendor/vendorCreateOrder";
 import VendorItemDetails from "pages/vendor/vendorItemDetails";
 import MaterialCreate from "pages/material/materialCreate";
+import Schedule from "pages/schedule";
+// import DevCentreDetails from "pages/devCentre/devCentreDetails";
 
 const privateRoute = {
   path: "/",
@@ -151,11 +152,15 @@ const privateRoute = {
     },
     {
       path: "dev-centre",
-      element: <DevCentre />,
+      // element: <DevCentre />,
     },
     {
       path: "dev-centre/:slug",
-      element: <DevCentreDetails />,
+      // element: <DevCentreDetails />,
+    },
+    {
+      path: "schedule/",
+      element: <Schedule />,
     },
     {
       path: "dev-centre/create-course",

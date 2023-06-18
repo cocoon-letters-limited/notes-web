@@ -121,3 +121,9 @@
   justify-content: center;
   align-items: center;
 }
+
+.MuiPickersDay-today {
+    background: #054CD6 !important;
+    color: white !important;
+    border: transparent !important;
+}

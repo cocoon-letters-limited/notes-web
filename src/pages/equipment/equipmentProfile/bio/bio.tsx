@@ -3,7 +3,7 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import EditIcon from "components/svg/editIcon";
 import { DateCalendar } from "@mui/x-date-pickers-pro";
-import EquipmentCard from "pages/dashboard/components/criticalSummarySection/components/equipmentCard";
+import LineChart from "components/elements/lineChart";
 import EditBio from "../../equipmentEdit/editBio";
 import style from "./style.module.css";
 
@@ -103,11 +103,11 @@ function Bio() {
             </div>
           </div>
           <div className="mt-2">
-            <EquipmentCard />
+            <LineChart />
           </div>
           <div className="mt-2 grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="bg-[#F6F7FB] p-5 rounded-lg">
-              <p className="font-bold text-xl text-default">Notes</p>
+              <p className="font-bold text-xl text-default">Schedule</p>
               <div className="">
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                   <DateCalendar />

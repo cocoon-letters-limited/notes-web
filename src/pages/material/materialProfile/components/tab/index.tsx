@@ -7,7 +7,7 @@ type Props = {
   disableTab?: boolean;
 };
 const Tab = ({ selectedTab, handleChangeTab, disableTab }: Props) => {
-  const tabList = ["Bio", "Integrity", "Vendor"];
+  const tabList = ["Bio", "Integrity", "Vendor", "Files"];
   return (
     <div className="mb-4 relative space-x-4 lg:space-x-6 xl:space-x-8 overflow-x-auto flex">
       {tabList?.map((tab) => (

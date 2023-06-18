@@ -1,31 +1,59 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { Rating } from "@mui/material";
-import dayjs from "dayjs";
 import { DateCalendar } from "@mui/x-date-pickers-pro";
 
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { DemoContainer, DemoItem } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import EditIcon from "components/svg/editIcon";
+import style from "./style.module.css";
+
+export type CardProps = {
+  name: string;
+  value: any;
+  styleName?: string;
+  children?: any;
+};
+
+export const Card = ({ name, value, styleName, children }: CardProps) => {
+  return (
+    <div className={`text-default text-sm-15  lg:text-base ${styleName}`}>
+      <p className="font-bold text-[#AEB4CB] mb-2">{name}</p>
+      {value ? <p className="">{value}</p> : children}
+    </div>
+  );
+};
+
+const NoteCard = () => {
+  return (
+    <div className={`py-3 px-6 relative bg-white rounded-lg ${style.noteCard}`}>
+      <div className="flex items-center">
+        <p className="font-bold text-base mr-5">Use of Metal plates</p>
+        <p className="bg-[#DA1BF9] text-white text-[10px] font-medium  px-3 py-1 rounded-full  dark:text-white">
+          Lesson note
+        </p>
+      </div>
+      <p className="text-[#B1BFD9] text-xs font-semibold">
+        27th of August, 2021
+      </p>
+      <p className="mt-2 text-[#3F3F3F] text-sm">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus euismod{" "}
+      </p>
+    </div>
+  );
+};
 
 function WorkforceBioView({ onChildClick }: any) {
   return (
     <div>
       <div className=" bg-[#F6F7FB] p-4 rounded-lg rounded-lg">
-        <div className="grid-cols-2 grid gap-2">
-          <div className="col-span-1">
-            <p className="text-gray-400 ">Employee ID</p>
-            <p className="text-xs">34990599</p>
-          </div>
+        <div className="grid-cols-2 grid gap-2 mt-3">
+          <Card name="Employee ID" value="34990599" />
           <div className="col-span-1 grid-cols-3 grid gap-3">
-            <div>
-              <p className="text-gray-400 ">Department</p>
-              <p className="text-xs">Maintenance</p>
-            </div>
-            <div>
-              <p className="text-gray-400 ">Rating</p>
+            <Card name="Department" value="Maintenance" />
+
+            <Card name="Rating" value={false}>
               <Rating name="simple-controlled" value={4} />
-            </div>
+            </Card>
             <button
               type="button"
               className="grid justify-items-end"
@@ -36,50 +64,37 @@ function WorkforceBioView({ onChildClick }: any) {
           </div>
         </div>
         <div className="grid-cols-2 grid gap-2 mt-3">
-          <div>
-            <p className="text-gray-400 ">Employee ID</p>
-            <p className="text-xs">34990599</p>
-          </div>
+          <Card name="Employee ID" value="34990599" />
           <div className="col-span-1 grid-cols-3 grid gap-3">
-            <div>
-              <p className="text-gray-400 ">Department</p>
-              <p className="text-xs">Maintenance</p>
-            </div>
-            <div>
-              <p className="text-gray-400 ">Condition</p>
+            <Card name="Department" value="Maintenance" />
+
+            <Card name="Condition" value={false}>
               <button
-                className=" bg-[#E0FFE3] border-4 px-2 py-1 text-xs rounded-lg text-green-600 border-green-300"
+                className=" bg-[#E0FFE3] border-2 px-2 py-1 text-xs rounded-lg text-green-600 border-green-300"
                 type="button"
               >
                 Onboard
               </button>
-            </div>
-            <div>
-              <p className="text-gray-400 ">Status</p>
+            </Card>
+            <Card name="Status" value={false}>
               <button
-                className=" bg-[#E0FFE3] border-4 px-2 py-1 text-xs  rounded-lg text-green-600 border-green-300"
+                className=" bg-[#E0FFE3] border-2 px-2 py-1 text-xs rounded-lg text-green-600 border-green-300"
                 type="button"
               >
                 Fit
               </button>
-            </div>
+            </Card>
           </div>
         </div>
         <div className="grid-cols-2 grid gap-2 mt-3">
-          <div>
-            <p className="text-[#AEB4CB]">Employee ID</p>
-            <p className="text-xs">34990599</p>
-          </div>
+          <Card name="Employee ID" value="34990599" />
           <div className="col-span-1 grid-cols-3 grid gap-3">
-            <div>
-              <p className="text-[#AEB4CB]">Level</p>
-              <p className="text-xs">1</p>
-            </div>
+            <Card name="Level" value="99" />
           </div>
         </div>
         <div className="grid-cols-2 grid gap-2 mt-3">
           <div>
-            <p className="text-[#AEB4CB] ">Team</p>
+            <p className="text-[#AEB4CB] mb-3 font-bold">Team</p>
             <div>
               <button
                 type="submit"
@@ -108,108 +123,52 @@ function WorkforceBioView({ onChildClick }: any) {
             </div>
           </div>
           <div className="col-span-1 grid-cols-3 grid gap-3">
-            <div>
-              <p className="text-[#AEB4CB]">Degree(s)</p>
-              <div>
-                <span className="text-xs">Bsc</span>
-                <span className="ml-3 text-xs">Msc.</span>
-              </div>
-            </div>
-            <div className="col-span-2 ">
-              <p className="text-[#AEB4CB]">Specializations Certificates</p>
-              <div>
-                <span className="text-xs">Cert 1</span>
-                <span className="text-xs ml-2">Cert 1</span>
-              </div>
-            </div>
-            <p className="text-[#AEB4CB]">WAGES</p>
+            <Card name="Degree(s)" value="Bsc Msc" />
+            <Card
+              name="Specializations Certificates"
+              styleName="col-span-2"
+              value="Cert 1 Cert 1"
+            />
           </div>
         </div>
         <div className="grid-cols-2 grid gap-2 mt-3">
-          <div>
-            <p className="text-[#AEB4CB]">Contract till</p>
-            <p className="text-xs">April, 2022</p>
-          </div>
+          <Card name="Contract till" value="April, 2022" />
           <div className="col-span-1 grid-cols-4 grid gap-3">
-            <div>
-              <p className="text-[#AEB4CB]">Standard</p>
-              <p className="text-xs">$1000</p>
-            </div>
-            <div className="">
-              <p className="text-[#AEB4CB]">Holiday</p>
-              <p className="text-xs">$1000</p>
-            </div>
-            <div>
-              <p className="text-[#AEB4CB]">Overtime</p>
-              <p className="text-xs">$1000</p>
-            </div>
-            <div>
-              <p className="text-[#AEB4CB]">Travel</p>
-              <p className="text-xs">$1000</p>
-            </div>
+            <Card name="Standard" value="$1000" />
+            <Card name="Holiday" value="$1000" />
+            <Card name="Overtime" value="$1000" />
+            <Card name="Travel" value="$1000" />
           </div>
         </div>
-        <p className="my-2 text-[#AEB4CB]">CREW CALENDAR</p>
+        <p className="my-2 text-[#AEB4CB] text-bold">CREW CALENDAR</p>
         <div className="flex">
-          <div>
-            <p className="text-[#AEB4CB]">Shift frequency</p>
-            <p className="text-xs">Every 14 days</p>
-          </div>
-          <div className="ml-4">
-            <p className="text-[#AEB4CB]">Next shift date</p>
-            <p className="text-xs">08. 04. 2021</p>
-          </div>
+          <Card name="Shift frequency" value="Every 14 days" />
+          <Card name="Next shift date" value="08. 04. 2021" />
         </div>
       </div>
-      <div className="w-full grid-cols-2 grid gap-5 mt-5">
-        <div className="bg-gray-100 p-5 rounded-lg">
-          <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DemoContainer components={["DateCalendar", "DateCalendar"]}>
-              <DemoItem label="Schedule">
-                <DateCalendar defaultValue={dayjs("2022-04-17")} />
-              </DemoItem>
-            </DemoContainer>
-          </LocalizationProvider>
+
+      <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="bg-[#F6F7FB] p-5 rounded-lg">
+          <p className="font-bold text-xl text-default">Schedule</p>
+          <div className="">
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+              <DateCalendar />
+            </LocalizationProvider>
+          </div>
         </div>
-        <div className="bg-gray-100 p-5 rounded-lg">
-          <div className="flex justify-between">
-            <p className="font-normal ">Notes</p>
+        <div className="bg-[#F6F7FB] px-4 py-5 rounded-lg">
+          <div className="flex justify-between items-center">
+            <p className="font-bold text-xl text-default">Notes</p>
             <button
               type="button"
-              className="w-fit px-3 bg-blue-700 text-xs text-white rounded-lg"
+              className="focus:outline-none text-sm-15 px-6 h-9 bg-primary text-white rounded-md"
             >
               New
             </button>
           </div>
-          <div className="p-3 bg-white rounded-lg mt-4">
-            <div className="border-l-8 border-fuchsia-600 pl-3">
-              <div className="flex">
-                <p className="  mr-5">Use of Metal plates</p>
-                <span className="bg-fuchsia-600  text-white  text-xs font-medium  px-2.5 py-1 rounded-full  dark:text-white">
-                  Lesson note
-                </span>
-              </div>
-              <small className="text-gray-400">27th of August, 2021</small>
-              <p className="font-light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
-                euismod{" "}
-              </p>
-            </div>
-          </div>
-          <div className="p-3 bg-white rounded-lg mt-4">
-            <div className="border-l-8 border-fuchsia-600 pl-3">
-              <div className="flex">
-                <p className="  mr-5">Use of Metal plates</p>
-                <span className="bg-fuchsia-600  text-white  text-xs font-medium  px-2.5 py-1 rounded-full  dark:text-white">
-                  Lesson note
-                </span>
-              </div>
-              <small className="text-gray-400">27th of August, 2021</small>
-              <p className="font-light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
-                euismod{" "}
-              </p>
-            </div>
+          <div className="mt-4 lg:mt-6 flex flex-col space-y-4">
+            <NoteCard />
+            <NoteCard />
           </div>
         </div>
       </div>

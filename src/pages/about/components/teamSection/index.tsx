@@ -11,7 +11,7 @@ const TeamSection = () => {
             Meet the Team
           </h2>
           <p className="mx-auto text-center mt-6 lg:mt-10 text-base leading-7 lg:text-xl lg:leading-8 text-textColor">
-            The inventing, innovating and doing humans at Cocoon Letters.
+            The inventing, innovating and doing humans at NoteOPX.
           </p>
         </div>
 

@@ -3,6 +3,19 @@ import Img from "assets/images/webp/profile.webp";
 import QRCodeImg from "assets/images/svg/qrcode.svg";
 import ButtonGroup from "components/elements/button";
 
+type TagProps = {
+  text: string;
+};
+
+const Tag = ({ text }: TagProps) => {
+  return (
+    <li className="pb-6 flex items-start border-l-2 border-[#B1BFD9]">
+      <span className="-ml-[.45rem] h-3 w-3 rounded-full border-2 border-primary bg-white" />
+      <span className="-mt-1 pl-2 lg:pl-3 text-sm">{text}</span>
+    </li>
+  );
+};
+
 const LeftContainer = () => {
   return (
     <div className="w-full lg:w-3/12 bg-white rounded-xl px-3 md:px-4 pt-8 pb-12">
@@ -24,18 +37,19 @@ const LeftContainer = () => {
         </div>
       </div>
 
-      <div className="bg-[#F6F7FB] rounded-lg mt-12 mx-auto px-4 pt-4 pb-6">
+      <div className="bg-[#F6F7FB] rounded-lg mt-12 mx-auto px-4 pt-4 pb-6 lg:pb-12">
         <h3 className="font-semibold text-sm-15 lg:text-base">Usage history</h3>
 
         <ul className="mt-4 lg:mt-6 text-sm text-[#230B34]">
-          <li className="pb-4">Popcorn Mac. Fabrication (5/1/21)</li>
-          <li className="pb-4">Roofing at Amotan Site (5/1/21)</li>
-          <li className="pb-4">Burglary Fabrication (5/1/21)</li>
+          <Tag text="Popcorn Mac. Fabrication (5/1/21)" />
+          <Tag text="Roofing at Amotan Site (5/1/21)" />
+          <Tag text="Burglary Fabrication (5/1/21)" />
         </ul>
       </div>
 
-      <div className="mt-12">
+      <div className="mt-12 space-y-6">
         <ButtonGroup title="Request material" />
+        <ButtonGroup buttonStyleType="outline" title="Issue material" />
       </div>
     </div>
   );

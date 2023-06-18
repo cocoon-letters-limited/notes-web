@@ -17,6 +17,7 @@ export type DataProps = {
   condition: string;
   criticality: number;
   price: string;
+  action?: string | undefined;
 };
 
 type ValueProps = {
@@ -69,6 +70,24 @@ const ConditionCard = ({ value }: ValueProps) => {
   );
 };
 
+const ActionCard = ({ value }: ValueProps) => {
+  return (
+    <button type="button" aria-label={`${value || ""}`}>
+      <svg
+        width="34"
+        height="8"
+        viewBox="0 0 34 8"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="4" cy="4" r="4" fill="#2F80ED" />
+        <circle cx="17" cy="4" r="4" fill="#2F80ED" />
+        <circle cx="30" cy="4" r="4" fill="#2F80ED" />
+      </svg>
+    </button>
+  );
+};
+
 const Material = () => {
   const columns = React.useMemo<Column<DataProps>[]>(
     () => [
@@ -117,6 +136,11 @@ const Material = () => {
         accessor: "price",
         Cell: PriceCard,
       },
+      {
+        Header: "Action",
+        accessor: "action",
+        Cell: ActionCard,
+      },
     ],
     [],
   );
@@ -135,6 +159,7 @@ const Material = () => {
         condition: "High",
         criticality: 1,
         price: "2,500",
+        action: "",
       },
       {
         id: 2,
@@ -148,6 +173,7 @@ const Material = () => {
         condition: "Low",
         criticality: 1,
         price: "2,500",
+        action: "",
       },
       {
         id: 3,
@@ -161,6 +187,7 @@ const Material = () => {
         condition: "Out of Stock",
         criticality: 1,
         price: "2,500",
+        action: "",
       },
     ],
     [],

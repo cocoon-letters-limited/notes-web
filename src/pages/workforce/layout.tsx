@@ -1,62 +1,85 @@
-import React from "react";
-import { TabContext, TabList, TabPanel } from "@mui/lab";
-import { Box, Tab } from "@mui/material";
+import React, { useState } from "react";
+import BioScreen from "pages/material/materialProfile/screens/bioScreen";
+import Breadcrumbs from "components/elements/breadcrumb";
+import Tabs from "components/elements/Tabs";
+import FilePage from "components/sharedpage/file";
 import Profile from "./components/profile";
 import WorkforceBio from "./components/bio/workforceBioView";
 import Relationships from "./components/relationships";
-import WorkforceTraning from "./components/Training";
-import Workfocefiles from "./components/files";
 import Timesheet from "./components/Timesheet";
 import WorkForceIntegrity from "./components/Integrity";
+import WorkforceTraning from "./components/Training";
 
 function ManpowerLayout() {
-  const [value, setValue] = React.useState("1");
+  const [selectedTab, setSelectedTab] = useState("Bio");
+  const [disableTab, setDisableTab] = useState(false);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
-    setValue(newValue);
+  const handleShowEdit = () => {
+    setDisableTab(true);
+    // setShowEdit(!showEdit);
+  };
+
+  const handleChangeTab = (value: string) => {
+    setSelectedTab(value);
+  };
+
+  const renderScreenBasedOnSelectedTab = (selectedValue: string) => {
+    switch (selectedValue) {
+      case "Bio":
+        return <WorkforceBio />;
+
+      case "Integrity":
+        return <WorkForceIntegrity />;
+
+      case "Timesheet":
+        return <Timesheet />;
+
+      case "Training":
+        return <WorkforceTraning />;
+
+      case "see":
+        return <BioScreen handleShowEdit={handleShowEdit} />;
+
+      case "Files":
+        return <FilePage />;
+
+      case "Relationships":
+        return <Relationships />;
+      default:
+        return null;
+    }
   };
 
   return (
-    <div className="grid grid-cols-4 gap-4">
-      <Profile />
-      <div className="col-span-3 bg-white p-3">
-        <Box sx={{ width: "100%", typography: "body1" }}>
-          <TabContext value={value}>
-            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-              <TabList
-                onChange={handleChange}
-                aria-label="lab API tabs example"
-              >
-                <Tab label={<p>Bio</p>} value="1" />
-                <Tab label={<p>Timesheet</p>} value="2" />
-                <Tab label="Integrity" value="3" />
-                <Tab label="Relationships" value="4" />
-                <Tab label="Training" value="5" />
-                <Tab label="Files" value="6" />
-              </TabList>
-            </Box>
-            <TabPanel value="1">
-              <WorkforceBio />
-            </TabPanel>
-            <TabPanel value="2">
-              <Timesheet />
-            </TabPanel>
-            <TabPanel value="3">
-              <WorkForceIntegrity />
-            </TabPanel>
-            <TabPanel value="4">
-              <Relationships />
-            </TabPanel>
-            <TabPanel value="5">
-              <WorkforceTraning />
-            </TabPanel>
-            <TabPanel value="6">
-              <Workfocefiles />
-            </TabPanel>
-          </TabContext>
-        </Box>
+    <section className="relative h-full">
+      <Breadcrumbs
+        fistTitle="Workforce"
+        secoundTitle="Profile"
+        privRoute="/manpower"
+      />
+
+      <div className="flex flex-row flex-wrap mt-6">
+        <Profile />
+        <div className="mt-6 lg:mt-0 w-full lg:flex-1 lg:ml-4 bg-white rounded-xl pt-8 pb-12 px-6 lg:px-8">
+          <Tabs
+            tabList={[
+              "Bio",
+              "Timesheet",
+              "Integrity",
+              "Relationships",
+              "Training",
+              "Files",
+            ]}
+            selectedTab={selectedTab}
+            handleChangeTab={handleChangeTab}
+            disableTab={disableTab}
+          />
+          <div className="relative">
+            {renderScreenBasedOnSelectedTab(selectedTab)}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
