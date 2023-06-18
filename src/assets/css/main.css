@@ -47,19 +47,22 @@
 }
 
 /* Status */
-.status-green,  .condition-high {
+.status-green,
+.condition-high {
   background: #e0ffe3;
   border: 2px solid #16f62c;
   color: #16f62c;
 }
 
-.status-blue, .condition-low {
+.status-blue,
+.condition-low {
   background: #e3edff;
   border: 2px solid #054cd6;
   color: #054cd6;
 }
 
-.status-red, .condition-out {
+.status-red,
+.condition-out {
   background: #ffdfdc;
   border: 2px solid #f92f1b;
   color: #f92f1b;

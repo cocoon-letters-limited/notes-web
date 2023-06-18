@@ -203,12 +203,12 @@ const Material = () => {
           Subscribe
         </button>
 
-        <button
-          type="button"
+        <Link
+          to="/material/create"
           className="focus:outline-none flex items-center py-3 space-x-4 text-sm-15 lg:text-base text-white border-2 border-primary bg-primary rounded-lg px-6 font-semibold"
         >
           New material
-        </button>
+        </Link>
       </div>
 
       <div className="mt-12">

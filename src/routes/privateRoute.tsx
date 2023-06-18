@@ -33,6 +33,7 @@ import Vendor from "pages/vendor";
 import VendorDetails from "pages/vendor/vendorDetails";
 import VendorCreateOrder from "pages/vendor/vendorCreateOrder";
 import VendorItemDetails from "pages/vendor/vendorItemDetails";
+import MaterialCreate from "pages/material/materialCreate";
 
 const privateRoute = {
   path: "/",
@@ -123,6 +124,10 @@ const privateRoute = {
     {
       path: "material",
       element: <Material />,
+    },
+    {
+      path: "material/create",
+      element: <MaterialCreate />,
     },
     {
       path: "material/:slug",
