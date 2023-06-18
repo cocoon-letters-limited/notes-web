@@ -146,7 +146,7 @@ const TableGroup = ({
                             className={`px-6 py-6 text-sm lg:text-sm-15 whitespace-nowrap ${style.td}`}
                           >
                             {
-                              // Render the cell contents
+                              // Render the cell contents g
                               cell.render("Cell")
                             }
                           </td>
