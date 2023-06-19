@@ -1,11 +1,13 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import * as React from "react";
 import SvgIcon from "@mui/material/SvgIcon";
 import { alpha, styled } from "@mui/material/styles";
 import TreeView from "@mui/lab/TreeView";
-import TreeItem, { treeItemClasses } from "@mui/lab/TreeItem";
+import TreeItem, { TreeItemProps, treeItemClasses } from "@mui/lab/TreeItem";
 import Collapse from "@mui/material/Collapse";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { useSpring, animated } from "@react-spring/web";
+import { TransitionProps } from "@mui/material/transitions";
 
 function MinusSquare() {
   return (
@@ -63,7 +65,7 @@ function CloseSquare() {
   );
 }
 
-function TransitionComponent({ tran_in }: any) {
+function TransitionComponent(props: TransitionProps) {
   const style = useSpring({
     from: {
       opacity: 0,
@@ -71,21 +73,21 @@ function TransitionComponent({ tran_in }: any) {
     },
     to: {
       // eslint-disable-next-line react/destructuring-assignment
-      opacity: tran_in ? 1 : 0,
+      opacity: props.in ? 1 : 0,
       // eslint-disable-next-line react/destructuring-assignment
-      transform: `translate3d(${tran_in ? 0 : 20}px,0,0)`,
+      transform: `translate3d(${props.in ? 0 : 20}px,0,0)`,
     },
   });
 
   return (
     <animated.div style={style}>
-      <Collapse />
+      <Collapse {...props} />
     </animated.div>
   );
 }
 
-const StyledTreeItem = styled(({ nodeId }: any) => (
-  <TreeItem TransitionComponent={TransitionComponent} nodeId={nodeId} />
+const StyledTreeItem = styled((props: TreeItemProps) => (
+  <TreeItem {...props} TransitionComponent={TransitionComponent} />
 ))(({ theme }) => ({
   [`& .${treeItemClasses.iconContainer}`]: {
     "& .close": {
