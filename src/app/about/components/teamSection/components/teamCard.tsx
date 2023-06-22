@@ -1,0 +1,27 @@
+import Image from "next/image";
+
+type Props = {
+  profilePicture: string;
+  name: string;
+  role: string;
+};
+
+const TeamCard = ({ profilePicture, name, role }: Props) => {
+  return (
+    <div className="mb-12 lg:mb-16 mx-auto text-center px-8">
+      <div className="w-9/12 mx-auto">
+        <Image
+          src={profilePicture}
+          alt="Tunde Avatar"
+          className="rounded-full w-full h-full object-cover"
+        />
+      </div>
+      <div className="mt-4 lg:mt-6">
+        <p className="text-lg lg:text-xl text-default">{name}</p>
+        <p className="mt-2 text-sm-15 lg:text-base text-textColor">{role}</p>
+      </div>
+    </div>
+  );
+};
+
+export default TeamCard;

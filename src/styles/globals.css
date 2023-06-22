@@ -1,0 +1,11 @@
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  :root {
+    --color-default: #1a191e;
+    --color-primary: #054cd6;
+    --color-textColor: #696969;
+  }
+  
+  @import "./main.css";

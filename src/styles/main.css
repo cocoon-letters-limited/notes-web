@@ -1,0 +1,36 @@
+.mobileMenu {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all ease-in-out 200ms;
+}
+
+.mobileMenu.showMenu {
+   animation: slideIn 200ms ease-in-out both;
+}
+
+.mobileMenu.closeMenu {
+    animation: slideOut 200ms ease-in-out both;
+ }
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
