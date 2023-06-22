@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${mulish.variable}`}>
-      <body>
+      <body suppressHydrationWarning={true}>
         {children}</body>
     </html>
   )
