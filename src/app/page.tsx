@@ -6,6 +6,7 @@ import GetStartedSection from "./home/components/getStartedSection";
 import TestimonialSection from "./home/components/testimonialSection";
 import PricingSection from "./home/components/pricingSection";
 
+
 export default function Home() {
     return (
         <MainLayout>
