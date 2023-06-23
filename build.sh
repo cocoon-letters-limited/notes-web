@@ -7,7 +7,7 @@
 set -e
 
 REPOPATH=${REPOPATH-/opt/manifest}
-CURRENT_BRANCH=${CIRCLE_BRANCH-"develop"}
+CURRENT_BRANCH=${CIRCLE_BRANCH-"main"}
 
 # Helper for adding a directory to the stack and echoing the result
 function enterDir {
